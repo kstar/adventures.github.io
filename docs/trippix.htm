@@ -1,0 +1,83 @@
+<html><head><title>Galaxy Triplet Slideshow</title></head>
+<body bgcolor="#000000" background="images/starry.jpg"
+ text="#FFFF66" link="#33FF33" vlink="#66FFCC">
+
+<CENTER><H1>GALAXY TRIPLET SLIDESHOW</H1></CENTER>
+
+<!--Insert this script anywhere between the BODY tags.-->
+
+<form>
+<center>
+<script language="JavaScript">
+<!--
+
+var current = 0;
+
+function imageArray()
+{
+  this.length = imageArray.arguments.length;
+  for (var i = 0; i < this.length; i++)
+  {
+     this[i] = imageArray.arguments[i];
+  }
+}
+// All images MUST BE OF THE SAME SIZE, since
+// the dimensions of the first image will be
+// used for all subsequent images.
+// All the images for your slide show need to 
+// be stored in the same directory.
+// You can use any group and any 
+// number of images. Place your images within 
+// each set of quotation marks below.
+// If the images are all in your Angelfire 
+// images subdirectory, makes sure the name 
+// of each image starts with "images/" like
+// in the example below.
+var imgz = new imageArray("images/gt1.jpg","images/gt10.jpg","images/gt29.jpg","images/gt33.jpg","images/gt36.jpg","images/gt48.jpg","images/gt54.jpg","images/gt58.jpg", "images/gt63.jpg","images/gt68.jpg","images/gt77.jpg ", "images/gt79.jpg ", "images/gt84.jpg ", "images/gt95.jpg ", "images/gt117.jpg ", "images/gt118.jpg " );
+
+document.write('<img name="myImages" border="1" src="'+imgz[0]+'">');
+
+function getPosition(val)
+{
+  var goodnum = current+val;
+  if (goodnum < 0)
+// This message is displayed if your visitor 
+// tries to click back past your first image.
+// Place your message within the quotation 
+// marks below.
+    alert("This is where you came in!");
+
+  else
+    if (goodnum > imgz.length-1)
+// This message is displayed if your visitor 
+// tries to click past your last image. Place 
+// your message within the quotation marks 
+// below.
+      alert("That's all, folks!");
+    else
+      document.myImages.src = imgz[goodnum];
+
+  current = goodnum;
+}
+
+//-->
+</script>
+<br>
+  <input type="button" value="<<" onclick="getPosition(-1)">  
+  <input type="button" value=">>" onclick="getPosition(1)">
+</center>
+</form>
+
+<center><A HREF="index.html"><IMG SRC="images/Home.jpg" width="57" height="49"></A><p>
+</center> <!-- Start of StatCounter Code -->
+
+<script type="text/javascript">
+var sc_project=3998290; 
+var sc_invisible=1; 
+var sc_partition=48; 
+var sc_click_stat=1; 
+var sc_security="d12111e7"; 
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/3998290/0/d12111e7/1/" alt="free hit counter" ></a></div></noscript>
+<!-- End of StatCounter Code --></body></html>
