@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="common.css">
   <script type="text/javascript" src="common.js"></script>
 </head>
-<body bgcolor="#000000" background="images/starry.jpg" text="#FFFF66" link="#33FF33" vlink="#66FFCC">
+<body bg background="images/starry.jpg" text="#FFFF66" link="#33FF33" vlink="#66FFCC">
   <center>
     <h1>Steve Gottlieb's NGC Notes</h1>
   </center>
@@ -14,7 +14,7 @@
   <hr>
   <table width="640" border="0" align="center" cellpadding="8">
     <tr>
-      <th align="left" bgcolor="#000000" valign="top" height="328">
+      <th align="left" bg valign="top" height="328">
         <div align="left">
           <font color="#FFFFFF">Here are my observing notes for nearly 7200 NGC entries and an additional 785 IC entries. I began taking notes on the Messier objects with a 6" reflector in
           1978 from northern California and by the end of 1981 was exploring fainter NGCs with a 13.1" Odyssey I. The vast majority of my notes, though, were made with a 17.5" f/4.5 homemade
@@ -37,83 +37,83 @@
   <center>
     <table width="640" border="3">
       <tr>
-        <th bgcolor="#FFFFFF"><font face="" color="#000000"><b>Note: All positions are in Equinox J2000.0<br>
+        <th bgcolor="#FFFFFF"><font face=""><b>Note: All positions are in Equinox J2000.0<br>
         In the Observation Files, 13: = 13-inch Telescope, 17.5: = 17.5-inch Telescope, etc.</b></font></th>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <div align="center">
             <a href="NGC%201-7840%20complete.htm"><b><x-dso>NGC 1</x-dso>-7840 complete</b></a>
           </div>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%200001-1000.htm"><b>NGC 1 thru <x-dso>NGC 1000</x-dso> (01/14/13)</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%201001%20thru%20NGC%202000.htm"><b><x-dso>NGC 0001</x-dso> thru <x-dso>NGC 2000</x-dso> (01/14/13)</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%202001%20thru%20NGC%203000.htm"><b><x-dso>NGC 2001</x-dso> thru <x-dso>NGC 3000</x-dso> (01/14/13)</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%203001%20thru%20NGC%204000.htm"><b><x-dso>NGC 3001</x-dso> thru <x-dso>NGC 4000</x-dso> (01/14/13)</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%204001%20thru%20NGC%205000.htm"><b><x-dso>NGC 4001</x-dso> thru <x-dso>NGC 5000</x-dso> (01/14/13)</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%205001%20thru%20NGC%206000.htm"><b><x-dso>NGC 5001</x-dso> thru <x-dso>NGC 6000</x-dso> (01/14/13</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%206001%20thru%20NGC%207000.htm"><b><x-dso>NGC 6001</x-dso> thru <x-dso>NGC 7000</x-dso> (01/14/13</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="NGC%207001%20thru%20NGC%207840.htm"><b><x-dso>NGC 7001</x-dso> thru <x-dso>NGC 7840</x-dso> (01/14/13</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <div align="center">
             <b><a href="IC%201-5386%20complete.htm"><x-dso>IC 1</x-dso>-5386 complete</a></b>
           </div>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000" height="22">
+        <td bg height="22">
           <div align="left">
             <a href="IC%201%20thru%20IC%201000.htm"><b>IC 1 thru <x-dso>IC 1000</x-dso> (01/14/13)</b></a>
           </div>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000"><b><a href="IC%201001%20thru%20IC%202000.htm"><x-dso>IC 1001</x-dso> thru <x-dso>IC 2000</x-dso> (01/14/13)</a></b></td>
+        <td bg><b><a href="IC%201001%20thru%20IC%202000.htm"><x-dso>IC 1001</x-dso> thru <x-dso>IC 2000</x-dso> (01/14/13)</a></b></td>
       </tr>
       <tr>
-        <td bgcolor="#000000">
+        <td bg>
           <a href="IC%202001%20thru%20IC%203000.htm"><b><x-dso>IC 2001</x-dso> thru <x-dso>IC 3000</x-dso> (01/14/13</b></a>
         </td>
       </tr>
       <tr>
-        <td bgcolor="#000000"><b><a href="IC%203001%20thru%20IC%204000.htm"><x-dso>IC 3001</x-dso> thru <x-dso>IC 4000</x-dso> (01/14/13)</a></b></td>
+        <td bg><b><a href="IC%203001%20thru%20IC%204000.htm"><x-dso>IC 3001</x-dso> thru <x-dso>IC 4000</x-dso> (01/14/13)</a></b></td>
       </tr>
       <tr>
-        <td bgcolor="#000000"><b><a href="IC%204001%20thru%20IC%205386.htm"><x-dso>IC 4001</x-dso> thru <x-dso>IC 5386</x-dso> (01/14/13)</a></b></td>
+        <td bg><b><a href="IC%204001%20thru%20IC%205386.htm"><x-dso>IC 4001</x-dso> thru <x-dso>IC 5386</x-dso> (01/14/13)</a></b></td>
       </tr>
     </table>
     <p><a href="index.html"><img src="images/Home.jpg" width="57" height="49"></a></p>
