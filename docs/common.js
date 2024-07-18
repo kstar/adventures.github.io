@@ -65,6 +65,11 @@ class XDsoElement extends HTMLElement {
         -webkit-transform-origin: 0 0;
       }
 
+      .x-dso-span {
+        text-decoration:underline;
+        text-decoration-style: dotted;
+      }
+
       .x-dso-span:hover + .x-dso-info, .x-dso-span:focus + .x-dso-info {
         display: block;
       }
