@@ -9,9 +9,9 @@ body {
 	color: light-dark(#FF0000, #FF0000);
     }
     a:visited {
-	color: light-dark(#0000FF, #882222);
+	color: light-dark(#0000FF, #bb5555);
     }
     a:hover {
-	background-color: light-dark(#f7c4af, #220000);
+	color: hotpink;
     }
 }
