@@ -1,0 +1,17 @@
+/* This CSS preserves the old look-and-feel of Adventures in Deep Space in light mode, but allows for a night-vision friendly dark mode for field use */
+:root {
+    color-scheme: light dark;
+}
+body {
+    color: light-dark(#000000, #ffffff);
+    background-color: light-dark(#e7c4af, #000000);
+    a:link {
+	color: light-dark(#FF0000, ##FF0000);
+    }
+    a:visited {
+	color: light-dark(#0000FF, #882222);
+    }
+    a:hover {
+	background-color: light-dark(#f7c4af, #220000);
+    }
+}
