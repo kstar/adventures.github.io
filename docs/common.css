@@ -6,7 +6,7 @@ body {
     color: light-dark(#000000, #ffffff);
     background-color: light-dark(#e7c4af, #000000);
     a:link {
-	color: light-dark(#FF0000, ##FF0000);
+	color: light-dark(#FF0000, #FF0000);
     }
     a:visited {
 	color: light-dark(#0000FF, #882222);
