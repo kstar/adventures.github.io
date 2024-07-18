@@ -1,823 +1,1383 @@
-<html><head><title>NGC Galaxies</title><link rel="stylesheet" href="common.css" />
-<script type="text/javascript" src="common.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.7.45">
+  <title>NGC Galaxies</title>
+  <link rel="stylesheet" href="common.css">
+  <script type="text/javascript" src="common.js"></script>
 </head>
-
 <body>
+  <center>
+    <h1>BRIGHT GALAXIES FROM THE NGC</h1>
+  </center>
+  <center>
+    These are some of my favorite galaxies from the New General Catalog.<br>
+    How many of the images on the slide show can you identify? (Click <a href="answers.htm">HERE</a> for the answers.) - Jim Shields
+  </center>
+  <p><!--Insert this script anywhere between the BODY tags.--></p>
+  <form>
+    <center>
+      <script language="JavaScript">
 
+      <!--
 
 
-<CENTER><H1>BRIGHT GALAXIES FROM THE NGC</H1></CENTER>
 
+      var current = 0;
 
 
-<CENTER>These are some of my favorite galaxies from the New General Catalog.<BR> How many of the images on the slide show can you identify? (Click <A HREF="answers.htm">HERE</A> for the answers.) - Jim Shields</CENTER><P>
 
+      function imageArray()
 
+      {
 
-<!--Insert this script anywhere between the BODY tags.-->
+      this.length = imageArray.arguments.length;
 
+      for (var i = 0; i < this.length; i++)
 
+      {
 
-<form>
+      this[i] = imageArray.arguments[i];
 
-<center>
+      }
 
-<script language="JavaScript">
+      }
 
-<!--
+      // All images MUST BE OF THE SAME SIZE, since
 
+      // the dimensions of the first image will be
 
+      // used for all subsequent images.
 
-var current = 0;
+      // All the images for your slide show need to 
 
+      // be stored in the same directory.
 
+      // You can use any group and any 
 
-function imageArray()
+      // number of images. Place your images within 
 
-{
+      // each set of quotation marks below.
 
-  this.length = imageArray.arguments.length;
+      // If the images are all in your Angelfire 
 
-  for (var i = 0; i < this.length; i++)
+      // images subdirectory, makes sure the name 
 
-  {
+      // of each image starts with "images/" like
 
-     this[i] = imageArray.arguments[i];
+      // in the example below.
 
-  }
+      var imgz = new imageArray("images/ngc4565.jpg","images/ngc6946.jpg","images/ngc1300.jpg","images/ngc4631.jpg","images/ngc0247.jpg","images/ngc5907.jpg",
 
-}
+      "images/ngc4490.jpg","images/ngc1532.jpg","images/ngc4656.jpg","images/ngc1365.jpg","images/ngc7479.jpg","images/ngc5128.jpg");
 
-// All images MUST BE OF THE SAME SIZE, since
 
-// the dimensions of the first image will be
 
-// used for all subsequent images.
+      document.write('<img name="myImages" border="1" src="'+imgz[0]+'">');
 
-// All the images for your slide show need to 
 
-// be stored in the same directory.
 
-// You can use any group and any 
+      function getPosition(val)
 
-// number of images. Place your images within 
+      {
 
-// each set of quotation marks below.
+      var goodnum = current+val;
 
-// If the images are all in your Angelfire 
+      if (goodnum < 0)
 
-// images subdirectory, makes sure the name 
+      // This message is displayed if your visitor 
 
-// of each image starts with "images/" like
+      // tries to click back past your first image.
 
-// in the example below.
+      // Place your message within the quotation 
 
-var imgz = new imageArray("images/ngc4565.jpg","images/ngc6946.jpg","images/ngc1300.jpg","images/ngc4631.jpg","images/ngc0247.jpg","images/ngc5907.jpg",
+      // marks below.
 
-"images/ngc4490.jpg","images/ngc1532.jpg","images/ngc4656.jpg","images/ngc1365.jpg","images/ngc7479.jpg","images/ngc5128.jpg");
+      alert("This is where you came in!");
 
 
 
-document.write('<img name="myImages" border="1" src="'+imgz[0]+'">');
+      else
 
+      if (goodnum > imgz.length-1)
 
+      // This message is displayed if your visitor 
 
-function getPosition(val)
+      // tries to click past your last image. Place 
 
-{
+      // your message within the quotation marks 
 
-  var goodnum = current+val;
-
-  if (goodnum < 0)
-
-// This message is displayed if your visitor 
-
-// tries to click back past your first image.
-
-// Place your message within the quotation 
-
-// marks below.
-
-    alert("This is where you came in!");
-
-
-
-  else
-
-    if (goodnum > imgz.length-1)
-
-// This message is displayed if your visitor 
-
-// tries to click past your last image. Place 
-
-// your message within the quotation marks 
-
-// below.
+      // below.
 
       alert("That's all, folks!");
 
-    else
+      else
 
       document.myImages.src = imgz[goodnum];
 
 
 
-  current = goodnum;
-
-}
-
-
-
-//-->
-
-</script>
-
-<br>
-
-  <input type="button" value="<<" onclick="getPosition(-1)">  
-
-  <input type="button" value=">>" onclick="getPosition(1)">
-
-</center>
-
-</form>
-
-
-
-<CENTER><TABLE BORDER>
-
-<TR><TD WIDTH=65><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">NGC</FONT></B></CENTER>
-
-</TD><TD WIDTH=52><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">Con</FONT></B></CENTER>
-
-</TD><TD WIDTH=100><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">RA2000</FONT></B></CENTER>
-
-</TD><TD WIDTH=100><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">Dec2000</FONT></B></CENTER>
-
-</TD><TD WIDTH=80><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">Size</FONT></B></CENTER>
-
-</TD><TD WIDTH=65><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">VMag</FONT></B></CENTER>
-
-</TD><TD WIDTH=65><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">SB</FONT></B></CENTER>
-
-</TD><TD WIDTH=65><CENTER><B><FONT SIZE=2 COLOR=#000000 FACE="Arial">URA2</FONT></B></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N0055</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Scl</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">00 15 08</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-39 13.2</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">32.4x5.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">7.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">159</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N0247</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Cet</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">00 47 08.2</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-20 45 37</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">21.4x6.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">158</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N0253</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Scl</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">00 47 33.1</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-25 17 17</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">27.5x6.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">7.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">158</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N1300</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Eri</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">03 19 41.0</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-19 24 40</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">6.2x4.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">156</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N1365</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">For</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">03 33 35.9</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-36 08 24</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.2x6.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">174</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N1532</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Eri</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">04 12 04.3</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-32 52 29</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.6x3.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">174</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N2403</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Cam</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">07 36 54.5</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+65 35 58</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">21.9x12.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">8.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">015</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N2683</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Lyn</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">08 52 41.4</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+33 25 14</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.3x2.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">056</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N2903</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Leo</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">09 32 10.0</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+21 30 02</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.6x6.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">074</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N3115</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Sex</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">10 05.2</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-07 43</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">7.2x2.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">8.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">133</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N3166</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Sex</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">10 13.8</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+03 26</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">4.8x2.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">112</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N3511</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Crt</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">11 03.4</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-23 05</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">5.8x2.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">151</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N3646</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Leo</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">11 21.7</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+20 10</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">3.9x2.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">072</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4151</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">CVn</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 10 31.4</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+39 23 19</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">6.3x4.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">0547</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4490</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">CVn</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 30.6</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+41 38</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">6.3x3.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">037</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4535</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Vir</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 34.3</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+08 12</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">7.1x5.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">090</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4559</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Com</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 35 57.7</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+27 57 36</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.7x4.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">072</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4565</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Com</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 36 20.6</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+25 59 15</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">15.8x2.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">071</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4605</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">UMa</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 40 00.0</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+61 36 29</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">5.8x2.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">024</FONT></CENTER>
-
-</TD></TR>
-
-
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4631</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">CVn</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 42.1</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+32 32</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">15.5x2.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">053</FONT></CENTER>
-
-</TD></TR>
-
-
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4656</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">CVn</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 43 58.2</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+32 10 13</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">15.1x3.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">053</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N4725</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">COM</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">12 50 26.3</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+25 30 03</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.7x7.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">14.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">071</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N5005</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">CVn</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">13 10 56.5</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+37 03 32</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">5.8x2.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">9.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">053</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N5128</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Cen</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">13 25.5</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-43 01</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">25.7x20.0</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">6.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">184</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N5363</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Vir</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">13 56.1</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+05 15</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">4.1x2.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">089</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N5529</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Boo</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">14 15.6</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+36 14</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">6.2x0.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.9</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.5</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">052</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N5746</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Vir</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">14 44.9</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+01 57</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">7.4x1.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">109</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N5907</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Dra</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">15 15 53.3</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+56 19 44</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.6x1.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.3</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">022</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N6503</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Dra</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">17 49 26.3</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+70 08 42</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">7.1x2.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">011</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N6907</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Cap</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">20 25 06.5</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">-24 48 30</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">3.3x2.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">144</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N6946</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Cep</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">20 34 52.3</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+60 09 14</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.5x9.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">8.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">020</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N7332</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Peg</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">22 37.4</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+23 48</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">4.1x1.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">12.6</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">064</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N7479</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Peg</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">23 05.0</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+12 19</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">4.1x3.1</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">10.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.4</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">082</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N7541</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Psc</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">23 14 43.4</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+04 32 03</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">3.5x1.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">102</FONT></CENTER>
-
-</TD></TR>
-
-<TR><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">N7678</FONT></CENTER>
-
-</TD><TD WIDTH=52><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">Peg</FONT></CENTER>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">23 28 27.9</FONT>
-
-</TD><TD WIDTH=100><FONT SIZE=2 COLOR=#000000 FACE="Arial">+22 25 16</FONT>
-
-</TD><TD WIDTH=80><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">2.3x1.7</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">11.8</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">13.2</FONT></CENTER>
-
-</TD><TD WIDTH=65><CENTER><FONT SIZE=2 COLOR=#000000 FACE="Arial">063</FONT></CENTER>
-
-</TD></TR>
-
-</TABLE></CENTER>
-
-<P>
-
-
-<center><A HREF="index.html"><IMG SRC="images/Home.jpg"></A><p>
-</center>
-
-<!-- Start of StatCounter Code -->
-
-<script type="text/javascript">
-var sc_project=3998290; 
-var sc_invisible=1; 
-var sc_partition=48; 
-var sc_click_stat=1; 
-var sc_security="d12111e7"; 
-</script>
-
-<script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/3998290/0/d12111e7/1/" alt="free hit counter" ></a></div></noscript>
-<!-- End of StatCounter Code -->
-
-</body></html>
-
+      current = goodnum;
+
+      }
+
+
+
+      //-->
+
+      </script><br>
+      <input type="button" value="&lt;&lt;" onclick="getPosition(-1)"> <input type="button" value="&gt;&gt;" onclick="getPosition(1)">
+    </center>
+  </form>
+  <center>
+    <table border>
+      <tr>
+        <td width="65">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">NGC</font></b>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">Con</font></b>
+          </center>
+        </td>
+        <td width="100">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">RA2000</font></b>
+          </center>
+        </td>
+        <td width="100">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">Dec2000</font></b>
+          </center>
+        </td>
+        <td width="80">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">Size</font></b>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">VMag</font></b>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">SB</font></b>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <b><font size="2" color="#000000" face="Arial">URA2</font></b>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N0055</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Scl</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">00 15 08</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-39 13.2</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">32.4x5.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">7.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">159</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N0247</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Cet</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">00 47 08.2</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-20 45 37</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">21.4x6.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">158</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N0253</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Scl</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">00 47 33.1</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-25 17 17</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">27.5x6.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">7.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">158</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N1300</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Eri</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">03 19 41.0</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-19 24 40</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">6.2x4.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">156</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N1365</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">For</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">03 33 35.9</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-36 08 24</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.2x6.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">174</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N1532</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Eri</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">04 12 04.3</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-32 52 29</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.6x3.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">174</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N2403</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Cam</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">07 36 54.5</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+65 35 58</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">21.9x12.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">8.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">015</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N2683</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Lyn</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">08 52 41.4</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+33 25 14</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.3x2.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">056</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N2903</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Leo</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">09 32 10.0</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+21 30 02</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.6x6.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">074</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N3115</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Sex</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">10 05.2</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-07 43</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">7.2x2.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">8.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">133</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N3166</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Sex</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">10 13.8</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+03 26</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">4.8x2.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">112</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N3511</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Crt</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">11 03.4</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-23 05</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">5.8x2.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">151</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N3646</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Leo</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">11 21.7</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+20 10</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">3.9x2.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">072</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4151</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">CVn</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 10 31.4</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+39 23 19</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">6.3x4.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">0547</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4490</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">CVn</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 30.6</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+41 38</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">6.3x3.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">037</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4535</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Vir</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 34.3</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+08 12</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">7.1x5.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">090</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4559</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Com</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 35 57.7</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+27 57 36</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.7x4.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">072</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4565</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Com</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 36 20.6</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+25 59 15</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">15.8x2.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">071</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4605</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">UMa</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 40 00.0</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+61 36 29</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">5.8x2.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">024</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4631</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">CVn</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 42.1</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+32 32</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">15.5x2.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">053</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4656</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">CVn</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 43 58.2</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+32 10 13</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">15.1x3.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">053</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N4725</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">COM</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">12 50 26.3</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+25 30 03</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.7x7.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">14.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">071</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N5005</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">CVn</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">13 10 56.5</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+37 03 32</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">5.8x2.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">9.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">053</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N5128</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Cen</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">13 25.5</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-43 01</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">25.7x20.0</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">6.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">184</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N5363</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Vir</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">13 56.1</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+05 15</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">4.1x2.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">089</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N5529</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Boo</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">14 15.6</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+36 14</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">6.2x0.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.9</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.5</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">052</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N5746</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Vir</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">14 44.9</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+01 57</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">7.4x1.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">109</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N5907</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Dra</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">15 15 53.3</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+56 19 44</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.6x1.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.3</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">022</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N6503</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Dra</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">17 49 26.3</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+70 08 42</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">7.1x2.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">011</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N6907</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Cap</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">20 25 06.5</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">-24 48 30</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">3.3x2.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">144</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N6946</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Cep</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">20 34 52.3</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+60 09 14</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.5x9.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">8.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">020</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N7332</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Peg</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">22 37.4</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+23 48</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">4.1x1.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">12.6</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">064</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N7479</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Peg</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">23 05.0</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+12 19</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">4.1x3.1</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">10.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.4</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">082</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N7541</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Psc</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">23 14 43.4</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+04 32 03</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">3.5x1.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">102</font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">N7678</font>
+          </center>
+        </td>
+        <td width="52">
+          <center>
+            <font size="2" color="#000000" face="Arial">Peg</font>
+          </center>
+        </td>
+        <td width="100"><font size="2" color="#000000" face="Arial">23 28 27.9</font></td>
+        <td width="100"><font size="2" color="#000000" face="Arial">+22 25 16</font></td>
+        <td width="80">
+          <center>
+            <font size="2" color="#000000" face="Arial">2.3x1.7</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">11.8</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">13.2</font>
+          </center>
+        </td>
+        <td width="65">
+          <center>
+            <font size="2" color="#000000" face="Arial">063</font>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </center>
+  <center>
+    <a href="index.html"><img src="images/Home.jpg"></a>
+  </center><!-- Start of StatCounter Code -->
+  <script type="text/javascript">
+  var sc_project=3998290; 
+  var sc_invisible=1; 
+  var sc_partition=48; 
+  var sc_click_stat=1; 
+  var sc_security="d12111e7"; 
+  </script> 
+  <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> <noscript>
+  <div class="statcounter">
+    <a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/3998290/0/d12111e7/1/" alt="free hit counter"></a>
+  </div></noscript> <!-- End of StatCounter Code -->
+</body>
+</html>
