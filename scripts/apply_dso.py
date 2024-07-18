@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Finds DSO identifiers and wraps them in <x-dso> tags, translating into SIMBADese if appropriate
+"""
 import re
 import sys
 from collections import OrderedDict
