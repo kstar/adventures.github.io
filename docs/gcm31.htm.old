@@ -15,19 +15,19 @@
     <img src="images/mayall2.jpg"><br>
     <i>Mayall II (G1)</i>
   </center>
-  <p><a href="M31GC.xls"><font size="4">M31 Globular Catalog in Excel<br>
+  <p><a href="M31GC.xls"><font size="4"><x-dso>M31</x-dso> Globular Catalog in Excel<br>
   The Brightest Globular in M31</font></a><br>
   <a href="gcm31ccd.htm"><font size="4">Imaging Globular Clusters in M31</font></a><br>
   <a href="http://nedwww.ipac.caltech.edu/level5/ANDROMEDA_Atlas/frames.html"><font size="4">Atlas of the Andromeda Galaxy</font></a></p>
   <p>With a special opportunity to observe faint deep sky objects in August at the San Francisco State field campus at the Sierra Buttes (2200m elevation), I found myself spending several
   hours exploring one of the most familiar objects in the sky, M31-the great spiral galaxy in Andromeda. Sure, M31 is always worth a look to see its large bright core, immense halo and
-  striking dust lanes, but as we view our galactic neighbor only 12.5� from edge-on we unfortunately miss the stunning spiral arms visible in M51 and the numerous HII regions of M33 seen in a
+  striking dust lanes, but as we view our galactic neighbor only 12.5� from edge-on we unfortunately miss the stunning spiral arms visible in <x-dso>M51</x-dso> and the numerous HII regions of <x-dso>M33</x-dso> seen in a
   large scope. Jim Shields mentioned to me that he had brought along two issues of Deep Sky (#8 and #32) which discussed in detail the globular and open cluster system of M31 and provided
   finder charts for tracking down these obscure objects (similar information can be found in Luginbuhl & Skiff's Observing Handbook) and I immediately knew I had an interesting observing
   project for the week!</p>
   <p>Edwin Hubble, whose pioneering work on the M31 Cepheid variables led to resolving the debate over the nature of the "spiral nebulae", also published the first catalogue of 140 globulars
   in 1932. The globulars he found ranged from 15-18 blue photographic magnitude and 4-10 arcseconds in diameter. At 2.2 million light years, the globulars of M31 are roughly 100 times as
-  distant as M13 in Hercules and hence are 1 / 10,000 as luminous if placed at a similar distance. This translates into a ten magnitude difference and at 14.3 (visual) magnitude, the
+  distant as <x-dso>M13</x-dso> in Hercules and hence are 1 / 10,000 as luminous if placed at a similar distance. This translates into a ten magnitude difference and at 14.3 (visual) magnitude, the
   brightest five globulars in M31 are comparable in absolute magnitude to 4th magnitude Omega Centauri (Mv = -8.5), the brightest within our galaxy.</p>
   <p>As many as 509 globulars in M31 have been catalogued based on spectra plates taken at Mauna Kea with the 3.6 meter Canada-France-Hawaii telescope, (Crampton et al, 1985), although recent
   work indicates that some of these are faint background galaxies. In any case, the M31 globular cluster system does appear to be more numerous than our own galaxy by roughly a 2:1 ratio.
@@ -38,12 +38,12 @@
   <p>I found it really quite easy to star hop around in the vicinity of M31 as the star fields are not densely packed and very easy to recognize small asterisms on the photos. In fact, most
   globulars were picked up by star hopping at low power (x100 for me) with a 20mm Nagler within a minute or two and then the identification was pinned down at x220 with a 9mm Nagler by
   comparison with a photo. . After three hours working over the field on two nights with my 44cm telescope, I had picked up a dozen globulars as well as five open clusters , three stellar
-  associations and of course the giant star cloud NGC 206. It was also clear that I will have to return to M31 again, as I really just started working on the fainter globulars.</p>
+  associations and of course the giant star cloud <x-dso>NGC 206</x-dso>. It was also clear that I will have to return to M31 again, as I really just started working on the fainter globulars.</p>
   <p>All the globular and open clusters appeared stellar (since I was viewing the brighter core), except Mayall II, although the catalogued dimensions are generally 3-4 arcseconds. I found
   the brightest globulars after Mayall II to be #76, #78 and #280 in Hodge's atlas which had photometrically determined magnitudes of 14.2-14.3V and all were easily visible with direct
   vision. In some cases, two or more globulars are visible in the same field. As you move closer to the core, the globulars are more difficult to pick out as they are reddened by dust and gas
   and lose contrast being superimposed on the brighter glow from the galaxy. The fainter globulars I viewed ranged from 15.0-15.5V and required averted vision, though I was able to confirm
-  the sightings after carefully checking the charts. Finally, I also easily tracked down #73, which turns out to be a 15th magnitude stellar globular in M110 = NGC 205, the large companion
+  the sightings after carefully checking the charts. Finally, I also easily tracked down #73, which turns out to be a 15th magnitude stellar globular in <x-dso>M110</x-dso> = NGC 205, the large companion
   galaxy northwest of M31. If you are looking for a challenging observing project with a 30cm or larger scopes, this is a great one for the fall as M31 passes high overhead and it was an
   exciting project to be exploring extragalactic globulars at immense distances.</p>
   <center>
@@ -55,7 +55,7 @@
   17.5" (10/21/95): this is the brightest globular cluster within M31 and appears as a fuzzy mag 13.5 object about 10" diameter with a bright quasi-stellar nucleus. The view is confused by a
   mag 14.5-15 star at the SW end and a fainter more difficult star at the NW edge of the halo. Located 2.5 degrees SW of the center of M31!
   <p>M31-G2 00 33 33.8 +39 31 19 V = 15.8<br>
-  17.5" (9/28/02): at 324x, this M31 globular appears as a mag 15.5 (V = 15.8) "star" just 51" SSW of a mag 14 star and 2' SW of UGC 330! M31-G1, the brightest globular in M31, lies 10'
+  17.5" (9/28/02): at 324x, this M31 globular appears as a mag 15.5 (V = 15.8) "star" just 51" SSW of a mag 14 star and 2' SW of <x-dso>UGC 330</x-dso>! M31-G1, the brightest globular in M31, lies 10'
   WNW.</p>
   <p>M31-G52 00 40 20.3 +40 43 59 V = 15.7<br>
   17.5" (01/12/02): this 16th magnitude M31 globular was extremely faint, stellar, just visible continuously with averted and concentration at 380x. Two mag 13 stars lie 2.0' S and 3.7' SW.
@@ -75,11 +75,11 @@
   distinctive obtuse triangle. Located on south side of southwest tip of M31, C107 is in the field 6' west. Brightest globular in M31 along with G78.</p>
   <p>M31-G87 00 41 14.7 +40 55 52 V = 15.6; Size 2.9"<br>
   This extremely faint M31 globular was not seen at 220x but picked up at 280x. Forms the eastern vertex of a small right triangle with a mag 13 star due W and a mag 14 star to the SW.
-  Located 17' WNW of the core of M32.</p>
+  Located 17' WNW of the core of <x-dso>M32</x-dso>.</p>
   <p>M31-G96 00 41 28.3 +40 53 50 V = 15.5; Size 2.7"<br>
   This mag 15.5 M31 GC appeared extremely faint at 280x but easier than M31-G87 situated just 3' NW.</p>
   <p>M31-G119 00 41.9 +40 47 2.7" 15.0<br>
-  Faint, appears as a 15th magnitude "star" about 2' north of a trapezoid formed by four stars 13th magnitude. Mag 7 SAO 36585 is in the field 7' south-southeast.</p>
+  Faint, appears as a 15th magnitude "star" about 2' north of a trapezoid formed by four stars 13th magnitude. Mag 7 <x-dso>SAO 36585</x-dso> is in the field 7' south-southeast.</p>
   <p>M31-G156 00 42 25.3 +40 57 18 V = 15.6; Size 2.5"<br>
   This M31 globular appeared as an extremely faint mag 15.6 "star" just 1' W of a mag 9.5 star and 6' NNW of the core of M32!</p>
   <p>M31-G172 00 42 33.3 +41 03 29 V = 15.2; Size 2.4"<br>
@@ -102,7 +102,7 @@
   17.5" (9/28/02): extremely faint, appears as a mag 15.5 "star" situated 1.6' ENE of a mag 10.5-11 star. Viewed at 324x and only visible part of the time with averted.</p>
   <p>M31-G257 00 44.0 +41 30 3.2" 15.1<br>
   Very faint, although listed as 15.0V this globular is fairly difficult as it is superimposed on obvious haze at the northeast edge of the core of M31, can just hold steadily with averted
-  vision, mag 9 SAO 36609 is just 4' north.</p>
+  vision, mag 9 <x-dso>SAO 36609</x-dso> is just 4' north.</p>
   <p>M31-G272 00 44.2 +41 19 3.4" 14.8<br>
   Very faint, appears as a mag 15 "star", just visible continuously with direct vision, a mag 10.5 star is 1.5' northwest, C410 is just 2.5' northeast and brighter G280 is 4' northeast.</p>
   <p>M31-G280 00 44.5 +41 22 2.7" 14.2<br>
@@ -114,7 +114,7 @@
   <p>M31-G287 00 44 42.1 +41 43 55 V = 15.8; Size 2.2"<br>
   17.5" (9/28/02): marginal 16th magnitude globular in M31 located 2.5' WSW of a mg 13/14 double in the NE portion of the outer halo. Only glimpsed occasionally at 324x.</p>
   <p>M31-G302 00 45 25.1 +41 06 22 V = 15.2; Size 2.5"<br>
-  17.5" (9/28/02): faint, stellar. This is a fairly easy mag 15.2 globular located 6' SSW of mag 9.1 SAO 36631 and collinear with mag 12 and 13 stars 5' and 6' NE.</p>
+  17.5" (9/28/02): faint, stellar. This is a fairly easy mag 15.2 globular located 6' SSW of mag 9.1 <x-dso>SAO 36631</x-dso> and collinear with mag 12 and 13 stars 5' and 6' NE.</p>
   <p>M31-G305 00 45 41.9 +41 45 33 V = 15.6; Size 2.2"<br>
   17.5" (9/28/02): identified at 324x as a very faint, stellar mag 15.6 globular at the NE end of M31. Located 47" NW of a mag 13.5 star.</p>
   <hr>
