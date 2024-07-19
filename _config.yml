@@ -1,0 +1,11 @@
+title: Adventures in Deep Space
+email: adventuresindeepspace@gmail.com
+description: Challenging observing projects for amateur astronomers of all ages
+url: https://www.adventuresindeepspace.com
+baseurl: /adventures.github.io
+source: ./src
+destination: ./_site
+
+theme: minima
+plugins:
+  - jekyll-latex
