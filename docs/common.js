@@ -97,3 +97,11 @@ customElements.define("x-dso", XDsoElement);
     script.src = 'assets/csv_maker.js';
     document.head.appendChild(script);
 }
+
+// Favicon
+{
+    let favicon = document.createElement('link');
+    favicon.rel = 'shortcut icon';
+    favicon.href = 'assets/favicon.ico';
+    document.head.appendChild(favicon);
+}
