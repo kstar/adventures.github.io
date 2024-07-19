@@ -5,6 +5,8 @@
 body {
     color: light-dark(#000000, #ffffff);
     background-color: light-dark(#e7c4af, #000000);
+    margin-left: 10px;
+    margin-right: 10px;
     a:link {
 	color: light-dark(#FF0000, #FF0000);
     }
@@ -14,4 +16,26 @@ body {
     a:hover {
 	color: hotpink;
     }
+}
+blockquote {
+  border-left: 10px solid light-dark(#ff7454, hotpink);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  background: light-dark(#f7c4af, #221111);
+  display: inline-block;
+}
+blockquote p {
+    display: inline;
+}
+img.small {
+    width: 300px;
+}
+
+img.tiny {
+    width: 100px;
+}
+
+img.invert {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
