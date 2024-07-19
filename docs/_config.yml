@@ -3,7 +3,6 @@ email: adventuresindeepspace@gmail.com
 description: Challenging observing projects for amateur astronomers of all ages
 url: https://www.adventuresindeepspace.com
 baseurl: /adventures.github.io
-source: ./src
 
 theme: minima
 plugins:
