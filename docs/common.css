@@ -36,3 +36,16 @@ img.invert {
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
+
+button.floating {
+    float: right;
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    padding: 1px 1px;
+    background-color: light-dark(#001133, #003bbf);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
