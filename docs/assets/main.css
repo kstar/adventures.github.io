@@ -646,4 +646,8 @@ table td {
   color: #099;
 }
 
+blockquote p {
+    display: inline;
+}
+
 /*# sourceMappingURL=main.css.map */
