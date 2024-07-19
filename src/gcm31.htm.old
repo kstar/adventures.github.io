@@ -12,7 +12,7 @@
   </center>
   <h3>--by Steve Gottlieb</h3>
   <center>
-    <img src="images/mayall2.jpg"><br>
+    <img src="assets/mayall2.jpg"><br>
     <i>Mayall II (G1)</i>
   </center>
   <p><a href="M31GC.xls"><font size="4"><x-dso>M31</x-dso> Globular Catalog in Excel<br>
@@ -161,7 +161,7 @@
   * Hodge, P.; 'Atlas of the Andromeda Galaxy', University of Washington Press, 1981.<br>
   * Hubble, E.; Astrophysical Journal, 76, 44, 1932.<br>
   <center>
-    <a href="index.html"><img src="images/Home.jpg"></a>
+    <a href="index.html"><img src="assets/Home.jpg"></a>
   </center>
 </body>
 </html>
