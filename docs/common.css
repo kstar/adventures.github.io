@@ -24,9 +24,6 @@ blockquote {
   background: light-dark(#f7c4af, #221111);
   display: inline-block;
 }
-blockquote p {
-    display: inline;
-}
 img.small {
     width: 300px;
 }
