@@ -80,7 +80,7 @@ window.onload = function() {
     }
 
     const N = document.querySelectorAll("x-dso").length;
-    if (N == 0) {
+    if (N == 0 || N >= 250) { // Don't overload SIMBAD if there are 250+ objects
         return;
     }
 
