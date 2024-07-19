@@ -29,7 +29,6 @@ class XDsoElement extends HTMLElement {
 	});
 
 	const style = document.createElement("style");
-	console.log(style.isConnected); // ?
 
 	style.textContent = `
       .x-dso-wrapper {
@@ -79,7 +78,6 @@ class XDsoElement extends HTMLElement {
     `;
 
     shadow.appendChild(style);
-    console.log(style.isConnected); // ?
     shadow.appendChild(wrapper);
     wrapper.appendChild(span);
     wrapper.appendChild(info);
@@ -90,3 +88,9 @@ class XDsoElement extends HTMLElement {
 customElements.define("x-dso", XDsoElement);
 // ------
 
+// CSV Maker
+{
+    let script = document.createElement('script');
+    script.src = 'assets/csv_maker.js';
+    document.head.appendChild(script);
+}

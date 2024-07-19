@@ -1,0 +1,11 @@
+* loading.gif:
+  From Wikimedia Commons:
+  https://commons.wikimedia.org/wiki/File:Loading_icon_cropped.gif
+  Creative Commons Attribution ShareAlike
+  by Skorp24
+
+* download_csv.png:
+
+  Derivative of KDE Oxygen icon theme:
+  https://techbase.kde.org/Projects/Oxygen/Licensing
+  GNU LGPL license
