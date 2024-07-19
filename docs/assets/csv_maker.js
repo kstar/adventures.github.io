@@ -34,7 +34,7 @@ async function fetchDSOData(dsoName) {
 
 async function generateCSV() {
     const xDSOs = document.querySelectorAll("x-dso");
-    const csvRows = [["Designation", "RA", "DEC", "V Mag"]];
+    const csvRows = [["Designation", "SIMBAD Designation", "RA", "DEC", "V Mag"]];
 
     let finishedIDs = new Set();
     for (const xDSO of xDSOs) {
@@ -45,7 +45,7 @@ async function generateCSV() {
             continue;
         }
         const dsoData = await fetchDSOData(identifier);
-        csvRows.push([mainDesignation, dsoData.ra, dsoData.dec, dsoData.mag].map(el => el || ""));
+        csvRows.push([mainDesignation, simbadIdentifier || "", dsoData.ra, dsoData.dec, dsoData.mag].map(el => el || ""));
         finishedIDs = finishedIDs.union(dsoData.aliases);
     }
     csvRows.push([]);
