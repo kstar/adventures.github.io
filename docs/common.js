@@ -6,6 +6,9 @@ class XDsoElement extends HTMLElement {
     }
 
     connectedCallback() {
+	if (document.disableDSO) {
+	    return;
+	}
 	const shadow = this.attachShadow({ mode: "open" });
 
 	const wrapper = document.createElement("span");
