@@ -69,3 +69,26 @@ button.floating {
     border-radius: 2px;
     cursor: pointer;
 }
+
+/* For observing reports, even the old styling of ADS uses dark
+   colors, so we have to tweak the theme. The only change we make in
+   dark mode is to preserve the reddish link colors so they show up
+   fine through a red plexiglas filter */
+body.or {
+    background-image: url("assets/starry.jpg");
+    background-color: black;
+    color: #ffff66;
+    @media (prefers-color-scheme: light) {
+        a {
+            color: #33ff33;
+        }
+        a:visited {
+            color: #66ffcc;
+        }
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
