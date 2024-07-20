@@ -1,28 +1,48 @@
 /* This CSS preserves the old look-and-feel of Adventures in Deep Space in light mode, but allows for a night-vision friendly dark mode for field use */
+
 :root {
-    color-scheme: light dark;
+    --font-color: black;
+    --link-color: red;
+    --link-visited-color: blue;
+    --link-hover-color: hotpink;
+    --blockquote-border: #ff7454;
+    --blockquote-background: #f7c4af;
+    --bg-color: #e7c4af;
+    --button-background: #001122;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+	--font-color: white;
+	--link-color: red;
+	--link-visited-color: #bb5555;
+	--link-hover-color: hotpink;
+	--blockquote-border: hotpink;
+	--blockquote-background: #221111;
+	--bg-color: black;
+	--button-background: #4488bb;
+    }
 }
 body {
-    color: light-dark(#000000, #ffffff);
-    background-color: light-dark(#e7c4af, #000000);
     margin-left: 10px;
     margin-right: 10px;
+    color: var(--font-color);
+    background-color: var(--bg-color);
     a:link {
-	color: light-dark(#FF0000, #FF0000);
+	color: var(--link-color);
     }
     a:visited {
-	color: light-dark(#0000FF, #bb5555);
+	color: var(--link-visited-color);
     }
     a:hover {
-	color: hotpink;
+	color: var(--link-hover-color);
     }
 }
 blockquote {
-  border-left: 10px solid light-dark(#ff7454, hotpink);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  background: light-dark(#f7c4af, #221111);
-  display: inline-block;
+    border-left: 10px solid var(--blockquote-border);
+    background: var(--blockquote-background);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    display: inline-block;
 }
 img.small {
     width: 300px;
@@ -43,7 +63,7 @@ button.floating {
     bottom: 20px;
     right: 20px;
     padding: 1px 1px;
-    background-color: light-dark(#001133, #003bbf);
+    background-color: var(--button-background);
     color: white;
     border: none;
     border-radius: 2px;
