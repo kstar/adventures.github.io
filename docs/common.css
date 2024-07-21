@@ -70,10 +70,10 @@ button.floating {
     cursor: pointer;
 }
 
-/* For observing reports, even the old styling of ADS uses dark
-   colors, so we have to tweak the theme. The only change we make in
-   dark mode is to preserve the reddish link colors so they show up
-   fine through a red plexiglas filter */
+/* For observing reports as well as the home page, even the old
+   styling of ADS uses dark colors, so we have to tweak the theme. The
+   only change we make in dark mode is to preserve the reddish link
+   colors so they show up fine through a red plexiglas filter */
 body.or {
     background-image: url("assets/starry.jpg");
     background-color: black;
