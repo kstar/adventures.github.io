@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adventures in Deep Space: {{ page.title }}</title>
+    <link rel="stylesheet" href="assets/common.css?version=0">
+    <script type="text/javascript" src="assets/common.js?version=0"></script>
+    <script type="text/javascript">document.disableCSVMaker = true; document.disableDSO = true;</script>
+    {% if page.open_new_page %}
+    <script type="text/javascript">
+      // Purpose of this script is to add _target = "blank" to all links so that they open in a new page/window
+      // Save the existing window.onload function if it exists
+      {
+	  let _existingOnload = window.onload;
+
+	  // Define a new onload function that includes the existing one and additional code
+	  window.onload = function() {
+	      // Call the existing onload function if it exists
+	      if (typeof _existingOnload === 'function') {
+		  _existingOnload();
+	      }
+	      // Add target="_blank" to links
+	      document.querySelectorAll('table.main_table tr td a').forEach((anchor_tag) =>
+		  {
+		      anchor_tag.target = "_blank";
+		  });
+	  }
+      }
+    </script>
+    {% endif %}
+    <style>
+      .main_table h2, h3, h4 {
+	  text-align: center;
+      }
+    </style>
+    {% if page.no_bullets %}
+    <style>
+      ul {
+	  list-style-type: none;
+      }
+    </style>
+    {% endif %}
+  </head>
+  <body class="or">
+    <center>
+      <h1>{{ page.title }}</h1>
+      {% if page.enable_search %}
+      <table width="50%" border="0" cellspacing="0" cellpadding="8" height="8">
+	<tr>
+          <td>
+	    <center>
+	                  <form action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+              <font size="1" face="arial,helvetica"><input type="hidden" name="id" value="37720602"> <input type="hidden" name="pageid" value="r"> <input type="hidden" name="mode" value=
+              "ALL"> <input type="radio" name="t" value="s" checked> Site search <input type="radio" name="t" value="w">Web search<br>
+              <input type="hidden" name="_charset_" value=""> <input type="hidden" name="bcd" value="÷"> <input type="text" name="query" size="15"> <small><input type="submit" value=
+																				  " Find "><br></small> powered by <a href="http://www.freefind.com">FreeFind</a></font>
+			  </form>
+	    </center>
+	  </td>
+	</tr>
+      </table>
+      {% endif %}
+      <p>Clicking on a link will open a new browser window.</p>
+      <hr />
+      <table class="main_table">
+	<tr>
+	  <td width="150"></td>
+	  <td width="676">
+	      {{ content }}
+	  </td>
+	</tr>
+      </table>&nbsp;<br />
+      <br />
+    </center>
+    <center>
+      <a href="index.html"><img src="./assets/Home.jpg" border="0" width="57" height="49"></a>
+    </center><!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+      var sc_project=3998290; 
+      var sc_invisible=1; 
+      var sc_partition=48; 
+      var sc_click_stat=1; 
+      var sc_security="d12111e7"; 
+    </script> 
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> <noscript>
+      <div class="statcounter">
+	<a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/3998290/0/d12111e7/1/" alt="free hit counter"></a>
+    </div></noscript> <!-- End of StatCounter Code -->
+  </body>
+</html>
