@@ -12,14 +12,14 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
-	--font-color: white;
-	--link-color: red;
-	--link-visited-color: #bb5555;
-	--link-hover-color: hotpink;
-	--blockquote-border: hotpink;
-	--blockquote-background: #221111;
-	--bg-color: black;
-	--button-background: #4488bb;
+        --font-color: white;
+        --link-color: red;
+        --link-visited-color: #bb5555;
+        --link-hover-color: hotpink;
+        --blockquote-border: hotpink;
+        --blockquote-background: #221111;
+        --bg-color: black;
+        --button-background: #4488bb;
     }
 }
 body {
@@ -28,13 +28,13 @@ body {
     color: var(--font-color);
     background-color: var(--bg-color);
     a:link {
-	color: var(--link-color);
+        color: var(--link-color);
     }
     a:visited {
-	color: var(--link-visited-color);
+        color: var(--link-visited-color);
     }
     a:hover {
-	color: var(--link-hover-color);
+        color: var(--link-hover-color);
     }
 }
 blockquote {
@@ -78,14 +78,22 @@ body.or {
     background-image: url("starry.jpg");
     background-color: black;
     color: #ffff66;
-    @media (prefers-color-scheme: light) {
+    a {
+        color: #33ff33;
+    }
+    a:visited {
+        color: #66ffcc;
+    }
+
+    @media (prefers-color-scheme: dark) {
         a {
-            color: #33ff33;
+            color: red;
         }
         a:visited {
-            color: #66ffcc;
+            color: #bb5555;
         }
     }
+
     img {
         display: block;
         margin-left: auto;
