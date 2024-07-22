@@ -27,15 +27,15 @@ body {
     margin-right: 10px;
     color: var(--font-color);
     background-color: var(--bg-color);
-    a:link {
-        color: var(--link-color);
-    }
-    a:visited {
-        color: var(--link-visited-color);
-    }
-    a:hover {
-        color: var(--link-hover-color);
-    }
+}
+a:link {
+    color: var(--link-color);
+}
+a:visited {
+    color: var(--link-visited-color);
+}
+a:hover {
+    color: var(--link-hover-color);
 }
 blockquote {
     border-left: 10px solid var(--blockquote-border);
@@ -78,25 +78,24 @@ body.or {
     background-image: url("starry.jpg");
     background-color: black;
     color: #ffff66;
-    a {
-        color: #33ff33;
-    }
-    a:visited {
-        color: #66ffcc;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        a {
-            color: red;
-        }
-        a:visited {
-            color: #bb5555;
-        }
-    }
-
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+}
+.or a:link {
+        color: #33ff33;
+}
+.or a:visited {
+        color: #66ffcc;
+}
+
+@media (prefers-color-scheme: dark) {
+.or a:link {
+            color: red;
+}
+.or a:visited {
+            color: #bb5555;
+}
 }
