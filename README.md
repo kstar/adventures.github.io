@@ -46,4 +46,16 @@ There are generally three kinds of things that are germane to this website:
 
 ## Contributing: Workflow
 
-Once you are ready to "write" your article, look at our [MarkDown example](https://raw.githubusercontent.com/kstar/adventures.github.io/main/docs/example.md). Although we will "begrudingly" accept contributions in other formats like HTML, MarkDown is preferred: it is easy to write, and we can use our styled templates to generate a uniform look-and-feel for the website.
+### MarkDown
+Once you are ready to "write" your article, look at our [MarkDown example](https://raw.githubusercontent.com/kstar/adventures.github.io/main/docs/example.md). Although we will "begrudingly" accept contributions in other formats like HTML, MarkDown is strongly preferred: it is really easy to pick up and write, and our styled templates will render a uniform look-and-feel for the website. Most users should never have to dig into this, but the specific dialect of MarkDown used here is called `kramdown`. We have custom styling syntax adapted to make the "common" operations of writing deep-sky observing articles (such as inverting images or tagging a DSO designation) convenient, as explained in our [example](https://raw.githubusercontent.com/kstar/adventures.github.io/main/docs/example.md). Once you have worked through that, there are specialized examples for the [observing report format](https://raw.githubusercontent.com/kstar/adventures.github.io/main/docs/example_or.md) or the observing list format (*TODO!*).
+
+MarkDown files have the extension `.md`
+
+### Create a new file
+
+We encourage you to first write the MarkDown content in your preferred word processor / text editor on your laptop, as a generic text file. Notepad is as good, but something with MarkDown syntax highlighting will be more helpful. This allows you to work over multiple settings, save your progress, etc. without relying on your browser and GitHub.
+
+Then once you are ready, go to our GitHub repo and create a new file under the `docs/` folder. We have a handy link for you: just click [here](https://github.com/kstar/adventures.github.io/new/main/docs/). Then copy-paste your article contents into the page, and name your file something thoughtful that ends with `.md`. Spaces are discouraged, prefer underscores.
+
+Once you've previewed the content, click the "Commit changes..." button. It should pop up a dialog like this:
+(*TODO!*)
