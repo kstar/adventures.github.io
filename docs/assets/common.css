@@ -75,7 +75,7 @@ button.floating {
    only change we make in dark mode is to preserve the reddish link
    colors so they show up fine through a red plexiglas filter */
 body.or {
-    background-image: url("assets/starry.jpg");
+    background-image: url("starry.jpg");
     background-color: black;
     color: #ffff66;
     @media (prefers-color-scheme: light) {
