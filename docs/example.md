@@ -148,6 +148,16 @@ results in
 
 ![Hubble Rose](https://stsci-opo.org/STScI-01EVT4TTB262W6BBPYW37747W3.jpg){:.tiny}
 
+## Mathematical Equations
+
+Mathematical equations can be typeset using $\LaTeX$, e.g.:
+```
+$\text{Magnification} = \frac{f_o}{f_e}$
+```
+produces
+$\text{Magnification} = \frac{f_o}{f_e}$
+
+
 ## For more
 
 See the KramDown quick reference [here](https://kramdown.gettalong.org/quickref.html)
