@@ -78,11 +78,11 @@ body.or {
     background-image: url("starry.jpg");
     background-color: black;
     color: #ffff66;
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+}
+.or img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .or a:link {
         color: #33ff33;
