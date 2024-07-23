@@ -34,33 +34,59 @@ simbadification = OrderedDict([
     ('sh2 ', 'Sh2-'),
     ('sharpless ', 'Sh2-'),
     ('KTG', 'K79'),
+    ('Hickson', 'HCG'),
 ])
 
-unique_matches = set()
+class Replacer:
+    """
+    A regex replacer function object that wraps DSO identifiers with <x-dso> tags
 
-def replacer(match):
-    match_text = match.group(0)
-    if match_text not in unique_matches:
-        unique_matches.add(match_text)
+    Example usage:
+    ```
+    replacer = Replacer()
+    COMPILED_OBJECT_REGEX.sub(replacer, haystack)
+    ```
 
-        simbadese = None
-        obj_lcase = match_text.lower()
-        if obj_lcase.startswith('abell '):
-            try:
-                num = int(re.match(r'abell ([0-9]+)', obj_lcase).groups()[0])
-            except:
-                pass
+    The above will replace the first occurrence of every DSO identifier in the string `haystack`,
+
+    i.e. "NGC 591" -> "<x-dso>NGC 591</x-dso>"
+
+    The regex provided must pick out the identifiers you want to tag. The replacer function only applies the translation table for SIMBAD.
+    """
+    def __init__(self, unique=True):
+        """
+        unique: if set to True, only the first occurrence of a given identifier is tagged
+        """
+        super().__init__()
+        self._unique_matches = set()
+        self._unique = unique
+
+    def __call__(self, match):
+        match_text = match.group(0)
+        if (match_text not in self._unique_matches) or (not self._unique):
+            self._unique_matches.add(match_text)
+
+            simbadese = None
+            obj_lcase = match_text.lower()
+            if obj_lcase.startswith('abell '):
+                try:
+                    num = int(re.match(r'abell ([0-9]+)', obj_lcase).groups()[0])
+                except:
+                    pass
+                else:
+                    if num <= 86:
+                        # Assume PN
+                        simbadese = f'PN A66 {num}'
             else:
-                if num <= 86:
-                    # Assume PN
-                    simbadese = f'PN A66 {num}'
-        else:
-            for key, value in simbadification.items():
-                if obj_lcase.startswith(key.lower()):
-                    simbadese = value + obj_lcase[len(key):]
-        if simbadese:
-            return f'<x-dso simbad="{simbadese}">{match_text}</x-dso>'
-        return f'<x-dso>{match_text}</x-dso>'
-    return match_text
+                for key, value in simbadification.items():
+                    if obj_lcase.startswith(key.lower()):
+                        simbadese = value + obj_lcase[len(key):]
+            if simbadese:
+                return f'<x-dso simbad="{simbadese}">{match_text}</x-dso>'
+            return f'<x-dso>{match_text}</x-dso>'
+        return match_text
 
-sys.stdout.write(COMPILED_OBJECT_REGEX.sub(replacer, sys.stdin.read()))
+if __name__ == "__main__":
+    replacer = Replacer()
+    sys.stdout.write(COMPILED_OBJECT_REGEX.sub(replacer, sys.stdin.read()))
+
