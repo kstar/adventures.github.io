@@ -79,36 +79,39 @@ body.or {
     background-color: black;
     color: #ffff66;
 }
-.or img {
+body.or img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.or a:link {
+body.or a:link {
         color: #33ff33;
 }
-.or a:visited {
+body.or a:visited {
         color: #66ffcc;
 }
 
 @media (prefers-color-scheme: dark) {
-.or a:link {
+body.or a:link {
             color: red;
 }
-.or a:visited {
+body.or a:visited {
             color: #bb5555;
 }
 }
 
-.main_content table, th, td {
+div.main_content table,
+div.main_content th,
+div.main_content td {
     border-collapse: collapse;
     border: 1px solid;
 }
 
-.main_content th, td {
+div.main_content th,
+div.main_content td {
     padding: 0.1em 0.3em 0.1em 0.3em;
 }
-.main_content th {
+div.main_content th {
     font-family: sans-serif;
     border-bottom: 2px solid;
 }
