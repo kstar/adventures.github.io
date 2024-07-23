@@ -11,3 +11,6 @@ Gemfile.lock
 
 # Gems
 *.gem
+
+# Akarsh's shell environment
+.my-setup
