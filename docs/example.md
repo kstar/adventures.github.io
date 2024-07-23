@@ -90,6 +90,27 @@ produces the following:
 
 Also check out the [Deep Sky Forum](https://deepskyforum.com)
 
+## Tables
+
+Tables can be written pretty naturally in markdown:
+
+```
+| Object | Type | Constellation |
+| ---- | ---- | ---- |
+| M 31 | Galaxy | Andromeda |
+| M 42 | HII Region | Orion |
+| M 66 | Galaxy | Leo |
+```
+
+turns into
+
+| Object | Type | Constellation |
+| ---- | ---- | ---- |
+| M 31 | Galaxy | Andromeda |
+| M 42 | HII Region | Orion |
+| M 66 | Galaxy | Leo |
+
+
 ## Images
 
 The method to add an image is very similar to a link, except there is an `!` before:
