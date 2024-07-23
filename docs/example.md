@@ -49,7 +49,11 @@ produces:
 
 > Use high power to observe the _tiny_ knots in the galaxy
 
+## Horizontal Line Breaks
 
+Use `---` on a standalone line to achieve a horizontal line break. The exact number of dashes is irrelevant as long as it is more than 3. Example:
+
+---
 
 ## Annotating DSOs
 
@@ -150,13 +154,40 @@ results in
 
 ## Mathematical Equations
 
-Mathematical equations can be typeset using $\LaTeX$, e.g.:
+Mathematical equations can be typeset through LaTeX-style code using [MathJax](https://www.mathjax.org/), e.g.:
 ```
-$\text{Magnification} = \frac{f_o}{f_e}$
+To calculate the magnification use the formula $$\text{Magnification} = \dfrac{f_o}{f_e}$$
 ```
 produces
-$\text{Magnification} = \frac{f_o}{f_e}$
 
+To calculate the magnification use the formula $$\text{Magnification} = \dfrac{f_o}{f_e}$$
+
+To get full-fledged equations as opposed to inline ones,  separate the equation by an empty line as in this example:
+```
+----
+The light-travel time for redshift $$z$$ can be calculated as
+
+$$ t_L(z) = \frac{1}{H_0} \int_0^z \frac{dz'}{(1 + z') \sqrt{E(z')}}, $$
+
+where
+
+$$ E(z) := \Omega_\Lambda + \Omega_K (1 + z)^2 + \Omega_M (1 + z)^3 + \Omega_R (1 + z)^4. $$
+
+----
+```
+
+The above results in:
+
+----
+The light-travel time for redshift $$z$$ can be calculated as
+
+$$ t_L(z) = \frac{1}{H_0} \int_0^z \frac{dz'}{(1 + z') \sqrt{E(z')}}, $$
+
+where
+
+$$ E(z) := \Omega_\Lambda + \Omega_K (1 + z)^2 + \Omega_M (1 + z)^3 + \Omega_R (1 + z)^4. $$
+
+----
 
 ## For more
 
