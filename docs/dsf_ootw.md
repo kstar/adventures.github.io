@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Deep-Sky Forum Object of the Week
-author: DSF OOTW team; compiled by Wouter van Reeven.
+author: DSF OOTW team; Wouter van Reeven; Akarsh Simha.
 ---
 
-Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts. The list was created by Wouter van Reeven and brought into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
+Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
 
 {% raw %}
 <script type="text/javascript">
@@ -678,7 +678,7 @@ document.querySelectorAll('a').forEach((anchor_tag) =>{anchor_tag.target = "_bla
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-07-23T10:33:30Z
+Last updated: 2024-07-23T10:57:59Z
 </div>
 {% endraw %}
 

@@ -52,10 +52,10 @@ with open(os.path.join(output_path, output_filename), 'w') as output:
     """---
 layout: default
 title: Deep-Sky Forum Object of the Week
-author: DSF OOTW team; compiled by Wouter van Reeven.
+author: DSF OOTW team; Wouter van Reeven; Akarsh Simha.
 ---
 
-Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts. The list was created by Wouter van Reeven and brought into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
+Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
 
 {% raw %}
 <script type="text/javascript">
@@ -94,4 +94,3 @@ document.querySelectorAll('a').forEach((anchor_tag) =>{anchor_tag.target = "_bla
         output.write(f'|{row[0]}|{row[1]}|[{row[2]}]({url})|' + COMPILED_REGEX.sub(replacer, row[3]) + '|\n')
 
     output.write('\n{% raw %}\n<br />\n<div style="text-align: right; margin-right: 10px;">\nLast updated: ' + datetime.utcnow().replace(tzinfo=timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') + '\n</div>\n{% endraw %}\n\n----\n')
-    
