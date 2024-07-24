@@ -16,7 +16,7 @@
     :root {
         --font-color: var(--readable-bright-text);
 	--head-color: white;
-        --link-color: red;
+        --link-color: #fa3e3e;
         --link-visited-color: #bb5555;
         --link-hover-color: hotpink;
         --blockquote-border: hotpink;
@@ -128,10 +128,13 @@ body.or h4 {
 
 @media (prefers-color-scheme: dark) {
 body.or a:link {
-            color: red;
+    color: var(--link-color);
 }
 body.or a:visited {
-            color: #bb5555;
+    color: var(--link-visited-color);
+}
+body.or a:hover {
+    color: var(--link-hover-color);
 }
 }
 
