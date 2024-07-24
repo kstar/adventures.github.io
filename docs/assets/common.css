@@ -2,12 +2,12 @@
 
 :root {
     --font-color: black;
-    --link-color: red;
-    --link-visited-color: blue;
-    --link-hover-color: hotpink;
+    --link-color: #2e2ea6;
+    --link-visited-color: #772372;
+    --link-hover-color: #bf2020;
     --blockquote-border: #ff7454;
     --blockquote-background: #f7c4af;
-    --bg-color: #e7c4af;
+    --bg-color: #d6b3a0; /* Similar to ADS flesh-tone, but darker */
     --button-background: #001122;
 }
 @media (prefers-color-scheme: dark) {
@@ -27,6 +27,13 @@ body {
     margin-right: 10px;
     color: var(--font-color);
     background-color: var(--bg-color);
+    font-size: 20px;
+    letter-spacing: 0.0025em;
+    font-family: "Source Serif Pro", "Times New Roman", serif;
+}
+h1, h2, h3 {
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.0075em;
 }
 a:link {
     color: var(--link-color);
@@ -43,6 +50,8 @@ blockquote {
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     display: inline-block;
+    font-family: Georgia, Palatino, "Times New Roman", serif;
+    letter-spacing: 0.004em;
 }
 img.small {
     width: 300px;
@@ -75,9 +84,8 @@ button.floating {
    only change we make in dark mode is to preserve the reddish link
    colors so they show up fine through a red plexiglas filter */
 body.or {
-    background-image: url("starry.jpg");
     background-color: black;
-    color: #ffff66;
+    color: white;
 }
 body.or img {
     display: block;
@@ -85,10 +93,15 @@ body.or img {
     margin-right: auto;
 }
 body.or a:link {
-        color: #33ff33;
+    color: #20ee20;
+    text-underline-offset: 2px;
 }
 body.or a:visited {
-        color: #66ffcc;
+    color: #40ddaa;
+    text-underline-offset: 2px;
+}
+body.or a:hover {
+    color: hotpink;
 }
 
 @media (prefers-color-scheme: dark) {
