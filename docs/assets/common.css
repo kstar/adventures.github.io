@@ -41,12 +41,20 @@ h1, h2, h3, h4 {
 }
 a:link {
     color: var(--link-color);
+    text-underline-offset: 2px;
 }
 a:visited {
     color: var(--link-visited-color);
 }
 a:hover {
     color: var(--link-hover-color);
+}
+a h1,
+a h2,
+a h3,
+a h4
+{
+    color: inherit;
 }
 blockquote {
     border-left: 10px solid var(--blockquote-border);
@@ -96,13 +104,17 @@ body.or img {
     margin-left: auto;
     margin-right: auto;
 }
+body.or h1,
+body.or h2,
+body.or h3,
+body.or h4 {
+    color: white;
+}
 body.or a:link {
     color: #20ee20;
-    text-underline-offset: 2px;
 }
 body.or a:visited {
     color: #40ddaa;
-    text-underline-offset: 2px;
 }
 body.or a:hover {
     color: hotpink;
@@ -121,6 +133,10 @@ body.or a:link {
 body.or a:visited {
             color: #bb5555;
 }
+}
+
+table {
+    margin: 10px;
 }
 
 div.main_content table,
