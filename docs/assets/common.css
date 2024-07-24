@@ -30,7 +30,7 @@ body {
     margin-right: 10px;
     color: var(--font-color);
     background-color: var(--bg-color);
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.0025em;
     font-family: "Source Serif Pro", "Times New Roman", serif;
 }
