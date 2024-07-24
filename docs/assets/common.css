@@ -2,6 +2,7 @@
 
 :root {
     --font-color: black;
+    --head-color: black;
     --link-color: #2e2ea6;
     --link-visited-color: #772372;
     --link-hover-color: #bf2020;
@@ -9,10 +10,12 @@
     --blockquote-background: #f7c4af;
     --bg-color: #d6b3a0; /* Similar to ADS flesh-tone, but darker */
     --button-background: #001122;
+    --readable-bright-text: #d5d5e5;
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --font-color: white;
+        --font-color: var(--readable-bright-text);
+	--head-color: white;
         --link-color: red;
         --link-visited-color: #bb5555;
         --link-hover-color: hotpink;
@@ -31,9 +34,10 @@ body {
     letter-spacing: 0.0025em;
     font-family: "Source Serif Pro", "Times New Roman", serif;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.0075em;
+    color: var(--head-color);
 }
 a:link {
     color: var(--link-color);
@@ -85,7 +89,7 @@ button.floating {
    colors so they show up fine through a red plexiglas filter */
 body.or {
     background-color: black;
-    color: white;
+    color: var(--readable-bright-text);
 }
 body.or img {
     display: block;
@@ -102,6 +106,12 @@ body.or a:visited {
 }
 body.or a:hover {
     color: hotpink;
+}
+body.or h1,
+body.or h2,
+body.or h3,
+body.or h4 {
+    color: white;
 }
 
 @media (prefers-color-scheme: dark) {
