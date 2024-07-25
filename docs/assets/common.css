@@ -98,18 +98,18 @@ button.floating {
    styling of ADS uses dark colors, so we have to tweak the theme. The
    only change we make in dark mode is to preserve the reddish link
    colors so they show up fine through a red plexiglas filter */
-
+/*
 body.or {
     background-color: black;
     color: var(--readable-bright-text);
 }
-
+*/
 body.or img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+/*
 body.or h1,
 body.or h2,
 body.or h3,
@@ -143,7 +143,7 @@ body.or a:hover {
     color: var(--link-hover-color);
 }
 }
-
+*/
 
 table {
     margin-top: 10px;
@@ -258,7 +258,8 @@ li.headbar-spacer {
 }
 
 /* Temporary: Until we remove the OR theme */
+/*
 body.or li.darkmode-button {
     opacity: 0.1;
 }
-
+*/
