@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="assets/common.css?version=5">
     <script type="text/javascript" src="assets/common.js?version=0"></script>
     {% include mathjax_support.html %}
+    {% assign no_equation_hilight = page.no_equation_hilight | default: false %}
+    {% if no_equation_hilight %}
+    <style>
+      mjx-container {
+	  color: inherit;
+      }
+    </style>
+    {% endif %}
   </head>
   <body>
     <center>

@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Example MarkDown Page
+title: Example Markdown Page
 author: Akarsh Simha
 ---
 
-This is an example of how the simple "markup" language called MarkDown
+This is an example of how the simple "markup" language called Markdown
 can be used to create websites for Adventures in Deep Space. There are
-many MarkDown tutorials on the internet, but we want to provide a
-quick intro here.
+many Markdown tutorials on the internet, but we want to provide a
+quick, ADS-tailored intro here.
 
 ## Preamble
 
-Every markdown page starts with a "Front Matter" or preamble, which contains the following format:
+Every markdown page starts with **Front Matter**, which contains the following format:
 
 ```
 ---
@@ -182,6 +182,20 @@ To calculate the magnification use the formula $$\text{Magnification} = \dfrac{f
 produces
 
 To calculate the magnification use the formula $$\text{Magnification} = \dfrac{f_o}{f_e}$$
+
+As you can see in this example, equations are hilighted in a different color from the rest of the text to make them stand out better. If you do not like this behavior, you can disable it by adding:
+```
+no_equation_hilight: false
+```
+to your front-matter, like:
+```
+---
+layout: default
+title: Example Markdown Page
+author: Akarsh Simha
+no_equation_hilight: false
+---
+```
 
 To get full-fledged equations as opposed to inline ones,  separate the equation by an empty line as in this example:
 ```
