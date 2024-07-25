@@ -89,6 +89,7 @@ class XDsoElement extends HTMLElement {
 }
 
 customElements.define("x-dso", XDsoElement);
+
 // ------
 
 // CSV Maker
@@ -97,11 +98,69 @@ customElements.define("x-dso", XDsoElement);
     script.src = 'assets/csv_maker.js';
     document.head.appendChild(script);
 }
-
+// Font Awesome v4.7.0
+{
+    let link = document.createElement('link');
+    link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    link.rel = 'stylesheet'
+    document.head.appendChild(link);
+}
 // Favicon
 {
     let favicon = document.createElement('link');
     favicon.rel = 'shortcut icon';
     favicon.href = 'assets/favicon.ico';
     document.head.appendChild(favicon);
+}
+
+// Navigation and Header Bar
+{
+    // Taken from https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
+    let headbar = document.createElement('div');
+    headbar.id = 'headbar';
+    headbar.setAttribute('class', 'headbar');
+
+    fetch('headbar.html').then(res => res.text()).then(
+	text => {
+	    headbar.innerHTML = text;
+	});
+    window.onload = () => {
+	var body = document.body;
+	body.insertBefore(headbar, body.firstChild);
+    }
+}
+
+// Following is based on https://stackoverflow.com/questions/56300132/how-to-override-css-prefers-color-scheme-setting
+// Determine if the user has a set theme
+function detectColorScheme(){
+    var theme="light";    //default to light
+
+    //local storage is used to override OS theme settings
+    if(localStorage.getItem("theme")){
+        if(localStorage.getItem("theme") == "dark"){
+            var theme = "dark";
+        }
+    } else if(!window.matchMedia) {
+        //matchMedia method not supported
+        return false;
+    } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        //OS theme setting detected as dark
+        var theme = "dark";
+    }
+
+    //dark theme preferred, set document with a `data-theme` attribute
+    if (theme == "dark") {
+         document.documentElement.setAttribute("data-theme", "dark");
+    }
+}
+detectColorScheme();
+
+function toggleDarkMode() {
+    if (document.documentElement.getAttribute("data-theme") != "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+	localStorage.setItem("theme", "dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+	localStorage.setItem("theme", "light");
+    }
 }
