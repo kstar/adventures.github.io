@@ -91,3 +91,9 @@ no_bullets: true
 * [The Double Quasar](dblqso.htm) - Jay McNeal
 * [Einstein's Cross](crossobsrpt.htm) - Jay Reynolds Freeman
 * [The Ultimate Challenge](hubble.htm) - Jim Shields
+
+----
+
+## Night Vision Astronomy
+
+* [Beyond Barnard's Loop](beyond_barnards.html) - Mark McCarthy
