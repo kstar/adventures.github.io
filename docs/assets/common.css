@@ -30,6 +30,7 @@
 	--equation-color: #ebc3e4;
 }
 body {
+    margin-top: 40px;
     color: var(--font-color);
     background-color: var(--bg-color);
     font-size: 18px;
@@ -178,6 +179,9 @@ div.headbar {
     display: block;
     width: 100%;
     height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 div.headbar ul
 {
@@ -258,3 +262,4 @@ li.headbar-spacer {
 body.or li.darkmode-button {
     opacity: 0.1;
 }
+
