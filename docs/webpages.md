@@ -2,7 +2,7 @@
 layout: listing
 title: Index of Webpages
 enable_search: true
-open_new_page: true
+open_new_page: false
 no_bullets: true
 ---
 
