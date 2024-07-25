@@ -14,15 +14,17 @@ Light is characterized by its wavelength, measured in $$\textrm{m}$$, and freque
 
 $$\lambda = \frac{c}{\nu}$$,
 
-where $$h = 6.62607015 \times 10^{-34} \ \mathrm{J \dot s}$$. The energy, $$E$$, and momentum, $$p$$, of a photon of frequency $$\nu$$ are given by
+where $$h = 6.62607015 \times 10^{-34} \ \mathrm{J s}$$ is the famous Planck Constant. Given a photon of frequency $$\nu$$, the energy, $$E$$, and momentum, $$p$$, are given by
 
 $$E = h \nu$$,
 
 and
 
-$$p = \frac{h\nu}{c}$$.
+$$p = \frac{h\nu}{c}$$
 
+respectively. The fact that photons carry momentum has implications for astrophysics in that radiation can drive interstellar and intergalactic winds, shaping and influencing the evolution of nebulae and galaxies.  
 
+Most sources of electromagnetic radiation are not monochromatic, i.e. real sources radiate over a range of frequencies (wavelengths) at the same time.
 
 
 
