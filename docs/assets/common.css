@@ -1,22 +1,25 @@
 /* This CSS preserves the old look-and-feel of Adventures in Deep Space in light mode, but allows for a night-vision friendly dark mode for field use */
 
 :root {
-    --font-color: black;
-    --head-color: black;
-    --link-color: #2e2ea6;
-    --link-visited-color: #772372;
-    --link-hover-color: #bf2020;
-    --blockquote-border: #ff7454;
-    --blockquote-background: #f7c4af;
-    --bg-color: #d6b3a0; /* Similar to ADS flesh-tone, but darker */
-    --button-background: #001122;
-    --readable-bright-text: #d5d5e5;
-    --equation-color: #2c2997;
+    --font-color: black; /* Color of general text */
+    --head-color: black; /* Color of headings */
+    --navbar-color: #ad9182; /* Color of the navigation bar */
+    --navbar-hilight: #9d8172; /* Color of hovered buttons on navigation bar */
+    --link-color: #2e2ea6; /* Color of unvisited links */
+    --link-visited-color: #772372; /* Color of visited links */
+    --link-hover-color: #bf2020; /* Color of links when hovering on them */
+    --blockquote-border: #ff7454; /* Border of a blockquote */
+    --blockquote-background: #f7c4af; /* Background of a blockquote */
+    --bg-color: #d6b3a0; /* Background color (chosen to be close to original ADS flesh-tone, but darker) */
+    --button-background: #001122; /* Background of a CTA button */
+    --readable-bright-text: #d5d5e5; /* A readable bright text for use on a dark background */
+    --equation-color: #2c2997; /* Color to use to hilight equations */
 }
-@media (prefers-color-scheme: dark) {
-    :root {
+[data-theme="dark"] {
         --font-color: var(--readable-bright-text);
 	--head-color: white;
+	--navbar-color: #252525; /* Color of the navigation bar */
+	--navbar-hilight: #454545; /* Color of hovered buttons on navigation bar */
         --link-color: #fa3e3e;
         --link-visited-color: #bb5555;
         --link-hover-color: hotpink;
@@ -25,11 +28,8 @@
         --bg-color: black;
         --button-background: #4488bb;
 	--equation-color: #ebc3e4;
-    }
 }
 body {
-    margin-left: 10px;
-    margin-right: 10px;
     color: var(--font-color);
     background-color: var(--bg-color);
     font-size: 18px;
@@ -97,15 +97,18 @@ button.floating {
    styling of ADS uses dark colors, so we have to tweak the theme. The
    only change we make in dark mode is to preserve the reddish link
    colors so they show up fine through a red plexiglas filter */
+
 body.or {
     background-color: black;
     color: var(--readable-bright-text);
 }
+
 body.or img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 body.or h1,
 body.or h2,
 body.or h3,
@@ -128,7 +131,7 @@ body.or h4 {
     color: white;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
 body.or a:link {
     color: var(--link-color);
 }
@@ -139,6 +142,7 @@ body.or a:hover {
     color: var(--link-hover-color);
 }
 }
+
 
 table {
     margin-top: 10px;
@@ -166,4 +170,91 @@ mjx-container {
 
 span.no-mjx-color mjx-container {
     color: inherit;
+}
+div.headbar {
+    padding: 0px;
+    background-color: var(--navbar-color);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+div.headbar ul
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+div.headbar li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+}
+div.headbar li.headbar-spacer {
+    flex-grow: 1;
+}
+div.headbar li.headbar-button {
+    padding: 0px 0px 0px 0px;
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--head-color);
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    transition: opacity 0.3s linear;
+}
+div.headbar li.headbar-button:hover {
+    background-color: var(--navbar-hilight)
+}
+
+li.headbar-button img {
+    display: block;
+    padding: 0px 5px 0px 2px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 26px;
+}
+li.headbar-button a:link,
+li.headbar-button a:visited,
+li.headbar-button a:hover {
+    padding: 0px 5px 0px 5px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    color: var(--head-color) !important;
+}
+
+li.headbar-sep {
+    background-color: var(--head-color);
+    opacity: 0.5;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 90%;
+    width: 3px;
+    display: block;
+}
+li.headbar-spacer {
+    content: "";
+    flex-grow: 1;
+}
+
+/* Temporary: Until we remove the OR theme */
+body.or li.darkmode-button {
+    opacity: 0.1;
 }
