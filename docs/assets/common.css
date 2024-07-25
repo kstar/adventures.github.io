@@ -246,7 +246,6 @@ li.headbar-button a:hover {
 
 li.headbar-sep {
     background-color: var(--head-color);
-    opacity: 0.5;
     margin-top: auto;
     margin-bottom: auto;
     height: 90%;
