@@ -254,6 +254,8 @@ gives
 {% assign pne = "02,04,12,65,70" | split: "," %}
 {% for pn in pne %}<img src="assets/abell{{pn}}.jpg" height=40/>&nbsp;{% endfor %}
 
+**Note** that GitHub's rendered preview of the Markdown does not run through the Liquid templating engine, so the preview on GitHub will not reflect what is seen on the actual website. If you want to render the actual website, you should consider [setting up Jekyll locally](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
+
 ## For more
 
 See the KramDown quick reference [here](https://kramdown.gettalong.org/quickref.html)
