@@ -94,6 +94,6 @@ no_bullets: true
 
 ----
 
-## Night Vision Astronomy
+## Night Vision Adventures
 
 * [Beyond Barnard's Loop](beyond_barnards.html) - Mark McCarthy
