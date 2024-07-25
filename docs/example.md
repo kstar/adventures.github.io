@@ -224,6 +224,36 @@ $$ E(z) := \Omega_\Lambda + \Omega_K (1 + z)^2 + \Omega_M (1 + z)^3 + \Omega_R (
 
 ----
 
+## Advanced features
+
+To write raw HTML, you can enclose it between `raw` and `endraw` instructions as follows:
+
+&#123;`% raw %`&#125;
+```
+Image Width: <input id="icon_size" type="number" min=10 max=300 step=10 value=30 onchange="document.getElementById('resizable_icon').width=document.getElementById('icon_size').value;"/> pixels<br/>
+<img id="resizable_icon" src="assets/abell70.jpg" width=10px alt="A resizable image!"/>
+```
+&#123;`% endraw %`&#125;
+
+produces
+
+{% raw %}
+Image Width: <input id="icon_size" type="number" min=10 max=300 step=10 value=30 onchange="document.getElementById('resizable_icon').width=document.getElementById('icon_size').value;"/> pixels<br/>
+<img id="resizable_icon" src="assets/abell70.jpg" width=30 alt="A resizable image!"/>
+{% endraw %}
+
+Avoid writing too much raw HTML and styling elements using custom CSS, as it may deviate from the uniform look-and-feel we envision for the website.
+
+The &#123;`% ... %`&#125; instructions are read by the [Liquid templating engine](https://shopify.github.io/liquid/). It allows you to do some pretty advanced stuff, for example:
+
+`{``% assign pne = "02,04,12,65,70" | split: "," %``}`<br/>
+`{``% for pn in pne %``}<img src="assets/abell``{``{``pn``}``}``.jpg" height=40/>&nbsp;{``% endfor %``}`<br/>
+
+gives
+
+{% assign pne = "02,04,12,65,70" | split: "," %}
+{% for pn in pne %}<img src="assets/abell{{pn}}.jpg" height=40/>&nbsp;{% endfor %}
+
 ## For more
 
 See the KramDown quick reference [here](https://kramdown.gettalong.org/quickref.html)
