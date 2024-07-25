@@ -11,6 +11,7 @@
     --bg-color: #d6b3a0; /* Similar to ADS flesh-tone, but darker */
     --button-background: #001122;
     --readable-bright-text: #d5d5e5;
+    --equation-color: #2c2997;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -23,6 +24,7 @@
         --blockquote-background: #221111;
         --bg-color: black;
         --button-background: #4488bb;
+	--equation-color: #ebc3e4;
     }
 }
 body {
@@ -157,4 +159,7 @@ div.main_content td {
 div.main_content th {
     font-family: sans-serif;
     border-bottom: 2px solid;
+}
+mjx-container {
+    color: var(--equation-color);
 }
