@@ -196,6 +196,14 @@ author: Akarsh Simha
 no_equation_hilight: false
 ---
 ```
+You can also disable the color hilight for a specific equation by assigning it the CSS class `no-mjx-color`, as in below:
+```
+Here is an equation which should not be colored: <span class="no-mjx-color">$$ a^2 + b^2 = c^2 $$</span>
+```
+produces:
+
+Here is an equation which should not be colored: <span class="no-mjx-color">$$ a^2 + b^2 = c^2 $$</span>
+
 
 To get full-fledged equations as opposed to inline ones,  separate the equation by an empty line as in this example:
 ```
