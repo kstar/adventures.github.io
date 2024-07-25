@@ -10,9 +10,21 @@ such as a CCD. Since the advent of the photographic plate, visual astronomy has 
 ## Physical Properties of Light
 Electromagnetic radiation, or light, consists of waves of the electromagnetic field which propagate through spacetime at the speed of light, $$c = 3 \times 10^{8} \ \textrm{m/s}$$, and carry both momentum as well as electromagnetic radiant energy. Electromagnetic field waves can be produced by a number of physical processes such as thermal processes, orbital transitions of electrons in atoms, molecular exicitations, bremsstrahlung, etc... From a quantum mechanical perspective, light consists of massless particles known as photons that possess energy and momentum.
 
-Light is characterized by its wavelength, measured in $$\textrm{m}$$, and frequency, measured in $$\mathrm{Hz}$$ or $$\mathrm{t^{-1}}$$. In a vaccuum, the wavelength of light is related to its frequency by
+Light is characterized by its wavelength, measured in $$\textrm{m}$$, and frequency, measured in $$\mathrm{Hz}$$ ($$1 \ \mathrm{Hz} == 1 \ \mathrm{t^{-1}}$$. In a vaccuum, the wavelength of light is related to its frequency by
 
-$$\lambda = \frac{c}{\nu}$$
+$$\lambda = \frac{c}{\nu}$$,
+
+where $$h = 6.62607015 \times 10^{-34} \ \mathrm{J \dot s}$$. The energy, $$E$$, and momentum, $$p$$, of a photon of frequency $$\nu$$ are given by
+
+$$E = h \nu$$,
+
+and
+
+$$p = \frac{h\nu}{c}$$.
+
+
+
+
 
 ## Telescopes
 Telescopes are characterized by their apertue, $$d_{T}$$, and focal-length, $$f_{T}$$. The ratio of the focal-length to aperture, $$N = f_{T}/d_{T}$$, is 
