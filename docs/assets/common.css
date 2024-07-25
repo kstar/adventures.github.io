@@ -3,7 +3,7 @@
 :root {
     --font-color: black; /* Color of general text */
     --head-color: black; /* Color of headings */
-    --navbar-color: #ad9182; /* Color of the navigation bar */
+    --navbar-color: rgba(160, 134, 120, 0.8); /* Color of the navigation bar */
     --navbar-hilight: #9d8172; /* Color of hovered buttons on navigation bar */
     --link-color: #2e2ea6; /* Color of unvisited links */
     --link-visited-color: #772372; /* Color of visited links */
@@ -18,7 +18,7 @@
 [data-theme="dark"] {
         --font-color: var(--readable-bright-text);
 	--head-color: white;
-	--navbar-color: #252525; /* Color of the navigation bar */
+	--navbar-color: rgba(50,50,50,0.8); /* Color of the navigation bar */
 	--navbar-hilight: #454545; /* Color of hovered buttons on navigation bar */
         --link-color: #fa3e3e;
         --link-visited-color: #bb5555;
@@ -219,7 +219,7 @@ div.headbar li.headbar-button {
     transition: opacity 0.3s linear;
 }
 div.headbar li.headbar-button:hover {
-    background-color: var(--navbar-hilight)
+    background-color: var(--navbar-hilight);
 }
 
 li.headbar-button img {
