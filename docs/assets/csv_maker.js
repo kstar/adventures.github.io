@@ -50,12 +50,12 @@ async function generateCSV() {
         }
         const dsoData = await fetchDSOData(identifier);
 	if (dsoData != null) {
-            csvRows.push([mainDesignation, simbadIdentifier || "", dsoData.ra, dsoData.dec, dsoData.mag].map(el => el || ""));
+            csvRows.push([mainDesignation, simbadIdentifier || mainDesignation, dsoData.ra, dsoData.dec, dsoData.mag].map(el => el || ""));
             finishedIDs = finishedIDs.union(dsoData.aliases);
 	} else {
 	    console.log(`Warning: Failed to get data for ${identifier}`)
 	    failed = true;
-	    csvRows.push([mainDesignation, simbadIdentifier || "", "", "", "An error occurred while receiving data"]);
+	    csvRows.push([mainDesignation, simbadIdentifier || mainDesignation, "", "", "An error occurred while receiving data"]);
 	}
     }
     csvRows.push([]);
