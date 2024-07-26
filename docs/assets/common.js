@@ -49,8 +49,8 @@ class XDsoElement extends HTMLElement {
         display: none;
         transition: 0.6s all;
         position: absolute;
-        bottom: 20px;
-        left: 10px;
+        bottom: 10px;
+        left: 0px;
         z-index: 3;
       }
 
