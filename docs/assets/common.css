@@ -259,6 +259,10 @@ li.headbar-spacer {
 table.favorites tr td:first-child {
     text-align: center;
 }
+table.favorites {
+    font-family: Arial, HelveticaNeue, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
 /* Temporary: Until we remove the OR theme */
 /*
 body.or li.darkmode-button {
