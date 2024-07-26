@@ -256,7 +256,9 @@ li.headbar-spacer {
     content: "";
     flex-grow: 1;
 }
-
+table.favorites tr td:first-child {
+    text-align: center;
+}
 /* Temporary: Until we remove the OR theme */
 /*
 body.or li.darkmode-button {
