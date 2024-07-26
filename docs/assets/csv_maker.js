@@ -39,8 +39,8 @@ async function generateCSV() {
     let failed = false;
     let finishedIDs = new Set();
     for (const xDSO of xDSOs) {
-        const simbadIdentifier = xDSO.getAttribute('simbad')
-        const mainDesignation = xDSO.textContent;
+        const simbadIdentifier = xDSO.getAttribute('simbad').replace(/(\r\n|\n|\r)/gm, "");
+        const mainDesignation = xDSO.textContent.replace(/(\r\n|\n|\r)/gm, "");
         const identifier = simbadIdentifier ? simbadIdentifier : mainDesignation;
         if (finishedIDs.has(identifier)) {
             continue;
