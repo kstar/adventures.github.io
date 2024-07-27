@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adventures in Deep Space: {{ page.title }}</title>
+    <link rel="stylesheet" href="assets/common.css?version=6">
+    <script type="text/javascript" src="assets/common.js?version=1"></script>
+    <script type="text/javascript">document.disableCSVMaker = true; document.disableDSO = true;</script>
+    {% if page.open_new_page %}
+    <base target="_blank" />
+    {% endif %}
+    <style>
+      table {
+	  margin-left: auto;
+	  margin-right: auto;
+      }
+      a.top {
+	  text-decoration: none;
+	  display: flex;
+	  justify-content: right;
+	  margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>{{ page.title }}</h1>
+      <div style="float: right; margin-right: 100px;">by <b>{{ page.author }}</b></div><br />
+    </center>
+    <br />
+    <div class="main_content">
+      {{ content }}
+    </div>
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+      var sc_project=3998290; 
+      var sc_invisible=1; 
+      var sc_partition=48; 
+      var sc_click_stat=1; 
+      var sc_security="d12111e7"; 
+    </script> 
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> <noscript>
+      <div class="statcounter">
+	<a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/3998290/0/d12111e7/1/" alt="free hit counter"></a>
+    </div></noscript> <!-- End of StatCounter Code -->
+  </body>
+</html>
