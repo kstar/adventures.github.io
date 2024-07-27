@@ -36,94 +36,94 @@ REGEX = r'(?<!\()(?<!\(\s)' + regex.OBJECT_REGEX
 COMPILED_REGEX = re.compile(REGEX)
 
 CONSTELLATIONS = {
-    'And': 'Andromeda',
-    'Ant': 'Antlia',
-    'Aps': 'Apus',
-    'Aql': 'Aquila',
-    'Aqr': 'Aquarius',
-    'Ara': 'Ara',
-    'Ari': 'Aries',
-    'Aur': 'Auriga',
-    'Boo': 'Böotes',
-    'Cae': 'Caelum',
-    'Cam': 'Camelopardalis',
-    'Cap': 'Capricornus',
-    'Car': 'Carina',
-    'Cas': 'Cassiopeia',
-    'Cen': 'Centaurus',
-    'Cep': 'Cepheus',
-    'Cet': 'Cetus',
-    'Cha': 'Chameleon',
-    'Cir': 'Circinus',
-    'CMa': 'Canis Major',
-    'CMi': 'Canis Minor',
-    'Cnc': 'Cancer',
-    'Col': 'Columba',
-    'Com': 'Coma Berenices',
-    'CrA': 'Corona Australis',
-    'CrB': 'Corona Borealis',
-    'Crt': 'Crater',
-    'Cru': 'Crux',
-    'Crv': 'Corvus',
-    'CVn': 'Canes Venatici',
-    'Cyg': 'Cygnus',
-    'Del': 'Delphinus',
-    'Dor': 'Dorado',
-    'Dra': 'Draco',
-    'Eql': 'Equuleus',
-    'Eri': 'Eridanus',
-    'For': 'Fornax',
-    'Gem': 'Gemini',
-    'Gru': 'Grus',
-    'Her': 'Hercules',
-    'Hor': 'Horologium',
-    'Hya': 'Hydra',
-    'Hyi': 'Hydrus',
-    'Ind': 'Indus',
-    'Lac': 'Lacerta',
-    'Leo': 'Leo',
-    'Lep': 'Lepus',
-    'Lib': 'Libra',
-    'LMi': 'Leo Minor',
-    'Lup': 'Lupus',
-    'Lyn': 'Lynx',
-    'Lyr': 'Lyra',
-    'Men': 'Mensa',
-    'Mic': 'Microscopium',
-    'Mon': 'Monoceros',
-    'Mus': 'Musca',
-    'Nor': 'Norma',
-    'Oct': 'Octans',
-    'Oph': 'Ophiuchus',
-    'Ori': 'Orion',
-    'Pav': 'Pavo',
-    'Peg': 'Pegasus',
-    'Per': 'Perseus',
-    'Phe': 'Phoenix',
-    'Pic': 'Pictor',
-    'PsA': 'Piscis Austrinus',
-    'Psc': 'Pisces',
-    'Pup': 'Puppis',
-    'Pyx': 'Pyxis',
-    'Ret': 'Reticulum',
-    'Scl': 'Sculptor',
-    'Sco': 'Scorpius',
-    'Sct': 'Scutum',
-    'Ser': 'Serpens',
-    'Sex': 'Sextans',
-    'Sge': 'Sagitta',
-    'Sgr': 'Sagittarius',
-    'Tau': 'Taurus',
-    'Tel': 'Telescopium',
-    'TrA': 'Triangulum Australe',
-    'Tri': 'Triangulum',
-    'Tuc': 'Tucana',
-    'UMa': 'Ursa Major',
-    'UMi': 'Ursa Minor',
-    'Vel': 'Vela',
-    'Vir': 'Virgo',
-    'Vol': 'Volans',
-    'Vul': 'Vulpecula',
+    'AND': 'Andromeda',
+    'ANT': 'Antlia',
+    'APS': 'Apus',
+    'AQL': 'Aquila',
+    'AQR': 'Aquarius',
+    'ARA': 'Ara',
+    'ARI': 'Aries',
+    'AUR': 'Auriga',
+    'BOO': 'Böotes',
+    'CAE': 'Caelum',
+    'CAM': 'Camelopardalis',
+    'CAP': 'Capricornus',
+    'CAR': 'Carina',
+    'CAS': 'Cassiopeia',
+    'CEN': 'Centaurus',
+    'CEP': 'Cepheus',
+    'CET': 'Cetus',
+    'CHA': 'Chameleon',
+    'CIR': 'Circinus',
+    'CMA': 'Canis Major',
+    'CMI': 'Canis Minor',
+    'CNC': 'Cancer',
+    'COL': 'Columba',
+    'COM': 'Coma Berenices',
+    'CRA': 'Corona Australis',
+    'CRB': 'Corona Borealis',
+    'CRT': 'Crater',
+    'CRU': 'Crux',
+    'CRV': 'Corvus',
+    'CVN': 'Canes Venatici',
+    'CYG': 'Cygnus',
+    'DEL': 'Delphinus',
+    'DOR': 'Dorado',
+    'DRA': 'Draco',
+    'EQU': 'Equuleus',
+    'ERI': 'Eridanus',
+    'FOR': 'Fornax',
+    'GEM': 'Gemini',
+    'GRU': 'Grus',
+    'HER': 'Hercules',
+    'HOR': 'Horologium',
+    'HYA': 'Hydra',
+    'HYI': 'Hydrus',
+    'IND': 'Indus',
+    'LAC': 'Lacerta',
+    'LEO': 'Leo',
+    'LEP': 'Lepus',
+    'LIB': 'Libra',
+    'LMI': 'Leo Minor',
+    'LUP': 'Lupus',
+    'LYN': 'Lynx',
+    'LYR': 'Lyra',
+    'MEN': 'Mensa',
+    'MIC': 'Microscopium',
+    'MON': 'Monoceros',
+    'MUS': 'Musca',
+    'NOR': 'Norma',
+    'OCT': 'Octans',
+    'OPH': 'Ophiuchus',
+    'ORI': 'Orion',
+    'PAV': 'Pavo',
+    'PEG': 'Pegasus',
+    'PER': 'Perseus',
+    'PHE': 'Phoenix',
+    'PIC': 'Pictor',
+    'PSA': 'Piscis Austrinus',
+    'PSC': 'Pisces',
+    'PUP': 'Puppis',
+    'PYX': 'Pyxis',
+    'RET': 'Reticulum',
+    'SCL': 'Sculptor',
+    'SCO': 'Scorpius',
+    'SCT': 'Scutum',
+    'SER': 'Serpens',
+    'SEX': 'Sextans',
+    'SGE': 'Sagitta',
+    'SGR': 'Sagittarius',
+    'TAU': 'Taurus',
+    'TEL': 'Telescopium',
+    'TRA': 'Triangulum Australe',
+    'TRI': 'Triangulum',
+    'TUC': 'Tucana',
+    'UMA': 'Ursa Major',
+    'UMI': 'Ursa Minor',
+    'VEL': 'Vela',
+    'VIR': 'Virgo',
+    'VOL': 'Volans',
+    'VUL': 'Vulpecula',
 }
 
 OOTWRow = namedtuple('OOTWRow', [
@@ -178,13 +178,13 @@ def main():
 layout: bigtable
 title: Deep-Sky Forum Object of the Week
 author: DSF OOTW team; Wouter van Reeven; Akarsh Simha.
-open_in_new_page: true
+open_new_page: false
 disable_dso: true
 ---
 
-Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts, latest first. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
+Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW)){:target="_blank"}" on the [Deep Sky Forum](https://www.deepskyforum.com){:target="_blank"}. This page is a full listing of all OOTW posts, latest first. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
 
-To see the objects organized by constellation, click [here](dsf_ootw_constellation.html). To see this data as a spreadsheet, click [here](https://docs.google.com/spreadsheets/d/1uyXGm2SjtR-fJmHgD5yqkXok4wAPgjx8tWWhRekq7B4/).
+To see the objects organized by constellation, click [here](dsf_ootw_constellation.html). To see this data as a spreadsheet, click [here](https://docs.google.com/spreadsheets/d/1uyXGm2SjtR-fJmHgD5yqkXok4wAPgjx8tWWhRekq7B4/){:target="_blank"}.
 
 """)
 
@@ -194,13 +194,13 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 layout: bigtable
 title: Deep-Sky Forum Object of the Week (by Constellation)
 author: DSF OOTW team; Wouter van Reeven; Akarsh Simha.
-open_in_new_page: true
+open_new_page: false
 disable_dso: true
 ---
 
-Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts, organized by constellation. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
+Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW)){:target="_blank"}" on the [Deep Sky Forum](https://www.deepskyforum.com){:target="_blank"}. This page is a full listing of all OOTW posts, organized by constellation. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
 
-To see the objects organized by chronology, click [here](dsf_ootw.html). To see this data as a spreadsheet, click [here](https://docs.google.com/spreadsheets/d/1uyXGm2SjtR-fJmHgD5yqkXok4wAPgjx8tWWhRekq7B4/).
+To see the objects organized by chronology, click [here](dsf_ootw.html). To see this data as a spreadsheet, click [here](https://docs.google.com/spreadsheets/d/1uyXGm2SjtR-fJmHgD5yqkXok4wAPgjx8tWWhRekq7B4/){:target="_blank"}.
 
 """)
 
@@ -211,7 +211,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
     def process_row(data):
         c = data.constellation.upper()
         rows_by_constellation.setdefault(c, []).append(len(rows))
-        rows.append(f'|{data.date}|[{data.title}]({data.url})|{data.author}|{COMPILED_REGEX.sub(replacer, data.objects.strip(" "))}|{c}|\n')
+        rows.append(f'|{data.date}|[{data.title}]({data.url})' + '{:target="_blank"}' + f'|{data.author}|{COMPILED_REGEX.sub(replacer, data.objects.strip(" "))}|{c}|\n')
 
     map_on_spreadsheet_rows(process_row)
 
@@ -227,7 +227,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
     for con in sorted(rows_by_constellation.keys()):
         if count != 0 and count % 11 == 0:
             constellation.write('|\n')
-        constellation.write(f'|[{con}](#{con.lower()})')
+        constellation.write(f'|[{con}](#{CONSTELLATIONS[con].lower().replace(" ", "-")} "{CONSTELLATIONS[con]}")')
         count += 1
     while count % 11 != 0:
         constellation.write('|&nbsp;')
@@ -239,7 +239,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
     header = '|Date|Title|Author|Object(s)|'
     header += '\n' + ''.join(['|----',] * header.count('|')) + '|\n'
     for con, inds in rows_by_constellation.items():
-        constellation.write(f'## {con}\n\n')
+        constellation.write(f'## {CONSTELLATIONS[con]}\n\n')
         constellation.write(header)
         for ind in inds[::-1]:
             raw_row = rows[ind].split('|')
