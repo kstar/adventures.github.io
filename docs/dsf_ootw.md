@@ -8,7 +8,7 @@ disable_dso: true
 
 Every Sunday, one of several experienced visual deep-sky observers posts an "[Object of the Week](https://www.deepskyforum.com/forumdisplay.php?8-Object-of-the-Week-2024-(OOTW))" on the [Deep Sky Forum](https://www.deepskyforum.com). This page is a full listing of all OOTW posts, latest first. The list was compiled by Wouter van Reeven and imported into Adventures in Deep Space by Akarsh Simha. DeepSkyForum is run by Dragan Nikin and Jimi Lowrey.
 
-To see the objects organized by constellation, click [here](dsf_ootw_constellation.html)
+To see the objects organized by constellation, click [here](dsf_ootw_constellation.html). To see this data as a spreadsheet, click [here](https://docs.google.com/spreadsheets/d/1uyXGm2SjtR-fJmHgD5yqkXok4wAPgjx8tWWhRekq7B4/).
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
@@ -664,7 +664,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-07-27T09:53:57Z
+Last updated: 2024-07-27T10:19:43Z
 </div>
 {% endraw %}
 
