@@ -238,7 +238,8 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
     header = '|Date|Title|Author|Object(s)|'
     header += '\n' + ''.join(['|----',] * header.count('|')) + '|\n'
-    for con, inds in rows_by_constellation.items():
+    for con in sorted(rows_by_constellation.keys()):
+        inds = rows_by_constellation[con]
         constellation.write(f'## {CONSTELLATIONS[con]}\n\n')
         constellation.write(header)
         for ind in inds[::-1]:
