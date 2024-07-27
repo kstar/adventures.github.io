@@ -39,7 +39,7 @@ simbadification = OrderedDict([
 
 class Replacer:
     """
-    A regex replacer function object that wraps DSO identifiers with <x-dso> tags
+    A regex replacer function object that wraps DSO identifiers with <x-dso> etc. tags
 
     Example usage:
     ```
@@ -51,15 +51,20 @@ class Replacer:
 
     i.e. "NGC 591" -> "<x-dso>NGC 591</x-dso>"
 
+    If `tag='x-dso-link'` is passed to the constructor instead, it will replace
+
+    "NGC 591" -> "<x-dso-link>NGC 591</x-dso-link>"
+
     The regex provided must pick out the identifiers you want to tag. The replacer function only applies the translation table for SIMBAD.
     """
-    def __init__(self, unique=True):
+    def __init__(self, unique=True, tag='x-dso'):
         """
         unique: if set to True, only the first occurrence of a given identifier is tagged
         """
         super().__init__()
         self._unique_matches = set()
         self._unique = unique
+        self._tag = tag
 
     def __call__(self, match):
         match_text = match.group(0)
@@ -82,8 +87,8 @@ class Replacer:
                     if obj_lcase.startswith(key.lower()):
                         simbadese = value + obj_lcase[len(key):]
             if simbadese:
-                return f'<x-dso simbad="{simbadese}">{match_text}</x-dso>'
-            return f'<x-dso>{match_text}</x-dso>'
+                return f'<{self._tag} simbad="{simbadese}">{match_text}</{self._tag}>'
+            return f'<{self._tag}>{match_text}</{self._tag}>'
         return match_text
 
 if __name__ == "__main__":
