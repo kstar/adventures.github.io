@@ -90,6 +90,26 @@ class XDsoElement extends HTMLElement {
 
 customElements.define("x-dso", XDsoElement);
 
+// --- Create a <x-dso-link> tag that adds SIMBAD links to DSOs ---
+class XDsoLinkElement extends HTMLElement {
+    constructor() {
+	super();
+    }
+
+    connectedCallback() {
+	const shadow = this.attachShadow({ mode: "open" });
+	const anchor = document.createElement("a");
+	anchor.setAttribute("target", "_blank");
+	setTimeout(() => { // https://stackoverflow.com/questions/62962138/how-to-get-the-contents-of-a-custom-element
+	    anchor.setAttribute("href", 'https://simbad.u-strasbg.fr/simbad/sim-id?Ident=' + encodeURIComponent(this.hasAttribute("simbad") ? this.getAttribute("simbad") : this.innerHTML.trim()));
+	    anchor.innerHTML = this.innerHTML.trim();
+	});
+	shadow.appendChild(anchor);
+    }
+
+}
+customElements.define("x-dso-link", XDsoLinkElement);
+
 // ------
 
 // CSV Maker
