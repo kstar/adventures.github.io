@@ -161,10 +161,10 @@ def map_on_spreadsheet_rows(function, markdown=True):
         # URL Encode the post title
         parts = data.url.split('?')
         url = '?'.join([parts[0],] + list(map(urlencode, parts[1:])))
-        data._replace(url=url)
+        data = data._replace(url=url)
 
         if markdown:
-            data._replace(title=markdown_escape(data.title))
+            data = data._replace(title=markdown_escape(data.title))
 
         function(data)
 
