@@ -100,6 +100,7 @@ class XDsoLinkElement extends HTMLElement {
 	const shadow = this.attachShadow({ mode: "open" });
 	const anchor = document.createElement("a");
 	anchor.setAttribute("target", "_blank");
+	anchor.style = "color: var(--link-color); text-underline-offset: 2px;";
 	setTimeout(() => { // https://stackoverflow.com/questions/62962138/how-to-get-the-contents-of-a-custom-element
 	    anchor.setAttribute("href", 'https://simbad.u-strasbg.fr/simbad/sim-id?Ident=' + encodeURIComponent(this.hasAttribute("simbad") ? this.getAttribute("simbad") : this.innerHTML.trim()));
 	    anchor.innerHTML = this.innerHTML.trim();
