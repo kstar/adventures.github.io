@@ -15,6 +15,7 @@ no_bullets: true
 * [Thoughts on a Great Comet](comet.htm) - Jay Reynolds Freeman
 * [Quantum Wierdness: The Garden of Forking Paths](paths.htm) - Jim Shields
 * [Herschel II in Rome: Another Way](rome.htm) - Bill Meyers
+* [The RASC Deep Sky Challenge - Part 1](RASC-Part1.html) - Akarsh Simha
 
 ----
 
