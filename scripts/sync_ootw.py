@@ -227,7 +227,10 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
     for con in sorted(rows_by_constellation.keys()):
         if count != 0 and count % 11 == 0:
             constellation.write('|\n')
-        constellation.write(f'|[{con}](#{CONSTELLATIONS[con].lower().replace(" ", "-")} "{CONSTELLATIONS[con]}")')
+        try:
+            constellation.write(f'|[{con}](#{CONSTELLATIONS[con].lower().replace(" ", "-")} "{CONSTELLATIONS[con]}")')
+        except KeyError:
+            raise RuntimeError(f'Invalid constellation `{con}` has entries {" ".join(list(map(row[ind] for ind in rows_by_constellation[con])))}!')
         count += 1
     while count % 11 != 0:
         constellation.write('|&nbsp;')
