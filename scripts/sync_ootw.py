@@ -44,7 +44,7 @@ CONSTELLATIONS = {
     'ARA': 'Ara',
     'ARI': 'Aries',
     'AUR': 'Auriga',
-    'BOO': 'Böotes',
+    'BOO': 'Boötes',
     'CAE': 'Caelum',
     'CAM': 'Camelopardalis',
     'CAP': 'Capricornus',

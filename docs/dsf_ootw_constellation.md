@@ -12,7 +12,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 ## Index
 
-|[AND](#andromeda "Andromeda")|[ANT](#antlia "Antlia")|[AQL](#aquila "Aquila")|[AQR](#aquarius "Aquarius")|[ARI](#aries "Aries")|[AUR](#auriga "Auriga")|[BOO](#böotes "Böotes")|[CAM](#camelopardalis "Camelopardalis")|[CAP](#capricornus "Capricornus")|[CAS](#cassiopeia "Cassiopeia")|[CEN](#centaurus "Centaurus")|
+|[AND](#andromeda "Andromeda")|[ANT](#antlia "Antlia")|[AQL](#aquila "Aquila")|[AQR](#aquarius "Aquarius")|[ARI](#aries "Aries")|[AUR](#auriga "Auriga")|[BOO](#boötes "Boötes")|[CAM](#camelopardalis "Camelopardalis")|[CAP](#capricornus "Capricornus")|[CAS](#cassiopeia "Cassiopeia")|[CEN](#centaurus "Centaurus")|
 |[CEP](#cepheus "Cepheus")|[CET](#cetus "Cetus")|[CMA](#canis-major "Canis Major")|[CMI](#canis-minor "Canis Minor")|[CNC](#cancer "Cancer")|[COL](#columba "Columba")|[COM](#coma-berenices "Coma Berenices")|[CRB](#corona-borealis "Corona Borealis")|[CRT](#crater "Crater")|[CRU](#crux "Crux")|[CRV](#corvus "Corvus")|
 |[CVN](#canes-venatici "Canes Venatici")|[CYG](#cygnus "Cygnus")|[DEL](#delphinus "Delphinus")|[DOR](#dorado "Dorado")|[DRA](#draco "Draco")|[EQU](#equuleus "Equuleus")|[ERI](#eridanus "Eridanus")|[FOR](#fornax "Fornax")|[GEM](#gemini "Gemini")|[GRU](#grus "Grus")|[HER](#hercules "Hercules")|
 |[HYA](#hydra "Hydra")|[LAC](#lacerta "Lacerta")|[LEO](#leo "Leo")|[LEP](#lepus "Lepus")|[LIB](#libra "Libra")|[LMI](#leo-minor "Leo Minor")|[LUP](#lupus "Lupus")|[LYN](#lynx "Lynx")|[LYR](#lyra "Lyra")|[MON](#monoceros "Monoceros")|[OPH](#ophiuchus "Ophiuchus")|
@@ -135,7 +135,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 ---
 
-## Böotes
+## Boötes
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
@@ -1355,7 +1355,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-07-28T00:03:42Z
+Last updated: 2024-07-28T01:54:00Z
 </div>
 {% endraw %}
 
