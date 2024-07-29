@@ -98,4 +98,4 @@ no_bullets: true
 ## Night Vision Adventures
 
 * [Beyond Barnard's Loop](beyond_barnards.html) - Mark McCarthy
-* [Spica Nebula](spica_nebula.html) - Mark McCarthy 
+* [Spica Nebula](Spica_Nebula.html) - Mark McCarthy 
