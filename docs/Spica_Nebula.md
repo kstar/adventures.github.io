@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Spica Nebula
-author: Mark McCarthy
+author: Mark McCarthy 
  
 ---
 
