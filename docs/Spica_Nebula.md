@@ -17,7 +17,7 @@ not so familiar) nebula with my night vision device.  One area which
 caught my attention was a cloud floating above the plane of the Milky
 Way somewhere to the northwest of Scorpio.  It's pointed out here and
 looks like an eye with an eyebrow.  It is considerably fainter than
-Sivan 10, which is in turn considerably fainter than Sh2-27, which is a
+Sivan 10, which is in turn considerably fainter than Sh2-27, a
 difficult object visually but which many a night vision device user has
 discovered by panning around the sky.  
 
@@ -27,8 +27,7 @@ alt="A red and white image of a fire Description automatically generated with me
 While on the Finkbeiner Gas line layer in Aladin, I navigated to the
 spot but at first there was no nebula seen.  I needed to adjust Aladin's
 pixel mapping (like adjusting the contrast on a TV) to make it appear. 
-To my shock I found the nebula is nearly centered on Spica, Alpha
-Virginis.  This is what it looks like on Aladin:
+To my shock I found the nebula is nearly centered on Spica.  This is what it looks like on Aladin:
 
 <img src="assets/918ab99b0c77bcfdbc626458f51728bc69e81dc3.png" style="width:3.33056in;height:2.2in"
 alt="A close-up of a galaxy Description automatically generated" />
@@ -64,7 +63,7 @@ approximately RA 13:40 Dec -15:00.  I set the device's gain quite low
 nebula).  As I flipped my filter wheel from unfiltered to a 3nm Ha, I
 immediately saw an expanse of very faint mottled nebulosity.  It was
 like blinking an OIII filter to see a planetary nebula: at first, it's
-not there and then--add the filter, and there it is.  The nebula faded
+not there; then--add the filter, and there it is.  The nebula faded
 from view, so I had to flip back and forth between unfiltered and
 filtered to get used to seeing it -- eventually I could pick it out
 against the sky background regularly.  In this area, the nebula to the
@@ -79,7 +78,7 @@ I tried the NW corner centered at RA 13:00 Dec -10:00.  Just as before,
 the nebula appeared when flipping from unfiltered to filtered.  Weak
 nebula to the north, less faint to the west, and stronger east and
 south.  I switched to the 60mm telescope, and brought it back to the
-brightest section in the SE.  The nebula was quite strong in this entire
+brightest section in the SE.  The nebula was relatively strong in this entire
 quadrant, and I followed a loop of it to the east back up to Spica. 
 Both the Ha+OIII and OIII filters showed different aspects of the
 nebula.  I also looked at the "Eyebrow" portion centered RA 14:14 Dec
@@ -89,13 +88,13 @@ east of the field. 
 <img src="assets/22aad055e70f487b17b9dc7458313cceeb843873.png" style="width:2.5in;height:3.33056in"
 alt="A paper with a graph on it Description automatically generated" />
 
-Finally, I mounted the device on the monopod and scanned the area.  This
+Finally, I mounted the device on the monopod and scanned the area at 1x.  This
 time I had less difficulty seeing the southern portion of the nebula (I
 could not see the eyebrow), and more confidently sketched it (though my
 sketch shows it “brighter” than it actually was).  I scanned over to
 Sh2-27 and judged its brightness against Siv 10, and then panned over to
-the Alpha Virginis nebula.  While the entire extent of the nebula is
-fainter than Siv 10, the brightest pocket to the SE of Spica is not very
+the Spica Nebula.  While the entire extent of the nebula is
+fainter than Siv 10, the brightest pocket to the SE of Spica is not excessively
 difficult.  
 
 <img src="assets/7488ea7d6763b1475bc654bd60244cd4298d3c47.png" style="width:3.33056in;height:2.5in"
