@@ -77,8 +77,10 @@ alt="K 1-16.jpg" />
   
 ### 4)  <x-dso simbad="Sh2-91">Sharpless 2-91</x-dso>
 
-|RA| 19 32 42|
-|Dec| +29 36|
+| | 9 Cyg filament |ϕ Cyg filament|
+|---|---|---|
+|RA| 19 32 42|19 39 42|
+|Dec| +29 36|+29 57|
 
 The little-known Sharpless HII region in Cygnus is virtually unknown
 among amateurs but is one of just a handful of visible supernova
