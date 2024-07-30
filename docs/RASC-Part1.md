@@ -24,7 +24,7 @@ While we are on the field, don't ignore the brighter IC 63, which is a very beau
 
 ### <x-dso>NGC 609</x-dso> (and <x-dso>Trumpler 1</x-dso>)
 
-Using 147× on my 18-inch telescope at the 2023 Golden State Star Party, I observed this cluster as a diffuse overdensity in the milky way with a smattering of a few bright stars in a roundish region. The faint stars comprising the nebulous background were not resolved, but there were many stars of medium brightness.
+Using 147× on my 18-inch telescope at the 2023 Golden State Star Party, I observed NGC 609 as a diffuse overdensity in the milky way with a smattering of a few bright stars in a roundish region. The faint stars comprising the nebulous background were not resolved, but there were many stars of medium brightness.
 
 The spreadsheet for the program also calls out nearby open cluster Trumpler 1, which I first saw in my 25×100 binocular in November 2023. At that low power it presented itself as a "star" that appeared slightly nebulous because of a thin haze that surrounded it. With averted vision, it was reminiscent of a condensed globular cluster, sort of like <x-dso omit="true">M 92</x-dso> when seen with the naked eye. I later looked at it through my friend Gautham Ramachandra's 8-inch f/6 telescope from a [Bangalore Astronomical Society](https://bas.org.in) star party in south India. There I saw a packed chain of 4 bright stars lying south of a chain of 3 stars. Of the three, one star was significantly fainter than the other two. There was one more star that resolved near the southern chain. At low power it appears like a fuzzy patch, but it was well-resolved at 170×.
 
