@@ -51,3 +51,4 @@ This nebula lies in between the Scorpion’s head and Sh2-27, the large bright c
 **<x-dso>Siv 11</x-dso>:** In Scorpius, centered 17 09 06.0 -30 52 00, size 360' x 60' (6° x 1°).  
 Sivan notes: "Double crescent shape.  Associated with diffuse background emission, one side bounded by heavy obscuration."  With the 4-inch it appeared as a weak, but very apparent, stream of nebulosity, looking much like a jet contrail with mottling in the body.  As an extra treat, the nebula bends slightly to make room for the globular cluster M62, which with the Ha filter and such low magnification was dulled and appeared as a small hazy ball (the view was much more filled with stars with the 685nm longpass filter, but the nebula was lost).  The dark cut-off Sivan mentions is very apparent.  
 ![Siv 11](/assets/sv11.png)
+
