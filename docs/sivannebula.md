@@ -4,7 +4,9 @@ title: <The Sivan Nebula>
 author: <Mark McCarthy>
 ---
 
-THE SIVAN NEBULA
+The Sivan Nebula
+
+Mark McCarthy
 
 While observing with my night vision device, I often notice filaments and clouds of nebulosity extending well beyond the field of view.  In my notes I comment how it appears a brighter, cataloged nebulosity is linked to another with a fainter stream.  I thought these were probably uncatalogued wisps or part of larger structure I hadn’t heard of.  To "see" such structures, the widest field possible is necessary.  If one is patient, and an excellent sketcher, super-wide fields can be constructed from multiple fields of view, such as Mel Bartels' excellent IFM sketches.  Of course, astrophotographers stitch together panels to form ultrawide mosaics.  Another excellent resource is Finkbeiner's H-alpha Full Sky Map.  
 
