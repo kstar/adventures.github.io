@@ -99,4 +99,4 @@ no_bullets: true
 
 * [Beyond Barnard's Loop](beyond_barnards.html) - Mark McCarthy
 * [Spica Nebula](Spica_Nebula.html) - Mark McCarthy 
-* [The Sivan Nebula](sivannebula.md) - Mark McCarthy
+* [The Sivan Nebula](sivannebula.html) - Mark McCarthy
