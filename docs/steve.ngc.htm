@@ -9,6 +9,56 @@
 <link rel="stylesheet" href="assets/common.css?version=6" />
 <script type="text/javascript" src="assets/common.js?version=1"></script>
 <script type="text/javascript">document.disableCSVMaker = true; document.disableDSO = true;</script>
+<script>
+  // ChatGPT-4o and Akarsh Simha
+  function searchGo() {
+      const catalog = document.getElementById('catalog').value;
+      const object = document.getElementById('object').value;
+      const regex = /^(\d+)$/;
+      const ICmax = 5386;
+      const NGCmax = 7840;
+
+      const match = object.match(regex);
+      if (match) {
+	  const catalogNumber = parseInt(match[1]);
+	  let catMax = 0;
+	  if (catalog == "NGC") {
+	      catMax = NGCmax;
+	  } else if (catalog == "IC") {
+	      catMax = ICmax;
+	  } else {
+	      console.log("Programming error!");
+	  }
+	  if (catalogNumber <= 0 || catalogNumber > catMax) {
+	      alert(`Invalid catalog number ${catalogNumber} for the ${catalog} catalog`);
+	      return;
+	  }
+	  const pageStart = Math.floor((catalogNumber - 1)/1000)*1000 + 1;
+	  const pageEnd = (pageStart + 999 > catMax) ? catMax : (pageStart + 999);
+          let url = `/${catalog}%20${pageStart.toString()}-${pageEnd}.html#${catalog}%20${catalogNumber}`;
+	  if (catalog == "NGC") {
+	      ;
+	  }
+	  else if (catalog == "IC") {
+	      url = `/${catalog}%20${pageStart.toString()}%20thru%20${catalog}%20${pageEnd}.html#${catalog}%20${catalogNumber}`;
+	  } else {
+	      console.log("Programming error!");
+	  }
+          window.location.href = url;
+      } else {
+          alert('Please enter a valid catalog number. Do not include the catalog name prefix like NGC / IC. Also do not include suffixes like A, B, C; Convert Messier names to NGC or IC as appropriate. Valid examples are:\n\n891\n0891\n34');
+      }
+
+  }
+  window.setTimeout(() => {
+      document.getElementById('object').addEventListener("keyup", (event) => { console.log(`Encountered ${event}`); if (event && event.keyCode == 13) { event.preventDefault(); searchGo(); } });
+  });
+</script>
+<style>
+  div.search-box {
+      text-align: right;
+  }
+</style>
 </head>
 
 
@@ -27,7 +77,18 @@
 </center>
 
 
-  <P>&nbsp; 
+<P>&nbsp; 
+  <div class="search-box">
+    <label for="catalog">Jump to</label>
+    <select id="catalog" name="catalog" title="Pick which catalog you want">
+      <option value="NGC">NGC</option>
+      <option value="IC">IC</option>
+    </select>
+
+    <input type="text" id="object" name="object" pattern="\d+" required title="Please enter a valid catalog number within the NGC/IC catalog (e.g. 891 or 6027) without A-B-C suffixes." placeholder="e.g. 2903" autofocus style="width: 100px;"/>
+
+    <button type="button" onclick="searchGo()">Go</button>
+  </div>
   <hr>
 <table width=640 border=0 align="center" cellpadding="8">
   <tr> 
