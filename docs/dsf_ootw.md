@@ -12,6 +12,8 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2024-08-04|[NGC 6872, this Condor soars tonight](https://www.deepskyforum.com/showthread.php?1791-Object-of-the-Week-August-4th-2024-NGC-6872-this-Condor-soars-tonight){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 6872</x-dso-link> (ESO 073-032, <x-dso-link>VV 297a</x-dso-link>, AM 2011-705, <x-dso-link>PGC 64413</x-dso-link>), <x-dso-link>IC 4970</x-dso-link>|PAV|
+|2024-07-28|[Rho Ophiuchi Cloud](https://www.deepskyforum.com/showthread.php?1789-Object-Of-The-Week-July-28-Rho-Ophiuchi-Cloud){:target="_blank"}|Wouter van Reeven|Rho Ophiuchi Cloud (IC 4603, <x-dso-link>IC 4604</x-dso-link>, <x-dso-link>IC 4605</x-dso-link>, <x-dso-link>IC 4606</x-dso-link>, <x-dso-link simbad="Barnard 42">B 42</x-dso-link>, <x-dso-link simbad="Barnard 44">B 44</x-dso-link>, <x-dso-link simbad="Barnard 45">B 45</x-dso-link>)|OPH|
 |2024-07-21|[Knot Cataloged](https://www.deepskyforum.com/showthread.php?1788-Object-of-the-Week-July-21-2024-Knot-Cataloged){:target="_blank"}|Victor van Wulfen|GAL 084.0+00.8 (GN 20.43.9)|CYG|
 |2024-07-14|[IRAS 17150-3224 the "Cotton Candy Nebula"](https://www.deepskyforum.com/showthread.php?1787-Object-of-the-Week-July-14-2024-IRAS-17150-3224-the-quot-Cotton-Candy-Nebula-quot){:target="_blank"}|Uwe Glahn|<x-dso-link>IRAS 17150-3224</x-dso-link> (Cotton Candy Nebula, PN G353.8+02.9, RAFGL 6815S, GLMP 540)|SCO|
 |2024-07-07|[Taffy but Edge-On \(NGC 7253\)](https://www.deepskyforum.com/showthread.php?1785-Object-of-the-Week-July-7th-2024-Taffy-but-Edge-On-%28NGC-7253%29){:target="_blank"}|Akarsh Simha|<x-dso-link>NGC 7253</x-dso-link> (VV 242, <x-dso-link>Arp 278</x-dso-link>, <x-dso-link>NGC 7253A</x-dso-link> (UGC 11984) && <x-dso-link>NGC 7253B</x-dso-link> (UGC 11985))|PEG|
@@ -664,7 +666,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-07-28T01:54:00Z
+Last updated: 2024-08-06T09:59:38Z
 </div>
 {% endraw %}
 

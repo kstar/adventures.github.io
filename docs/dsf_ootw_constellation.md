@@ -852,6 +852,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-07-28|[Rho Ophiuchi Cloud](https://www.deepskyforum.com/showthread.php?1789-Object-Of-The-Week-July-28-Rho-Ophiuchi-Cloud){:target="_blank"}|Wouter van Reeven|Rho Ophiuchi Cloud (IC 4603, <x-dso-link>IC 4604</x-dso-link>, <x-dso-link>IC 4605</x-dso-link>, <x-dso-link>IC 4606</x-dso-link>, <x-dso-link simbad="Barnard 42">B 42</x-dso-link>, <x-dso-link simbad="Barnard 44">B 44</x-dso-link>, <x-dso-link simbad="Barnard 45">B 45</x-dso-link>)|
 |2024-06-02|[CN 3-1 & CN 2-1 A \(Partial\) Tale of the Cannon Catalog](https://www.deepskyforum.com/showthread.php?1777-Object-of-the-Week-June-2-2024-%25E2%2580%2593-CN-3-1-amp-CN-2-1-A-%28Partial%29-Tale-of-the-Cannon-Catalog){:target="_blank"}|Mark Friedman|Cannon (Cn) 3-1 (PK 038+12.1, PN G038.2+12.0, <x-dso-link>VV 171</x-dso-link>), Cannon (Cn) 2-1 (PK 356-04.1, PN G356.2-04.4, <x-dso-link>VV 126</x-dso-link>)|
 |2023-07-23|[Sh2-27](https://www.deepskyforum.com/showthread.php?1706-Object-of-the-Week-July-23rd-2023-%25E2%2580%2593-Sharpless-2-27-in-Ophiuchus){:target="_blank"}|Scott Harrington|<x-dso-link>Sh2-27</x-dso-link> (Sharpless-Osterbrock 15, Stromlo (Gum) 73)|
 |2022-06-26|[Hidden in plain sight](https://www.deepskyforum.com/showthread.php?1602-Object-of-the-Week-June-26-2022-Hidden-in-plain-sight){:target="_blank"}|Victor van Wulfen|Nebula at R.A./Dec.: 17:01:04 -04d13m00s|
@@ -908,6 +909,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-08-04|[NGC 6872, this Condor soars tonight](https://www.deepskyforum.com/showthread.php?1791-Object-of-the-Week-August-4th-2024-NGC-6872-this-Condor-soars-tonight){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 6872</x-dso-link> (ESO 073-032, <x-dso-link>VV 297a</x-dso-link>, AM 2011-705, <x-dso-link>PGC 64413</x-dso-link>), <x-dso-link>IC 4970</x-dso-link>|
 |2022-09-25|[NGC 6744, a possible Milky Way clone](https://www.deepskyforum.com/showthread.php?1627-Object-Of-The-Week-September-25-2022-NGC-6744-a-possible-Milky-Way-clone){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC 6744</x-dso-link>, <x-dso-link>NGC 6744A</x-dso-link>|
 |2020-07-05|[NGC 6752, the 3rd or 4th brightest globular cluster in the sky](https://www.deepskyforum.com/showthread.php?1389-Object-Of-The-Week-July-5-2020-%E2%80%93-NGC-6752-the-3rd-or-4th-brightest-globular-cluster-in-the-sky){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC 6752</x-dso-link>|
 
@@ -1355,7 +1357,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-07-28T01:54:00Z
+Last updated: 2024-08-06T09:59:38Z
 </div>
 {% endraw %}
 
