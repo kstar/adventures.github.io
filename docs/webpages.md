@@ -83,6 +83,12 @@ no_bullets: true
 
 ----
 
+## Historically Themed Journeys
+
+* [The Rise and Fall of the Great Melbourne Telescope](GMT%20discoveries.html) - Steve Gottlieb
+
+----
+
 ## Ultimate Challenges
 
 * [Revised AINTNO 100](aintno.htm) - Barbara Wilson & Larry Mitchell
