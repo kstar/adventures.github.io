@@ -58,6 +58,13 @@
   div.search-box {
       text-align: right;
   }
+  div.flex-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: right;
+      padding: 0;
+  }
 </style>
 </head>
 
@@ -78,8 +85,9 @@
 
 
 <P>&nbsp; 
-  <div class="search-box">
-    <label for="catalog">Jump to</label>
+  <div class="search-box flex-box">
+      <image src="assets/AskSteve.png" style="margin-right: 0px; width: 150px; display: inline;"/>
+    <label for="catalog">Jump to:&nbsp;</label>
     <select id="catalog" name="catalog" title="Pick which catalog you want">
       <option value="NGC">NGC</option>
       <option value="IC">IC</option>
