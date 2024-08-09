@@ -184,7 +184,7 @@ alt="NGC 6872-4.jpg" /><br />
 _Credit: FORS Team, 8.2-meter, VLT Antu, ESO, Processing & License: Judy
 Schmidt_
 
-### Hodge 301 in the Tarantula Nebula (<x-dso>NGC 2070</x-dso>)
+### <x-dso simbad="H88 301">Hodge 301</x-dso> in the Tarantula Nebula (<x-dso>NGC 2070</x-dso>)
 
 Our next stop is the *Tarantula Nebula* NGC 2070, a spectacular
 naked-eye star-forming complex in the LMC. At its massive heart is <x-dso simbad="RMC 136">R136</x-dso>,
