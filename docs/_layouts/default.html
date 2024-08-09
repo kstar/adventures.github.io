@@ -18,7 +18,9 @@
   <body>
     <center>
       <h1>{{ page.title }}</h1>
+      {% if page.author %}
       <div style="float: right; margin-right: 100px;">by <b>{{ page.author }}</b></div><br />
+      {% endif %}
     </center>
     <br />
     <div class="main_content">
