@@ -65,6 +65,13 @@
       justify-content: right;
       padding: 0;
   }
+  a.gottlieb {
+      border: 1px var(--bg-color) solid;
+      margin-right: 2px;
+  }
+  a.gottlieb:hover {
+      border: 1px blue solid;
+  }
 </style>
 </head>
 
@@ -86,7 +93,7 @@
 
 <P>&nbsp; 
   <div class="search-box flex-box">
-      <image src="assets/AskSteve.png" style="margin-right: 0px; width: 150px; display: inline;"/>
+      <a href="mailto:astrogottlieb@gmail.com" class="gottlieb" title="Click to e-mail Steve Gottlieb"><image src="assets/AskSteve.png" style="margin-right: 0px; width: 150px; display: inline;"/></a>
     <label for="catalog">Jump to:&nbsp;</label>
     <select id="catalog" name="catalog" title="Pick which catalog you want">
       <option value="NGC">NGC</option>
