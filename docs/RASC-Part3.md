@@ -87,6 +87,12 @@ Using my 18-inch on a great night at Death Valley National Park, I was able to s
 
 3C 273 is perhaps the most popular quasar. Lying about 3 billion ly away, it is one of the most distant objects that can be seen in small amateur telescopes. Unfortunately, I have never looked for this distant stellar point through a small telescope. This object however is a popular target for Jimi Lowrey's 48-inch monster dob. Reason? The jet. The Active Galactic Nucleus (AGN) at the core of this quasar sports a jet that is visible as a faint, detached streak of light on the POSSII images.
 
+<center>
+<img src="/assets/3c273jet.jpg" width=350px /><br />
+<i>Hubble Space Telescope image showing the jet of 3C 273</i>
+</center>
+
+
 During an excellent April/May 2019 run at Jimi's observatory in west Texas, California amateur astronomer [Bob Douglas](https://douglas.asimha.net), Jimi and I took a look at 3C 273. It's unclear from my rough sketch whether the disk of the galaxy was visible in Jimi's scope. The jet popped in and out of view and was difficult to hold continuously with averted vision. I saw it many many times. The visual length of the jet was somewhere around 10 to 15 arcseconds.
 
 ### <x-dso>NGC 4676</x-dso>, the Mice Galaxies
