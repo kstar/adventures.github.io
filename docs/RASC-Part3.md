@@ -18,7 +18,7 @@ My experience through my 18-inch under the exceptional skies of Texas Star Party
 
 I'm surprised that I haven't visited this planetary that made such a strong impression on me more recently; the only reason for that is there is simply a lot to observe in the universe.
 
-### <x-dso>Leo I</x-dso>, the Regulus Dwarf (<x-dso>Leo A</x-dso> and <x-dso>Leo II</x-dso>)
+### <x-dso>Leo I</x-dso>, the Regulus Dwarf (plus <x-dso>Leo A</x-dso> and <x-dso>Leo II</x-dso>)
 
 This is another RASC Deep-Sky Challenge object that can open an entire can of worms. The Local Group contains numerous dim dwarf galaxies that have been a source of substantial suffering to my observing life. Their challenge is irresistible, yet they only yield (at least to my vision) under the most opportune of conditions. Tiny distant galaxies of magnitude 16+ can at least be tackled by throwing more aperture at them, but low surface brightness is a different monster.
 
