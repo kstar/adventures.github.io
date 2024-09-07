@@ -36,6 +36,7 @@ Links open in a new browser window or tab
 | [Field Guide to M31\'s Brighest Globular Clusters](https://drive.google.com/file/d/1N9NaJV8KJ71jgy0RewyVeq5HKOTKZKmy/view?usp=sharing) | [Lynds Bright Nebulae](LyndsBrightNebulae.xls) | [The Stars Of NGC 206](https://drive.google.com/file/d/1PNlitQz3xMn08jXwzwyhsquVfIg1M1WL/view?usp=sharing) |
 | [Veteran astronomer, (late) Albert Highe\'s website](https://web.archive.org/web/20060312200423/http://pw2.netcom.com/~ahighe/) | [Index of publications by Steve Gottlieb](/Steve_Gottlieb_Publications.docx) | [Portland XVII Alt/Az Workshop 2024 flyer PDF](assets/Portland_XVII.pdf) |
 | [Mark Wagner's observing blog](https://deepskyobserving.blogspot.com/) | [Old observing reports by Ptolemy Supper Club](http://arnett.us.com/psc/or.html) | [TAC Observing Report Archives](https://old.observers.org/reports/) |
+| [Pease 1](https://web.archive.org/web/20001220002000/http://www.blackskies.com/peasefc.htm) and [GJJC 1](https://web.archive.org/web/20010107003100/http://www.blackskies.com/gjjc_m22_2.htm) |
 {: class="catalogs"}
 
 </div>
