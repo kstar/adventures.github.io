@@ -71,12 +71,17 @@
               <tr>
                 <td height="6">
                   <center>
+		    <!--
                     <form action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
                       <div class="search_form"><input type="hidden" name="id" value="37720602"> <input type="hidden" name="pageid" value="r"> <input type="hidden" name="mode"
                       value="ALL"> <input type="radio" name="t" value="s" checked> Site search <input type="radio" name="t" value="w">Web search<br>
                       <input type="hidden" name="_charset_" value=""> <input type="hidden" name="bcd" value="÷"> <input type="text" name="query" size="15"> <small><input type="submit" value=
                       " Find "><br></small> powered by <a href="http://www.freefind.com">FreeFind</a></div>
                     </form>
+		    -->
+		    <form target="_blank">
+		      <div class="search_form"><input type="text" id="query" size="15"><small><input type="submit" value=" Search " onclick='window.open(`https://www.google.com/search?q=` + encodeURIComponent(`site:adventuresindeepspace.com ${document.getElementById("query").value}`));'><br></small> powered by <a href="https://www.google.com">Google</a></div>
+		    </form>
                   </center>
                 </td>
               </tr>
