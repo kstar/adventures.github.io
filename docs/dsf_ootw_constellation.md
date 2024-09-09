@@ -62,6 +62,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-08-11|[NGC6814 - A beautiful spiral in Aquila](https://www.deepskyforum.com/showthread.php?1793-NGC6814-A-beautiful-spiral-in-Aquila){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 6814</x-dso-link>|
 |2024-06-16|[Barnard’s E](https://www.deepskyforum.com/showthread.php?1780-Object-of-the-Week-June-16-2024-Barnard%25E2%2580%2599s-E){:target="_blank"}|Howard Banich|Barnard’s E (B 142 + <x-dso-link simbad="Barnard 143">B 143</x-dso-link>)|
 |2023-09-17|[Palomar 11](https://www.deepskyforum.com/showthread.php?1717-Object-of-the-Week-September-17th-2023-Palomar-11){:target="_blank"}|Owen Brazell|<x-dso-link>Palomar 11</x-dso-link>|
 |2022-10-23|[NGC 6741 Phantom Streak Nebula](https://www.deepskyforum.com/showthread.php?1634-Object-of-the-Week-October-23-2022-%E2%80%93-NGC-6741-Phantom-Streak-Nebula){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 6741</x-dso-link>|
@@ -548,6 +549,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-09-01|[NGC 4125 & NGC 4121](https://www.deepskyforum.com/showthread.php?1800-Object-of-the-Week-September-1-2024-%25E2%2580%2593-NGC-4125-amp-NGC-4121){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4125</x-dso-link> (UGC 7118, <x-dso-link>PGC 38524</x-dso-link>, <x-dso-link simbad="Z 315-019">CGCG 315-019</x-dso-link>, <x-dso-link simbad="Z 1205.6+6527">CGCG 1205.6+6527</x-dso-link>, <x-dso-link>MCG +11-15-027</x-dso-link>), <x-dso-link>NGC 4121</x-dso-link> (PGC 38508, <x-dso-link simbad="Z 315-018">CGCG 315-018</x-dso-link>, <x-dso-link simbad="Z 1205.5+6523">CGCG 1205.5+6523</x-dso-link>, <x-dso-link>MCG +11-15-026</x-dso-link>)|
 |2022-07-10|[KUV 18217+6419 + K 1-16, a remarkable duo](https://www.deepskyforum.com/showthread.php?1608-Object-of-the-Week-July-10-2022-%E2%80%93-KUV-18217-6419-K-1-16-a-remarkable-duo){:target="_blank"}|Steve Gottlieb|KUV 18217+6419 ([HB89] 1821+643), <x-dso-link>K 1-16</x-dso-link> (PK 94+27.1, PN G094.0+27.4)|
 |2022-06-19|[NGC 6670 "The Poster Girl"](https://www.deepskyforum.com/showthread.php?1598-Object-of-the-Week-June-19-2022-NGC-6670-quot-The-Poster-Girl-quot){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 6670A</x-dso-link>, <x-dso-link>NGC 6670B</x-dso-link>|
 |2022-04-24|[M102 The Spindle Galaxy](https://www.deepskyforum.com/showthread.php?1579-Object-of-the-Week-April-24th-2022-M102-The-Spindle-Galaxy){:target="_blank"}|Dragan Nikin|<x-dso-link>M 102</x-dso-link>|
@@ -609,6 +611,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-09-08|[NGC 1365](https://www.deepskyforum.com/showthread.php?1801-Object-of-the-Week-September-8-2024-%25E2%2580%2593-NGC-1365){:target="_blank"}|Howard Banich|<x-dso-link>NGC 1365</x-dso-link>|
 |2021-09-26|[Fornax Dwarf, NGC 1049, and 5 other extragalactic globulars](https://www.deepskyforum.com/showthread.php?1533-Object-of-the-Week-September-26-2021-Fornax-Dwarf-NGC-1049-and-5-other-extragalactic-globulars){:target="_blank"}|Akarsh Simha|Fornax Dwarf, <x-dso-link>NGC 1049</x-dso-link>, Fornax 1, Fornax 2, Fornax 4, Fornax 5, Fornax 6|
 |2018-10-28|[October 29, 2018 - NGC 1097](https://www.deepskyforum.com/showthread.php?1214-Object-of-the-Week-October-29-2018-NGC-1097){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 1097</x-dso-link>, [EKS96] 151, [EKS96] 245, [EKS96] 300/304, [EKS96] 100/105/119|
 |2015-01-11|[NGC 1360 A Dissolving Planetary](https://www.deepskyforum.com/showthread.php?675-Object-of-the-Week-January-11-2015-NGC-1360-A-Dissolving-Planetary){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 1360</x-dso-link>|
@@ -815,6 +818,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-08-18|[NGC 6765](https://www.deepskyforum.com/showthread.php?1795-Object-of-the-Week-August-18th-2024-NGC-6765){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 6765</x-dso-link>|
 |2023-07-30|[PN K 3-27 - LYRA](https://www.deepskyforum.com/showthread.php?1707-Object-of-the-Week-July-30th-2023-%25E2%2580%2593-PN-K-3-27-LYRA){:target="_blank"}|Paul Alsing|<x-dso-link>K 3-27</x-dso-link> (PK 061+08 1, PN G061.0+08.0)|
 |2022-02-13|[NGC 6791 Platais’ Oddball](https://www.deepskyforum.com/showthread.php?1564-Object-of-the-Week-February-13-2022-NGC-6791-Platais%E2%80%99-Oddball){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 6791</x-dso-link>|
 |2019-06-23|[M57, the Ring Nebula](https://www.deepskyforum.com/showthread.php?1287-Object-of-the-Week-June-23-2019-M57-the-Ring-Nebula){:target="_blank"}|Howard Banich|<x-dso-link>M 57</x-dso-link>|
@@ -1208,6 +1212,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-08-25|[Wilson’s Object](https://www.deepskyforum.com/showthread.php?1799-Object-of-The-Week-August-25th-2024-Wilson%25E2%2580%2599s-Object){:target="_blank"}|Jimi Lowrey|Wilson’s Object (MAC 0148+2733, <x-dso-link>PGC 6632</x-dso-link>, CGCG482-17)|
 |2021-12-12|[NGC 750/751 = Arp 166 - Triangulum](https://www.deepskyforum.com/showthread.php?1553-Object-of-the-Week-December-12-2021-%E2%80%93-NGC-750-751-Arp-166-Triangulum){:target="_blank"}|Paul Alsing|<x-dso-link>Arp 166</x-dso-link> (NGC 750 & <x-dso-link>NGC 751</x-dso-link>), <x-dso-link>NGC 761</x-dso-link>, <x-dso-link>NGC 739</x-dso-link>, <x-dso-link>NGC 736</x-dso-link>, <x-dso-link>NGC 740</x-dso-link>, <x-dso-link>NGC 738</x-dso-link>, <x-dso-link>NGC 733</x-dso-link>|
 |2019-10-27|[The Pinwheel Treasures](https://www.deepskyforum.com/showthread.php?1319-Object-of-the-Week-October-27-2019-The-Pinwheel-Treasures){:target="_blank"}|Mark Friedman|<x-dso-link>IC 135</x-dso-link>, <x-dso-link>IC 136</x-dso-link>, <x-dso-link>IC 137</x-dso-link>, <x-dso-link>IC 139</x-dso-link>, <x-dso-link>IC 140</x-dso-link>, <x-dso-link>IC 142</x-dso-link>, <x-dso-link>IC 143</x-dso-link>, <x-dso-link>NGC 588</x-dso-link>, <x-dso-link>NGC 592</x-dso-link>, <x-dso-link>NGC 595</x-dso-link>, <x-dso-link>NGC 603</x-dso-link>, A66|
 |2018-10-14|[Collinder 21 with background galaxies \(IC 1731\)](https://www.deepskyforum.com/showthread.php?1210-Object-of-the-Week-October-14-2018-Collinder-21-with-background-galaxies-%28IC-1731%29){:target="_blank"}|Uwe Glahn|<x-dso-link>Collinder 21</x-dso-link> (Cr 21), <x-dso-link>IC 1731</x-dso-link>, <x-dso-link>MCG +04-05-016</x-dso-link>, <x-dso-link>2MASS J01501150+2708581</x-dso-link>|
@@ -1357,7 +1362,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-08-06T09:59:38Z
+Last updated: 2024-09-09T07:00:11Z
 </div>
 {% endraw %}
 
