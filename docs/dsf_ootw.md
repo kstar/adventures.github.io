@@ -12,6 +12,11 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2024-09-08|[NGC 1365](https://www.deepskyforum.com/showthread.php?1801-Object-of-the-Week-September-8-2024-%25E2%2580%2593-NGC-1365){:target="_blank"}|Howard Banich|<x-dso-link>NGC 1365</x-dso-link>|FOR|
+|2024-09-01|[NGC 4125 & NGC 4121](https://www.deepskyforum.com/showthread.php?1800-Object-of-the-Week-September-1-2024-%25E2%2580%2593-NGC-4125-amp-NGC-4121){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4125</x-dso-link> (UGC 7118, <x-dso-link>PGC 38524</x-dso-link>, <x-dso-link simbad="Z 315-019">CGCG 315-019</x-dso-link>, <x-dso-link simbad="Z 1205.6+6527">CGCG 1205.6+6527</x-dso-link>, <x-dso-link>MCG +11-15-027</x-dso-link>), <x-dso-link>NGC 4121</x-dso-link> (PGC 38508, <x-dso-link simbad="Z 315-018">CGCG 315-018</x-dso-link>, <x-dso-link simbad="Z 1205.5+6523">CGCG 1205.5+6523</x-dso-link>, <x-dso-link>MCG +11-15-026</x-dso-link>)|DRA|
+|2024-08-25|[Wilson’s Object](https://www.deepskyforum.com/showthread.php?1799-Object-of-The-Week-August-25th-2024-Wilson%25E2%2580%2599s-Object){:target="_blank"}|Jimi Lowrey|Wilson’s Object (MAC 0148+2733, <x-dso-link>PGC 6632</x-dso-link>, CGCG482-17)|TRI|
+|2024-08-18|[NGC 6765](https://www.deepskyforum.com/showthread.php?1795-Object-of-the-Week-August-18th-2024-NGC-6765){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 6765</x-dso-link>|LYR|
+|2024-08-11|[NGC6814 - A beautiful spiral in Aquila](https://www.deepskyforum.com/showthread.php?1793-NGC6814-A-beautiful-spiral-in-Aquila){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 6814</x-dso-link>|AQL|
 |2024-08-04|[NGC 6872, this Condor soars tonight](https://www.deepskyforum.com/showthread.php?1791-Object-of-the-Week-August-4th-2024-NGC-6872-this-Condor-soars-tonight){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 6872</x-dso-link> (ESO 073-032, <x-dso-link>VV 297a</x-dso-link>, AM 2011-705, <x-dso-link>PGC 64413</x-dso-link>), <x-dso-link>IC 4970</x-dso-link>|PAV|
 |2024-07-28|[Rho Ophiuchi Cloud](https://www.deepskyforum.com/showthread.php?1789-Object-Of-The-Week-July-28-Rho-Ophiuchi-Cloud){:target="_blank"}|Wouter van Reeven|Rho Ophiuchi Cloud (IC 4603, <x-dso-link>IC 4604</x-dso-link>, <x-dso-link>IC 4605</x-dso-link>, <x-dso-link>IC 4606</x-dso-link>, <x-dso-link simbad="Barnard 42">B 42</x-dso-link>, <x-dso-link simbad="Barnard 44">B 44</x-dso-link>, <x-dso-link simbad="Barnard 45">B 45</x-dso-link>)|OPH|
 |2024-07-21|[Knot Cataloged](https://www.deepskyforum.com/showthread.php?1788-Object-of-the-Week-July-21-2024-Knot-Cataloged){:target="_blank"}|Victor van Wulfen|GAL 084.0+00.8 (GN 20.43.9)|CYG|
@@ -666,7 +671,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-08-06T09:59:38Z
+Last updated: 2024-09-09T07:00:11Z
 </div>
 {% endraw %}
 
