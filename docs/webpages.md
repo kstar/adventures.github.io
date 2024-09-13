@@ -34,7 +34,7 @@ no_bullets: true
 
 ----
 
-## Planetary and Diffuse Nebulae
+## Planetary, Diffuse and Other Nebulae
 
 * [200 Brightest PN for Small Scopes & Binos](100%2B%20brightest%20PN.pdf) - Scott Harrington
 * [Dissecting the Veil Nebula](Dissecting%20the%20Veil%20Nebula.html) - Steve Gottlieb
@@ -50,6 +50,7 @@ no_bullets: true
 * [A New SNR in Cygnus](sh2091.htm) - Dave Riddle & Ronald Stoyan
 * [Mostly Bright Summer Planetaries](pnsummer.htm) - Jim Shields
 * [Autumn Planetaries](pnfall.htm) - Doug Snyder
+* [Dracula's Chivito (and other protoplanetary disks)](Draculas_Chivito.html) – Steve Gottlieb
 
 ----
 
