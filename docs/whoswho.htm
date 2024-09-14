@@ -32,7 +32,7 @@
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    .active, .collapsible:hover {
+    .active, .collapsible:not(.empty):hover {
 	background-color: rgba(238, 238, 238, 0.4);
 	color: var(--link-hover-color);
     }
@@ -49,7 +49,7 @@
 	text-align: center;
     }
 
-    .collapsible:after {
+    .collapsible:not(.empty):after {
 	color: white;
 	/* content: '\02795'; /* Unicode character for "plus" sign (+) */
 	content: '▼';
@@ -58,7 +58,7 @@
 	margin-left: 5px;
     }
 
-    .active:after {
+    .active:not(.empty):after {
 	content: "▲"; /* Unicode character for "minus" sign (-) */
     }
   </style>
@@ -78,6 +78,8 @@
 	var i;
 
 	for (i = 0; i < coll.length; i++) {
+	    if (coll[i].classList.contains("empty"))
+		continue;
 	    coll[i].addEventListener("click", function() {
 		this.classList.toggle("active");
 		var content = this.nextElementSibling;
@@ -141,12 +143,12 @@
 	</p>
     </div>
 
-    <button type="button" class="collapsible"><span class="name">Vishal Kasliwal</span><br />Co-Webmaster</button>
+    <button type="button" class="collapsible empty"><span class="name">Vishal Kasliwal</span><br />Co-Webmaster</button>
     <div class="content">
       (Bio pending)
     </div>
 
-    <button type="button" class="collapsible"><span class="name">Mark McCarthy</span><br />Night Vision Expert</button>
+    <button type="button" class="collapsible empty"><span class="name">Mark McCarthy</span><br />Night Vision Expert</button>
     <div class="content">
       (Bio pending)
     </div>
@@ -250,19 +252,19 @@
     </div>
     <hr />
     <h3>Contributors</h3>
-    <button type="button" class="collapsible"><!--<img src="assets/_avatar.png"/>--><span class="name">Jay Reynolds Freeman</span></button>
+    <button type="button" class="collapsible empty"><!--<img src="assets/_avatar.png"/>--><span class="name">Jay Reynolds Freeman</span></button>
     <div class="content">
       (Bio pending)
     </div>
-    <button type="button" class="collapsible"><!--<img src="assets/_avatar.png"/>--><span class="name">Larry Mitchell</span></button>
+    <button type="button" class="collapsible empty"><!--<img src="assets/_avatar.png"/>--><span class="name">Larry Mitchell</span></button>
     <div class="content">
       (Bio pending)
     </div>
-    <button type="button" class="collapsible"><!--<img src="assets/_avatar.png"/>--><span class="name">Rich Jakiel</span></button>
+    <button type="button" class="collapsible empty"><!--<img src="assets/_avatar.png"/>--><span class="name">Rich Jakiel</span></button>
     <div class="content">
       (Bio pending)
     </div>
-    <button type="button" class="collapsible"><!--<img src="assets/_avatar.png"/>--><span class="name">Bob Hill</span></button>
+    <button type="button" class="collapsible empty"><!--<img src="assets/_avatar.png"/>--><span class="name">Bob Hill</span></button>
     <div class="content">
       (Bio pending)
     </div>
@@ -277,9 +279,8 @@
       Barbara Wilson of Houston, TX passed away on September 24, 2019 aged 71 after a battle with cancer that lasted several months. Many of us last saw her at the Texas Star Party 2019, an event where she was a regular fixture with a well-deserved celebrity status. After all, she pushed several frontiers in visual astronomy in the 80s and 90s. She was a prolific contributor to this website, including her articles on <a href="obscure.htm">obscure globulars</a> and <a href="obscure2.htm">extreme halo globulars</a> as well as the <a href="aintno.htm">AINTNO list</a>. Prolific visual astronomer and her friend Dave Tosteson wrote a detailed <a href="https://skyandtelescope.org/astronomy-news/people-places-and-events/barbara-wilson-remembrance/">tribute</a> to her on Sky & Telescope's website.
       </p>
     </div>
-    <button type="button" class="collapsible"><img src="assets/S&T_mimi.jpg"/><span class="name">Mimi Wagner-Fernandez</span></button>
+    <button type="button" class="collapsible empty"><img src="assets/S&T_mimi.jpg"/><span class="name">Mimi Wagner-Fernandez</span></button>
     <div class="content">
-      (Eulogy pending)
     </div>
     <hr />
     <center>
