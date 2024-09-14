@@ -1,0 +1,44 @@
+.x-dso-wrapper {
+    position: relative;
+}
+
+.x-dso-info {
+    font-size: 0.8rem;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    display: none;
+    transition: 0.6s all;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    z-index: 3;
+}
+
+.x-dso-info iframe {
+    width: 800px;
+    height: 800px;
+    display: block;
+    -ms-zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.5);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+}
+
+.x-dso-span {
+    text-decoration:underline;
+    text-decoration-style: dotted;
+}
+
+.x-dso-span:hover + .x-dso-info, .x-dso-span:focus + .x-dso-info {
+    display: block;
+}
+.x-dso-info:hover {
+    display: block;
+}
