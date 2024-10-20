@@ -12,6 +12,9 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2024-09-29|[The Sculptor Dwarf](https://www.deepskyforum.com/showthread.php?1809-Object-of-the-Week-September-29th-2024-%25E2%2580%2593-The-Sculptor-Dwarf){:target="_blank"}|Akarsh Simha|Sculptor Dwarf (Sculptor dSph, <x-dso-link>PGC 3589</x-dso-link>, <x-dso-link>ESO 351-30</x-dso-link>)|SCL|
+|2024-09-22|[Hickson 90 \(NGC 7172, NGC 7173, NGC 7174, NGC 7176\)](https://www.deepskyforum.com/showthread.php?1807-Object-of-the-Week-Hickson-90-%28NGC%25E2%2580%2599s-7172-7173-7174-7176%29){:target="_blank"}|Paul Alsing|<x-dso-link simbad="HCG 90">Hickson 90</x-dso-link> (NGC 7172, <x-dso-link>NGC 7173</x-dso-link>, <x-dso-link>NGC 7174</x-dso-link>, <x-dso-link>NGC 7176</x-dso-link>), KTS 66 (NGC 7173, NGC 7174, NGC 7176)|PSA|
+|2024-09-15|[Bernes 29 around V1331 Cyg](https://www.deepskyforum.com/showthread.php?1805-Object-of-the-Week-September-15th-2024-%25E2%2580%2593-Bernes-29-around-V1331-Cyg){:target="_blank"}|Scott Harrington|Bernes 29 (Parsamian-Petrosyan 99, Blitz-Fich-Stark 4), V1331 Cyg (LkHa 120, HBC 302)|CYG|
 |2024-09-08|[NGC 1365](https://www.deepskyforum.com/showthread.php?1801-Object-of-the-Week-September-8-2024-%25E2%2580%2593-NGC-1365){:target="_blank"}|Howard Banich|<x-dso-link>NGC 1365</x-dso-link>|FOR|
 |2024-09-01|[NGC 4125 & NGC 4121](https://www.deepskyforum.com/showthread.php?1800-Object-of-the-Week-September-1-2024-%25E2%2580%2593-NGC-4125-amp-NGC-4121){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4125</x-dso-link> (UGC 7118, <x-dso-link>PGC 38524</x-dso-link>, <x-dso-link simbad="Z 315-019">CGCG 315-019</x-dso-link>, <x-dso-link simbad="Z 1205.6+6527">CGCG 1205.6+6527</x-dso-link>, <x-dso-link>MCG +11-15-027</x-dso-link>), <x-dso-link>NGC 4121</x-dso-link> (PGC 38508, <x-dso-link simbad="Z 315-018">CGCG 315-018</x-dso-link>, <x-dso-link simbad="Z 1205.5+6523">CGCG 1205.5+6523</x-dso-link>, <x-dso-link>MCG +11-15-026</x-dso-link>)|DRA|
 |2024-08-25|[Wilson’s Object](https://www.deepskyforum.com/showthread.php?1799-Object-of-The-Week-August-25th-2024-Wilson%25E2%2580%2599s-Object){:target="_blank"}|Jimi Lowrey|Wilson’s Object (MAC 0148+2733, <x-dso-link>PGC 6632</x-dso-link>, CGCG482-17)|TRI|
@@ -210,7 +213,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 |2020-11-29|[Arp 236 = IC 1623 train wreck](https://www.deepskyforum.com/showthread.php?1435-Object-of-the-Week-November-29-2020-Arp-236-IC-1623-train-wreck){:target="_blank"}|Steve Gottlieb|<x-dso-link>Arp 236</x-dso-link> (VV 114, <x-dso-link>IC 1623A</x-dso-link> & <x-dso-link>IC 1623B</x-dso-link>)|CET|
 |2020-11-22|[NGC 1499, The California Nebula](https://www.deepskyforum.com/showthread.php?1434-Object-Of-The-Week-November-22-2020-%E2%80%93-NGC-1499-The-California-Nebula){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC 1499</x-dso-link>|PER|
 |2020-11-15|[NGC 1624 + Sh 2-212](https://www.deepskyforum.com/showthread.php?1433-Object-of-the-Week-November-15th-2020-%E2%80%93-NGC-1624-Sh-2-212){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 1624</x-dso-link>, Sh 2-212, <x-dso-link>IRAS 04366+5022</x-dso-link>|PER|
-|2020-11-08|[November 9th, 2020 – NGC 7609](https://www.deepskyforum.com/showthread.php?1431-Object-of-the-Week-November-9th-2020-%E2%80%93-NGC-7609){:target="_blank"}|Alvin Huey|HGC 95 (NGC 7609 (Arp 150) & <x-dso-link>MCG 1-59-48</x-dso-link> (LEDA 71080) & PCG 71077 & <x-dso-link>MCG 1-59-46</x-dso-link> (LEDA 71074))|PEG|
+|2020-11-08|[NGC 7609](https://www.deepskyforum.com/showthread.php?1431-Object-of-the-Week-November-9th-2020-%E2%80%93-NGC-7609){:target="_blank"}|Alvin Huey|HGC 95 (NGC 7609 (Arp 150) & <x-dso-link>MCG 1-59-48</x-dso-link> (LEDA 71080) & PCG 71077 & <x-dso-link>MCG 1-59-46</x-dso-link> (LEDA 71074))|PEG|
 |2020-11-01|[IC 5148/50](https://www.deepskyforum.com/showthread.php?1428-Object-of-the-Week-November-1st-2020-IC-5148-50){:target="_blank"}|Paul Alsing|<x-dso-link>IC 5148</x-dso-link> (IC 5150)|GRU|
 |2020-10-25|[GM 1-29, HH 215, Gyulbudaghian’s Nebula](https://www.deepskyforum.com/showthread.php?1425-Object-of-the-Week-October-25-2020-%E2%80%93-GM-1-29-HH-215-Gyulbudaghian%E2%80%99s-Nebula){:target="_blank"}|Howard Banich|Gyulbudaghian’s Nebula (GM 1-29)|CEP|
 |2020-10-18|[NGC 7569 “The Little Starfish”](https://www.deepskyforum.com/showthread.php?1421-Object-of-the-Week-October-18-2020%E2%80%93NGC-7569-%E2%80%9CThe-Little-Starfish%E2%80%9D){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 7569</x-dso-link>, 2MFGC 17454 (LEDA 1356384)|PEG|
@@ -671,7 +674,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-09-09T07:00:11Z
+Last updated: 2024-10-20T00:03:30Z
 </div>
 {% endraw %}
 
