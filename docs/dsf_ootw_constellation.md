@@ -484,6 +484,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-09-15|[Bernes 29 around V1331 Cyg](https://www.deepskyforum.com/showthread.php?1805-Object-of-the-Week-September-15th-2024-%25E2%2580%2593-Bernes-29-around-V1331-Cyg){:target="_blank"}|Scott Harrington|Bernes 29 (Parsamian-Petrosyan 99, Blitz-Fich-Stark 4), V1331 Cyg (LkHa 120, HBC 302)|
 |2024-07-21|[Knot Cataloged](https://www.deepskyforum.com/showthread.php?1788-Object-of-the-Week-July-21-2024-Knot-Cataloged){:target="_blank"}|Victor van Wulfen|GAL 084.0+00.8 (GN 20.43.9)|
 |2023-09-10|[NGC 7048](https://www.deepskyforum.com/showthread.php?1716-Object-of-the-Week-September-10th-2023-NGC-7048){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 7048</x-dso-link>|
 |2022-09-18|[Celestial Reveilations](https://www.deepskyforum.com/showthread.php?1626-Object-of-the-Week-September-18-2022-Celestial-Reveilations){:target="_blank"}|Victor van Wulfen|Veil Nebula (Simeis designations)|
@@ -933,7 +934,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 |2022-09-04|[NGC 7102 - Galaxy Pair in Pegasus](https://www.deepskyforum.com/showthread.php?1622-Object-of-the-Week-September-4-2022-NGC-7102-Galaxy-Pair-in-Pegasus){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 7102</x-dso-link> (IC 5127), <x-dso-link>PGC 214783</x-dso-link> (2MFGC 16361)|
 |2021-09-05|[IC 5285](https://www.deepskyforum.com/showthread.php?1527-Object-of-The-Week-September-5-2021-IC-5285){:target="_blank"}|Jimi Lowrey|<x-dso-link>IC 5285</x-dso-link>, <x-dso-link>NGC 7489</x-dso-link>|
 |2021-08-15|[Arp 169 \(3 in A Row\)](https://www.deepskyforum.com/showthread.php?1518-Object-of-The-Week-August-15-2021%E2%80%93Arp-169-%283-in-A-Row%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>Arp 169</x-dso-link> (NGC 7236 & <x-dso-link>NGC 7237</x-dso-link> & <x-dso-link>LEDA 200377</x-dso-link>)|
-|2020-11-08|[November 9th, 2020 – NGC 7609](https://www.deepskyforum.com/showthread.php?1431-Object-of-the-Week-November-9th-2020-%E2%80%93-NGC-7609){:target="_blank"}|Alvin Huey|HGC 95 (NGC 7609 (Arp 150) & <x-dso-link>MCG 1-59-48</x-dso-link> (LEDA 71080) & PCG 71077 & <x-dso-link>MCG 1-59-46</x-dso-link> (LEDA 71074))|
+|2020-11-08|[NGC 7609](https://www.deepskyforum.com/showthread.php?1431-Object-of-the-Week-November-9th-2020-%E2%80%93-NGC-7609){:target="_blank"}|Alvin Huey|HGC 95 (NGC 7609 (Arp 150) & <x-dso-link>MCG 1-59-48</x-dso-link> (LEDA 71080) & PCG 71077 & <x-dso-link>MCG 1-59-46</x-dso-link> (LEDA 71074))|
 |2020-10-18|[NGC 7569 “The Little Starfish”](https://www.deepskyforum.com/showthread.php?1421-Object-of-the-Week-October-18-2020%E2%80%93NGC-7569-%E2%80%9CThe-Little-Starfish%E2%80%9D){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 7569</x-dso-link>, 2MFGC 17454 (LEDA 1356384)|
 |2020-09-20|[Hickson Compact Group \(HCG\) 99](https://www.deepskyforum.com/showthread.php?1410-Object-of-the-Week-September-20-2020-Hickson-Compact-Group-%28HCG%29-99){:target="_blank"}|Steve Gottlieb|<x-dso-link>HCG 99</x-dso-link>, <x-dso-link simbad="Z 499-026">CGCG 499-026</x-dso-link> (LEDA 73186), <x-dso-link>LEDA 1831453</x-dso-link>|
 |2019-09-29|[NGC 7469 and Arp 298](https://www.deepskyforum.com/showthread.php?1314-Object-Of-The-Week-September-29-2019-NGC-7469-and-Arp-298){:target="_blank"}|Wouter van Reeven|<x-dso-link>Arp 298</x-dso-link> (NGC 7469 & <x-dso-link>IC 5283</x-dso-link>)|
@@ -1000,6 +1001,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-09-22|[Hickson 90 \(NGC 7172, NGC 7173, NGC 7174, NGC 7176\)](https://www.deepskyforum.com/showthread.php?1807-Object-of-the-Week-Hickson-90-%28NGC%25E2%2580%2599s-7172-7173-7174-7176%29){:target="_blank"}|Paul Alsing|<x-dso-link simbad="HCG 90">Hickson 90</x-dso-link> (NGC 7172, <x-dso-link>NGC 7173</x-dso-link>, <x-dso-link>NGC 7174</x-dso-link>, <x-dso-link>NGC 7176</x-dso-link>), KTS 66 (NGC 7173, NGC 7174, NGC 7176)|
 |2018-10-21|[The Grus Galaxy Chain](https://www.deepskyforum.com/showthread.php?1212-Object-Of-The-Week-October-21-2018-The-Grus-Galaxy-Chain){:target="_blank"}|Wouter van Reeven|The Grus Galaxy Chain (IC 5270 & <x-dso-link>IC 5269</x-dso-link> & <x-dso-link>IC 5269B</x-dso-link> & <x-dso-link>IC 5269A</x-dso-link> & <x-dso-link>IC 1459</x-dso-link> & <x-dso-link>IC 5264</x-dso-link> & <x-dso-link>NGC 7418B</x-dso-link> & <x-dso-link>NGC 7418</x-dso-link> & <x-dso-link>NGC 7421</x-dso-link> & <x-dso-link>IC 5273</x-dso-link>)|
 
 
@@ -1066,6 +1068,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-09-29|[The Sculptor Dwarf](https://www.deepskyforum.com/showthread.php?1809-Object-of-the-Week-September-29th-2024-%25E2%2580%2593-The-Sculptor-Dwarf){:target="_blank"}|Akarsh Simha|Sculptor Dwarf (Sculptor dSph, <x-dso-link>PGC 3589</x-dso-link>, <x-dso-link>ESO 351-30</x-dso-link>)|
 |2023-10-29|[NGC 253, the Sculptor Galaxy, and its companions](https://www.deepskyforum.com/showthread.php?1725-Object-of-the-Week-October-29th-2023-%25E2%2580%2593-NGC-253-the-Sculptor-Galaxy-and-its-companions){:target="_blank"}|Akarsh Simha|<x-dso-link>NGC 253</x-dso-link> (UGCA 13, <x-dso-link>PGC 2789</x-dso-link>, Sculptor Galaxy) and many others|
 |2022-09-11|[Cartwheel Galaxy et. al.](https://www.deepskyforum.com/showthread.php?1624-Object-of-the-Week-September-11-2022-Cartwheel-Galaxy-et-al){:target="_blank"}|Akarsh Simha|Cartwheel Galaxy (ESO 350-40, AM 0035-335, <x-dso-link>MCG-06-02-</x-dso-link>022a, <x-dso-link>VV 784</x-dso-link>, <x-dso-link>PGC 2248</x-dso-link>), <x-dso-link>LEDA 2249</x-dso-link>, <x-dso-link>LEDA 2252</x-dso-link>, 2MASX J00374627-3339515|
 |2017-10-15|[NGC 613, a gorgeous barred spiral](https://www.deepskyforum.com/showthread.php?1075-Object-of-the-Week-October-15-2017-%E2%80%93-NGC-613-a-gorgeous-barred-spiral){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 613</x-dso-link> (VV 824)|
@@ -1362,7 +1365,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-09-09T07:00:11Z
+Last updated: 2024-10-20T00:03:30Z
 </div>
 {% endraw %}
 
