@@ -13,13 +13,15 @@ CATALOG_REGEXES = [
     r'\b(?:2MASS|2MASSX|SDSS|RCS|RCS2) J?[0-9\.]+[+-][0-9\.]+\b', # J2000 based
     r'\b[VIX]+ Zw [0-9]+\b', # Zwicky
     r'\b(?:Simeis|Sharpless|Sim|Cr|Collinder|Cederblad|Ced|HD|SAO|HIP|vdB|Mrk|Mailyan|VV|Trumpler|Tr|Arp|Abell|PN A66|ACO|AGC|PGC|LEDA|B|Barnard|HH|Messier) ?[0-9]+\b', # Simple catalogs
-    r'\bSh2[ -][0-9]+\b', # Sharpless
+    r'\bSh ?2[ -][0-9]+\b', # Sharpless
     r'\b(?:M|Min|Minkowski) [0-9]-[0-9]+\b', # Minkowksi
-    r'\b(?:Pal|Palomar) [0-9]{1,2}\b', # Palomar
+    r'\b(?:Pal|Palomar|Terzan) [0-9]{1,2}\b', # Palomar and Terzan
     r'\bM ?[0-9]{1,3}\b(?! *(?:[Ww]rench|[Bb]olt|[nN]ut|[tT]hread|[Ss]panner|[hH]ex|[aA]ll[ae]n)(?:[^-]+|$))', # Messier (and not referring to metric hardware)
 ]
-OBJECT_REGEX = '(?<!= )(?<!=)(' + '|'.join(['(?:' + regex + ')' for regex in CATALOG_REGEXES]) + ')'
+OBJECT_REGEX = '(' + '|'.join(['(?:' + regex + ')' for regex in CATALOG_REGEXES]) + ')' # Matches an object designation in a capture group
 COMPILED_OBJECT_REGEX = re.compile(OBJECT_REGEX)
+REPLACEMENT_REGEX = r'<x-dso[^>]*>(?:(?!</x-dso>|</x-dso-link>).)*</x-dso(?:-link)?>|(?:= *)?' + OBJECT_REGEX # Matches any object designation that is not preceded by '=', '= ' or is placed immediately after an <x-dso> or <x-dso-link> tag
+COMPILED_REPLACEMENT_REGEX = re.compile(REPLACEMENT_REGEX)
 
 simbadification = OrderedDict([
     ('simeis', 'Sim'),
@@ -44,7 +46,7 @@ class Replacer:
     Example usage:
     ```
     replacer = Replacer()
-    COMPILED_OBJECT_REGEX.sub(replacer, haystack)
+    COMPILED_REPLACEMENT_REGEX.sub(replacer, haystack)
     ```
 
     The above will replace the first occurrence of every DSO identifier in the string `haystack`,
@@ -67,8 +69,23 @@ class Replacer:
         self._tag = tag
 
     def __call__(self, match):
-        match_text = match.group(0)
-        if (match_text not in self._unique_matches) or (not self._unique):
+        section = match.group(0)
+        if section.startswith('='):
+            # Alternate designation, do not tag but include for duplicates
+            self._unique_matches.add(match.group(1))
+            return section
+
+        match_text = match.group(1)
+        if not match_text:
+            assert section.startswith('<x-dso'), f'Programming error. Match text {match_text}'
+            for submatches in COMPILED_OBJECT_REGEX.finditer(section):
+                submatch = submatches.group(1)
+                assert submatch, f'{submatch}'
+                self._unique_matches.add(submatch)
+                print(f'*** Added {submatch} to unique_matches which now contains {self._unique_matches}', file=sys.stderr)
+            return section
+            
+        if match_text and (match_text not in self._unique_matches or (not self._unique)):
             self._unique_matches.add(match_text)
 
             simbadese = None
@@ -89,9 +106,9 @@ class Replacer:
             if simbadese:
                 return f'<{self._tag} simbad="{simbadese}">{match_text}</{self._tag}>'
             return f'<{self._tag}>{match_text}</{self._tag}>'
-        return match_text
+        return match.group(0)
 
 if __name__ == "__main__":
     replacer = Replacer()
-    sys.stdout.write(COMPILED_OBJECT_REGEX.sub(replacer, sys.stdin.read()))
+    sys.stdout.write(COMPILED_REPLACEMENT_REGEX.sub(replacer, sys.stdin.read()))
 
