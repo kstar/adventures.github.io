@@ -1,0 +1,10 @@
+
+Regex Snippets
+==============
+
+# Markdownize <td>s within <tr>s that don't span multiple columns, iterate to get all <td> tags
+perl -i -p0e 's,(<tr[^>]*>\s*(?:(?!</tr).|\s)*)<td (?!colspan)[^>]*> *((?:(?!</td).|\s)*)</td>\n?,\1\2|,g' <file>
+
+# Markdownize <td>s with colspan tags, iterate to get all <td> tags
+perl -p0e 's,<td[^>]*colspan[^>]*>((?:(?!</td).|\s)*)</td>,($1 =~ s/(?:\n|\n\r|\r\n)*/ /ger),ge'
+
