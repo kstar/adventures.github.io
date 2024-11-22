@@ -16,6 +16,7 @@ no_bullets: true
 * [Quantum Wierdness: The Garden of Forking Paths](paths.htm) - Jim Shields
 * [Herschel II in Rome: Another Way](rome.htm) - Bill Meyers
 * The RASC Deep Sky Challenge - [Part 1](RASC-Part1.html), [Part 2](RASC-Part2.html), [Part 3](RASC-Part3.html) - Akarsh Simha
+* [Off the Deep End – 10 Challenging Observing Projects](GSSP_2007.html) – Steve Gottlieb
 
 ----
 
