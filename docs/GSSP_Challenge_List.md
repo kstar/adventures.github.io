@@ -1,7 +1,7 @@
 ---
 layout: or
 title: Golden State Star Party Challenge List
-author: Unknown (Steve Gottlieb?)
+author: Steve Gottlieb
 open_new_page: false
 disable_dso: false
 ---
