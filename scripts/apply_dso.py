@@ -4,6 +4,7 @@ Finds DSO identifiers and wraps them in <x-dso> tags, translating into SIMBADese
 """
 import re
 import sys
+import argparse
 from collections import OrderedDict
 from common import COMPILED_OBJECT_REGEX, COMPILED_REPLACEMENT_REGEX
 
@@ -92,7 +93,24 @@ class Replacer:
             return f'<{self._tag}>{match_text}</{self._tag}>'
         return match.group(0)
 
-if __name__ == "__main__":
+def main():
     replacer = Replacer()
-    sys.stdout.write(COMPILED_REPLACEMENT_REGEX.sub(replacer, sys.stdin.read()))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--file', help='Perform the substitution in-place on file. If no file is provided, the input is read from stdin and output written to stdout', required=False, default=None)
+    args = parser.parse_args()
+    if args.file is not None:
+        with open(args.file, 'r') as f:
+            data = f.read()
+    else:
+        data = sys.stdin.read()
 
+    data = COMPILED_REPLACEMENT_REGEX.sub(replacer, data)
+
+    if args.file is not None:
+        with open(args.file, 'w') as f:
+            f.write(data)
+    else:
+        sys.stdout.write(data)
+
+if __name__ == "__main__":
+    main()
