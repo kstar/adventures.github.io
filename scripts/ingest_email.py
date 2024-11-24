@@ -102,7 +102,8 @@ def eml_to_md(eml_path_str: Union[str, Path]) -> Path:
     if eml_path.suffix != ".eml":
         print(f"🟡 Skipping `{eml_path}`; not an .eml file")
 
-    md_path: Path = DOCS_DIR / (eml_path.with_suffix('.md').name.replace(' ', '_').replace(':', '_'))
+    bad_filename_chars = re.compile('[ \'\(\):]')
+    md_path: Path = DOCS_DIR / bad_filename_chars.sub('_', eml_path.with_suffix('.md').name)
     with eml_path.open(mode="r") as eml_file:
         message: Message = message_from_file(eml_file)
         contents: List[MessageContent] = extract_message_contents(message)
