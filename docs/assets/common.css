@@ -68,6 +68,9 @@ blockquote {
     font-family: Georgia, Palatino, "Times New Roman", serif;
     letter-spacing: 0.004em;
 }
+img.medium {
+    width: 500px;
+}
 img.small {
     width: 300px;
 }
