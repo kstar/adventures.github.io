@@ -1,6 +1,7 @@
 # Copyright (c) 2024 Akarsh Simha <akarsh@kde.org>
 # SPDX-License-Identifier: MIT
 import re
+from collections import OrderedDict
 
 CATALOG_REGEXES = [ # FIXME: Handle `ESO 456-SC38` / `ESO 597-G36`
     r'\b(?:NGC|IC|UGC) ?[0-9]+ ??[A-Za-z]?\b', # ABCs
@@ -112,3 +113,36 @@ CONSTELLATIONS = {
     'VUL': 'Vulpecula',
 }
 
+simbadification = OrderedDict([
+    ('Collinder ', 'Cl Collinder '),
+    ('simeis', 'Sim'),
+    ('cgcg', 'Z'),
+    ('agc', 'ACO'),
+    ('minkowski 1-', 'PN M 1-'),
+    ('minkowski 2-', 'PN M 2-'),
+    ('minkowski 3-', 'PN M 3-'),
+    ('minkowski 4-', 'PN M 4-'),
+    ('minkowksi', 'Min'),
+    ('m 1-', 'PN M 1-'),
+    ('m 2-', 'PN M 2-'),
+    ('b ', 'Barnard '),
+    ('cr ', 'Collinder '),
+    ('sh2 ', 'Sh2-'),
+    ('sharpless ', 'Sh2-'),
+    ('KTG', 'K79'),
+    ('Hickson', 'HCG'),
+    ('k ', 'PN K '),
+    ('Cederblad', 'Ced'),
+])
+
+desimbadification = OrderedDict([
+    ('PN A66 ', 'Abell PN '),
+    ('ACO ', 'Abell '),
+    ('PN M ', 'Minkowski '),
+    ('K79 ', 'KTG '),
+    ('Cl ', ''),
+    ('Sim ', 'Simeis '),
+    ('Sh2', 'Sh 2'),
+    ('SKHB ', 'M31-G'),
+    ('Z ', 'CGCG '),
+])
