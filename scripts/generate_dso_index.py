@@ -29,7 +29,7 @@ SELECT mentions.filename, objects.main_id, objects.type, mentions.simbad_id, obj
 inner join queries on  queries.simbad_id = mentions.simbad_id
 inner join objects on queries.main_id = objects.main_id
 inner join reachability on reachability.filename = mentions.filename
-where reachability.reachable = 1
+where reachability.reachable = 1 and mentions.simbad_id not like "HD %" and mentions.simbad_id not like "SAO %"
 """
 
 if len(exclude) > 0:
