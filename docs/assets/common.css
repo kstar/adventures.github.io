@@ -226,6 +226,9 @@ div.headbar li.headbar-button {
 div.headbar li.headbar-button:hover {
     background-color: var(--navbar-hilight);
 }
+div.headbar li.headbar-shiny {
+    background-color: var(--navbar-shiny);
+}
 
 li.headbar-button img {
     display: block;
