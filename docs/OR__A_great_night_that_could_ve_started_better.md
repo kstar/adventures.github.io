@@ -77,7 +77,7 @@ We looked at <b><x-dso>M 31</x-dso></b> next, where I reconfirmed the inclined c
   
 
 
-<b><x-dso>Sh2\-136</x-dso></b>, a fairly small reflection nebula that Tanveer recommended, appeared as a star with a weak elongated halo running roughly north\-south, about 3' in length to my averted vision. The nebulosity appeared weakly curved, concave NNW towards the bright double star. Nearby **Iris Nebula**, <x-dso>NGC 7023</x-dso>, was very structured and reminiscent of a barred spiral galaxy with lots of mottling.
+<b><x-dso>Sh2-136</x-dso></b>, a fairly small reflection nebula that Tanveer recommended, appeared as a star with a weak elongated halo running roughly north\-south, about 3' in length to my averted vision. The nebulosity appeared weakly curved, concave NNW towards the bright double star. Nearby **Iris Nebula**, <x-dso>NGC 7023</x-dso>, was very structured and reminiscent of a barred spiral galaxy with lots of mottling.
 
   
 

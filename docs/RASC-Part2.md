@@ -34,7 +34,7 @@ A pretty challenging target within IC 410 are the two cometary Bok globules desi
 </center>
 
 
-### <x-dso>HH 1</x-dso> (<x-dso>HH 2, <x-dso>NGC 1999</x-dso>, <x-dso>HH 222</x-dso>)
+### <x-dso>HH 1</x-dso> (<x-dso>HH 2</x-dso>, <x-dso>NGC 1999</x-dso>, <x-dso>HH 222</x-dso>)
 
 I was super stoked when I first read about Herbig-Haro objects. Herbig-Haro objects are patches of emission that are formed when bipolar outflow from a protostar hits the interstellar medium (ISM). The magnetic fields carried by the plasma in the accretion disk around the forming star get twisted around as the material spirals into the star. Somehow, this has the effect of creating jets of plasma thrown out along the polar axes of the star. (See Figure 18-16 in "Universe" 3rd Ed. by Freedman and Kaufmann.) Where these jets meet the ISM, they ionize it causing the ISM to glow. Although the protostar itself can generally only be seen using infrared light that can penetrate its dusty cocoon, the Herbig-Haro objects that are imprinted by them in the ISM are accessible to amateur astronomers. The Herbig-Haro objects are as erratic as the formative stars that cause them: they can vary in brightness, position and structure on a timescale of years! It's worth checking out this [amazing timelapse](https://en.wikipedia.org/wiki/File:HH_34_jet_video_HST.ogv) of <x-dso omit="true">HH 34</x-dso> by the Hubble Space Telescope.
 
