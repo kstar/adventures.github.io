@@ -17,7 +17,7 @@ Arriving at the location, various factors took me on an emotional roller coaster
 Phew, 9 PM, astronomical twilight is fading and my telescope is all set up. I remove the primary mirror cover and start undoing the secondary mirror cover and the velvet bag feels heavier than usual. Oops. I knew the secondary must have fallen out of its holder. How did it happen? I had no clue! This was the second time the scope was set up, so I anticipated trouble of some form—but I should've been crazy to expect this!  
 
 
-![image.png](assets/b0c74259af9a9f0c8ba88044069afba0c61bd92e.png){: .small }
+![image.png](assets/asimha_secondary_mirror.jpg){: .small }
 
 
 <center><i>The secondary was my primary concern</i></center>
@@ -131,7 +131,7 @@ With astronomical twilight getting me before I could try to study the faint arms
   
 
 
-![image.png](assets/26f4cd4367af7c2fa78cc3d8190ea787109af001.png)  
+![image.png](assets/asimha_28inch_engineering.jpg)  
 
 
 <center><i>Early morning engineering, taking some measurements</i></center>
