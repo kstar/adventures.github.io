@@ -5,7 +5,8 @@ import re
 CATALOG_REGEXES = [ # FIXME: Handle `ESO 456-SC38` / `ESO 597-G36`
     r'\b(?:NGC|IC|UGC) ?[0-9]+ ??[A-Za-z]?\b', # ABCs
     r'\b(?:VV|Hickson|HCG|KTG|KPG) ?[0-9]+?[A-Za-z]?\b', # Components
-    r'\b(?:K|PK|PNG|CGCG|MCG|ESO|IRAS)[+\- ][0-9\.+\-]+\b', # Hyphenated / Coordinate-based
+    r'\bESO ?[0-9]+-(?:SC|G|N)?[0-9]+\b', # ESO
+    r'\b(?:K|PK|PNG|CGCG|MCG|IRAS)[+\- ][0-9\.+\-]+\b', # Hyphenated / Coordinate-based
     r'\b(?:MCG)[+\- ][0-9\.+\-]+[A-Fa-f]?\b', # Hyphenated / Coordinate-based, MCG allows a/b/c
     r'\b(?:2MASS|2MASSX|SDSS|RCS|RCS2) J?[0-9\.]+[+-][0-9\.]+\b', # J2000 based
     r'\b[VIX]+ Zw [0-9]+\b', # Zwicky

@@ -9,12 +9,16 @@ from collections import OrderedDict
 from common import COMPILED_OBJECT_REGEX, COMPILED_REPLACEMENT_REGEX
 
 simbadification = OrderedDict([
+    ('Collinder ', 'Cl Collinder '),
     ('simeis', 'Sim'),
     ('cgcg', 'Z'),
     ('agc', 'ACO'),
+    ('minkowski 1-', 'PN M 1-'),
     ('minkowski 2-', 'PN M 2-'),
+    ('minkowski 3-', 'PN M 3-'),
+    ('minkowski 4-', 'PN M 4-'),
     ('minkowksi', 'Min'),
-    ('m 1-', 'Min 1-'),
+    ('m 1-', 'PN M 1-'),
     ('m 2-', 'PN M 2-'),
     ('b ', 'Barnard '),
     ('cr ', 'Collinder '),
