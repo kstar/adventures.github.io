@@ -492,7 +492,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 |2024-07-21|[Knot Cataloged](https://www.deepskyforum.com/showthread.php?1788-Object-of-the-Week-July-21-2024-Knot-Cataloged){:target="_blank"}|Victor van Wulfen|GAL 084.0+00.8 (GN 20.43.9)|
 |2023-09-10|[NGC 7048](https://www.deepskyforum.com/showthread.php?1716-Object-of-the-Week-September-10th-2023-NGC-7048){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 7048</x-dso-link>|
 |2022-09-18|[Celestial Reveilations](https://www.deepskyforum.com/showthread.php?1626-Object-of-the-Week-September-18-2022-Celestial-Reveilations){:target="_blank"}|Victor van Wulfen|Veil Nebula (Simeis designations)|
-|2022-05-01|[Minkowski 4-17](https://www.deepskyforum.com/showthread.php?1581-Object-of-the-Week-May-1st-2022-Minkowski-4-17){:target="_blank"}|Owen Brazell|<x-dso-link>Minkowski 4-17</x-dso-link> (M 4-17)|
+|2022-05-01|[Minkowski 4-17](https://www.deepskyforum.com/showthread.php?1581-Object-of-the-Week-May-1st-2022-Minkowski-4-17){:target="_blank"}|Owen Brazell|<x-dso-link simbad="PN M 4-17">Minkowski 4-17</x-dso-link> (M 4-17)|
 |2021-09-12|[the Cygnus Loop](https://www.deepskyforum.com/showthread.php?1531-Object-of-the-Week-September-12-2021-%E2%80%93-the-Cygnus-Loop){:target="_blank"}|Howard Banich|Cygnus Loop (Veil Nebula and more)|
 |2021-07-04|[Abell 69 in Cygnus](https://www.deepskyforum.com/showthread.php?1506-Object-of-the-Week-July-4-2021-%E2%80%93-Abell-69-in-Cygnus){:target="_blank"}|Alvin Huey|<x-dso-link simbad="PN A66 69">Abell 69</x-dso-link>|
 |2021-06-27|[NGC 6894, PN G069.4-02.6 , PK 069-02 1 - CYGNUS](https://www.deepskyforum.com/showthread.php?1505-Object-of-the-Week-June-27-2021-NGC-6894-PN-G069-4-02-6-PK-069-02-1-CYGNUS){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 6894</x-dso-link> (PN G069.4-02.6 , <x-dso-link>PK 069-02.1</x-dso-link>)|
@@ -1126,7 +1126,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 |2023-06-11|[UGC 9829 - Now That's a Strange Galaxy!](https://www.deepskyforum.com/showthread.php?1698-Object-of-the-Week-June-11th-2023-UGC-9829-Now-That-s-a-Strange-Galaxy%21){:target="_blank"}|Steve Gottlieb|<x-dso-link>UGC 9829</x-dso-link>, <x-dso-link simbad="K79 61">KTG 61</x-dso-link>, WBL 565|
 |2022-07-03|[Abell 41 and the case of MT Serpentis](https://www.deepskyforum.com/showthread.php?1606-Object-Of-The-Week-July-3-2022-Abell-41-and-the-case-of-MT-Serpentis){:target="_blank"}|Wouter van Reeven|<x-dso-link simbad="PN A66 41">Abell 41</x-dso-link>, MT Serpentis|
 |2022-05-29|[NGC 6070 & Friends](https://www.deepskyforum.com/showthread.php?1590-Object-of-the-Week-May-29-2022-%E2%80%93-NGC-6070-amp-Friends){:target="_blank"}|Paul Alsing|NGC 6070, NGC 6070B, NGC 6070C|
-|2021-07-25|[A nebula in the snake's tail](https://www.deepskyforum.com/showthread.php?1513-Object-of-the-Week-25-July-2021-A-nebula-in-the-snake-s-tail){:target="_blank"}|Victor van Wulfen|<x-dso-link>Minkowski 1-88</x-dso-link> (M 1-88, Gum 85), Gum 84 (Sh 2-54, Lynds 71 & Lynds 72), <x-dso-link>NGC 6604</x-dso-link>, M 16, Sanduleak-Stephenson 156, <x-dso-link>Minkowski 3-25</x-dso-link> (M 3-25), <x-dso-link>Trumpler 32</x-dso-link>, ES Serpentis|
+|2021-07-25|[A nebula in the snake's tail](https://www.deepskyforum.com/showthread.php?1513-Object-of-the-Week-25-July-2021-A-nebula-in-the-snake-s-tail){:target="_blank"}|Victor van Wulfen|<x-dso-link>Minkowski 1-88</x-dso-link> (M 1-88, Gum 85), Gum 84 (Sh 2-54, Lynds 71 & Lynds 72), <x-dso-link>NGC 6604</x-dso-link>, M 16, Sanduleak-Stephenson 156, <x-dso-link simbad="PN M 3-25">Minkowski 3-25</x-dso-link> (M 3-25), <x-dso-link>Trumpler 32</x-dso-link>, ES Serpentis|
 |2021-07-11|[Abell 2063](https://www.deepskyforum.com/showthread.php?1507-Object-of-the-Week-July-11-2021-Abell-2063){:target="_blank"}|Akarsh Simha|<x-dso-link>ACO 2063</x-dso-link> (MCG 02-39-020 & <x-dso-link>IC 1116</x-dso-link> & MKW 3s (NGC 5920 and more) and more)|
 |2020-05-31|[UGC 10043 A peculiar edge on](https://www.deepskyforum.com/showthread.php?1370-Object-of-The-Week-May-31-2020-UGC-10043-A-peculiar-edge-on){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 10043</x-dso-link>, <x-dso-link>MCG +4-37-35</x-dso-link>, <x-dso-link>HCG 77</x-dso-link>|
 |2020-05-17|[Palomar 5](https://www.deepskyforum.com/showthread.php?1365-Object-of-the-Week-May-17th-Palomar-5){:target="_blank"}|Owen Brazell|<x-dso-link>Palomar 5</x-dso-link> (Pal 5)|
@@ -1373,7 +1373,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-11-25T05:55:03Z
+Last updated: 2024-11-25T06:06:33Z
 </div>
 {% endraw %}
 

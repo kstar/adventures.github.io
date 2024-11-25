@@ -144,7 +144,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 |2022-05-22|[May22, 2022 – NGC 5746](https://www.deepskyforum.com/showthread.php?1589-Object-of-the-Week-May22-2022-%E2%80%93-NGC-5746){:target="_blank"}|Howard Banich|<x-dso-link>NGC 5746</x-dso-link>|VIR|
 |2022-05-15|[NGC 3949 and NGC 3950](https://www.deepskyforum.com/showthread.php?1586-Object-of-The-Week-May-15th-2022-NGC-3949-and-NGC-3950){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 3949</x-dso-link>, <x-dso-link>NGC 3950</x-dso-link>|UMA|
 |2022-05-08|[NGC 4725 TIE Fighter Galaxy](https://www.deepskyforum.com/showthread.php?1583-Object-of-the-Week-May-8-2022-NGC-4725-TIE-Fighter-Galaxy){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4725</x-dso-link>|COM|
-|2022-05-01|[Minkowski 4-17](https://www.deepskyforum.com/showthread.php?1581-Object-of-the-Week-May-1st-2022-Minkowski-4-17){:target="_blank"}|Owen Brazell|<x-dso-link>Minkowski 4-17</x-dso-link> (M 4-17)|CYG|
+|2022-05-01|[Minkowski 4-17](https://www.deepskyforum.com/showthread.php?1581-Object-of-the-Week-May-1st-2022-Minkowski-4-17){:target="_blank"}|Owen Brazell|<x-dso-link simbad="PN M 4-17">Minkowski 4-17</x-dso-link> (M 4-17)|CYG|
 |2022-04-24|[M102 The Spindle Galaxy](https://www.deepskyforum.com/showthread.php?1579-Object-of-the-Week-April-24th-2022-M102-The-Spindle-Galaxy){:target="_blank"}|Dragan Nikin|<x-dso-link>M 102</x-dso-link>|DRA|
 |2022-04-17|[Wild's Triplet](https://www.deepskyforum.com/showthread.php?1577-Object-of-the-Week-April-17-2022-%E2%80%93-Wild-s-Triplet){:target="_blank"}|Steve Gottlieb|<x-dso-link>Arp 248</x-dso-link> (VV 35, <x-dso-link simbad="K79 38">KTG 38</x-dso-link>, Wild's Triplet, <x-dso-link>MCG -01-30-032</x-dso-link> & <x-dso-link>MCG -01-30-033</x-dso-link> & <x-dso-link>MCG -01-30-034</x-dso-link>)|VIR|
 |2022-04-10|[NGC 3699 and friends](https://www.deepskyforum.com/showthread.php?1576-Object-Of-The-Week-April-10-2022-NGC-3699-and-friends){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC 3699</x-dso-link>, He 2-67, He 2-70, Wray 16-93, PN G292.9+01.0, PN G292.8+00.6, PN G292.4+00.8|CEN|
@@ -184,7 +184,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 |2021-08-15|[Arp 169 \(3 in A Row\)](https://www.deepskyforum.com/showthread.php?1518-Object-of-The-Week-August-15-2021%E2%80%93Arp-169-%283-in-A-Row%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>Arp 169</x-dso-link> (NGC 7236 & <x-dso-link>NGC 7237</x-dso-link> & <x-dso-link>LEDA 200377</x-dso-link>)|PEG|
 |2021-08-08|[Terzan 7 and 8](https://www.deepskyforum.com/showthread.php?1516-Object-Of-The-Week-Aug-8-2021-%E2%80%93-Terzan-7-and-8){:target="_blank"}|Steve Gottlieb|Terzan 7, Terzan 8|SGR|
 |2021-08-01|[Messier 55](https://www.deepskyforum.com/showthread.php?1515-Object-Of-The-Week-August-1-2021-Messier-55){:target="_blank"}|Wouter van Reeven|<x-dso-link>M 55</x-dso-link>, Arp 2, <x-dso-link>Terzan 7</x-dso-link>, <x-dso-link>Terzan 8</x-dso-link>|SGR|
-|2021-07-25|[A nebula in the snake's tail](https://www.deepskyforum.com/showthread.php?1513-Object-of-the-Week-25-July-2021-A-nebula-in-the-snake-s-tail){:target="_blank"}|Victor van Wulfen|<x-dso-link>Minkowski 1-88</x-dso-link> (M 1-88, Gum 85), Gum 84 (Sh 2-54, Lynds 71 & Lynds 72), <x-dso-link>NGC 6604</x-dso-link>, M 16, Sanduleak-Stephenson 156, <x-dso-link>Minkowski 3-25</x-dso-link> (M 3-25), <x-dso-link>Trumpler 32</x-dso-link>, ES Serpentis|SER|
+|2021-07-25|[A nebula in the snake's tail](https://www.deepskyforum.com/showthread.php?1513-Object-of-the-Week-25-July-2021-A-nebula-in-the-snake-s-tail){:target="_blank"}|Victor van Wulfen|<x-dso-link>Minkowski 1-88</x-dso-link> (M 1-88, Gum 85), Gum 84 (Sh 2-54, Lynds 71 & Lynds 72), <x-dso-link>NGC 6604</x-dso-link>, M 16, Sanduleak-Stephenson 156, <x-dso-link simbad="PN M 3-25">Minkowski 3-25</x-dso-link> (M 3-25), <x-dso-link>Trumpler 32</x-dso-link>, ES Serpentis|SER|
 |2021-07-18|[Henize 3-1475 the "Garden Sprinkler"](https://www.deepskyforum.com/showthread.php?1511-Object-of-the-Week-July-18-2021-Henize-3-1475-the-quot-Garden-Sprinkler-quot){:target="_blank"}|Uwe Glahn|Hen 3-1475 (IRAS 17423-1755, <x-dso-link>PK 009+05.1</x-dso-link>, <x-dso-link>PNG 009.3+05.7</x-dso-link>)|SGR|
 |2021-07-11|[Abell 2063](https://www.deepskyforum.com/showthread.php?1507-Object-of-the-Week-July-11-2021-Abell-2063){:target="_blank"}|Akarsh Simha|<x-dso-link>ACO 2063</x-dso-link> (MCG 02-39-020 & <x-dso-link>IC 1116</x-dso-link> & MKW 3s (NGC 5920 and more) and more)|SER|
 |2021-07-04|[Abell 69 in Cygnus](https://www.deepskyforum.com/showthread.php?1506-Object-of-the-Week-July-4-2021-%E2%80%93-Abell-69-in-Cygnus){:target="_blank"}|Alvin Huey|<x-dso-link simbad="PN A66 69">Abell 69</x-dso-link>|CYG|
@@ -682,7 +682,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-11-25T05:55:03Z
+Last updated: 2024-11-25T06:06:33Z
 </div>
 {% endraw %}
 
