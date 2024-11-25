@@ -5,6 +5,7 @@
     --head-color: black; /* Color of headings */
     --navbar-color: rgba(160, 134, 120, 0.8); /* Color of the navigation bar */
     --navbar-hilight: #9d8172; /* Color of hovered buttons on navigation bar */
+    --navbar-shiny: rgba(220, 150, 80);
     --link-color: #2e2ea6; /* Color of unvisited links */
     --link-visited-color: #772372; /* Color of visited links */
     --link-hover-color: #bf2020; /* Color of links when hovering on them */
@@ -20,6 +21,7 @@
 	--head-color: white;
 	--navbar-color: rgba(50,50,50,0.8); /* Color of the navigation bar */
 	--navbar-hilight: #454545; /* Color of hovered buttons on navigation bar */
+	--navbar-shiny: rgba(100,40,70,128);
         --link-color: #fa3e3e;
         --link-visited-color: #bb5555;
         --link-hover-color: hotpink;

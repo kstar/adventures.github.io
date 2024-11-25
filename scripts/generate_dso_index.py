@@ -78,6 +78,9 @@ open_new_page: false
 disable_dso: true
 ---
 
+This is an index of all objects featured in Adventures in Deep Space pages (including articles and observing reports), organized by constellation. The Deep-Sky Forum objects of the week are excluded, which have their own [index](/dsf_ootw_constellation.html). This feature is still in beta and there are many errors and issues with it. Hope you find it useful! - Akarsh Simha
+
+
 """)
 
     # Write constellation index
