@@ -67,7 +67,7 @@ def extract_message_contents(message: Message) -> List[MessageContent]:
         payload: List = message.get_payload()
         assert isinstance(payload, List), type(payload)
         alternatives = {x.get_content_type(): x for x in payload}
-        for ty in ['text/html', 'text/plain']:
+        for ty in ['text/html', 'multipart/related', 'text/plain']:
             if ty in alternatives:
                 result.extend(extract_message_contents(alternatives[ty]))
                 break
