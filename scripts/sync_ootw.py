@@ -11,10 +11,12 @@ import os
 import apply_dso as regex
 import requests
 import re
+from common import CONSTELLATIONS
 from datetime import datetime, timezone
 from io import StringIO
 from urllib.parse import quote_plus as urlencode
 from collections import namedtuple
+from common import OBJECT_REGEX
 
 ESCAPE_REGEX = re.compile(r'[_{\*`\(\)}]|---+')
 
@@ -32,99 +34,8 @@ def markdown_escape(s: str) -> str:
 
 SHEET_ID = '1uyXGm2SjtR-fJmHgD5yqkXok4wAPgjx8tWWhRekq7B4'
 
-REGEX = r'(?<!\()(?<!\(\s)' + regex.OBJECT_REGEX
+REGEX = r'(?<!\()(?<!\(\s)' + OBJECT_REGEX
 COMPILED_REGEX = re.compile(REGEX)
-
-CONSTELLATIONS = {
-    'AND': 'Andromeda',
-    'ANT': 'Antlia',
-    'APS': 'Apus',
-    'AQL': 'Aquila',
-    'AQR': 'Aquarius',
-    'ARA': 'Ara',
-    'ARI': 'Aries',
-    'AUR': 'Auriga',
-    'BOO': 'Boötes',
-    'CAE': 'Caelum',
-    'CAM': 'Camelopardalis',
-    'CAP': 'Capricornus',
-    'CAR': 'Carina',
-    'CAS': 'Cassiopeia',
-    'CEN': 'Centaurus',
-    'CEP': 'Cepheus',
-    'CET': 'Cetus',
-    'CHA': 'Chameleon',
-    'CIR': 'Circinus',
-    'CMA': 'Canis Major',
-    'CMI': 'Canis Minor',
-    'CNC': 'Cancer',
-    'COL': 'Columba',
-    'COM': 'Coma Berenices',
-    'CRA': 'Corona Australis',
-    'CRB': 'Corona Borealis',
-    'CRT': 'Crater',
-    'CRU': 'Crux',
-    'CRV': 'Corvus',
-    'CVN': 'Canes Venatici',
-    'CYG': 'Cygnus',
-    'DEL': 'Delphinus',
-    'DOR': 'Dorado',
-    'DRA': 'Draco',
-    'EQU': 'Equuleus',
-    'ERI': 'Eridanus',
-    'FOR': 'Fornax',
-    'GEM': 'Gemini',
-    'GRU': 'Grus',
-    'HER': 'Hercules',
-    'HOR': 'Horologium',
-    'HYA': 'Hydra',
-    'HYI': 'Hydrus',
-    'IND': 'Indus',
-    'LAC': 'Lacerta',
-    'LEO': 'Leo',
-    'LEP': 'Lepus',
-    'LIB': 'Libra',
-    'LMI': 'Leo Minor',
-    'LUP': 'Lupus',
-    'LYN': 'Lynx',
-    'LYR': 'Lyra',
-    'MEN': 'Mensa',
-    'MIC': 'Microscopium',
-    'MON': 'Monoceros',
-    'MUS': 'Musca',
-    'NOR': 'Norma',
-    'OCT': 'Octans',
-    'OPH': 'Ophiuchus',
-    'ORI': 'Orion',
-    'PAV': 'Pavo',
-    'PEG': 'Pegasus',
-    'PER': 'Perseus',
-    'PHE': 'Phoenix',
-    'PIC': 'Pictor',
-    'PSA': 'Piscis Austrinus',
-    'PSC': 'Pisces',
-    'PUP': 'Puppis',
-    'PYX': 'Pyxis',
-    'RET': 'Reticulum',
-    'SCL': 'Sculptor',
-    'SCO': 'Scorpius',
-    'SCT': 'Scutum',
-    'SER': 'Serpens',
-    'SEX': 'Sextans',
-    'SGE': 'Sagitta',
-    'SGR': 'Sagittarius',
-    'TAU': 'Taurus',
-    'TEL': 'Telescopium',
-    'TRA': 'Triangulum Australe',
-    'TRI': 'Triangulum',
-    'TUC': 'Tucana',
-    'UMA': 'Ursa Major',
-    'UMI': 'Ursa Minor',
-    'VEL': 'Vela',
-    'VIR': 'Virgo',
-    'VOL': 'Volans',
-    'VUL': 'Vulpecula',
-}
 
 OOTWRow = namedtuple('OOTWRow', [
     'date',    # Date string of the OOTW
@@ -139,7 +50,7 @@ OOTWRow = namedtuple('OOTWRow', [
     'constellation', # 3-letter IAU abbreviation of the constellation
     'type',    # Type code of object in SIMBAD
     'designations', # Designations output by SIMBAD
-        ])
+])
 
 def map_on_spreadsheet_rows(function, markdown=True):
     csv_url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv"

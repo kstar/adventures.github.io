@@ -22,6 +22,8 @@ simbadification = OrderedDict([
     ('sharpless ', 'Sh2-'),
     ('KTG', 'K79'),
     ('Hickson', 'HCG'),
+    ('k ', 'PN K '),
+    ('Cederblad', 'Ced'),
 ])
 
 class Replacer:
