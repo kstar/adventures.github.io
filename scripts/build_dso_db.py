@@ -55,6 +55,7 @@ def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { 
         r'Introduction \(4-4-20\)\.htm',
         r'.*\.old',
         r'.*\.html#',
+        r'dso_index_constellation.md',
     ]))
 
     files = [x for xs in [list(DOC_DIRECTORY.glob(glob_pattern)) for glob_pattern in GLOB_PATTERNS] for x in xs]
@@ -231,7 +232,7 @@ def process_reachability():
     href_in_md = re.compile(r'\[(?:[^\[\]]|(?:\[[^\]]*\]))+\]\(/?((?:[^()]+|\([^()]*\))+)\)') # FIXME: Does not handle nested parantheses / brackets
 
     # Breadth first search
-    visited = set()
+    visited = { 'dso_index_constellation.md' } # Skip the index, because that defeats reachability
     queue = deque([ 'index.html', 'headbar.html' ]) # Start nodes
     parent = {}
     while len(queue) > 0:
