@@ -41,7 +41,7 @@ data = {}
 for filename, main_id, type_, simbad_id, constellation, display_id in cursor.execute(query):
     main_id_dict = data.setdefault(constellation, {}).setdefault(main_id, {})
     main_id_dict.setdefault('simbad_ids', set()).add(simbad_id)
-    main_id_dict.setdefault('display_ids', {})[display_id] = filename
+    main_id_dict.setdefault('display_ids', {}).setdefault(display_id, []).append(filename)
     main_id_dict['type'] = type_
 
 for objects in data.values():
@@ -66,7 +66,7 @@ for objects in data.values():
         main_id_dict['valid_ids'] = valid_ids
         main_id_dict['display_id'] = winning_id # Note: singular, not plural
         main_id_dict['simbad_id'] = sorted(main_id_dict['simbad_ids'])[0] # Note: singular, pick any
-        main_id_dict['filenames'] = list(set(main_id_dict['display_ids'].values()))
+        main_id_dict['filenames'] = sorted({fn for fns in main_id_dict['display_ids'].values() for fn in fns}, key=lambda fn: article_titles[fn])
 
 with open('../docs/dso_index_constellation.md', 'w') as output:
     output.write(
@@ -120,7 +120,7 @@ This is an index of all objects featured in Adventures in Deep Space pages (incl
             type_ = main_id_dict['type']
             articles = '<ul>' + ' '.join([
                 f'<li class="index_article"><a href="/' + filename.replace('.md', '.html') + f'" class="index_article">{article_titles[filename]}</a></li>'
-                for filename in sorted(main_id_dict['filenames'], key=lambda fn: article_titles[fn])
+                for filename in main_id_dict['filenames']
             ]) + '</ul>'
             output.write(f'<tr><td><x-dso-link simbad="{simbad_id}">{display_id}</x-dso-link></td><td>{valid_ids}</td><td>{type_}</td><td>{articles}</td></tr>' + '\n')
         output.write('\n</tbody>\n</table>')
