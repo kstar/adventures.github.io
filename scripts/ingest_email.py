@@ -16,6 +16,7 @@ from typing import Any, List, Union, Dict
 import hashlib
 import os
 import re
+import json
 from markdownify import MarkdownConverter
 
 class CustomMarkdownConverter(MarkdownConverter):
@@ -111,7 +112,7 @@ def eml_to_md(eml_path_str: Union[str, Path]) -> Path:
         # Write preamble
         preamble_table = {
             'layout': 'default',
-            'title': '"' + message['Subject'] + '"', # Quoted version of subject
+            'title': json.dumps(message['Subject']), # Quoted version of subject (Fascinating solution from https://stackoverflow.com/questions/18886596/replace-all-quotes-in-a-string-with-escaped-quotes)
             'author': re.sub(' *<[^>]*> *$', '', message['From']), # Strip email from "From" field
             'date': '"' + message['Date'] + '"', # Date of email
         }
