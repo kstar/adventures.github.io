@@ -56,6 +56,7 @@ def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { 
         r'.*\.old',
         r'.*\.html#',
         r'dso_index_constellation.md',
+        r'steve.ngc.htm',
     ]))
 
     files = [x for xs in [list(DOC_DIRECTORY.glob(glob_pattern)) for glob_pattern in GLOB_PATTERNS] for x in xs]
