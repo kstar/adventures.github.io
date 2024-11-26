@@ -11,7 +11,8 @@ CATALOG_REGEXES = [ # FIXME: Handle `ESO 456-SC38` / `ESO 597-G36`
     r'\b(?:MCG)[+\- ][0-9\.+\-]+[A-Fa-f]?\b', # Hyphenated / Coordinate-based, MCG allows a/b/c
     r'\b(?:2MASS|2MASSX|SDSS|RCS|RCS2) J?[0-9\.]+[+-][0-9\.]+\b', # J2000 based
     r'\b[VIX]+ Zw [0-9]+\b', # Zwicky
-    r'\b(?:Simeis|Sharpless|Sim|Cr|Collinder|Cederblad|Ced|HD|SAO|HIP|vdB|Mrk|Mailyan|VV|Trumpler|Tr|Arp|Abell|PN A66|ACO|AGC|PGC|LEDA|B|Barnard|HH|Messier) ?[0-9]+\b', # Simple catalogs
+    r'\b(?:Simeis|Sharpless|Sim|Cr|Collinder|Cederblad|Ced|HD|SAO|HIP|vdB|Mrk|Mailyan|VV|Trumpler|Tr|Arp|Abell|PN A66|ACO|AGC|PGC|LEDA|B|Barnard|HH|Messier|Rose) ?[0-9]+\b', # Simple catalogs
+    r'\bRCG ?[0-9]{4}\b', # Another name for ACO? But could stand for Rose compact group, which is why we enforce 4-digits
     r'\bSh ?2[ -][0-9]+\b', # Sharpless
     r'\b(?:M|Min|Minkowski) [0-9]-[0-9]+\b', # Minkowksi
     r'\b(?:Pal|Palomar|Terzan) [0-9]{1,2}\b', # Palomar and Terzan
@@ -133,6 +134,8 @@ simbadification = OrderedDict([
     ('Hickson', 'HCG'),
     ('k ', 'PN K '),
     ('Cederblad', 'Ced'),
+    ('RCG', 'ACO'),
+    ('Rose ', '[R77] '),
 ])
 
 desimbadification = OrderedDict([
@@ -145,4 +148,5 @@ desimbadification = OrderedDict([
     ('Sh2', 'Sh 2'),
     ('SKHB ', 'M31-G'),
     ('Z ', 'CGCG '),
+    ('[R77] ', 'Rose '),
 ])
