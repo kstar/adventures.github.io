@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- A list of peculiar galaxies that I found interesting in my 18" telescope -->
+<!-- by Akarsh Simha. (c) 2022 Akarsh Simha, Released under Creative Commons Attribution ShareAlike -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Interesting Peculiar Galaxies for 16–22" telescopes</title>
+    <link rel="stylesheet" href="assets/common.css?version=7">
+    <script type="text/javascript" src="assets/common.js?version=3"></script>
+    <script type="text/javascript">document.disableDSO = true;</script>
+    <script type="text/javascript" src="/peculiar18.json"></script> <!-- Note: Data for this webpage -->
+</head>
+<style>
+        table {
+	  border-collapse: collapse;
+	  align: center;
+	  font-family: arial, sans-serif;
+      }
+      td, th {
+	  border: 1px solid #ffffff;
+	  padding: 5px;
+	  text-align: center;
+      }
+</style>
+    <!-- <style>
+      body {
+	  background: black;
+	  color: white;
+	  font-family: palatino, serif;
+	  font-size: 16px;
+      }
+      h1, h3 {
+	  font-family: arial, sans-serif;
+      }
+      .odd_row {
+	  background-color: #111111;
+      }
+      a {
+	  color: #ff2323;
+	  text-decoration: none;
+      }
+      a:hover {
+	  color: hotpink;
+	  text-decoration: underline;
+      }
+      img {
+	  border: 1px solid black;
+      }
+      img:hover {
+	  border: 1px solid hotpink;
+      }
+      /* tr:nth-child(even) { */
+      /* 	  background-color: #222222; */
+      /* } */
+    </style> -->
+<body>
+  <center>
+    <h1>Interesting Peculiar Galaxies for 16–22" telescopes</h1>
+    <div style="float: right; margin-right: 100px;">by <b>Akarsh Simha</b></div><br />
+  </center>
+  <h2>Introduction</h2>
+  <p>
+    I love galaxies. You can perhaps guess why – they are entire large systems so far away, and yet we can see them with our own eyes. It's really a surreal feeling to look at them and attempt to comprehend the size of the universe. When I was using an 8" telescope though, pretty much every galaxy I would look at appeared as a dim fuzzy blob with no features, excepting perhaps showpiece examples like <x-dso noindex>NGC 4565</x-dso>, <x-dso noindex>M33</x-dso> or <x-dso noindex>M51</x-dso>. The joy there was in finding that faint fuzzy patch barely peeking out of the sky background, and thinking about what I was looking at. Ever since I upgraded to an 18" telescope, though, hundreds of galaxies would show fascinating structure within them – be it their spiral arms, dust lanes, bars, <a href="/GSSP_2007.html#8-hii-regions-in-external-galaxies">HII regions</a>, <a href="/gcextra.htm">globular clusters</a> or super–star clusters.
+  </p>
+  <p>
+    One class of galaxies however call out to me the most – peculiar galaxies. It's fascinating that although galaxies mostly conform to certain types – elliptical, spiral with or without bars, and lenticular – there are thousands of counterexamples cataloged as peculiar. Halton C. Arp went on to say famously, "But far from all galaxies fit the Hubble sequence of nebular forms. In fact, when looked at closely enough, every galaxy is peculiar." Perhaps the draw of peculiar galaxies lies in their diversity of shape, form and structure that rivals galactic diffuse nebulae. It also lies in the challenge of ferreting out structure in the dim blobs of light that lie hundreds of millions of light years away. Then there is the pleasure of being able to witness examples of the astrophysical processes occurring in interacting galaxies with one's own eyes: starbursts, tidal tails and streams, tidal dwarfs, and the effects of ram-pressure.
+  </p>
+  <p>
+      Whereas there are 338 peculiar galaxies in <a href="/arpintro.htm">Halton Arp's famous catalog</a>, many of them do not show their peculiarities appreciably well in a 16"–22" telescope. There are also many interesting objects that are not in Arp's catalog that however show structure in this aperture class. Although many of them are found in the Arp-Madore catalog (AM) or in Boris Vorontsov-Vel'yaminov's (VV) catalog, some are oddly in neither. My aim here was to compile a list of galaxies that showed some interesting peculiarity, such as tidal tails or symptoms of interaction, at the eyepiece of my 18" telescope.
+  </p>
+  <p>
+    This is not an exhaustive list by any means and is a collection biased by whatever I have managed to observe over the years. There are some objects that could show some tangible detail in this aperture class that I haven't observed yet in an 18" – perhaps an example would be <x-dso noindex>IC 883</x-dso>. Then there are others where I was not satisfied with my observation, such as the Umbrella Galaxy <x-dso noindex>NGC 4651</x-dso>. There are also galaxies where I think the amount of detail I picked up was insignificant – most of those have been omitted, but I have ended up including some here anyway. Even amongst the objects that made it to this list, many do not yield detail to this aperture class easily: some of the objects required me great conditions and patience to ferret out whatever I got. Some form of tracking will greatly help on many of the objects that are best studied at high power – my telescope tracks on an equatorial platform and I personally would struggle to ferret out the details I describe without it.
+    <p>
+      Data on this website comes mostly from <a href="http://simbad.u-strasbg.fr/simbad/">SIMBAD</a> and images are from the <a href="https://archive.stsci.edu/dss/index.html">Digitzed Sky Survey (MAST/STScI)</a>. Some of it was manually entered, if you find any typos please let me know.<br />
+      This page uses JavaScript to render the contents, so if you have JavaScript blockers it may not render.
+    </p>
+    <h2 id="list">List</h2>
+    <p id="listinfo">Click on the designation to jump to my 18" notes on the object and a DSS image. All observations were made with my 18" f/4.5 Obsession classic, most of the time tracking on a Gregg Blandin equatorial platform.</p>
+    <table id="table" align="center">
+    </table>
+    <h2>Descriptions</h2>
+    <div id="descriptions">
+    </div>
+    <script type="text/javascript">
+      let table = document.getElementById('table');
+      table.innerHTML = '<tr><th>Designation</th><th>RA (J2000)</th><th>Dec (J2000)</th><th>Size</th><th>V magnitude</th><th>Redshift (z)</th><th>Common Name</th></tr>\n';
+      for (var idx = 0; idx < data.length; ++idx) {
+	  let row = data[idx];
+	  table.innerHTML += (
+	      '<tr class="' + (idx % 2 == 0 ? 'even_row' : 'odd_row') + '"><td><a href="#' + row.primary + '"><x-dso>' + row.primary + '</x-dso></a></td><td>' + row.ra + '</td><td>' + row.dec + '</td><td>' + (row.maj_axis > 0 && row.min_axis > 0 ? row.maj_axis.toFixed(1) + '\' &times; ' + row.min_axis.toFixed(1) + '\'' : '') + '</td><td>' + (row.V !== null ? row.V.toFixed(1) : '') + '</td><td>' + (row.z !== null ? row.z.toString() : '') + '</td><td>' + (row.name ? row.name : "") + '</td></tr>\n'
+	  );
+      }
+      // Populate the descriptions
+      let descriptions = document.getElementById('descriptions');
+      descriptions.innerHTML = '';
+      for (var idx = 0; idx < data.length; ++idx) {
+	  let row = data[idx];
+	  descriptions.innerHTML += '<h3 id="' + row.primary + '">' + row.primary + '</h3>\n' +
+	      '<a href="https://tools.asimha.net/dss.html?id=' + row.primary + '" target="_blank"><img width=150px src="assets/dss_thumbs/' + row.primary.replace(' ', '_') + '.jpg" /></a><br />' +
+	      '<table>\n' +
+	      '<tr><td>Coordinates (J2000)</td><td>' + row.ra + '&nbsp; &nbsp;' + row.dec + '</td></tr>\n' +
+	      (row.maj_axis > 0 && row.min_axis > 0 ? '<tr><td>Size</td><td>' + row.maj_axis.toFixed(1) + '\' &times; ' + row.min_axis.toFixed(1) + '\'</td></tr>\n' : ''
+	      ) + '</table>\n' +
+	      '<p>' + row.description + '\n<a style="float: right; font-size: 25px;" href="#list" title="Back to top">&#9650;</a></p><hr />\n\n';
+      }
+    </script>
+  </body>
+</html>
