@@ -65,7 +65,7 @@ def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { 
     for filename in tqdm.tqdm(files):
         basename = filename.name
         extension = os.path.splitext(basename)[1]
-        if skip_files.match(basename):
+        if skip_files.match(basename) or basename.startswith('.#'):
             logger.info(f'Skipping {basename}')
             continue
         with filename.open('r') as f:
