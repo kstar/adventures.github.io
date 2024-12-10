@@ -20,6 +20,7 @@ CATALOG_REGEXES = [ # FIXME: Handle `ESO 456-SC38` / `ESO 597-G36`
 ]
 OBJECT_REGEX = '(' + '|'.join(['(?:' + regex + ')' for regex in CATALOG_REGEXES]) + ')' # Matches an object designation in a capture group
 COMPILED_OBJECT_REGEX = re.compile(OBJECT_REGEX)
+MULTILINE_OBJECT_REGEX = re.compile(OBJECT_REGEX, re.MULTILINE)
 REPLACEMENT_REGEX = r'<x-dso[^>]*>(?:(?!</x-dso>|</x-dso-link>).)*</x-dso(?:-link)?>|(?:= *)?' + OBJECT_REGEX # Matches any object designation that is not preceded by '=', '= ' or is placed immediately after an <x-dso> or <x-dso-link> tag
 COMPILED_REPLACEMENT_REGEX = re.compile(REPLACEMENT_REGEX)
 

@@ -57,7 +57,7 @@ skip_files = re.compile('|'.join('(?:' + pat + ')' for pat in [
 ]))
 
 def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { simbad_id: { visible_id: [filename,] } }, { filename: article_title }
-    pattern = re.compile(r'<x-dso(?:-link)?(?: simbad="([^"]*)")?>((?:(?!</x-dso).)+)</x-dso(?:-link)?>')
+    pattern = re.compile(r'<x-dso(?:-link)?(?: simbad="([^"]*)")?>\s*((?:(?!</x-dso).)+)\s*</x-dso(?:-link)?>', re.MULTILINE)
     match_title = {extension: re.compile(pattern) for extension, pattern in [
         ('.md', r'\ntitle: *(.+)\r?\n'),
         ('.html', r'<title>((?:(?!</title>).)+)</title>'),
@@ -96,6 +96,8 @@ def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { 
             for simbad, common in pattern.findall(text):
                 if not simbad or len(simbad) == 0:
                     simbad = common
+                simbad = simbad.strip(' \t\r\n')
+                common = common.strip(' \t\r\n')
                 targets.setdefault(simbad, {}).setdefault(common, []).append(basename) # targets = {simbad_id: {display_id: [article_basename1.htm, article_basename2.html]}}
     return targets, articles
 
