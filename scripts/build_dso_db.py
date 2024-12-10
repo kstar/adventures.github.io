@@ -22,6 +22,7 @@ from collections import deque
 from pathlib import Path
 import markdown
 from urllib.parse import unquote
+from common import COMPILED_OBJECT_REGEX
 import numpy as np
 
 logger = logging.getLogger('build_dso_db')
@@ -33,6 +34,7 @@ DATABASE = SCRIPT_DIR / 'adventures.db'
 RESOLUTION_FAILURE_FILE = SCRIPT_DIR / 'unresolved.json'
 resolution_failures = {}
 COMMIT_INTERVAL = 100
+RE_SPACES = re.compile(r'\s+')
 
 MD_HREF_FINDER = re.compile(r'\[(?:[^\[\]]|\[[^\[\]]*\])+\]\(((?:[^\(\)]|\([^\(\)]*\))+)\)') # Allows non-nested [] in the link text and non-nested () in the URL; needed because of SIMBAD objects e.g. "[R77] 16" as well as webpage names that have parantheses.
 
@@ -104,6 +106,7 @@ def resolve_and_store(targets):
                    "    ra REAL NOT NULL,"
                    "    dec REAL NOT NULL,"
                    "    type TEXT,"
+                   "    aliases TEXT,"
                    "    constellation TEXT NOT NULL,"
                    "    trixel INTEGER NOT NULL)")
     cursor.execute("CREATE INDEX IF NOT EXISTS `idx_trixel_on_objects` ON objects(trixel)")
@@ -131,6 +134,7 @@ def resolve_and_store(targets):
     batch_count = 0
     for simbad_id in tqdm.tqdm(targets):
         if simbad_id not in cached_simbad_ids:
+            alternate_ids = None
             try:
                 result = simbad.query_object(simbad_id.strip(' '))
             except Exception as e:
@@ -145,12 +149,24 @@ def resolve_and_store(targets):
                 # from IPython import embed
                 # embed()
 
-                main_id = result['MAIN_ID'].replace('  ', ' ') # Ugh, SIMBAD main-ids need not be unique and have multiple spaces
+                main_id = RE_SPACES.sub(' ', result['MAIN_ID']).strip(' ') # Ugh, SIMBAD main-ids need not be unique and have multiple spaces
                 ra = float(result['RA_d'])
                 dec = float(result['DEC_d'])
                 otype = result['OTYPE']
                 if np.isnan(ra) or np.isnan(dec):
                     raise RuntimeError("NaN coordinates from SIMBAD")
+
+                try:
+                    # Get alternate designations
+                    alternate_ids = sorted(filter(lambda x: COMPILED_OBJECT_REGEX.match(x), (RE_SPACES.sub(' ', alt_id['ID']).strip(' ') for alt_id in simbad.query_objectids(main_id))), key=lambda alt_id: len(alt_id))[:5]
+                    if len(alternate_ids) == 0:
+                        alternate_ids = None
+                    else:
+                        alternate_ids = json.dumps(alternate_ids)
+                except Exception as exc:
+                    logger.error(f'Error fetching alternate ids for {main_id}: {exc}')
+                    
+                
             except Exception as simbad_exception:
                 # Try NED
                 try:
@@ -176,8 +192,8 @@ def resolve_and_store(targets):
                     
 
                 # print(f'Resolved Object: {simbad_id}, ra: {ra:0.2f}, dec: {dec:0.2f}, otype: {otype}, trixel: {trixel}, constellation: {constellation}')
-                cursor.execute("INSERT INTO objects(main_id, ra, dec, type, constellation, trixel) VALUES (?, ?, ?, ?, ?, ?)",
-                               (main_id, ra, dec, otype, constellation, trixel))
+                cursor.execute("INSERT INTO objects(main_id, ra, dec, type, constellation, trixel, aliases) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                               (main_id, ra, dec, otype, constellation, trixel, alternate_ids))
                 batch_count += 1
 
             # SIMBAD id was not in the database, add it

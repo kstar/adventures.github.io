@@ -8,8 +8,9 @@ from datetime import datetime, timezone
 import logging
 import os
 import re
-from common import desimbadification, CONSTELLATIONS
+from common import desimbadification, CONSTELLATIONS, make_constellation_map
 from pathlib import Path
+import json
 
 logger = logging.getLogger('build_dso_db')
 logger.setLevel(logging.INFO)
@@ -25,7 +26,7 @@ article_titles = dict(cursor.execute("SELECT filename, title FROM articles").fet
 exclude = ["dsf_ootw.md", "dsf_ootw_constellation.md"]
 
 query = """
-SELECT mentions.filename, objects.main_id, objects.type, mentions.simbad_id, objects.constellation, COALESCE(display_id, mentions.simbad_id) as display_id from mentions
+SELECT mentions.filename, objects.main_id, objects.type, mentions.simbad_id, objects.constellation, objects.aliases, COALESCE(display_id, mentions.simbad_id) as display_id from mentions
 inner join queries on  queries.simbad_id = mentions.simbad_id
 inner join objects on queries.main_id = objects.main_id
 inner join reachability on reachability.filename = mentions.filename
@@ -38,10 +39,11 @@ if len(exclude) > 0:
 query += "order by constellation, objects.main_id, mentions.display_id"
 
 data = {}
-for filename, main_id, type_, simbad_id, constellation, display_id in cursor.execute(query):
+for filename, main_id, type_, simbad_id, constellation, aliases, display_id in cursor.execute(query):
     main_id_dict = data.setdefault(constellation, {}).setdefault(main_id, {})
     main_id_dict.setdefault('simbad_ids', set()).add(simbad_id)
     main_id_dict.setdefault('display_ids', {}).setdefault(display_id, []).append(filename)
+    main_id_dict.setdefault('aliases', []).extend(json.loads(aliases) if aliases else [])
     main_id_dict['type'] = type_
 
 for objects in data.values():
@@ -62,6 +64,9 @@ for objects in data.values():
             if winning_id is None:
                 winning_id = simbad_id
             valid_ids.add(simbad_id)
+        for alias in main_id_dict['aliases']:
+            if (not alias.startswith('2MASX')) and (not alias.startswith('2MASS')) and (not alias.startswith('SDSS ')) and (not alias.startswith('SDSSJ')):
+                valid_ids.add(alias)
 
         main_id_dict['valid_ids'] = valid_ids
         main_id_dict['display_id'] = winning_id # Note: singular, not plural
@@ -78,6 +83,10 @@ open_new_page: false
 disable_dso: true
 ---
 
+<style>
+td { word-wrap: break-word; }
+</style>
+
 This is an index of all objects featured in Adventures in Deep Space pages (including articles and observing reports), organized by constellation. The Deep-Sky Forum objects of the week are excluded, which have their own [index](/dsf_ootw_constellation.html). This feature is still in beta and there are many errors and <a href="https://github.com/kstar/adventures.github.io/issues/30">issues</a> that need to be addressed. (If you'd like to help improve the code, please submit an MR on the <a href='https://github.com/kstar/adventures.github.io'>github repo</a>.) Hope you find it useful!<br/>&nbsp;&nbsp; - Akarsh Simha
 
 
@@ -86,18 +95,19 @@ This is an index of all objects featured in Adventures in Deep Space pages (incl
     # Write constellation index
     count = 0
     output.write('## Index\n\n')
-    for con in sorted(data):
-        if count != 0 and count % 11 == 0:
-            output.write('|\n')
-        try:
-            output.write(f'|[{con}](#{CONSTELLATIONS[con.upper()].lower().replace(" ", "-")} "{CONSTELLATIONS[con.upper()]}")')
-        except KeyError:
-            raise RuntimeError(f'Invalid constellation `{con}`')
-        count += 1
-    while count % 11 != 0:
-        output.write('|&nbsp;')
-        count += 1
-    output.write('|\n')
+    output.write(make_constellation_map(data.keys()))
+    # for con in sorted(data):
+    #     if count != 0 and count % 11 == 0:
+    #         output.write('|\n')
+    #     try:
+    #         output.write(f'|[{con}](#{CONSTELLATIONS[con.upper()].lower().replace(" ", "-")} "{CONSTELLATIONS[con.upper()]}")')
+    #     except KeyError:
+    #         raise RuntimeError(f'Invalid constellation `{con}`')
+    #     count += 1
+    # while count % 11 != 0:
+    #     output.write('|&nbsp;')
+    #     count += 1
+    # output.write('|\n')
 
     output.write('\n\n---\n\n')
 

@@ -11,12 +11,11 @@ import os
 import apply_dso as regex
 import requests
 import re
-from common import CONSTELLATIONS
 from datetime import datetime, timezone
 from io import StringIO
 from urllib.parse import quote_plus as urlencode
 from collections import namedtuple
-from common import OBJECT_REGEX
+from common import OBJECT_REGEX, CONSTELLATIONS, make_constellation_map
 
 ESCAPE_REGEX = re.compile(r'[_{\*`\(\)}]|---+')
 
@@ -135,18 +134,14 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
     count = 0
     constellation.write('## Index\n\n')
-    for con in sorted(rows_by_constellation.keys()):
-        if count != 0 and count % 11 == 0:
-            constellation.write('|\n')
+
+    for con in rows_by_constellation.keys():
         try:
-            constellation.write(f'|[{con}](#{CONSTELLATIONS[con].lower().replace(" ", "-")} "{CONSTELLATIONS[con]}")')
+            CONSTELLATIONS[con]
         except KeyError:
             raise RuntimeError(f'Invalid constellation `{con}` has entries {" ".join([rows[ind] for ind in rows_by_constellation[con]])}!')
-        count += 1
-    while count % 11 != 0:
-        constellation.write('|&nbsp;')
-        count += 1
-    constellation.write('|\n')
+
+    constellation.write(make_constellation_map(rows_by_constellation.keys()))
 
     constellation.write('\n\n---\n\n')
 

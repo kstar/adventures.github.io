@@ -23,6 +23,97 @@ COMPILED_OBJECT_REGEX = re.compile(OBJECT_REGEX)
 REPLACEMENT_REGEX = r'<x-dso[^>]*>(?:(?!</x-dso>|</x-dso-link>).)*</x-dso(?:-link)?>|(?:= *)?' + OBJECT_REGEX # Matches any object designation that is not preceded by '=', '= ' or is placed immediately after an <x-dso> or <x-dso-link> tag
 COMPILED_REPLACEMENT_REGEX = re.compile(REPLACEMENT_REGEX)
 
+CONSTELLATIONS_CAMELCASE = {
+    'AND': 'And',
+    'ANT': 'Ant',
+    'APS': 'Aps',
+    'AQL': 'Aql',
+    'AQR': 'Aqr',
+    'ARA': 'Ara',
+    'ARI': 'Ari',
+    'AUR': 'Aur',
+    'BOO': 'Boo',
+    'CAE': 'Cae',
+    'CAM': 'Cam',
+    'CAP': 'Cap',
+    'CAR': 'Car',
+    'CAS': 'Cas',
+    'CEN': 'Cen',
+    'CEP': 'Cep',
+    'CET': 'Cet',
+    'CHA': 'Cha',
+    'CIR': 'Cir',
+    'CMA': 'CMa',
+    'CMI': 'CMi',
+    'CNC': 'Cnc',
+    'COL': 'Col',
+    'COM': 'Com',
+    'CRA': 'CrA',
+    'CRB': 'CrB',
+    'CRT': 'Crt',
+    'CRU': 'Cru',
+    'CRV': 'Crv',
+    'CVN': 'CVn',
+    'CYG': 'Cyg',
+    'DEL': 'Del',
+    'DOR': 'Dor',
+    'DRA': 'Dra',
+    'EQU': 'Equ',
+    'ERI': 'Eri',
+    'FOR': 'For',
+    'GEM': 'Gem',
+    'GRU': 'Gru',
+    'HER': 'Her',
+    'HOR': 'Hor',
+    'HYA': 'Hya',
+    'HYI': 'Hyi',
+    'IND': 'Ind',
+    'LAC': 'Lac',
+    'LEO': 'Leo',
+    'LEP': 'Lep',
+    'LIB': 'Lib',
+    'LMI': 'LMi',
+    'LUP': 'Lup',
+    'LYN': 'Lyn',
+    'LYR': 'Lyr',
+    'MEN': 'Men',
+    'MIC': 'Mic',
+    'MON': 'Mon',
+    'MUS': 'Mus',
+    'NOR': 'Nor',
+    'OCT': 'Oct',
+    'OPH': 'Oph',
+    'ORI': 'Ori',
+    'PAV': 'Pav',
+    'PEG': 'Peg',
+    'PER': 'Per',
+    'PHE': 'Phe',
+    'PIC': 'Pic',
+    'PSA': 'PsA',
+    'PSC': 'Psc',
+    'PUP': 'Pup',
+    'PYX': 'Pyx',
+    'RET': 'Ret',
+    'SCL': 'Scl',
+    'SCO': 'Sco',
+    'SCT': 'Sct',
+    'SER': 'Ser',
+    'SEX': 'Sex',
+    'SGE': 'Sge',
+    'SGR': 'Sgr',
+    'TAU': 'Tau',
+    'TEL': 'Tel',
+    'TRA': 'TrA',
+    'TRI': 'Tri',
+    'TUC': 'Tuc',
+    'UMA': 'UMa',
+    'UMI': 'UMi',
+    'VEL': 'Vel',
+    'VIR': 'Vir',
+    'VOL': 'Vol',
+    'VUL': 'Vul',
+}
+
 CONSTELLATIONS = {
     'AND': 'Andromeda',
     'ANT': 'Antlia',
@@ -113,6 +204,18 @@ CONSTELLATIONS = {
     'VOL': 'Volans',
     'VUL': 'Vulpecula',
 }
+
+def make_constellation_map(enable: set):
+    with open('ConstellationMap.html', 'r') as f:
+        constellation_map = f.read();
+        
+    for constellation in enable:
+        constellation = constellation.upper()
+        abbrev = CONSTELLATIONS_CAMELCASE[constellation]
+        full = CONSTELLATIONS[constellation]
+        constellation_map = constellation_map.replace(f'<span class="constellation-anchor">{abbrev}</span>', f'<span class="constellation-anchor"><a href="#{full.lower().replace(" ", "-")}" title="{full}">{abbrev}</a></span>')
+
+    return constellation_map
 
 simbadification = OrderedDict([
     ('Collinder ', 'Cl Collinder '),
