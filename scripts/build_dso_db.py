@@ -40,24 +40,24 @@ indexer = pykstars.Indexer(HTM_LEVEL)
 conn = sqlite3.connect(DATABASE.as_posix())
 cursor = conn.cursor()
 
+# Below are files that are essentially catalogs / complete or long lists of objects and not selections; or otherwise must be skipped
+skip_files = re.compile('|'.join('(?:' + pat + ')' for pat in [
+    r'(?:NGC|IC|UGC) +[0-9]+ *(?:-+|thru|through) *(?:(?:NGC|IC|UGC) *)?[0-9]+.*\.html?', # Skip Steve Gottlieb's notes as they are lists of all objects
+    r'(?:NGC|IC|UGC) complete.*\.html?',
+    r'UGC \(4-4-20\)\.htm',
+    r'Introduction \(4-4-20\)\.htm',
+    r'.*\.old',
+    r'.*\.html#',
+    r'dso_index_constellation.md',
+    r'steve.ngc.htm',
+]))
+
 def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { simbad_id: { visible_id: [filename,] } }, { filename: article_title }
     pattern = re.compile(r'<x-dso(?:-link)?(?: simbad="([^"]*)")?>((?:(?!</x-dso).)+)</x-dso(?:-link)?>')
     match_title = {extension: re.compile(pattern) for extension, pattern in [
         ('.md', r'\ntitle: *(.+)\r?\n'),
         ('.html', r'<title>((?:(?!</title>).)+)</title>'),
     ]}
-
-    # Below are files that are essentially catalogs / complete or long lists of objects and not selections; or otherwise must be skipped
-    skip_files = re.compile('|'.join('(?:' + pat + ')' for pat in [
-        r'(?:NGC|IC|UGC) +[0-9]+ *(?:-+|thru|through) *(?:(?:NGC|IC|UGC) *)?[0-9]+.*\.html?', # Skip Steve Gottlieb's notes as they are lists of all objects
-        r'(?:NGC|IC|UGC) complete.*\.html?',
-        r'UGC \(4-4-20\)\.htm',
-        r'Introduction \(4-4-20\)\.htm',
-        r'.*\.old',
-        r'.*\.html#',
-        r'dso_index_constellation.md',
-        r'steve.ngc.htm',
-    ]))
 
     files = [x for xs in [list(DOC_DIRECTORY.glob(glob_pattern)) for glob_pattern in GLOB_PATTERNS] for x in xs]
     targets = {}
@@ -238,7 +238,7 @@ def process_reachability():
     parent = {}
     while len(queue) > 0:
         current = queue.popleft()
-        if current in visited:
+        if current in visited or skip_files.match(current):
             continue
 
         path = DOC_DIRECTORY / current
