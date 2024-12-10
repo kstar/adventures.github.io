@@ -34,6 +34,8 @@ RESOLUTION_FAILURE_FILE = SCRIPT_DIR / 'unresolved.json'
 resolution_failures = {}
 COMMIT_INTERVAL = 100
 
+MD_HREF_FINDER = re.compile(r'\[(?:[^\[\]]|\[[^\[\]]*\])+\]\(((?:[^\(\)]|\([^\(\)]*\))+)\)') # Allows non-nested [] in the link text and non-nested () in the URL; needed because of SIMBAD objects e.g. "[R77] 16" as well as webpage names that have parantheses.
+
 HTM_LEVEL = 3
 indexer = pykstars.Indexer(HTM_LEVEL)
 
@@ -243,20 +245,30 @@ def process_reachability():
 
         path = DOC_DIRECTORY / current
         extension = os.path.splitext(current)[1]
+        stime = time.time()
         if extension in ('.md'):
             with path.open('r') as md_file:
-                html_content = markdown.markdown(md_file.read()) # Convert to HTML
-                soup = BeautifulSoup(html_content, features='html5lib')
+                hrefs = MD_HREF_FINDER.findall(md_file.read())
+                # Note: markdown's md -> HTML conversion isn't equivalent to kramdown and so it messes things up, better to use regexes
+                # html_content = markdown.markdown(md_file.read()) # Convert to HTML
+                # soup = BeautifulSoup(html_content, features='html5lib')
+                
         elif extension in ('.htm', '.html'):
             with path.open('r') as html_file:
                 soup = BeautifulSoup(html_file.read(), features='html5lib')
+                # Find all <a ...> tags that point to ADS articles in the current file
+                hrefs = filter(lambda href: href is not None, map(lambda tag: tag.get('href'), soup.find_all("a")))
+        elif extension in ('.obs', '.xls', '.jpg', '.jpeg', '.pdf', '.png', '.svg', '.gif'):
+            continue # Known ignorable extensions
         else:
             # raise RuntimeError(f'The following file has an unhandled extension for reachability <a...> tag extraction: {current}')
             logger.warning(f'Ignoring file {current} which has unhandled extension for reachability analysis')
             continue
 
-        # Find all <a ...> tags that point to ADS articles in the current file
-        hrefs = filter(lambda href: href is not None, map(lambda tag: tag.get('href'), soup.find_all("a")))
+
+        # if current == 'catalogs.md':
+        #     from IPython import embed
+        #     embed(header=current)
 
         # Treat HTTP redirects as a single link
         http_redirect = soup.find("meta", attrs={"http-equiv": "Refresh"})
@@ -265,6 +277,7 @@ def process_reachability():
 
         hrefs = map(lambda href: unquote(href).lstrip('/').split('#')[0].split('?')[0], hrefs) # Remove any in-file anchors or GET parameters
         hrefs = filter(lambda href: href and (not href.startswith('mailto:')) and (not href.startswith('http')), hrefs) # Filter out mailto and external links (we assume that all internal links are /foo.html and not prefixed with the full URL)
+
 
         for href in hrefs:
             child_path = DOC_DIRECTORY / href
@@ -278,6 +291,7 @@ def process_reachability():
                 parent[child] = current
 
         visited.add(current)
+        # logger.warning(f'Took {time.time()-stime:0.2f}s to process file {current}')
 
     # Store results in database table
     for filepaths in (DOC_DIRECTORY.glob(glob_pattern) for glob_pattern in GLOB_PATTERNS):
