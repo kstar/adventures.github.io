@@ -12,13 +12,237 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 ## Index
 
-|[AND](#andromeda "Andromeda")|[ANT](#antlia "Antlia")|[AQL](#aquila "Aquila")|[AQR](#aquarius "Aquarius")|[ARI](#aries "Aries")|[AUR](#auriga "Auriga")|[BOO](#boötes "Boötes")|[CAM](#camelopardalis "Camelopardalis")|[CAP](#capricornus "Capricornus")|[CAS](#cassiopeia "Cassiopeia")|[CEN](#centaurus "Centaurus")|
-|[CEP](#cepheus "Cepheus")|[CET](#cetus "Cetus")|[CMA](#canis-major "Canis Major")|[CMI](#canis-minor "Canis Minor")|[CNC](#cancer "Cancer")|[COL](#columba "Columba")|[COM](#coma-berenices "Coma Berenices")|[CRB](#corona-borealis "Corona Borealis")|[CRT](#crater "Crater")|[CRU](#crux "Crux")|[CRV](#corvus "Corvus")|
-|[CVN](#canes-venatici "Canes Venatici")|[CYG](#cygnus "Cygnus")|[DEL](#delphinus "Delphinus")|[DOR](#dorado "Dorado")|[DRA](#draco "Draco")|[EQU](#equuleus "Equuleus")|[ERI](#eridanus "Eridanus")|[FOR](#fornax "Fornax")|[GEM](#gemini "Gemini")|[GRU](#grus "Grus")|[HER](#hercules "Hercules")|
-|[HYA](#hydra "Hydra")|[LAC](#lacerta "Lacerta")|[LEO](#leo "Leo")|[LEP](#lepus "Lepus")|[LIB](#libra "Libra")|[LMI](#leo-minor "Leo Minor")|[LUP](#lupus "Lupus")|[LYN](#lynx "Lynx")|[LYR](#lyra "Lyra")|[MON](#monoceros "Monoceros")|[OPH](#ophiuchus "Ophiuchus")|
-|[ORI](#orion "Orion")|[PAV](#pavo "Pavo")|[PEG](#pegasus "Pegasus")|[PER](#perseus "Perseus")|[PHE](#phoenix "Phoenix")|[PSA](#piscis-austrinus "Piscis Austrinus")|[PSC](#pisces "Pisces")|[PUP](#puppis "Puppis")|[PYX](#pyxis "Pyxis")|[SCL](#sculptor "Sculptor")|[SCO](#scorpius "Scorpius")|
-|[SCT](#scutum "Scutum")|[SER](#serpens "Serpens")|[SEX](#sextans "Sextans")|[SGE](#sagitta "Sagitta")|[SGR](#sagittarius "Sagittarius")|[TAU](#taurus "Taurus")|[TRI](#triangulum "Triangulum")|[TUC](#tucana "Tucana")|[UMA](#ursa-major "Ursa Major")|[UMI](#ursa-minor "Ursa Minor")|[VEL](#vela "Vela")|
-|[VIR](#virgo "Virgo")|[VUL](#vulpecula "Vulpecula")|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+<style>
+  div.main_content table.constellation-table td { border-style: solid; padding: 0 4px 0 4px; }
+  div.main_content table.constellation-table { border-collapse:collapse; border-spacing:0; empty-cells:show; text-align: center; border: 0; }
+  table.constellation-table a { text-decoration: none; }
+  table.constellation-table a:hover { text-decoration: underline; }
+  table.constellation-table td { vertical-align:top; margin-top: 0; margin-bottom: 0; }
+    /* h1, h2, h3, h4, h5, h6 { clear:both;} */
+  table.constellation-table span { white-space: nowrap; }
+    /* ol, ul { margin:0; padding:0;} */
+    /* li { list-style: none; margin:0; padding:0;} */
+    /* span.footnodeNumber { padding-right:1em; } */
+    /* span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  } */
+    /* span.heading_numbering { margin-right: 0.8rem; }* { margin:0;} */
+    /* .graphic-Default{ background-color:#729fcf; font-size:12pt; writing-mode:horizontal-tb; direction:ltr;} */
+  /* .constellation-
+table{ writing-mode:horizontal-tb; direction:ltr; } */
+    div.main_content table.constellation-table td.cell-Default{ border-style: none; }
+    div.main_content table.constellation-table td.cell-ce1{  border-bottom-width: 1px; border-bottom-style:solid; border-left-width: 1px; border-left-style:solid; border-right-style:none; border-top-width: 1px; border-top-style:solid; }
+    div.main_content table.constellation-table td.cell-ce10{  border-bottom-style:none; border-left-style:none; border-right-width: 1px; border-right-style:solid; border-top-style:none; }
+    div.main_content table.constellation-table td.cell-ce11{  border-bottom-width: 1px; border-bottom-style:solid; border-left-style:none; border-right-width: 1px; border-right-style:solid; border-top-style:none; }
+    div.main_content table.constellation-table td.cell-ce12{  border-bottom-width: 1px; border-bottom-style:solid; border-left-style:none; border-right-width: 1px; border-right-style:solid; border-top-width: 1px; border-top-style:solid; }
+    div.main_content table.constellation-table td.cell-ce2{  text-align:center ! important; margin-left:0in; border-style: none; }
+    div.main_content table.constellation-table td.cell-ce3{  border-bottom-style:none; border-left-width: 1px; border-left-style:solid; border-right-style:none; border-top-width: 1px; border-top-style:solid; }
+    div.main_content table.constellation-table td.cell-ce4{  border-bottom-style:none; border-left-width: 1px; border-left-style:solid; border-right-style:none; border-top-style:none; }
+    div.main_content table.constellation-table td.cell-ce5{  border-bottom-width: 1px; border-bottom-style:solid; border-left-width: 1px; border-left-style:solid; border-right-style:none; border-top-style:none; }
+    div.main_content table.constellation-table td.cell-ce6{  border-bottom-width: 1px; border-bottom-style:solid; border-left-style:none; border-right-style:none; border-top-width: 1px; border-top-style:solid; }
+    div.main_content table.constellation-table td.cell-ce7{  border-bottom-style:none; border-left-style:none; border-right-style:none; border-top-width: 1px; border-top-style:solid; }
+    div.main_content table.constellation-table td.cell-ce8{  border-bottom-width: 1px; border-bottom-style:solid; border-left-style:none; border-right-style:none; border-top-style:none; }
+    div.main_content table.constellation-table td.cell-ce9{  border-bottom-style:none; border-left-style:none; border-right-width: 1px; border-right-style:solid; border-top-width: 1px; border-top-style:solid
+    .col-co1{ width:0.461in; }
+    /*.row-ro1{ height:0.178in; }*/
+    /* ODF styles with no properties representable as CSS:
+     { } */
+</style>
+<table border="0" cellspacing="0" cellpadding="0" class="constellation-table" id="constellation-table">
+  <!--<colgroup><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/></colgroup>-->
+  <tr class="row-ro1"><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td colspan="4" class="cell-ce2">
+<span>NORTH</span>
+</td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td></tr><tr class="row-ro1"><td class="cell-ce1">
+<span class="constellation-anchor"><a href="#lynx" title="Lynx">Lyn</a></span>
+</td><td class="cell-ce6"> </td><td class="cell-ce6">
+<span class="constellation-anchor"><a href="#camelopardalis" title="Camelopardalis">Cam</a></span>
+</td><td class="cell-ce6"> </td><td class="cell-ce6">
+<span class="constellation-anchor"><a href="#cassiopeia" title="Cassiopeia">Cas</a></span>
+</td><td class="cell-ce6">
+<span class="constellation-anchor"><a href="#cepheus" title="Cepheus">Cep</a></span>
+</td><td class="cell-ce6"> </td><td class="cell-ce6">
+<span class="constellation-anchor"><a href="#draco" title="Draco">Dra</a></span>
+</td><td class="cell-ce6"> </td><td class="cell-ce6">
+<span class="constellation-anchor"><a href="#ursa-minor" title="Ursa Minor">UMi</a></span>
+</td><td class="cell-ce6">
+<span class="constellation-anchor"><a href="#ursa-major" title="Ursa Major">UMa</a></span>
+    </td><td class="cell-ce12"> </td></tr>
+
+  <tr class="row-ro1"><td class="cell-ce2" colspan="4">&nbsp;</td></tr>
+  <tr class="row-ro1"><td colspan="3" class="cell-ce2">
+<span>WINTER</span>
+</td><td colspan="3" class="cell-ce2">
+<span>FALL</span>
+</td><td colspan="3" class="cell-ce2">
+<span>SUMMER</span>
+</td><td colspan="3" class="cell-ce2">
+<span>SPRING</span>
+</td></tr><tr class="row-ro1"><td class="cell-ce3"> </td><td class="cell-ce7"> </td><td class="cell-ce9">
+<span class="constellation-anchor"><a href="#auriga" title="Auriga">Aur</a></span>
+</td><td class="cell-ce3">
+<span class="constellation-anchor"><a href="#perseus" title="Perseus">Per</a></span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#andromeda" title="Andromeda">And</a></span>
+</td><td class="cell-ce9">
+<span class="constellation-anchor"><a href="#lacerta" title="Lacerta">Lac</a></span>
+</td><td class="cell-ce3">
+<span class="constellation-anchor"><a href="#cygnus" title="Cygnus">Cyg</a></span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#lyra" title="Lyra">Lyr</a></span>
+</td><td class="cell-ce9"> </td><td class="cell-ce3"> </td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#canes-venatici" title="Canes Venatici">CVn</a></span>
+</td><td class="cell-ce9"> </td></tr><tr class="row-ro1"><td class="cell-ce4"> </td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#gemini" title="Gemini">Gem</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#taurus" title="Taurus">Tau</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#triangulum" title="Triangulum">Tri</a></span>
+</td><td class="cell-Default"> </td><td class="cell-ce10"> </td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#vulpecula" title="Vulpecula">Vul</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#sagitta" title="Sagitta">Sge</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#hercules" title="Hercules">Her</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#corona-borealis" title="Corona Borealis">CrB</a></span>
+</td><td class="cell-Default"> </td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#leo-minor" title="Leo Minor">LMi</a></span>
+</td></tr><tr class="row-ro1"><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#cancer" title="Cancer">Cnc</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#canis-minor" title="Canis Minor">CMi</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#orion" title="Orion">Ori</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#aries" title="Aries">Ari</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#pisces" title="Pisces">Psc</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#pegasus" title="Pegasus">Peg</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#delphinus" title="Delphinus">Del</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#aquila" title="Aquila">Aql</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#ophiuchus" title="Ophiuchus">Oph</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#boötes" title="Boötes">Boo</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#coma-berenices" title="Coma Berenices">Com</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#leo" title="Leo">Leo</a></span>
+</td></tr><tr class="row-ro1"><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#hydra" title="Hydra">Hya</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#monoceros" title="Monoceros">Mon</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#lepus" title="Lepus">Lep</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#cetus" title="Cetus">Cet</a></span>
+</td><td class="cell-Default"> </td><td class="cell-ce10"> </td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#equuleus" title="Equuleus">Equ</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#scutum" title="Scutum">Sct</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#serpens" title="Serpens">Ser</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#libra" title="Libra">Lib</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#virgo" title="Virgo">Vir</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#sextans" title="Sextans">Sex</a></span>
+</td></tr><tr class="row-ro1"><td class="cell-ce4"> </td><td class="cell-Default"> </td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#columba" title="Columba">Col</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#eridanus" title="Eridanus">Eri</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#sculptor" title="Sculptor">Scl</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#aquarius" title="Aquarius">Aqr</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#capricornus" title="Capricornus">Cap</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#sagittarius" title="Sagittarius">Sgr</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#scorpius" title="Scorpius">Sco</a></span>
+</td><td class="cell-ce4"> </td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#corvus" title="Corvus">Crv</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#crater" title="Crater">Crt</a></span>
+</td></tr><tr class="row-ro1"><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#pyxis" title="Pyxis">Pyx</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#canis-major" title="Canis Major">CMa</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor">Cae</span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#fornax" title="Fornax">For</a></span>
+</td><td class="cell-Default"> </td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#piscis-austrinus" title="Piscis Austrinus">PsA</a></span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor">Mic</span>
+</td><td class="cell-Default">
+<span class="constellation-anchor">CrA</span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor">Ara</span>
+</td><td class="cell-ce4">
+<span class="constellation-anchor"><a href="#lupus" title="Lupus">Lup</a></span>
+</td><td class="cell-Default">
+<span class="constellation-anchor"><a href="#hydra" title="Hydra">Hya</a></span>
+</td><td class="cell-ce10">
+<span class="constellation-anchor"><a href="#antlia" title="Antlia">Ant</a></span>
+</td></tr><tr class="row-ro1"><td class="cell-ce5">
+<span class="constellation-anchor"><a href="#vela" title="Vela">Vel</a></span>
+</td><td class="cell-ce8">
+<span class="constellation-anchor"><a href="#puppis" title="Puppis">Pup</a></span>
+</td><td class="cell-ce11">
+<span class="constellation-anchor">Pic</span>
+</td><td class="cell-ce5">
+<span class="constellation-anchor">Hor</span>
+</td><td class="cell-ce8">
+<span class="constellation-anchor"><a href="#phoenix" title="Phoenix">Phe</a></span>
+</td><td class="cell-ce11">
+<span class="constellation-anchor"><a href="#grus" title="Grus">Gru</a></span>
+</td><td class="cell-ce5">
+<span class="constellation-anchor">Ind</span>
+</td><td class="cell-ce8">
+<span class="constellation-anchor">Tel</span>
+</td><td class="cell-ce11">
+<span class="constellation-anchor">Nor</span>
+</td><td class="cell-ce5"> </td><td class="cell-ce8">
+<span class="constellation-anchor"><a href="#centaurus" title="Centaurus">Cen</a></span>
+</td><td class="cell-ce11"> </td></tr><tr class="row-ro1"><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td></tr><tr class="row-ro1"><td class="cell-ce3"> </td><td class="cell-ce7">
+<span class="constellation-anchor">Car</span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#dorado" title="Dorado">Dor</a></span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor">Ret</span>
+</td><td class="cell-ce7"> </td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#tucana" title="Tucana">Tuc</a></span>
+</td><td class="cell-ce7"> </td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#pavo" title="Pavo">Pav</a></span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor">TrA</span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor">Cir</span>
+</td><td class="cell-ce7">
+<span class="constellation-anchor"><a href="#crux" title="Crux">Cru</a></span>
+</td><td class="cell-ce9"> </td></tr><tr class="row-ro1"><td class="cell-ce5"> </td><td class="cell-ce8">
+<span class="constellation-anchor">Vol</span>
+</td><td class="cell-ce8">
+<span class="constellation-anchor">Men</span>
+</td><td class="cell-ce8"> </td><td class="cell-ce8">
+<span class="constellation-anchor">Hyi</span>
+</td><td class="cell-ce8">
+<span class="constellation-anchor">Oct</span>
+</td><td class="cell-ce8"> </td><td class="cell-ce8"> </td><td class="cell-ce8">
+<span class="constellation-anchor">Aps</span>
+</td><td class="cell-ce8"> </td><td class="cell-ce8">
+<span class="constellation-anchor">Mus</span>
+</td><td class="cell-ce11">
+<span class="constellation-anchor">Cha</span>
+</td></tr><tr class="row-ro1"><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td colspan="4" class="cell-ce2">
+<span>SOUTH</span>
+</td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td></tr></table>
+
 
 
 ---
@@ -169,6 +393,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-11-24|[UGC 4185 3 for 1](https://www.deepskyforum.com/showthread.php?1821-Object-of-The-Week-November-24-2024-UGC-4185-3-for-1){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 4185</x-dso-link>, <x-dso-link>UGC 4186</x-dso-link>, <x-dso-link>MCG +11-10-55</x-dso-link>|
 |2021-02-07|[A wide northern pair in Camelopardalis](https://www.deepskyforum.com/showthread.php?1459-Object-of-the-Week-February-7-2021-A-wide-northern-pair-in-Camelopardalis){:target="_blank"}|Victor van Wulfen|<x-dso-link>KPG 132</x-dso-link> (NGC 2336 & <x-dso-link>IC 467</x-dso-link>), <x-dso-link>LEDA 213387</x-dso-link>|
 |2021-01-17|[Arp 9, NGC 2523](https://www.deepskyforum.com/showthread.php?1451-Object-of-the-week-Jan-17-2021-Arp-9-NGC-2523){:target="_blank"}|Alvin Huey|<x-dso-link>NGC 2523</x-dso-link> (Arp 9), <x-dso-link>NGC 2523B</x-dso-link>|
 |2020-04-19|[The Galaxy Chain NGC 2633/2634/2634A and the surrounding IFN](https://www.deepskyforum.com/showthread.php?1356-Object-of-the-Week-April-19-2020-The-Galaxy-Chain-NGC-2633-2634-2634A-and-the-surrounding-IFN){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 2633</x-dso-link> (Arp 80, <x-dso-link>VV 519</x-dso-link>), <x-dso-link>NGC 2634</x-dso-link>, <x-dso-link>NGC 2634A</x-dso-link>, IFN|
@@ -205,6 +430,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-12-01|[Four Open Clusters: NGC 133, NGC 146, King14 and Pot 7](https://www.deepskyforum.com/showthread.php?1823-Object-of-the-Week-December-3-2024-%25E2%2580%2593-Four-Open-Clusters-NGC-133-NGC-146-King14-and-Pot-7){:target="_blank"}|Howard Banich|<x-dso-link>NGC 133</x-dso-link>, <x-dso-link>NGC 146</x-dso-link>, King14, Pot 7|
 |2024-11-17|[Abell PN 6 and HFG1](https://www.deepskyforum.com/showthread.php?1818-Object-of-the-Week-November-17-2024-Abell-PN-6-and-HFG1){:target="_blank"}|Mark Friedman|Abell PN 6 (A 6, <x-dso-link>PK 136+04.1</x-dso-link>, PN G136.1+04.9, A55 5, ARO 207), HFG1 (Heckathorn-Fesen-Gull 1, PN G136.3+05.5, <x-dso-link>PK 136+05.1</x-dso-link>)|
 |2023-11-26|[EGB 1 - PN or imposter?](https://www.deepskyforum.com/showthread.php?1730-EGB-1-PN-or-imposter){:target="_blank"}|Steve Gottlieb|EGB 1 (Simeis 280, LBN 624, HDW 1, HaWe 1, <x-dso-link>PK 124+10.1</x-dso-link>, PN G124.0+10.7)|
 |2023-11-12|[Neckel-Staude 2](https://www.deepskyforum.com/showthread.php?1727-Object-of-the-Week-November-12th-2023-Neckel-Staude-2){:target="_blank"}|Victor van Wulfen|Neckel-Staude 2|
@@ -477,7 +703,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 |2013-07-21|[NGC4656 The Hockey Stick](https://www.deepskyforum.com/showthread.php?405-Object-of-the-Week-July-21-2013-NGC4656-The-Hockey-Stick){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 4656</x-dso-link>, <x-dso-link>NGC 4657</x-dso-link>|
 |2013-05-12|[MCG Galaxy Chain near M51](https://www.deepskyforum.com/showthread.php?371-Object-of-the-Week-May-12-2013-MCG-Galaxy-Chain-near-M51){:target="_blank"}|Steve Gottlieb|NSC J131822+471007 ([YSS2008] 264, <x-dso-link>MCG +8-24-102</x-dso-link> (LEDA 46349) & <x-dso-link>MCG +8-24-103</x-dso-link> (LEDA 46348) & <x-dso-link>MCG +8-24-104</x-dso-link> (LEDA 46359) & <x-dso-link>MCG +8-24-105</x-dso-link> (LEDA 46371) & <x-dso-link>MCG +8-24-106</x-dso-link> (UGC 8364))|
 |2013-04-21|[M51](https://www.deepskyforum.com/showthread.php?355-Object-of-the-Week-April-21-2013-M51){:target="_blank"}|Howard Banich|<x-dso-link>M 51</x-dso-link> (Arp 85, <x-dso-link>NGC 5194</x-dso-link> & <x-dso-link>NGC 5195</x-dso-link>), <x-dso-link>IC 4277</x-dso-link>, 2MASXi J1330023+471654|
-|2012-03-04|[ROSE 16](https://www.deepskyforum.com/showthread.php?88-Object-of-the-Week-Mar-4-2012-ROSE-16){:target="_blank"}|Jimi Lowrey|Rose 16|
+|2012-03-04|[ROSE 16](https://www.deepskyforum.com/showthread.php?88-Object-of-the-Week-Mar-4-2012-ROSE-16){:target="_blank"}|Jimi Lowrey|<x-dso-link simbad="[R77] 16">Rose 16</x-dso-link>|
 
 
 [▲ Index](#index){:.top}
@@ -717,7 +943,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 |2022-03-20|[NGC 3646, a Ring Galaxy in Leo](https://www.deepskyforum.com/showthread.php?1571-Object-of-the-Week-March-20-2022-NGC-3646-a-Ring-Galaxy-in-Leo){:target="_blank"}|Akarsh Simha|<x-dso-link>NGC 3646</x-dso-link>|
 |2021-03-28|[NGC 3628 Tidal Tail](https://www.deepskyforum.com/showthread.php?1479-Object-of-the-Week-March-28-2021-NGC-3628-Tidal-Tail){:target="_blank"}|Howard Banich|NGC 3628 Tidal Tail|
 |2021-03-14|[HCG \(Hickson\) 44 and Arp 316](https://www.deepskyforum.com/showthread.php?1472-Object-of-the-Week-March-14-2021-%E2%80%93-HCG-%28Hickson%29-44-and-Arp-316){:target="_blank"}|Mark Friedman|<x-dso-link>HCG 44</x-dso-link> (Arp 316 (NGC 3187 & <x-dso-link>NGC 3193</x-dso-link>) & <x-dso-link>NGC 3190</x-dso-link> & <x-dso-link>NGC 3185</x-dso-link>)|
-|2020-04-12|[The Rose Catalogue](https://www.deepskyforum.com/showthread.php?1355-Object-of-the-week-April-12-2020-The-Rose-Catalogue){:target="_blank"}|Alvin Huey|Rose 2, Rose 13, Rose 33|
+|2020-04-12|[The Rose Catalogue](https://www.deepskyforum.com/showthread.php?1355-Object-of-the-week-April-12-2020-The-Rose-Catalogue){:target="_blank"}|Alvin Huey|<x-dso-link simbad="[R77] 2">Rose 2</x-dso-link>, <x-dso-link simbad="[R77] 13">Rose 13</x-dso-link>, <x-dso-link simbad="[R77] 33">Rose 33</x-dso-link>|
 |2020-04-05|[M 105 = NGC 3379 \(and friends\), in Leo](https://www.deepskyforum.com/showthread.php?1354-Object-of-the-Week-April-5th-2020-M-105-NGC-3379-%28and-friends%29-in-Leo){:target="_blank"}|Paul Alsing|<x-dso-link>M 105</x-dso-link>, <x-dso-link>NGC 3384</x-dso-link>, <x-dso-link>NGC 3389</x-dso-link>|
 |2019-04-14|[Arp 198 / UGC 6073 / VV 267a and VV267b](https://www.deepskyforum.com/showthread.php?1264-Object-of-the-Week-April-14-2019-Arp-198-UGC-6073-VV-267a-and-VV267b){:target="_blank"}|Howard Banich|<x-dso-link>Arp 198</x-dso-link> (UGC 6073, <x-dso-link>VV 267</x-dso-link>)|
 |2019-04-07|[NGC 3908 \(Did Swift See IT ?\)](https://www.deepskyforum.com/showthread.php?1260-Object-of-The-Week-April-7-2019%E2%80%93NGC-3908-%28Did-Swift-See-IT-%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 3908</x-dso-link>|
@@ -1373,7 +1599,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-11-25T06:33:58Z
+Last updated: 2024-12-10T10:24:45Z
 </div>
 {% endraw %}
 

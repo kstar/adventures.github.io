@@ -12,6 +12,8 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2024-12-01|[Four Open Clusters: NGC 133, NGC 146, King14 and Pot 7](https://www.deepskyforum.com/showthread.php?1823-Object-of-the-Week-December-3-2024-%25E2%2580%2593-Four-Open-Clusters-NGC-133-NGC-146-King14-and-Pot-7){:target="_blank"}|Howard Banich|<x-dso-link>NGC 133</x-dso-link>, <x-dso-link>NGC 146</x-dso-link>, King14, Pot 7|CAS|
+|2024-11-24|[UGC 4185 3 for 1](https://www.deepskyforum.com/showthread.php?1821-Object-of-The-Week-November-24-2024-UGC-4185-3-for-1){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 4185</x-dso-link>, <x-dso-link>UGC 4186</x-dso-link>, <x-dso-link>MCG +11-10-55</x-dso-link>|CAM|
 |2024-11-17|[Abell PN 6 and HFG1](https://www.deepskyforum.com/showthread.php?1818-Object-of-the-Week-November-17-2024-Abell-PN-6-and-HFG1){:target="_blank"}|Mark Friedman|Abell PN 6 (A 6, <x-dso-link>PK 136+04.1</x-dso-link>, PN G136.1+04.9, A55 5, ARO 207), HFG1 (Heckathorn-Fesen-Gull 1, PN G136.3+05.5, <x-dso-link>PK 136+05.1</x-dso-link>)|CAS|
 |2024-11-10|[NGC 507](https://www.deepskyforum.com/showthread.php?1816-Object-of-the-Week-Nov-10th-2024-NGC-507){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 507</x-dso-link> (Arp 229), NGC 507 group|PSC|
 |2024-11-03|[NGC 7640 - as perceived by AI](https://www.deepskyforum.com/showthread.php?1815-NGC-7640-as-perceived-by-AI){:target="_blank"}|Dragan Nikin|NGC 7640|AND|
@@ -251,7 +253,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 |2020-05-03|[NGC 4945, the Tweezers Galaxy](https://www.deepskyforum.com/showthread.php?1361-Object-Of-The-Week-May-3-2020-%E2%80%93-NGC-4945-the-Tweezers-Galaxy){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 4945</x-dso-link>|CEN|
 |2020-04-26|[Abell 3526](https://www.deepskyforum.com/showthread.php?1358-Object-Of-The-Week-April-26-2020-%E2%80%93-Abell-3526){:target="_blank"}|Wouter van Reeven|<x-dso-link>ACO 3526</x-dso-link> (NGC 4603A & <x-dso-link>NGC 4603C</x-dso-link> & <x-dso-link>NGC 4601</x-dso-link> & <x-dso-link>NGC 4603B</x-dso-link> & <x-dso-link>NGC 4603</x-dso-link> & <x-dso-link>NGC 4616</x-dso-link> & <x-dso-link>NGC 4603D</x-dso-link> & <x-dso-link>NGC 4622A</x-dso-link> & <x-dso-link>NGC 4650A</x-dso-link> & <x-dso-link>NGC 4650B</x-dso-link> & <x-dso-link>NGC 4650</x-dso-link> & <x-dso-link>NGC 4645A</x-dso-link> & <x-dso-link>NGC 4645B</x-dso-link> & <x-dso-link>NGC 4645</x-dso-link> & <x-dso-link>NGC 4672</x-dso-link> & <x-dso-link>NGC 4696D</x-dso-link> & <x-dso-link>NGC 4696A</x-dso-link> & <x-dso-link>NGC 4677</x-dso-link> & <x-dso-link>NGC 4683</x-dso-link> & <x-dso-link>NGC 4696B</x-dso-link> & <x-dso-link>NGC 4696E</x-dso-link> & <x-dso-link>NGC 4709</x-dso-link> & <x-dso-link>NGC 4706</x-dso-link> & <x-dso-link>NGC 4696</x-dso-link> & <x-dso-link>NGC 4744</x-dso-link> & <x-dso-link>NGC 4743</x-dso-link> & <x-dso-link>NGC 4730</x-dso-link> & <x-dso-link>NGC 4729</x-dso-link> and more)|CEN|
 |2020-04-19|[The Galaxy Chain NGC 2633/2634/2634A and the surrounding IFN](https://www.deepskyforum.com/showthread.php?1356-Object-of-the-Week-April-19-2020-The-Galaxy-Chain-NGC-2633-2634-2634A-and-the-surrounding-IFN){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 2633</x-dso-link> (Arp 80, <x-dso-link>VV 519</x-dso-link>), <x-dso-link>NGC 2634</x-dso-link>, <x-dso-link>NGC 2634A</x-dso-link>, IFN|CAM|
-|2020-04-12|[The Rose Catalogue](https://www.deepskyforum.com/showthread.php?1355-Object-of-the-week-April-12-2020-The-Rose-Catalogue){:target="_blank"}|Alvin Huey|Rose 2, Rose 13, Rose 33|LEO|
+|2020-04-12|[The Rose Catalogue](https://www.deepskyforum.com/showthread.php?1355-Object-of-the-week-April-12-2020-The-Rose-Catalogue){:target="_blank"}|Alvin Huey|<x-dso-link simbad="[R77] 2">Rose 2</x-dso-link>, <x-dso-link simbad="[R77] 13">Rose 13</x-dso-link>, <x-dso-link simbad="[R77] 33">Rose 33</x-dso-link>|LEO|
 |2020-04-05|[M 105 = NGC 3379 \(and friends\), in Leo](https://www.deepskyforum.com/showthread.php?1354-Object-of-the-Week-April-5th-2020-M-105-NGC-3379-%28and-friends%29-in-Leo){:target="_blank"}|Paul Alsing|<x-dso-link>M 105</x-dso-link>, <x-dso-link>NGC 3384</x-dso-link>, <x-dso-link>NGC 3389</x-dso-link>|LEO|
 |2020-03-29|[NGC 3738 / Arp 234](https://www.deepskyforum.com/showthread.php?1351-Object-of-the-Week-March-29-2020-%E2%80%93-NGC-3738-Arp-234){:target="_blank"}|Howard Banich|<x-dso-link>NGC 3738</x-dso-link> (Arp 234), <x-dso-link>NGC 3756</x-dso-link>|UMA|
 |2020-03-22|[IC 2144 What is it?](https://www.deepskyforum.com/showthread.php?1350-Object-of-the-week-March-22-2020-IC-2144-What-is-it){:target="_blank"}|Jimi Lowrey|<x-dso-link>IC 2144</x-dso-link>|TAU|
@@ -673,7 +675,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 |2012-03-25|[Hickson 56 along with Arp 214](https://www.deepskyforum.com/showthread.php?103-Object-of-the-Week-Mar-25-2012-Hickson-56-along-with-Arp-214){:target="_blank"}|Alvin Huey|<x-dso-link>HCG 56</x-dso-link>, <x-dso-link>Arp 214</x-dso-link> (NGC 3718)|UMA|
 |2012-03-18|[Arp 142 and his "Shred"](https://www.deepskyforum.com/showthread.php?101-Object-of-the-Week-Mar-18-2012-Arp-142-and-his-quot-Shred-quot){:target="_blank"}|Steve Gottlieb|<x-dso-link>Arp 142</x-dso-link> (NGC 2936 & <x-dso-link>NGC 2937</x-dso-link>), <x-dso-link>LEDA 1237172</x-dso-link>|HYA|
 |2012-03-11|[The Boomerang Nebula](https://www.deepskyforum.com/showthread.php?95-Object-of-the-Week-Mar-11-2012-The-Boomerang-Nebula){:target="_blank"}|Jim Chandler|<x-dso-link>ESO 172-7</x-dso-link>|CEN|
-|2012-03-04|[ROSE 16](https://www.deepskyforum.com/showthread.php?88-Object-of-the-Week-Mar-4-2012-ROSE-16){:target="_blank"}|Jimi Lowrey|Rose 16|CVN|
+|2012-03-04|[ROSE 16](https://www.deepskyforum.com/showthread.php?88-Object-of-the-Week-Mar-4-2012-ROSE-16){:target="_blank"}|Jimi Lowrey|<x-dso-link simbad="[R77] 16">Rose 16</x-dso-link>|CVN|
 |2012-02-26|[ARP 283](https://www.deepskyforum.com/showthread.php?81-Object-of-the-Week-Feb-26-2012-ARP-283){:target="_blank"}|Paul Alsing|<x-dso-link>Arp 283</x-dso-link> (NGC 2798 & <x-dso-link>NGC 2799</x-dso-link>)|LYN|
 |2012-02-19|[Thommes' Nebula revealed](https://www.deepskyforum.com/showthread.php?65-Object-of-the-Week-Feb-19-2012-Thommes-Nebula-revealed){:target="_blank"}|Steve Gottlieb|Thommes' Nebula|MON|
 |2012-02-12|[UGC 4332](https://www.deepskyforum.com/showthread.php?43-Object-of-the-Week-Feb-12-2012-UGC-4332){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 4332</x-dso-link>|CNC|
@@ -682,7 +684,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-11-25T06:33:58Z
+Last updated: 2024-12-10T10:24:45Z
 </div>
 {% endraw %}
 
