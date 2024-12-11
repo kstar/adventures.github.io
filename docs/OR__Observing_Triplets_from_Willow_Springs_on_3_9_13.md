@@ -204,7 +204,7 @@ UGC 4003 is the first and brightest in the KTG 19 triplet with UGC 4012 7\.6' NE
   
 ---
   
-**Name**: <x-dso simbad="MCG\+00\-22\-003">KTG 21</x-dso>
+**Name**: <x-dso simbad="MCG+00-22-003">KTG 21</x-dso>
 
 **RA**: 08 20 39\.0
 
