@@ -118,11 +118,11 @@ td { word-wrap: break-word; }
 
 This is an index of all objects featured in Adventures in Deep Space pages (including articles and observing reports), organized by constellation. The Deep-Sky Forum objects of the week are excluded, which have their own [index](/dsf_ootw_constellation.html). [Steve Gottlieb's NGC/IC/UGC logs](/steve.ngc.htm) are also excluded since it is exhaustive.
 
-The data including aliases, object type classifications, and positions (used to compute constellation) ultimately comes from the <a href="https://simbad.u-strasbg.fr/">SIMBAD</a> Astronomical Database, or less-frequently from the <a href="https://ned.ipac.caltech.edu/'>NASA Extragalactic Database (NED)</a>. Some type abbreviations are translated to common parlance for your convenience. When the type abbreviations are as used on SIMBAD / NED, you can use <a href="https://simbad.cds.unistra.fr/guide/otypes.htx">the SIMBAD type page</a> or <a href="https://ned.ipac.caltech.edu/help/ui/nearposn-list_objecttypes?popup=1">the NED type page</a> for reference.
+The data including aliases, object type classifications, and positions (used to compute constellation) ultimately comes from the <a href="https://simbad.u-strasbg.fr/">SIMBAD</a> Astronomical Database, or less-frequently from the <a href="https://ned.ipac.caltech.edu/">NASA Extragalactic Database (NED)</a>. Some type abbreviations are translated to common parlance for your convenience. When the type abbreviations are as used on SIMBAD / NED, you can use <a href="https://simbad.cds.unistra.fr/guide/otypes.htx">the SIMBAD type page</a> or <a href="https://ned.ipac.caltech.edu/help/ui/nearposn-list_objecttypes?popup=1">the NED type page</a> for reference.
 
 The objects within each constellation are sorted by a popularity score, calculated as (no. of article features) + ½(no. of observing report features) - ½(no. of articles with a different object name in the title) - ½(if object is a subcomponent of a compact group / interaction)
 
-If you'd like to help improve this feature, please submit an MR on the <a href='https://github.com/kstar/adventures.github.io'>github repo</a>.) Hope you find it useful!<br/>&nbsp;&nbsp; - Akarsh Simha
+If you'd like to help improve this feature, please submit an MR on the <a href='https://github.com/kstar/adventures.github.io'>github repo</a>. Hope you find it useful!<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp; - Akarsh Simha
 
 
 """)
