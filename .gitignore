@@ -12,5 +12,21 @@ Gemfile.lock
 # Gems
 *.gem
 
+# Pre-documents
+predocs/
+
+# Auto-save
+.#*
+\#*.html#
+\#*.htm#
+\#*.md#
+
+# Other
+__pycache__/
+
+# Products of scripts
+adventures.db
+unresolved.json
+
 # Akarsh's shell environment
 .my-setup
