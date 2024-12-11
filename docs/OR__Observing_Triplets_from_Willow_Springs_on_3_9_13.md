@@ -117,7 +117,7 @@ This small triplet of CGCG galaxies is contained within 3\.2'. CGCG 146\-33 is t
 
 ---
   
-**Name**: KTG 16  
+**Name**: <x-dso simbad="UGC 3776">KTG 16</x-dso>
 **RA**: 07 17 05\.3
 
 **Dec**: \+34 01 35  

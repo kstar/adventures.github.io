@@ -6,8 +6,7 @@ date: "Mon, 9 Dec 2024 16:05:40 -0800"
 ---
 We had a nice crowd at Grey Pine Flat on Saturday night, September 11th, at Lake Sonoma, situated just above the wine\-growing vineyards of Dry Creek in Sonoma County.  The observers included Ray Cash, Carter Scholz, Dennis Beckley, Caroline Scolari and a few others, though not Bob Douglas, who was leaving shortly for France. Conditions were pretty nice \-\- warm and dry with SQM readings between 21\.3 to 21\.4\.  The friendly, enthusasiast crowd made for an enjoyable evening.  
 
-
-Known as the Berkeley clusters (or Setteducati\-Weaver clusters), these stellar assemblages were discovered around 1960 by UC astronomers Harold Weaver and Arthur Setteducati.  They searched the Palomar Observatory Sky Survey (POSS) plates looking for faint, rich open star clusters and found over 80 new objects (some were previously catalogued objects).  Generally, the Berkely clusters are not impressive visual clusters but there are a few Berkeley standouts.  I spent Saturday night at Lake Sonoma, checking out some of the Berkeley luminaries along with a nice crowd at Grey Pine Flat including Ray Cash, Carter Scholz, Dennis Beckley, Caroline Scolari and several others.  Conditions were pretty nice \-\- warm and dry with SQM readings between 21\.3\-21\.4 \-\- and the friendly crowd made for an enjoyable evening.  
+Known as the Berkeley clusters (or Setteducati-Weaver clusters), these stellar assemblages were discovered around 1960 by UC astronomers Harold Weaver and Arthur Setteducati.  They searched the Palomar Observatory Sky Survey (POSS) plates looking for faint, rich open star clusters and found over 80 new objects (some were previously catalogued objects).  Generally, the Berkeley clusters are not impressive visual clusters but there are a few Berkeley standouts.  I spent Saturday night at Lake Sonoma, checking out some of these Berkeley luminaries.
 
 ---
 
