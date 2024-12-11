@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 import logging
 import os
 import re
-from common import desimbadification, CONSTELLATIONS, make_constellation_map
+from common import desimbadification, CONSTELLATIONS, make_constellation_map, COMPILED_OBJECT_REGEX, SIMBAD_OTYPE
 from pathlib import Path
 import json
 
@@ -73,6 +73,35 @@ for objects in data.values():
         main_id_dict['simbad_id'] = sorted(main_id_dict['simbad_ids'])[0] # Note: singular, pick any
         main_id_dict['filenames'] = sorted({fn for fns in main_id_dict['display_ids'].values() for fn in fns}, key=lambda fn: article_titles[fn])
 
+parents = {
+    filename: parent
+    for filename, parent in cursor.execute("select filename, parent from reachability where reachable = 1")
+}
+
+component_matcher = re.compile(r'\b(?:Rose|[R77]|HCG|VV|KTG|K77|Hickson) ?[0-9]+[a-f]\b', re.IGNORECASE)
+
+def popularity_score(obj: dict) -> float:
+    count_or = 0
+    count_article = 0
+    for fn in obj['filenames']:
+        if parents[fn] == 'observing.reports.htm':
+            count_or += 1
+            continue
+        match =  COMPILED_OBJECT_REGEX.search(article_titles[fn])
+        if match:
+            all_ids = {
+                _id.replace(' ', '') for _id in
+                set(obj['valid_ids']) | set(obj['display_ids']) | {obj['simbad_id'],}
+            }
+            if match.group().replace(' ', '') not in all_ids:
+                count_article -= 0.5
+        count_article += 1
+    score = count_article + count_or/2.0
+    if component_matcher.match(obj['display_id']):
+        score -= 0.5
+    return -score
+
+
 with open('../docs/dso_index_constellation.md', 'w') as output:
     output.write(
 """---
@@ -87,7 +116,13 @@ disable_dso: true
 td { word-wrap: break-word; }
 </style>
 
-This is an index of all objects featured in Adventures in Deep Space pages (including articles and observing reports), organized by constellation. The Deep-Sky Forum objects of the week are excluded, which have their own [index](/dsf_ootw_constellation.html). This feature is still in beta and there are many errors and <a href="https://github.com/kstar/adventures.github.io/issues/30">issues</a> that need to be addressed. (If you'd like to help improve the code, please submit an MR on the <a href='https://github.com/kstar/adventures.github.io'>github repo</a>.) Hope you find it useful!<br/>&nbsp;&nbsp; - Akarsh Simha
+This is an index of all objects featured in Adventures in Deep Space pages (including articles and observing reports), organized by constellation. The Deep-Sky Forum objects of the week are excluded, which have their own [index](/dsf_ootw_constellation.html). [Steve Gottlieb's NGC/IC/UGC logs](/steve.ngc.htm) are also excluded since it is exhaustive.
+
+The data including aliases, object type classifications, and positions (used to compute constellation) ultimately comes from the <a href="https://simbad.u-strasbg.fr/">SIMBAD</a> Astronomical Database, or less-frequently from the <a href="https://ned.ipac.caltech.edu/'>NASA Extragalactic Database (NED)</a>. Some type abbreviations are translated to common parlance for your convenience. When the type abbreviations are as used on SIMBAD / NED, you can use <a href="https://simbad.cds.unistra.fr/guide/otypes.htx">the SIMBAD type page</a> or <a href="https://ned.ipac.caltech.edu/help/ui/nearposn-list_objecttypes?popup=1">the NED type page</a> for reference.
+
+The objects within each constellation are sorted by a popularity score, calculated as (no. of article features) + ½(no. of observing report features) - ½(no. of articles with a different object name in the title) - ½(if object is a subcomponent of a compact group / interaction)
+
+If you'd like to help improve this feature, please submit an MR on the <a href='https://github.com/kstar/adventures.github.io'>github repo</a>.) Hope you find it useful!<br/>&nbsp;&nbsp; - Akarsh Simha
 
 
 """)
@@ -117,10 +152,10 @@ This is an index of all objects featured in Adventures in Deep Space pages (incl
         output.write(f'## {CONSTELLATIONS[constellation.upper()]}\n\n')
         output.write('\n'.join([
             f'<table class="constellation_index" id="{constellation}">',
-            f'<thead><tr><th>Object</th><th>Also known as</th><th>Type</th><th>Featured in</th></tr></thead>',
+            f'<thead><tr><th>Object</th><th>Also known as</th><th><a href="https://simbad.cds.unistra.fr/guide/otypes.htx">Type</a></th><th>Featured in</th></tr></thead>',
             f'<tbody>',
         ]))
-        for main_id in sorted(objects.keys(), key=lambda k: (-len(objects[k]['filenames']), objects[k]['display_id'])):
+        for main_id in sorted(objects.keys(), key=lambda k: (popularity_score(objects[k]), objects[k]['display_id'])):
             main_id_dict = objects[main_id]
             simbad_id = main_id_dict['simbad_id']
             display_id = main_id_dict['display_id']
@@ -128,6 +163,7 @@ This is an index of all objects featured in Adventures in Deep Space pages (incl
             valid_ids.discard(display_id)
             valid_ids = ', '.join(sorted(valid_ids))
             type_ = main_id_dict['type']
+            type_ = SIMBAD_OTYPE.get(type_, type_)
             articles = '<ul>' + ' '.join([
                 f'<li class="index_article"><a href="/' + filename.replace('.md', '.html') + f'" class="index_article">{article_titles[filename]}</a></li>'
                 for filename in main_id_dict['filenames']
