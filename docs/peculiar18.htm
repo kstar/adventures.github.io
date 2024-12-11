@@ -1,3 +1,6 @@
+---
+# Forcing Jekyll processing by including this front-matter
+---
 <!DOCTYPE html>
 <!-- A list of peculiar galaxies that I found interesting in my 18" telescope -->
 <!-- by Akarsh Simha. (c) 2022 Akarsh Simha, Released under Creative Commons Attribution ShareAlike -->
@@ -9,7 +12,7 @@
     <link rel="stylesheet" href="assets/common.css?version=7">
     <script type="text/javascript" src="assets/common.js?version=3"></script>
     <script type="text/javascript">document.disableDSO = true;</script>
-    <script type="text/javascript" src="/peculiar18.json"></script> <!-- Note: Data for this webpage -->
+<!--    <script type="text/javascript" src="/peculiar18.json"></script> <!-- Note: Data for this webpage -->
 </head>
 <style>
         table {
@@ -78,32 +81,59 @@
     <h2 id="list">List</h2>
     <p id="listinfo">Click on the designation to jump to my 18" notes on the object and a DSS image. All observations were made with my 18" f/4.5 Obsession classic, most of the time tracking on a Gregg Blandin equatorial platform.</p>
     <table id="table" align="center">
+      {% assign sorted_data = site.data.peculiar18 | sort: "ra" %}
+      {% for entry in sorted_data %}
+
+      <tr class={% if forloop.index0 % 2 == 0 %}"even_row"{% else %}"odd_row"{% endif %}>
+	<td><a href="#{{entry.primary}}"><x-dso>{{entry.primary}}</x-dso></a></td>
+	<td>{{entry.ra}}</td><td>{{entry.dec}}</td>
+	<td>{% if entry.maj_axis > 0 and entry.min_axis > 0 %}{{entry.maj_axis | round: 1}}×{{entry.min_axis | round: 1}}{% endif %}</td>
+	<td>{% if entry.V %}{{ entry.V | round: 1 }}{% endif %}</td>
+	<td>{% if entry.z %}{{ entry.z }}{% endif %}</td>
+	<td>{% if entry.name %}{{ entry.name }}{% endif %}</td>
+      </tr>
+      {% endfor %}
     </table>
     <h2>Descriptions</h2>
     <div id="descriptions">
+      {% for entry in site.data.peculiar18 %}
+      <h3 id="{{ entry.primary }}">{{ entry.primary }}</h3>
+      <a href="https://tools.asimha.net/dss.html?id={{ entry.primary }}" target="_blank"><img width=150px src='assets/dss_thumbs/{{ entry.primary | replace: " ", "_"}}.jpg'/></a><br />
+      <table>
+	<tr><td>Coordinates (J2000)</td><td>{{entry.ra}}&nbsp;&nbsp;{{entry.dec}}</td></tr>
+	{% if entry.maj_axis > 0 and entry.min_axis > 0 %}
+	<tr><td>Size</td><td>{{entry.maj_axis | round: 1}}×{{entry.min_axis | round: 1}}</td></tr>
+	{% endif %}
+      </table>
+      <p>
+	{{entry.description}}
+	<a style="float: right; font-size: 25px;" href="#list" title="Back to Top">&#9650;</a>
+      </p>
+      <hr/>
+      {% endfor %}
     </div>
-    <script type="text/javascript">
-      let table = document.getElementById('table');
-      table.innerHTML = '<tr><th>Designation</th><th>RA (J2000)</th><th>Dec (J2000)</th><th>Size</th><th>V magnitude</th><th>Redshift (z)</th><th>Common Name</th></tr>\n';
-      for (var idx = 0; idx < data.length; ++idx) {
-	  let row = data[idx];
-	  table.innerHTML += (
-	      '<tr class="' + (idx % 2 == 0 ? 'even_row' : 'odd_row') + '"><td><a href="#' + row.primary + '"><x-dso>' + row.primary + '</x-dso></a></td><td>' + row.ra + '</td><td>' + row.dec + '</td><td>' + (row.maj_axis > 0 && row.min_axis > 0 ? row.maj_axis.toFixed(1) + '\' &times; ' + row.min_axis.toFixed(1) + '\'' : '') + '</td><td>' + (row.V !== null ? row.V.toFixed(1) : '') + '</td><td>' + (row.z !== null ? row.z.toString() : '') + '</td><td>' + (row.name ? row.name : "") + '</td></tr>\n'
-	  );
-      }
-      // Populate the descriptions
-      let descriptions = document.getElementById('descriptions');
-      descriptions.innerHTML = '';
-      for (var idx = 0; idx < data.length; ++idx) {
-	  let row = data[idx];
-	  descriptions.innerHTML += '<h3 id="' + row.primary + '">' + row.primary + '</h3>\n' +
-	      '<a href="https://tools.asimha.net/dss.html?id=' + row.primary + '" target="_blank"><img width=150px src="assets/dss_thumbs/' + row.primary.replace(' ', '_') + '.jpg" /></a><br />' +
-	      '<table>\n' +
-	      '<tr><td>Coordinates (J2000)</td><td>' + row.ra + '&nbsp; &nbsp;' + row.dec + '</td></tr>\n' +
-	      (row.maj_axis > 0 && row.min_axis > 0 ? '<tr><td>Size</td><td>' + row.maj_axis.toFixed(1) + '\' &times; ' + row.min_axis.toFixed(1) + '\'</td></tr>\n' : ''
-	      ) + '</table>\n' +
-	      '<p>' + row.description + '\n<a style="float: right; font-size: 25px;" href="#list" title="Back to top">&#9650;</a></p><hr />\n\n';
-      }
-    </script>
+    <!-- <script type="text/javascript"> -->
+    <!--   let table = document.getElementById('table'); -->
+    <!--   table.innerHTML = '<tr><th>Designation</th><th>RA (J2000)</th><th>Dec (J2000)</th><th>Size</th><th>V magnitude</th><th>Redshift (z)</th><th>Common Name</th></tr>\n'; -->
+    <!--   for (var idx = 0; idx < data.length; ++idx) { -->
+    <!-- 	  let row = data[idx]; -->
+    <!-- 	  table.innerHTML += ( -->
+    <!-- 	      '<tr class="' + (idx % 2 == 0 ? 'even_row' : 'odd_row') + '"><td><a href="#' + row.primary + '"><x-dso>' + row.primary + '</x-dso></a></td><td>' + row.ra + '</td><td>' + row.dec + '</td><td>' + (row.maj_axis > 0 && row.min_axis > 0 ? row.maj_axis.toFixed(1) + '\' &times; ' + row.min_axis.toFixed(1) + '\'' : '') + '</td><td>' + (row.V !== null ? row.V.toFixed(1) : '') + '</td><td>' + (row.z !== null ? row.z.toString() : '') + '</td><td>' + (row.name ? row.name : "") + '</td></tr>\n' -->
+    <!-- 	  ); -->
+    <!--   } -->
+    <!--   // Populate the descriptions -->
+    <!--   let descriptions = document.getElementById('descriptions'); -->
+    <!--   descriptions.innerHTML = ''; -->
+    <!--   for (var idx = 0; idx < data.length; ++idx) { -->
+    <!-- 	  let row = data[idx]; -->
+    <!-- 	  descriptions.innerHTML += '<h3 id="' + row.primary + '">' + row.primary + '</h3>\n' + -->
+    <!-- 	      '<a href="https://tools.asimha.net/dss.html?id=' + row.primary + '" target="_blank"><img width=150px src="assets/dss_thumbs/' + row.primary.replace(' ', '_') + '.jpg" /></a><br />' + -->
+    <!-- 	      '<table>\n' + -->
+    <!-- 	      '<tr><td>Coordinates (J2000)</td><td>' + row.ra + '&nbsp; &nbsp;' + row.dec + '</td></tr>\n' + -->
+    <!-- 	      (row.maj_axis > 0 && row.min_axis > 0 ? '<tr><td>Size</td><td>' + row.maj_axis.toFixed(1) + '\' &times; ' + row.min_axis.toFixed(1) + '\'</td></tr>\n' : '' -->
+    <!-- 	      ) + '</table>\n' + -->
+    <!-- 	      '<p>' + row.description + '\n<a style="float: right; font-size: 25px;" href="#list" title="Back to top">&#9650;</a></p><hr />\n\n'; -->
+    <!--   } -->
+    <!-- </script> -->
   </body>
 </html>

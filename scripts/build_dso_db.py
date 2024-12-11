@@ -56,6 +56,26 @@ skip_files = re.compile('|'.join('(?:' + pat + ')' for pat in [
     r'steve.ngc.htm',
 ]))
 
+with (SCRIPT_DIR / 'templated.json').open('r') as f:
+    # See https://jekyllrb.com/docs/datafiles/ -- we may wish to generate HTML
+    # from JSON / YAML / CSV containing object data, but still wish to capture
+    # it in the index. This could also be done client-side using JavaScript.
+    #
+    # To capture DSO objects and their SIMBAD/NED-friendly designations from
+    # such files, we need some explicit guidelines, mapping the HTML filename
+    # to the source data, and also how to interpret said source data
+    #
+    # Therefore templated.json must contain fields of the following form
+    #
+    # filename: { source: "data_source.(json|csv|yaml)", ...}
+    #
+    # For JSON data source (as inferred from extension of source file)
+    #   { source: "foo.json", key: "target" /* key in json object corresponding to primary designation */, simbad: "simbad" /* key corresponding to simbad designation (optional) */ }
+    # CSV not implemented but anticipate this form:
+    #   { source: "foo.csv", key: 1 /* 0-based column number corresponding to primary designation */, simbad: 2 /* col. no. for simbad (optional) */, header_lines: 0 /* number of header lines to skip */ }
+    # YAML not implemented
+    templated_files = json.load(f)
+
 def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { simbad_id: { visible_id: [filename,] } }, { filename: article_title }
     pattern = re.compile(r'<x-dso(?:-link)?(?: simbad="([^"]*)")?>\s*((?:(?!</x-dso).)+)\s*</x-dso(?:-link)?>', re.MULTILINE)
     match_title = {extension: re.compile(pattern) for extension, pattern in [
@@ -92,13 +112,32 @@ def scan_files() -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, str]]: # { 
                 articles[basename] = title # articles = {basename.html: title}
             else:
                 logger.error(f'No title was found in file {basename}')
-                
+
+            # Find all <x-dso>-type tags
             for simbad, common in pattern.findall(text):
                 if not simbad or len(simbad) == 0:
                     simbad = common
                 simbad = simbad.strip(' \t\r\n')
                 common = common.strip(' \t\r\n')
                 targets.setdefault(simbad, {}).setdefault(common, []).append(basename) # targets = {simbad_id: {display_id: [article_basename1.htm, article_basename2.html]}}
+
+            if basename in templated_files:
+                # Handle this file as a templated file with source data elsewhere
+                source_metadata = templated_files[basename]
+                data_source = source_metadata['source']
+                simbad_key = source_metadata.get('simbad', None)
+                source_type = os.path.splitext(data_source)[1].lower()
+                if source_type == '.json':
+                    with (DOC_DIRECTORY / data_source).open('r') as ff:
+                        source_data = json.load(ff)
+                    for entry in source_data:
+                        display_id = entry[source_metadata['key']]
+                        simbad_id = display_id
+                        if simbad_key:
+                            simbad_id = entry.get(simbad_key, display_id)
+                        targets.setdefault(simbad_id, {}).setdefault(display_id, []).append(basename)
+                else:
+                    raise NotImplementedError(f'Unhandled templated datasource type {source_type} for file {basename}')
     return targets, articles
 
 def resolve_and_store(targets):

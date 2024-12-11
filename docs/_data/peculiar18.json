@@ -1,4 +1,4 @@
-const data = [
+[
     {
 	"primary": "VV 254",
 	"individual": ["UGC 12914", "UGC 12915"],
@@ -755,23 +755,6 @@ const data = [
 	"name": "",
 	"description": "The galaxy appeared as an asymmetric halo around a star. A bright knot east of the star was the most prominent feature and was readingly recognized. A fainter knot was fleetingly detected due north of the star, forming a nearyl right triangle with the bright knot and star."
     },
-    // Commenting out because I haven't picked out the dust lane; spiral feature is not peculiar afaik.
-    // {
-    // 	"primary": "NGC 3718",
-    // 	"individual": null,
-    // 	"alias": "Arp 214",
-    // 	"ra": "11:32:35",
-    // 	"dec": "+53:04:05",
-    // 	"otype": "G",
-    // 	"V": 10.61,
-    // 	"B": 11.35,
-    // 	"maj_axis": 5.13,
-    // 	"min_axis": 2.51,
-    // 	"pa": 180,
-    // 	"z": 0.003278,
-    // 	"name": "",
-    // 	"description": ""
-    // },
     {
 	"primary": "Arp 86",
 	"individual": ["NGC 7752", "NGC 7753"],
@@ -820,21 +803,4 @@ const data = [
 	"name": "Mayall's Object",
 	"description": "This is a borderline entry on this list, as it was very difficult to see any structure. Yet, the object is so cool that I had to keep it. All I could see mostly continuously with averted vision at 460× was an elongated E-W glow corresponding to the 'bullet'. About half the time, I perceived a bit more than a bar, a bit more 'puff' but it was indistinct where exactly the puffiness was and how it was structured. I got about 3–4 flashes of the full structure including both the 'bullet' and the 'target'. On a different observing night in 2012, I picked out a stubby T-shape, with the stem of the T (the 'bullet') being brighter. The stem was pointed west."
     }
-    // Template:
-    // {
-    // 	"primary": "",
-    // 	"individual": null,
-    // 	"alias": "",
-    // 	"ra": "",
-    // 	"dec": "",
-    // 	"otype": "",
-    // 	"V": null,
-    // 	"B": null,
-    // 	"maj_axis": null,
-    // 	"min_axis": null,
-    // 	"pa": null,
-    // 	"z": null,
-    // 	"name": "",
-    // 	"description": ""
-    // },
-].sort((a, b) => a['ra'] > b['ra']);
+]
