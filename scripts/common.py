@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 CATALOG_REGEXES = [ # FIXME: Handle `ESO 456-SC38` / `ESO 597-G36`
     r'\b(?:NGC|IC|UGC) ?[0-9]+ ??[A-Za-z]?\b', # ABCs
-    r'\b(?:VV|Hickson|HCG|KTG|KPG) ?[0-9]+?[A-Za-z]?\b', # Components
+    r'\b(?:VV|Hickson|HCG|KTG|KTS|KPG) ?[0-9]+?[A-Za-z]?\b', # Components
     r'\bESO ?[0-9]+-(?:SC|G|N)?[0-9]+\b', # ESO
     r'\b(?:K|PK|PNG|CGCG|MCG|IRAS)[+\- ][0-9\.+\-]+\b', # Hyphenated / Coordinate-based
     r'\b(?:MCG)[+\- ][0-9\.+\-]+[A-Fa-f]?\b', # Hyphenated / Coordinate-based, MCG allows a/b/c
@@ -313,6 +313,7 @@ simbadification = OrderedDict([
     ('sh2 ', 'Sh2-'),
     ('sharpless ', 'Sh2-'),
     ('KTG', 'K79'),
+    ('KTS', '[KK2000]'),
     ('Hickson', 'HCG'),
     ('k ', 'PN K '),
     ('Cederblad', 'Ced'),
@@ -325,6 +326,7 @@ desimbadification = OrderedDict([
     ('ACO ', 'Abell '),
     ('PN M ', 'Minkowski '),
     ('K79 ', 'KTG '),
+    ('[KK2000] ', 'KTS '),
     ('Cl ', ''),
     ('Sim ', 'Simeis '),
     ('Sh2', 'Sh 2'),
