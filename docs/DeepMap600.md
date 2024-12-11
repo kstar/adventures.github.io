@@ -6,7 +6,7 @@ author: Steve Gottlieb
 
 Below is a listing of deep-sky objects (excluding double stars) plotted in the [Orion DeepMap 600](https://optcorp.com/products/or-4150-deepmap-600-star-chart). The list has about 510 entries. It was put together by [Steve Gottlieb](/whoswho.htm#Gottlieb). The list was originally shared on [Ray Cash's website](https://www.raycash.org/dmcon.htm) with some variations. This version is directly from Steve Gottlieb. It can be retrieved in Excel Spreadsheet form from [here](/Orion.DeepMap.600.xls). Coordinates are referenced to the J2000 equinox, sizes are in arcminutes except when specified.
 
-Sl. No.|Name|Type|RA|Dec|Size|VMag|Con|Brief Description
+Serial No.|Name|Type|RA|Dec|Size|VMag|Con|Brief Description
 1|<x-dso-link>NGC 7814</x-dso-link>|GX-Sab|00 03.3|+16 09|5.5×2.3|10.6|Peg|bright edge-on with dust lane
 2|<x-dso-link>NGC 40</x-dso-link>|PN|00 13.0|+72 31|48"|10.6|Cep|mag 11.5 central star in easy halo
 3|<x-dso-link>NGC 55</x-dso-link>|GX-SBm|00 15.1|-39 13|32.4×5.6|7.9|Scl|huge irregular edge-on with faint east section
