@@ -1,3 +1,6 @@
+---
+# This is front-matter to get Jekyll to process this; see https://jekyllrb.com/docs/front-matter/ for an explanation
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,176 +99,28 @@
                         <td height="24" valign="middle" colspan="2" style="text-align: center">
                               <h3>Most Recent Additions</h3>
                         </td>
+		      </tr>
+		      <!-- Liquid templating engine is used to generate the highlights, see https://jekyllrb.com/docs/datafiles/ -->
+		      {% comment %}
+                          To update this data, please edit docs/_data/highlights.csv
+		      {% endcomment %}
+		      {% assign highlights = site.data.highlights | sort: "date" | reverse %}
+		      {% for entry in highlights limit: 15 %}
                       <tr>
                         <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            11/22/24
+                          <div align="right" style="padding-right: 5px;">
+                            {{entry.date}}
                           </div>
                         </td>
                         <td height="11" valign="middle" width="401">
-			  Newly reformatted: <a href="GSSP_2007.html">Off the Deep End</a> with Steve Gottlieb.
+			  {% if entry.description contains '</a>' %} {% comment %} The description already has a link {% endcomment %}
+                          {{entry.description}}
+                          {% else %}
+                          <a href="/{{entry.page}}">{{entry.description}}</a> {% comment %} convenience version where the entire description links to the page {% endcomment %}
+			  {% endif %}
                         </td>
                       </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            11/21/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  Pages restored from archives: <a href="GSSP_Challenge_List.html">GSSP Challenge List</a>, <a href="GSSP_General_Obs_List.html">GSSP General List</a>.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            11/21/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  <a href="catalogs.html">Updates to Catalogs, Lists and Links!</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            9/13/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  <a href="/assets/Portland_XVII.pdf">Portland XVII Alt/Az Workshop 2024 Flyer</a><br />Note: <a href="/assets/Portland_XVII_Updated.pdf">Updated Agenda!</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            9/13/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  <a href="Draculas_Chivito.html">Dracula's Chivito – A New Planetary Nursery</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            8/19/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          RASC Deep Sky Challenge <a href="/RASC-Part1.html">Part 1</a>, <a href="/RASC-Part2.html">Part 2</a>, <a href="/RASC-Part3.html">Part 3</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            8/8/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  <a href="/Steve_Gottlieb_Publications.docx">Index of Publications by Steve Gottlieb</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            8/8/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  <a href="/GMT%20discoveries.html">Giant Melbourne Telescope</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            8/7/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  Steve Gottlieb's old ORs restored <a href="/OR-%20Observing%20Barnard's%20Galaxy%20from%20Lassen%208_12_10.html">8/12/2010</a>, <a href="OR-%20Fall%20CalStar%202012.html">9/2012</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            8/5/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-			  <a href="/sivannebula.html">Sivan Nebula</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            7/28/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="/Spica_Nebula.html">Spica Nebula</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            7/24/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="beyond_barnards.html">Beyond Barnard's Loop</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            3/27/24
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="https://douglas.asimha.net/">Astronomical Curiosities</a> book recommendation.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            08/18/23
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="2023.McArthur.htm">Aug 10/11/12 at McArthur</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            07/17/23
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="Pickering.Planetaries.htm">Pickering's Pint-sized Planetaries</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            08/27/22
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="First%20Light%20At%20Tranquility%20Base.htm">First Light At "Tranquility Base"</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="11" valign="middle" width="71">
-                          <div align="right">
-                            04/20/21
-                          </div>
-                        </td>
-                        <td height="11" valign="middle" width="401">
-                          <a href="https://drive.google.com/file/d/1jYcDtEl4aekzKgyK-QcAGKhAYuelx03E/view"><x-dso>M33</x-dso> Observing Guide PDF</a>
-                        </td>
-                      </tr>
+                      {% endfor %}
                     </table>
                   </td>
                 </tr>
