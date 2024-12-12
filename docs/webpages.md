@@ -37,6 +37,7 @@ no_bullets: true
 
 ## Planetary, Diffuse and Other Nebulae
 
+* [The Supernova Remnant Challenge](SNR_Challenge.html) – Jay Eads
 * [Dissecting the Veil Nebula](Dissecting%20the%20Veil%20Nebula.html) - Steve Gottlieb
 * [MASH Planetaries for Hawkeyes](MASH.Planetaries.html) - Steve Gottlieb
 * [M33 HII Regions and Star Clouds](M33.HII-Star.Clouds.html) - Steve Gottlieb
