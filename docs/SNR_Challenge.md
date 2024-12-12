@@ -8,7 +8,9 @@ author: Jay Eads
 img { display: block; margin-left: auto; margin-right: auto; }
 </style>
 
-Okay, it is evident if you search my blog that I do love supernovae.
+**If you want high-resolution finder charts for this article (and more), please check out the [source article](https://jaysastronomyobservingblog.blogspot.com/2015/08/the-supernova-remnant-challenge.html) on [Jay's Astronomical Observing Blog](https://jaysastronomyobservingblog.blogspot.com/)!**
+
+Okay, it is evident if you search [my blog](https://jaysastronomyobservingblog.blogspot.com/) that I do love supernovae.
 They are to me, the most fascinating subject because they not only
 signal the death of a star, but because they also signal how the
 universe continues to create new things from old. From Disney's 1994
