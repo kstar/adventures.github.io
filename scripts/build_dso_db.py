@@ -341,6 +341,9 @@ def process_reachability():
             if not child_path.exists():
                 child_path = child_path.with_suffix('.md') # Convert .html to .md to find the source file
             if not child_path.exists():
+                if href.startswith('{{') and href.endswith('}}'): # Liquid template
+                    logger.warning(f'Ignoring liquid-templated href {href} in {path} while processing reachability!')
+                    continue
                 raise RuntimeError(f'Could not identify destination file for href {href} in file {path}. Tried {child_path} but it does not exist!')
             child = child_path.name # Use the source filename for consistency
             queue.append(child_path.name)
