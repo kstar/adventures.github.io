@@ -124,7 +124,7 @@ UGC 8686 \= KTG 48A is westernmost in the KTG triplet and forms a close pair wit
   
 ---
 
-**Name**: <x-dso simbad="MCG\+00\-35\-020">KTG 49</x-dso>  
+**Name**: <x-dso simbad="MCG+00-35-020">KTG 49</x-dso>  
 **RA**: 13 46 18
 
 **Dec**: \-03 24 00  
@@ -191,7 +191,7 @@ UGC 8939 \= KTG 52A is the brightest member of this triplet. At 375x, it appeare
   
 ---
 
-**Name**: <x-dso simbad="Z 103\-60">KTG 53</x-dso>  
+**Name**: <x-dso simbad="Z 103-60">KTG 53</x-dso>  
 **RA**: 14 04 34
 
 **Dec**: \+16 18 18  
@@ -235,7 +235,7 @@ NGC 5560 \= KTG 54A appeared fairly bright, very elongated 7:2 WNW\-ESE, 2\.0'x0
   
 ---
 
-**Name**: <x-dso simbad="2MASX J14224016\+0610005">KTG 56</x-dso>  
+**Name**: <x-dso simbad="2MASX J14224016+0610005">KTG 56</x-dso>  
 **RA**: 14 22 55
 
 **Dec**: \+06 09 40  
@@ -301,7 +301,7 @@ NGC 5736 \= KTG 58A is the brightest member of this triplet.  At 375x, it appea
   
 ---
 
-**Name**: <x-dso simbad="MCG\+12\-14\-021">KTG 59</x-dso>  
+**Name**: <x-dso simbad="MCG+12-14-021">KTG 59</x-dso>  
 **RA**: 15 15 49
 
 **Dec**: \+69 18 18  
