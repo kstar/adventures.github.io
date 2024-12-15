@@ -12,6 +12,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2024-12-08|[MCG -06-09-030](https://www.deepskyforum.com/showthread.php?1824-Object-of-the-Week-December-8th-2024-%25E2%2580%2593-MCG-06-09-030){:target="_blank"}|Scott Harrington|<x-dso-link>MCG -06-09-030</x-dso-link> (ESO 358-G63, <x-dso-link>PGC 013809</x-dso-link>, FCC 312, The Subtle Knife)|FOR|
 |2024-12-01|[Four Open Clusters: NGC 133, NGC 146, King14 and Pot 7](https://www.deepskyforum.com/showthread.php?1823-Object-of-the-Week-December-3-2024-%25E2%2580%2593-Four-Open-Clusters-NGC-133-NGC-146-King14-and-Pot-7){:target="_blank"}|Howard Banich|<x-dso-link>NGC 133</x-dso-link>, <x-dso-link>NGC 146</x-dso-link>, King14, Pot 7|CAS|
 |2024-11-24|[UGC 4185 3 for 1](https://www.deepskyforum.com/showthread.php?1821-Object-of-The-Week-November-24-2024-UGC-4185-3-for-1){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 4185</x-dso-link>, <x-dso-link>UGC 4186</x-dso-link>, <x-dso-link>MCG +11-10-55</x-dso-link>|CAM|
 |2024-11-17|[Abell PN 6 and HFG1](https://www.deepskyforum.com/showthread.php?1818-Object-of-the-Week-November-17-2024-Abell-PN-6-and-HFG1){:target="_blank"}|Mark Friedman|Abell PN 6 (A 6, <x-dso-link>PK 136+04.1</x-dso-link>, PN G136.1+04.9, A55 5, ARO 207), HFG1 (Heckathorn-Fesen-Gull 1, PN G136.3+05.5, <x-dso-link>PK 136+05.1</x-dso-link>)|CAS|
@@ -22,7 +23,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 |2024-10-13|[From a lost epoch](https://www.deepskyforum.com/showthread.php?1811-Object-of-the-Week-October-13-2024-From-a-lost-epoch){:target="_blank"}|Victor van Wulfen|[V61] 1|PER|
 |2024-10-06|[Holmberg 802/WBL 695 \(NGC 7463/7464/7465, UGC 12313/12321\) ](https://www.deepskyforum.com/showthread.php?1810-Object-of-the-Week-October-6-2024-%25E2%2580%2593-Holmberg-802-WBL-695-%28NGC-7463-7464-7465-UGC-12313-12321%29){:target="_blank"}|Uwe Glahn|Holmberg 802/WBL 695 (NGC 7463/7464/7465, UGC 12313/12321)|PEG|
 |2024-09-29|[The Sculptor Dwarf](https://www.deepskyforum.com/showthread.php?1809-Object-of-the-Week-September-29th-2024-%25E2%2580%2593-The-Sculptor-Dwarf){:target="_blank"}|Akarsh Simha|Sculptor Dwarf (Sculptor dSph, <x-dso-link>PGC 3589</x-dso-link>, <x-dso-link>ESO 351-30</x-dso-link>)|SCL|
-|2024-09-22|[Hickson 90 \(NGC 7172, NGC 7173, NGC 7174, NGC 7176\)](https://www.deepskyforum.com/showthread.php?1807-Object-of-the-Week-Hickson-90-%28NGC%25E2%2580%2599s-7172-7173-7174-7176%29){:target="_blank"}|Paul Alsing|<x-dso-link simbad="HCG 90">Hickson 90</x-dso-link> (NGC 7172, <x-dso-link>NGC 7173</x-dso-link>, <x-dso-link>NGC 7174</x-dso-link>, <x-dso-link>NGC 7176</x-dso-link>), KTS 66 (NGC 7173, NGC 7174, NGC 7176)|PSA|
+|2024-09-22|[Hickson 90 \(NGC 7172, NGC 7173, NGC 7174, NGC 7176\)](https://www.deepskyforum.com/showthread.php?1807-Object-of-the-Week-Hickson-90-%28NGC%25E2%2580%2599s-7172-7173-7174-7176%29){:target="_blank"}|Paul Alsing|<x-dso-link simbad="HCG 90">Hickson 90</x-dso-link> (NGC 7172, <x-dso-link>NGC 7173</x-dso-link>, <x-dso-link>NGC 7174</x-dso-link>, <x-dso-link>NGC 7176</x-dso-link>), <x-dso-link simbad="[KK2000] 66">KTS 66</x-dso-link> (NGC 7173, NGC 7174, NGC 7176)|PSA|
 |2024-09-15|[Bernes 29 around V1331 Cyg](https://www.deepskyforum.com/showthread.php?1805-Object-of-the-Week-September-15th-2024-%25E2%2580%2593-Bernes-29-around-V1331-Cyg){:target="_blank"}|Scott Harrington|Bernes 29 (Parsamian-Petrosyan 99, Blitz-Fich-Stark 4), V1331 Cyg (LkHa 120, HBC 302)|CYG|
 |2024-09-08|[NGC 1365](https://www.deepskyforum.com/showthread.php?1801-Object-of-the-Week-September-8-2024-%25E2%2580%2593-NGC-1365){:target="_blank"}|Howard Banich|<x-dso-link>NGC 1365</x-dso-link>|FOR|
 |2024-09-01|[NGC 4125 & NGC 4121](https://www.deepskyforum.com/showthread.php?1800-Object-of-the-Week-September-1-2024-%25E2%2580%2593-NGC-4125-amp-NGC-4121){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4125</x-dso-link> (UGC 7118, <x-dso-link>PGC 38524</x-dso-link>, <x-dso-link simbad="Z 315-019">CGCG 315-019</x-dso-link>, <x-dso-link simbad="Z 1205.6+6527">CGCG 1205.6+6527</x-dso-link>, <x-dso-link>MCG +11-15-027</x-dso-link>), <x-dso-link>NGC 4121</x-dso-link> (PGC 38508, <x-dso-link simbad="Z 315-018">CGCG 315-018</x-dso-link>, <x-dso-link simbad="Z 1205.5+6523">CGCG 1205.5+6523</x-dso-link>, <x-dso-link>MCG +11-15-026</x-dso-link>)|DRA|
@@ -684,7 +685,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-12-10T10:24:45Z
+Last updated: 2024-12-15T00:11:28Z
 </div>
 {% endraw %}
 

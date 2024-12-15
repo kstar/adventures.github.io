@@ -48,34 +48,46 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 </style>
 <table border="0" cellspacing="0" cellpadding="0" class="constellation-table" id="constellation-table">
   <!--<colgroup><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/><col width="51"/></colgroup>-->
-  <tr class="row-ro1"><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td colspan="4" class="cell-ce2">
-<span>NORTH</span>
-</td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td></tr><tr class="row-ro1"><td class="cell-ce1">
-<span class="constellation-anchor"><a href="#lynx" title="Lynx">Lyn</a></span>
-</td><td class="cell-ce6"> </td><td class="cell-ce6">
-<span class="constellation-anchor"><a href="#camelopardalis" title="Camelopardalis">Cam</a></span>
-</td><td class="cell-ce6"> </td><td class="cell-ce6">
-<span class="constellation-anchor"><a href="#cassiopeia" title="Cassiopeia">Cas</a></span>
-</td><td class="cell-ce6">
-<span class="constellation-anchor"><a href="#cepheus" title="Cepheus">Cep</a></span>
-</td><td class="cell-ce6"> </td><td class="cell-ce6">
-<span class="constellation-anchor"><a href="#draco" title="Draco">Dra</a></span>
-</td><td class="cell-ce6"> </td><td class="cell-ce6">
-<span class="constellation-anchor"><a href="#ursa-minor" title="Ursa Minor">UMi</a></span>
-</td><td class="cell-ce6">
-<span class="constellation-anchor"><a href="#ursa-major" title="Ursa Major">UMa</a></span>
-    </td><td class="cell-ce12"> </td></tr>
-
-  <tr class="row-ro1"><td class="cell-ce2" colspan="4">&nbsp;</td></tr>
-  <tr class="row-ro1"><td colspan="3" class="cell-ce2">
-<span>WINTER</span>
-</td><td colspan="3" class="cell-ce2">
-<span>FALL</span>
-</td><td colspan="3" class="cell-ce2">
-<span>SUMMER</span>
-</td><td colspan="3" class="cell-ce2">
-<span>SPRING</span>
-</td></tr><tr class="row-ro1"><td class="cell-ce3"> </td><td class="cell-ce7"> </td><td class="cell-ce9">
+  <tr class="row-ro1">
+    <td class="cell-Default"> </td>
+    <td class="cell-Default"> </td>
+    <td class="cell-Default"> </td>
+    <td class="cell-Default"> </td>
+    <td colspan="4" class="cell-ce2">
+      <span>NORTH</span>
+    </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td><td class="cell-Default"> </td>
+  </tr>
+  <tr class="row-ro1"><td class="cell-ce1">
+      <span class="constellation-anchor"><a href="#lynx" title="Lynx">Lyn</a></span>
+    </td><td class="cell-ce6"> </td><td class="cell-ce6">
+      <span class="constellation-anchor"><a href="#camelopardalis" title="Camelopardalis">Cam</a></span>
+    </td><td class="cell-ce6"> </td><td class="cell-ce6">
+      <span class="constellation-anchor"><a href="#cassiopeia" title="Cassiopeia">Cas</a></span>
+    </td><td class="cell-ce6">
+      <span class="constellation-anchor"><a href="#cepheus" title="Cepheus">Cep</a></span>
+    </td><td class="cell-ce6"> </td><td class="cell-ce6">
+      <span class="constellation-anchor"><a href="#draco" title="Draco">Dra</a></span>
+    </td><td class="cell-ce6"> </td><td class="cell-ce6">
+      <span class="constellation-anchor"><a href="#ursa-minor" title="Ursa Minor">UMi</a></span>
+    </td><td class="cell-ce6">
+      <span class="constellation-anchor"><a href="#ursa-major" title="Ursa Major">UMa</a></span>
+    </td><td class="cell-ce12"> </td>
+  </tr>
+  <tr class="row-ro1">
+    <td class="cell-ce2" colspan="12">&nbsp;</td>
+  </tr>
+  <tr class="row-ro1">
+    <td colspan="3" class="cell-ce2">
+      <span>WINTER</span>
+    </td><td colspan="3" class="cell-ce2">
+      <span>FALL</span>
+    </td><td colspan="3" class="cell-ce2">
+      <span>SUMMER</span>
+    </td><td colspan="3" class="cell-ce2">
+      <span>SPRING</span>
+    </td>
+  </tr>
+  <tr class="row-ro1"><td class="cell-ce3"> </td><td class="cell-ce7"> </td><td class="cell-ce9">
 <span class="constellation-anchor"><a href="#auriga" title="Auriga">Aur</a></span>
 </td><td class="cell-ce3">
 <span class="constellation-anchor"><a href="#perseus" title="Perseus">Per</a></span>
@@ -842,6 +854,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-12-08|[MCG -06-09-030](https://www.deepskyforum.com/showthread.php?1824-Object-of-the-Week-December-8th-2024-%25E2%2580%2593-MCG-06-09-030){:target="_blank"}|Scott Harrington|<x-dso-link>MCG -06-09-030</x-dso-link> (ESO 358-G63, <x-dso-link>PGC 013809</x-dso-link>, FCC 312, The Subtle Knife)|
 |2024-09-08|[NGC 1365](https://www.deepskyforum.com/showthread.php?1801-Object-of-the-Week-September-8-2024-%25E2%2580%2593-NGC-1365){:target="_blank"}|Howard Banich|<x-dso-link>NGC 1365</x-dso-link>|
 |2021-09-26|[Fornax Dwarf, NGC 1049, and 5 other extragalactic globulars](https://www.deepskyforum.com/showthread.php?1533-Object-of-the-Week-September-26-2021-Fornax-Dwarf-NGC-1049-and-5-other-extragalactic-globulars){:target="_blank"}|Akarsh Simha|Fornax Dwarf, <x-dso-link>NGC 1049</x-dso-link>, Fornax 1, Fornax 2, Fornax 4, Fornax 5, Fornax 6|
 |2018-10-28|[October 29, 2018 - NGC 1097](https://www.deepskyforum.com/showthread.php?1214-Object-of-the-Week-October-29-2018-NGC-1097){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 1097</x-dso-link>, [EKS96] 151, [EKS96] 245, [EKS96] 300/304, [EKS96] 100/105/119|
@@ -1234,7 +1247,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
-|2024-09-22|[Hickson 90 \(NGC 7172, NGC 7173, NGC 7174, NGC 7176\)](https://www.deepskyforum.com/showthread.php?1807-Object-of-the-Week-Hickson-90-%28NGC%25E2%2580%2599s-7172-7173-7174-7176%29){:target="_blank"}|Paul Alsing|<x-dso-link simbad="HCG 90">Hickson 90</x-dso-link> (NGC 7172, <x-dso-link>NGC 7173</x-dso-link>, <x-dso-link>NGC 7174</x-dso-link>, <x-dso-link>NGC 7176</x-dso-link>), KTS 66 (NGC 7173, NGC 7174, NGC 7176)|
+|2024-09-22|[Hickson 90 \(NGC 7172, NGC 7173, NGC 7174, NGC 7176\)](https://www.deepskyforum.com/showthread.php?1807-Object-of-the-Week-Hickson-90-%28NGC%25E2%2580%2599s-7172-7173-7174-7176%29){:target="_blank"}|Paul Alsing|<x-dso-link simbad="HCG 90">Hickson 90</x-dso-link> (NGC 7172, <x-dso-link>NGC 7173</x-dso-link>, <x-dso-link>NGC 7174</x-dso-link>, <x-dso-link>NGC 7176</x-dso-link>), <x-dso-link simbad="[KK2000] 66">KTS 66</x-dso-link> (NGC 7173, NGC 7174, NGC 7176)|
 |2018-10-21|[The Grus Galaxy Chain](https://www.deepskyforum.com/showthread.php?1212-Object-Of-The-Week-October-21-2018-The-Grus-Galaxy-Chain){:target="_blank"}|Wouter van Reeven|The Grus Galaxy Chain (IC 5270 & <x-dso-link>IC 5269</x-dso-link> & <x-dso-link>IC 5269B</x-dso-link> & <x-dso-link>IC 5269A</x-dso-link> & <x-dso-link>IC 1459</x-dso-link> & <x-dso-link>IC 5264</x-dso-link> & <x-dso-link>NGC 7418B</x-dso-link> & <x-dso-link>NGC 7418</x-dso-link> & <x-dso-link>NGC 7421</x-dso-link> & <x-dso-link>IC 5273</x-dso-link>)|
 
 
@@ -1599,7 +1612,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-12-10T10:24:45Z
+Last updated: 2024-12-15T00:11:28Z
 </div>
 {% endraw %}
 
