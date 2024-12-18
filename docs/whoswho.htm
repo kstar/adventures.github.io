@@ -74,8 +74,12 @@
             savedOnLoad();
 	}
 
-	var coll = document.getElementsByClassName("collapsible");
+	let coll = document.getElementsByClassName("collapsible");
 	var i;
+	let openAll = false;
+	if (window.location.href.includes('#')) {
+	    openAll = true;
+	}
 
 	for (i = 0; i < coll.length; i++) {
 	    if (coll[i].classList.contains("empty"))
@@ -89,6 +93,10 @@
 		    content.style.display = "block";
 		}
 	    });
+	    if (openAll) {
+		coll[i].classList.add("active");
+		coll[i].nextElementSibling.style.display = 'block';
+	    }
 	}
     };
   </script>
