@@ -20,6 +20,7 @@ predocs/
 \#*.html#
 \#*.htm#
 \#*.md#
+*.bak
 
 # Other
 __pycache__/
