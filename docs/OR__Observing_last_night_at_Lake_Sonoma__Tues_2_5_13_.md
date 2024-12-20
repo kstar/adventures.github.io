@@ -263,7 +263,7 @@ Two more galaxies were visible to the east of NGC 2616 and they nearly formed a 
   
 ---
 
-**Name**: UGC 1856
+**Name**: <x-dso>UGC 1856</x-dso>
 
   
 
