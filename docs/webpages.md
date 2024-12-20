@@ -66,6 +66,7 @@ no_bullets: true
 * [Complete Hickson Catalog](hickcatalog.htm) - Miles Paul
 * [32 _Interesting_ Hickson Groups](hicklist.htm) - Jim Shields
 * [Compact Galaxy Triplets](triplets.htm) - Miles Paul
+* [Interesting Peculiar Galaxies for 16–22" telescopes](peculiar18.htm) – Akarsh Simha
 
 ----
 
