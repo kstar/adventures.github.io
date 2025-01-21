@@ -361,6 +361,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-01-05|[Let's hop on over to Sven's nr. 61](https://www.deepskyforum.com/showthread.php?1829-Let-s-hop-on-over-to-Sven-s-nr-61){:target="_blank"}|Victor van Wulfen|<x-dso-link>Ced 61</x-dso-link>|
 |2024-01-28|[NGC 1931 "The Fly" and Parsamian 1](https://www.deepskyforum.com/showthread.php?1743-Object-Of-The-Week-January-28-2024-NGC-1931-quot-The-Fly-quot-and-Parsamian-1){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 1931</x-dso-link> (Open Cluster (OCL 441, <x-dso-link simbad="Collinder 68">Cr 68</x-dso-link>, St 9) + Emission Nebula (LBN 810, <x-dso-link>Sh 2-237</x-dso-link>))|
 |2023-01-08|[Abell 8](https://www.deepskyforum.com/showthread.php?1652-Object-of-the-Week-January-8th-2023-Abell-8){:target="_blank"}|Owen Brazell|<x-dso-link simbad="PN A66 8">Abell 8</x-dso-link>|
 |2022-02-06|[NGC 2242](https://www.deepskyforum.com/showthread.php?1562-Object-of-the-Week-February-6th-2022-NGC-2242){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 2242</x-dso-link>|
@@ -854,6 +855,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-12-15|[NGC 1316 = ARP 154 = Fornax A](https://www.deepskyforum.com/showthread.php?1825-Object-of-the-Week-NGC-1316-ARP-154-Fornax-A){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 1316</x-dso-link> (Arp 154, Fornax A)|
 |2024-12-08|[MCG -06-09-030](https://www.deepskyforum.com/showthread.php?1824-Object-of-the-Week-December-8th-2024-%25E2%2580%2593-MCG-06-09-030){:target="_blank"}|Scott Harrington|<x-dso-link>MCG -06-09-030</x-dso-link> (ESO 358-G63, <x-dso-link>PGC 013809</x-dso-link>, FCC 312, The Subtle Knife)|
 |2024-09-08|[NGC 1365](https://www.deepskyforum.com/showthread.php?1801-Object-of-the-Week-September-8-2024-%25E2%2580%2593-NGC-1365){:target="_blank"}|Howard Banich|<x-dso-link>NGC 1365</x-dso-link>|
 |2021-09-26|[Fornax Dwarf, NGC 1049, and 5 other extragalactic globulars](https://www.deepskyforum.com/showthread.php?1533-Object-of-the-Week-September-26-2021-Fornax-Dwarf-NGC-1049-and-5-other-extragalactic-globulars){:target="_blank"}|Akarsh Simha|Fornax Dwarf, <x-dso-link>NGC 1049</x-dso-link>, Fornax 1, Fornax 2, Fornax 4, Fornax 5, Fornax 6|
@@ -923,6 +925,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2024-12-22|[M83, the Southern Pinwheel Galaxy](https://www.deepskyforum.com/showthread.php?1827-Object-of-the-Week-December-22nd-2024-%25E2%2580%2593-M83-the-Southern-Pinwheel-Galaxy%26p%3D10176%23post10176){:target="_blank"}|Akarsh Simha|<x-dso-link>M83</x-dso-link> (NGC 5236, <x-dso-link>MCG-05-32-050</x-dso-link>, Southern Pinwheel Galaxy)|
 |2024-05-12|[Abell 35, a planetary nebula imposter](https://www.deepskyforum.com/showthread.php?1772-Object-of-the-Week-May-12-2024-Abell-35-a-planetary-nebula-imposter){:target="_blank"}|Steve Gottlieb|<x-dso-link simbad="PN A66 35">Abell 35</x-dso-link> (Sh 2-313, <x-dso-link>PK 303+40.1</x-dso-link>, PN G303.6+40.0)|
 |2021-06-06|[NGC 5694 A Foster Son of the Galactic Halo](https://www.deepskyforum.com/showthread.php?1500-Object-of-the-Week-June-6-2021-%E2%80%93-NGC-5694-A-Foster-Son-of-the-Galactic-Halo){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 5694</x-dso-link>|
 |2018-03-25|[NGC 3242, the Ghost of Jupiter](https://www.deepskyforum.com/showthread.php?1146-Object-of-the-Week-March-25-2018-NGC-3242-the-Ghost-of-Jupiter){:target="_blank"}|Howard Banich|<x-dso-link>NGC 3242</x-dso-link>|
@@ -1124,6 +1127,8 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-01-19|[Cederblad 51, an E.E. Barnard discovery](https://www.deepskyforum.com/showthread.php?1831-Object-of-the-Week-January-19-2025-Cederblad-51-an-E-E-Barnard-discovery){:target="_blank"}|Steve Gottlieb|<x-dso-link simbad="Ced 51">Cederblad 51</x-dso-link> (Simeis 3-52, Bernes 89, Parsamian-Petrosyan 29)|
+|2024-12-29|[Sharpless 2-264, the Lambda Orionis Ring](https://www.deepskyforum.com/showthread.php?1828-Object-of-the-Week-December-29-2024-%25E2%2580%2593-Sharpless-2-264-the-Lambda-Orionis-Ring){:target="_blank"}|Uwe Glahn|Sharpless 2-264 (Sh2-264, Lambda Orionis Ring, "Angelfish Nebula")|
 |2024-02-04|[The Hunter and the Deep Sky](https://www.deepskyforum.com/showthread.php?1745-The-Hunter-and-the-Deep-Sky){:target="_blank"}|Victor van Wulfen|Sazhen 30, Dorschner-Gürtler 99 (DG 99)|
 |2023-12-31|[M 78, Reflection Nebula](https://www.deepskyforum.com/showthread.php?1737-Object-of-the-Week-December-31-2023-%25E2%2580%2593-M-78-Reflection-Nebula){:target="_blank"}|Howard Banich|<x-dso-link>M 78</x-dso-link>, <x-dso-link>NGC 2071</x-dso-link>, <x-dso-link>NGC 2067</x-dso-link>, <x-dso-link>NGC 2064</x-dso-link>, [<x-dso-link>B77</x-dso-link>] 106|
 |2023-02-12|[Proplyd 159-350 in the Great Orion Nebula](https://www.deepskyforum.com/showthread.php?1659-Object-of-the-Week-February-12th-2023-%E2%80%93-Proplyd-159-350-in-the-Great-Orion-Nebula){:target="_blank"}|Scott Harrington|V2279 Ori (Brun 591, Parenago 1869, [OW94] 159-350)|
@@ -1211,6 +1216,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-01-12|[IC 2003](https://www.deepskyforum.com/showthread.php?1830-Object-of-the-Week-January-12-2025-IC-2003){:target="_blank"}|Wouter van Reeven|<x-dso-link>IC 2003</x-dso-link> (HD 279193, <x-dso-link>PK 161-14</x-dso-link> 1, PN G161.2-14.8)|
 |2024-10-13|[From a lost epoch](https://www.deepskyforum.com/showthread.php?1811-Object-of-the-Week-October-13-2024-From-a-lost-epoch){:target="_blank"}|Victor van Wulfen|[V61] 1|
 |2022-03-13|[Abell 5 in Perseus](https://www.deepskyforum.com/showthread.php?1570-Object-of-the-Week-March-13-2022-Abell-5-in-Perseus){:target="_blank"}|Alvin Huey|<x-dso-link simbad="PN A66 5">Abell 5</x-dso-link>|
 |2022-01-09|[A heroic little bubble](https://www.deepskyforum.com/showthread.php?1557-Object-of-the-Week-January-9-2022-A-heroic-little-bubble){:target="_blank"}|Victor van Wulfen|Böhm-Vitense 5-3 (PK 131-05.1, PN G131.4-05.4)|
@@ -1612,7 +1618,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-12-15T00:11:28Z
+Last updated: 2025-01-21T11:09:46Z
 </div>
 {% endraw %}
 

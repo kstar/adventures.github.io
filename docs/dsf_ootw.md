@@ -12,6 +12,12 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2025-01-19|[Cederblad 51, an E.E. Barnard discovery](https://www.deepskyforum.com/showthread.php?1831-Object-of-the-Week-January-19-2025-Cederblad-51-an-E-E-Barnard-discovery){:target="_blank"}|Steve Gottlieb|<x-dso-link simbad="Ced 51">Cederblad 51</x-dso-link> (Simeis 3-52, Bernes 89, Parsamian-Petrosyan 29)|ORI|
+|2025-01-12|[IC 2003](https://www.deepskyforum.com/showthread.php?1830-Object-of-the-Week-January-12-2025-IC-2003){:target="_blank"}|Wouter van Reeven|<x-dso-link>IC 2003</x-dso-link> (HD 279193, <x-dso-link>PK 161-14</x-dso-link> 1, PN G161.2-14.8)|PER|
+|2025-01-05|[Let's hop on over to Sven's nr. 61](https://www.deepskyforum.com/showthread.php?1829-Let-s-hop-on-over-to-Sven-s-nr-61){:target="_blank"}|Victor van Wulfen|<x-dso-link>Ced 61</x-dso-link>|AUR|
+|2024-12-29|[Sharpless 2-264, the Lambda Orionis Ring](https://www.deepskyforum.com/showthread.php?1828-Object-of-the-Week-December-29-2024-%25E2%2580%2593-Sharpless-2-264-the-Lambda-Orionis-Ring){:target="_blank"}|Uwe Glahn|Sharpless 2-264 (Sh2-264, Lambda Orionis Ring, "Angelfish Nebula")|ORI|
+|2024-12-22|[M83, the Southern Pinwheel Galaxy](https://www.deepskyforum.com/showthread.php?1827-Object-of-the-Week-December-22nd-2024-%25E2%2580%2593-M83-the-Southern-Pinwheel-Galaxy%26p%3D10176%23post10176){:target="_blank"}|Akarsh Simha|<x-dso-link>M83</x-dso-link> (NGC 5236, <x-dso-link>MCG-05-32-050</x-dso-link>, Southern Pinwheel Galaxy)|HYA|
+|2024-12-15|[NGC 1316 = ARP 154 = Fornax A](https://www.deepskyforum.com/showthread.php?1825-Object-of-the-Week-NGC-1316-ARP-154-Fornax-A){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 1316</x-dso-link> (Arp 154, Fornax A)|FOR|
 |2024-12-08|[MCG -06-09-030](https://www.deepskyforum.com/showthread.php?1824-Object-of-the-Week-December-8th-2024-%25E2%2580%2593-MCG-06-09-030){:target="_blank"}|Scott Harrington|<x-dso-link>MCG -06-09-030</x-dso-link> (ESO 358-G63, <x-dso-link>PGC 013809</x-dso-link>, FCC 312, The Subtle Knife)|FOR|
 |2024-12-01|[Four Open Clusters: NGC 133, NGC 146, King14 and Pot 7](https://www.deepskyforum.com/showthread.php?1823-Object-of-the-Week-December-3-2024-%25E2%2580%2593-Four-Open-Clusters-NGC-133-NGC-146-King14-and-Pot-7){:target="_blank"}|Howard Banich|<x-dso-link>NGC 133</x-dso-link>, <x-dso-link>NGC 146</x-dso-link>, King14, Pot 7|CAS|
 |2024-11-24|[UGC 4185 3 for 1](https://www.deepskyforum.com/showthread.php?1821-Object-of-The-Week-November-24-2024-UGC-4185-3-for-1){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 4185</x-dso-link>, <x-dso-link>UGC 4186</x-dso-link>, <x-dso-link>MCG +11-10-55</x-dso-link>|CAM|
@@ -685,7 +691,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2024-12-15T00:11:28Z
+Last updated: 2025-01-21T11:09:46Z
 </div>
 {% endraw %}
 
