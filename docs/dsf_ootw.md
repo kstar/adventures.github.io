@@ -12,6 +12,17 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2025-04-06|[NGC 3256, the nearest LIRG](https://www.deepskyforum.com/showthread.php?1843-Object-of-the-Week-April-6th-2025-NGC-3256-the-nearest-LIRG){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 3256</x-dso-link> (VV 65, <x-dso-link>MCG -07-22-010</x-dso-link>, <x-dso-link>ESO 263-038</x-dso-link>, AM 1025-433, <x-dso-link>PGC 30785</x-dso-link>)|VEL|
+|2025-03-30|[M 48](https://www.deepskyforum.com/showthread.php?1842-Object-of-the-Week-March-30-M-48){:target="_blank"}|Wouter van Reeven|<x-dso-link>M 48</x-dso-link> (NGC 2548, <x-dso-link simbad="Collinder 179">Cr 179</x-dso-link>, Mel 85)|HYA|
+|2025-03-23|[the Haro Berenice](https://www.deepskyforum.com/showthread.php?1841-Object-of-the-Week-March-23-2025-the-Haro-Berenice){:target="_blank"}|Victor van Wulfen|H4-1 (PK 049+88 1, PN G049.3+88.1)|COM|
+|2025-03-16|[IC 443, the "Jellyfish Nebula" ](https://www.deepskyforum.com/showthread.php?1840-Object-of-the-Week-March-16-2025-%25E2%2580%2593-IC-443-the-quot-Jellyfish-Nebula-quot){:target="_blank"}|Uwe Glahn|<x-dso-link>IC 443</x-dso-link> (Sh 2-248, LBN 844, VMT 9, CTB 20, SNR 189.1)|GEM|
+|2025-03-09|[KPG 148, a pair of galaxies in Gemini](https://www.deepskyforum.com/showthread.php?1839-Object-of-the-Week-March-9th-2025-%25E2%2580%2593-KPG-148-a-pair-of-galaxies-in-Gemini%26p%3D10260%23post10260){:target="_blank"}|Akarsh Simha|<x-dso-link>KPG 148</x-dso-link> (NGC 2480, <x-dso-link>NGC 2481</x-dso-link>)|GEM|
+|2025-03-02|[NGC 2750 = UGC 4769 = VV 541](https://www.deepskyforum.com/showthread.php?1837-Object-of-the-Week-March-2-2025-NGC-2750-UGC-4769-VV-541){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 2750</x-dso-link> (UGC 4769, <x-dso-link>VV 541</x-dso-link>), <x-dso-link>NGC 2753</x-dso-link>, <x-dso-link>UGC 4774</x-dso-link>, <x-dso-link>UGC 4764</x-dso-link>|CNC|
+|2025-02-23|[NGC 2313 \(d’Arrest #75, GC 1475, P17, PP67, GN 06.55.6.01\)](https://www.deepskyforum.com/showthread.php?1836-Object-of-the-Week-February-23rd-2025-%25E2%2580%2593-NGC-2313){:target="_blank"}|Scott Harrington|<x-dso-link>NGC 2313</x-dso-link>|MON|
+|2025-02-16|[NGC 609](https://www.deepskyforum.com/showthread.php?1835-Object-of-the-Week-for-February-16-2025-%25E2%2580%2593-NGC-609){:target="_blank"}|Howard Banich|<x-dso-link>NGC 609</x-dso-link>|CAS|
+|2025-02-09|[AM 1316-240 One Hickson Missed!](https://www.deepskyforum.com/showthread.php?1834-Object-of-The-Week-February-9th-2025-AM-1316-240-One-Hickson-Missed%21){:target="_blank"}|Jimi Lowrey|AM 1316-240 (ESO 508-43 & <x-dso-link>LEDA 790153</x-dso-link> & 2MFGC 10641 & <x-dso-link>LEDA 4681588</x-dso-link>)|HYA|
+|2025-02-02|[Haro 3-75](https://www.deepskyforum.com/showthread.php?1833-Object-of-the-Week-February-2nd-2025-Haro-3-75){:target="_blank"}|Owen Brazell|Haro 3-75 (PN G193.6-09.5)|ORI|
+|2025-01-26|[APM 08279+5255](https://www.deepskyforum.com/showthread.php?1832-Object-of-the-Week-January-26-2025-APM-08279-5255){:target="_blank"}|Timo Karhula|APM 08279+5255 (IRAS F08279+5255, QSO <x-dso-link>B0827</x-dso-link>+5255, KODIAQ J083141+524517, LQAC 127+052 013, PS-ELQS J083141.69+524517.5)|LYN|
 |2025-01-19|[Cederblad 51, an E.E. Barnard discovery](https://www.deepskyforum.com/showthread.php?1831-Object-of-the-Week-January-19-2025-Cederblad-51-an-E-E-Barnard-discovery){:target="_blank"}|Steve Gottlieb|<x-dso-link simbad="Ced 51">Cederblad 51</x-dso-link> (Simeis 3-52, Bernes 89, Parsamian-Petrosyan 29)|ORI|
 |2025-01-12|[IC 2003](https://www.deepskyforum.com/showthread.php?1830-Object-of-the-Week-January-12-2025-IC-2003){:target="_blank"}|Wouter van Reeven|<x-dso-link>IC 2003</x-dso-link> (HD 279193, <x-dso-link>PK 161-14</x-dso-link> 1, PN G161.2-14.8)|PER|
 |2025-01-05|[Let's hop on over to Sven's nr. 61](https://www.deepskyforum.com/showthread.php?1829-Let-s-hop-on-over-to-Sven-s-nr-61){:target="_blank"}|Victor van Wulfen|<x-dso-link>Ced 61</x-dso-link>|AUR|
@@ -691,7 +702,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2025-01-21T11:09:46Z
+Last updated: 2025-04-09T05:38:53Z
 </div>
 {% endraw %}
 
