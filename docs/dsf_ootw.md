@@ -12,6 +12,10 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2025-05-04|[UGC 10402 \(The Sickle\)](https://www.deepskyforum.com/showthread.php?1848-Object-of-The-Week-May-4th-2025-UGC-10402-%28The-Sickle%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 10402</x-dso-link> (VV 560, <x-dso-link>PGC 58267</x-dso-link>)|HER|
+|2025-04-27|[NGC 3166 and friends](https://www.deepskyforum.com/showthread.php?1847-Object-of-the-Week-April-27th-2025-NGC-3166-and-friends){:target="_blank"}|Owen Brazell|LGG 192 (NGC 3156, 3165, 3166, 3169 and <x-dso-link>UGC 5539</x-dso-link>)|SEX|
+|2025-04-20|[Southern Pleiades and ESO 92-18](https://www.deepskyforum.com/showthread.php?1846-Object-of-the-Week-April-20-2025-Southern-Pleiades-and-ESO-92-18){:target="_blank"}|Timo Karhula|Southern Pleiades (IC 2602, <x-dso-link simbad="Cl Collinder 229">Collinder 229</x-dso-link>, Melotte 102, vdB-Ha 103, Theta Car cluster), Melotte 101 (Mel 101, <x-dso-link simbad="Collinder 227">Cr 227</x-dso-link>), Hen 2-51 (PK 288-5.1, <x-dso-link>ESO 92-23</x-dso-link>), <x-dso-link>ESO 92-18</x-dso-link>|CAR|
+|2025-04-13|[NGC 4536 & NGC 4527](https://www.deepskyforum.com/showthread.php?1845-Object-of-the-Week-April-13th-2025-%25E2%2580%2593-NGC-4536-amp-NGC-4527){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 4536</x-dso-link>, <x-dso-link>NGC 4527</x-dso-link>, <x-dso-link>NGC 4533</x-dso-link>|VIR|
 |2025-04-06|[NGC 3256, the nearest LIRG](https://www.deepskyforum.com/showthread.php?1843-Object-of-the-Week-April-6th-2025-NGC-3256-the-nearest-LIRG){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 3256</x-dso-link> (VV 65, <x-dso-link>MCG -07-22-010</x-dso-link>, <x-dso-link>ESO 263-038</x-dso-link>, AM 1025-433, <x-dso-link>PGC 30785</x-dso-link>)|VEL|
 |2025-03-30|[M 48](https://www.deepskyforum.com/showthread.php?1842-Object-of-the-Week-March-30-M-48){:target="_blank"}|Wouter van Reeven|<x-dso-link>M 48</x-dso-link> (NGC 2548, <x-dso-link simbad="Collinder 179">Cr 179</x-dso-link>, Mel 85)|HYA|
 |2025-03-23|[the Haro Berenice](https://www.deepskyforum.com/showthread.php?1841-Object-of-the-Week-March-23-2025-the-Haro-Berenice){:target="_blank"}|Victor van Wulfen|H4-1 (PK 049+88 1, PN G049.3+88.1)|COM|
@@ -702,7 +706,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2025-04-09T05:38:53Z
+Last updated: 2025-05-06T07:36:09Z
 </div>
 {% endraw %}
 

@@ -222,7 +222,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 </td><td class="cell-ce5"> </td><td class="cell-ce8">
 <span class="constellation-anchor"><a href="#centaurus" title="Centaurus">Cen</a></span>
 </td><td class="cell-ce11"> </td></tr><tr class="row-ro1"><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td></tr><tr class="row-ro1"><td class="cell-ce3"> </td><td class="cell-ce7">
-<span class="constellation-anchor">Car</span>
+<span class="constellation-anchor"><a href="#carina" title="Carina">Car</a></span>
 </td><td class="cell-ce7">
 <span class="constellation-anchor"><a href="#dorado" title="Dorado">Dor</a></span>
 </td><td class="cell-ce7">
@@ -433,6 +433,17 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 |2022-08-21|[ACO 3744 - CAPRICORN](https://www.deepskyforum.com/showthread.php?1619-Object-of-the-Week-August-21-2022-ACO-3744-CAPRICORN){:target="_blank"}|Paul Alsing|<x-dso-link>ACO 3744</x-dso-link> (NGC 7016 & <x-dso-link>NGC 7017</x-dso-link> & <x-dso-link>NGC 7018</x-dso-link> &  <x-dso-link>MCG -4-49-16</x-dso-link> (PGC 66149) and more)|
 |2021-10-31|[A galaxy cluster next to M30](https://www.deepskyforum.com/showthread.php?1543-Object-of-the-Week-October-31-2021-%E2%80%93-A-galaxy-cluster-next-to-M30){:target="_blank"}|Steve Gottlieb|ACO S 963 (ESO 531-013 & <x-dso-link>IC 5122</x-dso-link> & <x-dso-link>LEDA 93990</x-dso-link> & <x-dso-link>NGC 7103</x-dso-link> & <x-dso-link>LEDA 134285</x-dso-link> & <x-dso-link>LEDA 197842</x-dso-link> & <x-dso-link>MCG -04-51-007</x-dso-link> & <x-dso-link>NGC 7104</x-dso-link> & <x-dso-link>IC 1393</x-dso-link> & <x-dso-link>LEDA 93995</x-dso-link> and more)|
 |2012-08-19|[NGC 6907 And the Strange Case of NGC 6908](https://www.deepskyforum.com/showthread.php?189-Object-of-the-Week-August-19-2012-NGC-6907-And-the-Strange-Case-of-NGC-6908){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 6907</x-dso-link>, <x-dso-link>NGC 6908</x-dso-link>|
+
+
+[▲ Index](#index){:.top}
+
+---
+
+## Carina
+
+|Date|Title|Author|Object(s)|
+|----|----|----|----|----|
+|2025-04-20|[Southern Pleiades and ESO 92-18](https://www.deepskyforum.com/showthread.php?1846-Object-of-the-Week-April-20-2025-Southern-Pleiades-and-ESO-92-18){:target="_blank"}|Timo Karhula|Southern Pleiades (IC 2602, <x-dso-link simbad="Cl Collinder 229">Collinder 229</x-dso-link>, Melotte 102, vdB-Ha 103, Theta Car cluster), Melotte 101 (Mel 101, <x-dso-link simbad="Collinder 227">Cr 227</x-dso-link>), Hen 2-51 (PK 288-5.1, <x-dso-link>ESO 92-23</x-dso-link>), <x-dso-link>ESO 92-18</x-dso-link>|
 
 
 [▲ Index](#index){:.top}
@@ -902,6 +913,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-05-04|[UGC 10402 \(The Sickle\)](https://www.deepskyforum.com/showthread.php?1848-Object-of-The-Week-May-4th-2025-UGC-10402-%28The-Sickle%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 10402</x-dso-link> (VV 560, <x-dso-link>PGC 58267</x-dso-link>)|
 |2022-08-07|[UGC 10321-A Compact Group That Hickson Missed](https://www.deepskyforum.com/showthread.php?1616-Object-of-the-Week-Aug-7-2022-UGC-10321-A-Compact-Group-That-Hickson-Missed){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 10321</x-dso-link> (LEDA 57765, <x-dso-link>LEDA 20036</x-dso-link>, <x-dso-link>LEDA 57770</x-dso-link>, <x-dso-link>LEDA 200337</x-dso-link>)|
 |2022-06-05|[Arp 71, NGC 6045 in Hercules](https://www.deepskyforum.com/showthread.php?1594-Object-of-the-Week-June-5-2022-Arp-71-NGC-6045-in-Hercules){:target="_blank"}|Alvin Huey|<x-dso-link>NGC 6045</x-dso-link> (Arp 71)|
 |2020-08-09|[I ZW 136 and A Big Telescope](https://www.deepskyforum.com/showthread.php?1396-Object-of-The-Week-August-9-2020-I-ZW-136-and-A-Big-Telescope){:target="_blank"}|Jimi Lowrey|<x-dso-link>I Zw 136</x-dso-link> (LEDA 3087279 & <x-dso-link>LEDA 2387685</x-dso-link>)|
@@ -1401,6 +1413,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-04-27|[NGC 3166 and friends](https://www.deepskyforum.com/showthread.php?1847-Object-of-the-Week-April-27th-2025-NGC-3166-and-friends){:target="_blank"}|Owen Brazell|LGG 192 (NGC 3156, 3165, 3166, 3169 and <x-dso-link>UGC 5539</x-dso-link>)|
 |2023-04-02|[NGC 3090](https://www.deepskyforum.com/showthread.php?1673-Object-of-the-Week-April-2nd-2023-NGC-3090){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 3090</x-dso-link>|
 |2021-03-21|[NGC 3341 A Triple Merger](https://www.deepskyforum.com/showthread.php?1477-Object-of-The-Week-March-21-2021-NGC-3341-A-Triple-Merger){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 3341</x-dso-link>|
 |2018-04-08|[The forgotten Trio Holmberg 173 - NGC 3165/3166/3169](https://www.deepskyforum.com/showthread.php?1151-Object-of-the-Week-April-8-2018-The-forgotten-Trio-Holmberg-173-NGC-3165-3166-3169){:target="_blank"}|Uwe Glahn|Holmberg 173 (NGC 3165 & <x-dso-link>NGC 3166</x-dso-link> & <x-dso-link>NGC 3169</x-dso-link>)|
@@ -1576,6 +1589,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-04-13|[NGC 4536 & NGC 4527](https://www.deepskyforum.com/showthread.php?1845-Object-of-the-Week-April-13th-2025-%25E2%2580%2593-NGC-4536-amp-NGC-4527){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 4536</x-dso-link>, <x-dso-link>NGC 4527</x-dso-link>, <x-dso-link>NGC 4533</x-dso-link>|
 |2024-06-09|[NGC 5331 \(Fox Eyes\)](https://www.deepskyforum.com/showthread.php?1779-Object-of-The-Week-June-9-2024%25E2%2580%2594NGC-5331-%28Fox-Eyes%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 5331</x-dso-link> (VV 253)|
 |2024-05-19|[NGC 4388](https://www.deepskyforum.com/showthread.php?1775-Object-of-the-Week-May19th-2024-NGC-4388){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 4388</x-dso-link> (UGC 7520)|
 |2024-04-21|[NGC 5084](https://www.deepskyforum.com/showthread.php?1767-Object-of-the-Week-April-21-2024-NGC-5084){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 5084</x-dso-link>|
@@ -1629,7 +1643,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2025-04-09T05:38:53Z
+Last updated: 2025-05-06T07:36:09Z
 </div>
 {% endraw %}
 
