@@ -4,15 +4,15 @@ title: "Seven Nights in West Texas"
 author: Akarsh Simha
 date: "Sun, 4 May 2025 01:28:07 -0700"
 ---
-Whenever the Texas Star Party comes around, some of us end up at Jimi Lowrey's for a pilgrimage to his observatory. This year, Steve Gottlieb and I planned our trips to Jimi's to overlap. While I was there, Jimi's observatory was visited by many very well\-known people in visual deep\-sky astronomy. Howard Banich was sorely missed, but it looks like he won much better sky conditions in this new moon's lottery elsewhere.  
+Whenever the Texas Star Party comes around, some of us end up at Jimi Lowrey's for a pilgrimage to his observatory. This year, [Steve Gottlieb](/whoswho.htm#Gottlieb) and I planned our trips to Jimi's to overlap. Howard Banich, who frequently joins us, was sorely missed, but it looks like he won much better sky conditions in this new moon's lottery elsewhere.  While I was there, Jimi's observatory was visited by many deep\-sky observers, who I enjoyed meeting and learning from.
 
 
-I took with me a fellow amateur astronomer, Sanath Kumar Sastry, visiting from India. He signed up for the star party so that he could showcase his new travel telescope product. Sanath and I left the bay area on the Sunday of TSP week in my vehicle. I was carrying my 28" so I could work on observations for a forthcoming Sky \& Telescope article, and also balance out the load on the 48". We made it Tuesday morning to Jimi's, shortly before Steve arrived. That evening, I set up my telescope in a small patch of level ground right outside Jimi's observatory. I lost the east and some of the north, but I chose this so I could be close to the action in the observatory. It also made for this nice photograph that Sanath took, my 28\-inch in the foreground and Jimi's 48\-inch in the background.
+I took with me a fellow amateur astronomer, Sanath Kumar Sastry, visiting from India. He signed up for the star party so that he could showcase his new travel telescope product. Sanath and I left the bay area on the Sunday of TSP week in my vehicle. I was carrying my 28" so I could work on observations for a forthcoming Sky & Telescope article, and also balance out the load on the 48". We made it Tuesday morning to Jimi's, shortly before Steve arrived. That evening, I set up my telescope in a small patch of level ground right outside Jimi's observatory. I lost the east and some of the north, but I chose this so I could be close to the action in the observatory. It also made for this nice photograph that Sanath took, my 28\-inch in the foreground and Jimi's 48\-inch in the background.
 
 ![BlackBetty_Barabarella.jpg.jpeg](assets/bc8ac8a92673445388c050551917ed517942bbb1.jpeg){:.medium}
 
 
-My telescope needed some troubleshooting during setup on Tuesday. Scott, Steve and Sanath observed on Jimi's scope whereas I missed several of the cool things they were looking at, while sneaking in a few views every now and then. I hope Scott and Steve will post on what they observed.
+My telescope needed some troubleshooting during setup on Tuesday. [Scott Harrington](/whoswho.htm#Harrington), Steve and Sanath observed on Jimi's scope whereas I missed several of the cool things they were looking at, while sneaking in a few views every now and then.
 
   
 
@@ -22,7 +22,7 @@ The conditions were moderate for the first five nights \-\- lots of extinction d
   
 
 
-On Wednesday we were joined by Josh Wright from Pennsylvania (I first met Josh on the field of TSP in 2012\). On Thursday we were joined by Larry Mitchell, Stephen J O'Meara, Brent Archinal and Doug McCormick. That night was better \-\- we were able to see the Zodiacal Band. After almost everyone left on Thursday night, Jimi and I were so pumped up that we even observed some with Josh Wright's fine 25" Zambuto mirror Obsession, into the wee hours of morning. On Friday night, Sanath was at Texas Star Party showing the travel scope off, so it was just Steve and me with Jimi on the 48" \-\- the conditions were very underwhelming and we quit early due to high humidity and high particle count. Saturday night was decent, but we packed up on the 48" early since Steve had an early flight; I switched to my 28\-inch and pushed through until astronomical twilight. Everyone but for me had left by Sunday, and the conditions were unusable as clouds and winds came in Sunday and Monday nights. The wind was so bad, I tore down my telescope on Sunday and packed it up on Monday. Tuesday and Wednesday nights had spectacular conditions (except for the seeing) and I am glad I stayed on to observe with Jimi on his 48".
+On Wednesday we were joined by Josh Wright from Pennsylvania (I first met Josh on the field of TSP in 2012\). On Thursday we were joined by [Larry Mitchell](/whoswho.htm#Mitchell), Stephen J O'Meara, Brent Archinal and Doug McCormick. That night was better \-\- we were able to see the Zodiacal Band. After almost everyone left on Thursday night, Jimi and I were so pumped up that we even observed some with Josh Wright's fine 25" Zambuto mirror Obsession, into the wee hours of morning. On Friday night, Sanath was at Texas Star Party showing the travel scope off, so it was just Steve and me with Jimi on the 48" \-\- the conditions were very underwhelming and we quit early due to high humidity and high particle count. Saturday night was decent, but we packed up on the 48" early since Steve had an early flight; I switched to my 28\-inch and pushed through until astronomical twilight. Everyone but for me had left by Sunday, and the conditions were unusable as clouds and winds came in Sunday and Monday nights. The wind was so bad, I tore down my telescope on Sunday and packed it up on Monday. Tuesday and Wednesday nights had spectacular conditions (except for the seeing) and I am glad I stayed on to observe with Jimi on his 48".
 
   
 
@@ -155,7 +155,7 @@ Finally, the best thing I saw all week was
   
 
 
-Finally, here is a picture of Jimi, Steve, Scott and me taken on one of the days:
+Below is a picture of Jimi, Steve, Scott and me taken by Sanath on one of the days. Sanath, Scott and I had just returned from McDonald Observatory, where Dr. Steve Odewahn gave us an excellent tour of the Hobby-Eberley telescope and the Otto Struve 82-inch telescope and patiently answered our barrage of questions!
 
 ![Lowrey_Simha_Harrington_Gottlieb.jpg](assets/f29d45a0a6759c913bee40fdf6e0b58fa506652a.jpeg)
 
