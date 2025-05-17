@@ -40,7 +40,6 @@ Links open in a new browser window or tab
 | [Abell Planetary Observing Guide (PDF)](http://www.reinervogel.net/pdf/Abell_PN.pdf) by Reiner Vogel | [Hickson Observing Atlas (PDF)](https://www.reinervogel.net/pdf/Hickson.pdf) by Reiner Vogel | [Texas Star Party Observing Program Archive](https://texasstarparty.org/activities/tsp-observing-programs/tsp-observing-program-archive/) |
 | [Downloadable Observing Guides](https://faintfuzzies.com/DownloadableObservingGuides2.html) by Alvin Huey | [Ultimate Deep-Sky Observers Resource](https://www.deepskyforum.com/showthread.php?336-The-Ultimate-Deep-Sky-Observers-Resource-(UDSOR)) on DeepSkyForum | [Mel Bartels'](https://www.bbastrodesigns.com/drawings.html) drawings and his listing of [other astrosketcher's websites](https://www.bbastrodesigns.com/others_drawings.html) |
 | [200 Brightest PN for Small Scopes & Binos](https://drive.google.com/file/d/1Zw7Xof6rqAoO3xGrsMW6QK8zR8KP4c3y/view) by Scott Harrington | | |
-
 {: class="catalogs"}
 
 </div>
