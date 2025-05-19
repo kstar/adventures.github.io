@@ -1,0 +1,77 @@
+Object,Common,Sexagesimal,RA_Deg,Dec_Deg,z,Constellation,Image,Tidal_Type,Remarks,Feature
+VV 254,Taffy System,00:01:40 +23:29:23,0.41716,23.48973,0.01452,Peg,,,<a href='https://adsabs.harvard.edu/pdf/1993AJ....105.1730C'>Counter-rotating spirals resulting in a tidal hook</a>,taffy-system
+SDSS J000415.42+032301.8,Bruno's Violin Clef,00:04:15 +03:23:01,1.06425,3.383833333,0.095,Psc,,,Extremely dim: tails not seen in 48-inch,brunos-violin-clef
+NGC 17,,00:11:06 -12:06:28,2.77755,-12.10786944,0.019418,Cet,,,=NGC 34,
+Arp 256,,00:18:50 -10:22:36,4.712075,-10.37680278,0.027243,Cet,,,,
+IC 18,,00:28:34 -11:35:12,7.14562917,-11.58675,,Cet,,Tail,Very dim tail,ic-18
+NGC 474,,01:20:06 +03:24:55,20.02786272,3.41551721,,Psc,,Shells,<a href='https://apod.nasa.gov/apod/ap241107.html'>Shells resulting from accretion of a small galaxy</a>,ngc-474
+NGC 520,,01:24:34 +03:47:29,21.1454,3.7915,,Psc,,Tails,Excellent tail: attempt in 16-inch; Feat. in Toomre Sequence,ngc-520
+Arp 273,Rose Galaxies,02:21:28 +39:22:32,35.36960978,39.37558927,,And,,,arp-273
+NGC 922,,02:25:04 -24:47:17,36.26833333,-24.78818333,0.01027,For,,,<a href='https://noirlab.edu/public/images/iotw2439a/'>Galaxy distorted by interaction possessing an extremely dim tidal tail</a>,
+NGC 1097,,02:46:19 -30:16:29,41.5794125,-30.27491111,,For,,,<a href='/aintno.htm'>AINTNO #67</a>: this galaxy has an <a href='https://arxiv.org/abs/1504.03697'>extremely dim dog-leg stream</a>,ngc-1097
+NGC 1614,,04:34:00 -08:34:44,68.5001125,-8.57904722,0.015835,Eri,,,,
+NGC 2207,,06:16:22 -21:22:21,94.09180704,-21.37271089,,CMa,,,<a href='https://iopscience.iop.org/article/10.1088/0004-6256/144/5/156/pdf'>Tidal arms of IC 2163</a> give it an '<a href='https://articles.adsabs.harvard.edu/full/1995ApJ...453..100E'>ocular</a>' appearance,ngc-2207-and-ic-2163
+NGC 2146,Dusty Hand,06:18:37 +78:21:25,94.657125,78.35701944,0.002792,Cam,,,Tidal stream,ngc-2146
+Arp 82,,08:11:13 +25:12:24,122.8083333,25.20694444,,Cnc,,,<a href='https://link.springer.com/article/10.1007/s10509-008-9826-3'>M51-type</a> interaction with tidal arms; NGC 2535 is an ocular galaxy
+NGC 2623,,08:38:24 +25:45:16,129.6000667,25.754525,0.018427,Cnc,,,Feat. in Toomre Sequence
+Arp 55,Grasshopper,09:15:55 +44:19:58,138.98125,44.33277778,0.03995,Lyn,,,
+NGC 2799,,09:17:31 +41:59:38,139.3791858,41.99405436,0.00621,Lyn,,,
+Arp 245,,09:45:42 -14:19:34,146.4251875,-14.32636111,0.00767495,Hya,,"Tail, TDG",S&T Feb 2025; incl. tidal dwarf Arp 245N,arp-245
+NGC 3239,,10:25:04 +17:09:49,156.2702792,17.16366944,,Leo,,,
+NGC 3448,,10:54:39 +54:18:18,163.6635,54.30522778,,UMa,,,
+AM 1054-325,,10:56:58 -33:09:41,164.24375,-33.16138889,,Hya,,,
+NGC 3509,,11:04:23 +04:49:43,166.0981351,4.82861243,0.02559,Leo,,Tail,S&T Feb 2025; Feat. in Toomre Sequence,ngc-3509
+Arp 105,Guitar,11:11:13 +28:41:46,167.8049471,28.69637861,0.02875,UMa,,"Tail, TDG",Dim in 48-inch,arp-105
+M 66,,11:20:15 +12:59:29,170.0626,12.9915,,Leo,,,Hook-shaped tidal feature seen in DSS2 imagery,m-66
+NGC 3628,Hamburger,11:20:17 +13:35:22,170.0709083,13.58948889,,Leo,,"Tails, TDG",S&T Feb 2025. Sports tidal dwarf Leo-TDG.,ngc-3628
+NGC 3718,,11:32:34 +53:04:04,173.1452383,53.06792228,0.00327807,UMa,,,"'Arms' are a warped stellar disk, not confirmed if due to tides"
+Arp 248,Wild's Triplet,11:46:45 -03:50:52,176.6884357,-3.84804125,,Vir,,Bridge,,arp-248
+NGC 3921,,11:51:06 +55:04:43,177.7786683,55.07872624,0.01968,UMa,,,<a href='https://articles.adsabs.harvard.edu/pdf/1996AJ....111..655H'>Late-stage merger with a southern tidal loop</a>
+NGC 4038/9,Antennae,12:46:10 +30:43:53,180.4715417,-18.8772,0.005265,Crv,,"Tails, TDG",S&T Feb 2025; Very difficult tails and TDG,antennae-galaxies
+MCG 9-20-82,,12:04:37 +52:57:16,181.15825,52.95472222,,UMa,,,
+Arp 97,,12:05:45 +31:03:30,181.440375,31.0585,0.023049,UMa,,,
+NGC 4105,,12:06:40 -29:45:36,181.6698625,-29.76017778,0.0063,Hya,,,
+Arp 106,,12:15:35 +28:10:39,183.8994112,28.17762455,0.02189,Com,,,
+NGC 4438,Eyes,12:27:45 +13:00:31,186.940294,13.0088078,,Vir,,Tails,"S&T Feb 2025. Three tidal tails.",the-eyes
+NGC 4449,,12:28:11 +44:05:36,187.046325,44.09355833,0.00068,CVn,,TDG,Extremely diffuse tail connects to extremely faint TDG,ngc-4449
+IC 803,,12:39:37 +16:35:19,189.9060833,16.58864444,,Com,,,
+NGC 4651,Umbrella,12:43:42 +16:23:36,190.9276567,16.39333407,,Com,,,Very dim Umbrella-shaped tail,umbrella-galaxy
+NGC 4676,Mice,12:46:10 +30:43:53,191.5424167,30.73158333,0.0225,Com,,Tail,"S&T Feb 2025. One of the best, brightest tails: attempt in 16-inch!",the-mice
+Arp 238,,13:15:32 +62:07:36,198.8854167,62.12694444,,UMa,,,
+IC 883,,13:20:35 +34:08:22,200.1473,34.1395,0.023412,CVn,,Tails,Two difficult tails
+M 51,Whirlpool,13:29:52 +47:11:42,202.469575,47.19525833,,CVn,,Streams,S&T Feb 2025,m-51
+Arp 104,Keenan's System,13:32:13 +62:43:36,203.0550123,62.72688947,,UMa,,Bridge,Bridge that is tough in a 48-inch!,keenans-system
+NGC 5215,,13:35:08 -33:29:06,203.7833333,-33.485,,Cen,,Tidal Tails,ngc-5215
+Arp 240,,13:39:52 +00:50:24,204.9705325,0.84002508,0.02267,Vir,,,arp-240
+NGC 5279,,13:41:43 +55:40:25,205.4323652,55.67375816,,UMa,,,
+Mrk 273,,13:44:42 +55:53:12,206.1757421,55.88689417,0.037816,UMa,,Tail,Excellent tidal tail; needs aperture,mrk-273
+AM 1353-272,"Dentist's Chair",13:56:15 -27:35:55,209.0625,-27.59861111,,Hya,,Tail,Extremely difficult tail,dentists-chair
+Arp 84,"""Heron""",13:58:34 +37:27:10,209.6429167,37.45302778,,CVn,,Check,,arp-84
+NGC 5514,,14:13:38 +07:39:37,213.4112083,7.660375,,Boo,,,
+NGC 5614,,14:24:07 +34:51:31,216.0316137,34.85883713,,Boo,,,
+UGC 9425,Segner's Wheel,14:37:51 +30:28:47,219.4632417,30.47978333,,Boo,,,segners-wheel
+VV 109,,14:46:01 +08:29:46,221.5083333,8.496111111,0.03546,Boo,,Tail,Excellent tidal tail but bright star detracts,vv-109
+Arp 173,,14:51:30 +09:20:02,222.8754167,9.33388889,,Boo,,,
+VV 59,"""Spade""",15:08:05 +34:23:23,227.0236875,34.38980556,0.045088,Boo,,????,Is this a tidal tail?,vv-59
+NGC 5907,Splinter,15:15:53 +56:19:43,228.9736958,56.32885,,Dra,,,Extremely dim stellar stream at the center of a controversy; see <a href='https://iopscience.iop.org/article/10.3847/2041-8213/ab40c9/pdf'>article</a>,ngc-5907
+VV 705,,15:18:06 +42:44:45,229.5254946,42.74585722,0.040912,Boo,,,Two bright tidal tails,vv-705
+Arp 254,,15:21:30 -07:22:00,230.375,-7.36666667,,Lib,,,
+VV 847,,15:23:01 -01:20:49,230.7565738,-1.34717713,0.02823,Ser,,,Member of KTG 61 with long tidal features
+Arp 72,,15:46:56 +17:52:41,236.73375,17.87833333,,Ser,,,<a href='https://science.nasa.gov/image-detail/hubble-image-of-arp-72/'>Faint tidal plume</a>; distorted arm of unclear origin; M51-type.,arp-72
+HCG 79b,Seyfert's Sextet,15:59:12 +20:45:48,239.802257,20.763354,0.01466,Ser,,Tail,S&T Feb 2025,seyferts-sextet
+IC 1182,,16:05:36 +17:48:07,241.4033182,17.80206169,,Her,,Tail,"Hercules Cluster galaxy with a strange jet-like feature; <a href='https://www.aanda.org/articles/aa/pdf/2004/17/aa0295.pdf'>this paper</a> argues that it is a tidal tail",ic-1182
+UGC 10214,Tadpole,16:06:03 +55:25:31,241.5162843,55.42544114,0.031222,Dra,,"Tail, SFRs","S&T Feb 2025; A really iconic galaxy!",tadpole-galaxy
+UGC 10610,,16:54:58 +43:03:38,253.7445417,43.06063889,,Her,,,
+IC 4630,,16:55:09 +26:39:46,253.7899163,26.66292831,0.0347,Her,,,
+VV 805,,17:03:15 +31:27:28,255.8154835,31.45793199,,Her,,,
+Arp 102,,17:19:14 +48:58:49,259.8103858,48.98039533,0.02486481,Her,,Tail,
+Arp 81,Edward's Galaxy,18:12:57 +68:21:32,273.24,68.35888889,,Dra,,"Tail, SFRs","S&T Feb 2025. TT is tough but tractable under good-sky. SFRs seen in 48-inch",arp-81
+NGC 7135,"""Stingray Galaxy""",21:49:46 -34:52:34,327.4416723,-34.8762711,,PsA,,Tails,Fascinating <a href='https://arxiv.org/pdf/2101.07072'>merger</a> with shells and tidal tails,ngc-7135
+NGC 7252,Atoms for Peace,22:20:44 -24:40:41,335.1865618,-24.6783082,0.0158,Aqr,,,,ngc-7252
+NGC 7463,,23:01:51 +15:58:54,345.4665582,15.98181438,,Peg,,,
+PGC 1000273,Kite Galaxy,23:04:44 -08:42:12,346.1833333,-8.703333333,,Aqr,,,"One of the <a href='https://arxiv.org/pdf/2305.01335'>longest tidal tails</a> known, promptly reserved for AINTO 2nd edition",the-kite
+NGC 7592,,23:18:22 -04:24:56,349.5916667,-4.41583333,0.024721,Aqr,,,
+NGC 7609,,23:19:30 +09:30:29,349.8751858,9.50829018,,Peg,,,
+NGC 7715,,23:36:21 +02:09:25,354.0907,2.15702778,,Psc,,,
+Arp 295,,23:41:47 -03:40:01,355.4470208,-3.66719444,,Aqr,,,"<a href='https://articles.adsabs.harvard.edu/pdf/1996AJ....111..655H'>Paper</a>. A very dim tidal tail and bridge."
+Arp 86,,23:47:01 +29:28:15,356.7570833,29.47111111,,Peg,,Tails M51-type,M51-type interaction

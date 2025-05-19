@@ -142,3 +142,28 @@ function toggleDarkMode() {
 	localStorage.setItem("theme", "light");
     }
 }
+
+function raDegreesToHMS(degrees) {
+  const totalHours = degrees / 15;
+  const hours = Math.floor(totalHours);
+  const minutesFloat = (totalHours - hours) * 60;
+  const minutes = Math.floor(minutesFloat);
+  const seconds = ((minutesFloat - minutes) * 60).toFixed(2);
+
+  const padZero = val => String(val).padStart(2, '0');
+
+  return `${padZero(hours)}h ${padZero(minutes)}m ${padZero(seconds)}s`;
+}
+
+function decDegreesToDMS(degrees) {
+  const sign = degrees < 0 ? '-' : '+';
+  const absDegrees = Math.abs(degrees);
+  const d = Math.floor(absDegrees);
+  const minutesFloat = (absDegrees - d) * 60;
+  const m = Math.floor(minutesFloat);
+  const s = ((minutesFloat - m) * 60).toFixed(2);
+
+  const padZero = val => String(val).padStart(2, '0');
+
+  return `${sign}${padZero(d)}° ${padZero(m)}' ${padZero(s)}"`;
+}
