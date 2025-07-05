@@ -12,6 +12,14 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2025-06-29|[DeHt 3, an obscure PN in Sagittarius](https://www.deepskyforum.com/showthread.php?1857-Object-of-the-Week-June-29-2025-DeHt-3-an-obscure-PN-in-Sagittarius){:target="_blank"}|Steve Gottlieb|DeHt 3 (DHW 1-1, <x-dso-link>PK 19-13.1</x-dso-link>, PN G019.4-13.6, <x-dso-link>ESO 593-009</x-dso-link>)|SGR|
+|2025-06-22|[The Butterfly Cluster](https://www.deepskyforum.com/showthread.php?1856-Object-of-the-Week-June-22-2025-The-Butterfly-Cluster%26p%3D10357%23post10357){:target="_blank"}|Wouter van Reeven|<x-dso-link>M 6</x-dso-link> (Butterfly Cluster, <x-dso-link>NGC 6405</x-dso-link>), <x-dso-link>HD 160259</x-dso-link>, <x-dso-link>HD 318093</x-dso-link>, <x-dso-link>HD 160094</x-dso-link>|SCO|
+|2025-06-15|[A ringside view in Hercules](https://www.deepskyforum.com/showthread.php?1855-Object-of-the-Week-June-15th-2025-A-ringside-view-in-Hercules){:target="_blank"}|Victor van Wulfen|Humason 2-1 (Hu 2-1, <x-dso-link>VV 458</x-dso-link>, <x-dso-link>PK 051+09.1</x-dso-link>, PN G051.4+09.6)|HER|
+|2025-06-08|[NGC 5917 \(Arp 254\), the Hooked Galaxy](http://www.deepskyforum.com/showthread.php?1854-Object-of-the-Week-June-8-2025-NGC-5917-%28Arp-254%29-the-Hooked-Galaxy){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 5917</x-dso-link> (Arp 254), <x-dso-link>MCG-01-39-003</x-dso-link>|LIB|
+|2025-06-01|[IC 1101 and Abell 2029](https://www.deepskyforum.com/showthread.php?1853-Object-of-the-Week-June-1st-2025-IC-1101-and-Abell-2029){:target="_blank"}|Akarsh Simha|<x-dso-link>IC 1101</x-dso-link>, <x-dso-link>Abell 2029</x-dso-link>, <x-dso-link>PGC 54178</x-dso-link> (LEDA 54178), <x-dso-link>LEDA 5057632</x-dso-link>|VIR|
+|2025-05-25|[AGC 1060, The Hydra Cluster](https://www.deepskyforum.com/showthread.php?1852-Object-of-the-Week-%25E2%2580%2593-AGC-1060-The-Hydra-Cluster){:target="_blank"}|Paul Alsing|<x-dso-link simbad="ACO 1060">AGC 1060</x-dso-link> (The Hydra Cluster)|HYA|
+|2025-05-18|[Malin 1](https://www.deepskyforum.com/showthread.php?1851-Object-of-the-Week-May-18th-2025-%25E2%2580%2593-Malin-1){:target="_blank"}|Scott Harrington|Malin 1 (VPC 1091, <x-dso-link>LEDA 42102</x-dso-link>)|COM|
+|2025-05-11|[NGC 3338](https://www.deepskyforum.com/showthread.php?1850-Object-of-the-Week-May-11-2025-%25E2%2580%2593-NGC-3338){:target="_blank"}|Howard Banich|<x-dso-link>NGC 3338</x-dso-link>|LEO|
 |2025-05-04|[UGC 10402 \(The Sickle\)](https://www.deepskyforum.com/showthread.php?1848-Object-of-The-Week-May-4th-2025-UGC-10402-%28The-Sickle%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>UGC 10402</x-dso-link> (VV 560, <x-dso-link>PGC 58267</x-dso-link>)|HER|
 |2025-04-27|[NGC 3166 and friends](https://www.deepskyforum.com/showthread.php?1847-Object-of-the-Week-April-27th-2025-NGC-3166-and-friends){:target="_blank"}|Owen Brazell|LGG 192 (NGC 3156, 3165, 3166, 3169 and <x-dso-link>UGC 5539</x-dso-link>)|SEX|
 |2025-04-20|[Southern Pleiades and ESO 92-18](https://www.deepskyforum.com/showthread.php?1846-Object-of-the-Week-April-20-2025-Southern-Pleiades-and-ESO-92-18){:target="_blank"}|Timo Karhula|Southern Pleiades (IC 2602, <x-dso-link simbad="Cl Collinder 229">Collinder 229</x-dso-link>, Melotte 102, vdB-Ha 103, Theta Car cluster), Melotte 101 (Mel 101, <x-dso-link simbad="Collinder 227">Cr 227</x-dso-link>), Hen 2-51 (PK 288-5.1, <x-dso-link>ESO 92-23</x-dso-link>), <x-dso-link>ESO 92-18</x-dso-link>|CAR|
@@ -706,7 +714,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2025-05-06T07:36:09Z
+Last updated: 2025-07-05T23:26:26Z
 </div>
 {% endraw %}
 
