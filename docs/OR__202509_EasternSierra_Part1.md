@@ -1,6 +1,6 @@
 ---
 layout: or
-title: September 2025 Observing in the Eastern Sierra: Part 1
+title: "September 2025 Observing in the Eastern Sierra: Part 1"
 author: Akarsh Simha
 ---
 
