@@ -51,7 +51,7 @@ I took a moment to calm myself, and tell the rational thinking which was coming 
 
 Next up was <x-dso simbad="HCG 96">Hickson 96</x-dso> in Pegasus. I've been slowly making progress towards the goal of observing all Hickson groups, a project I started ostensibly in 2013 with my 18-inch. Three of the four components were bright and continuously visible to direct vision. <x-dso omit>PGC 71507</x-dso>, the other component, was intermittently visible to averted vision. <x-dso>PGC 214960</x-dso> nearby was also picked up, and sported a north-south elongated halo.
 
-Staying in Pegasus, <x-dso>NGC 7769</x-dso> and <x-dso>NGC 7771<x-dso> form a nice trio with <x-dso>NGC 7770</x-dso>. All three were fairly bright, with NGc 7771 showing some interesting structure -- it's western extension seemed to curve northward or was in general misaligned with the rest of the body of the galaxy.  I also picked up <x-dso>PGC 72612</x-dso> nearby, which was bright enough to be continuously visible with direct vision. I did not bother with the other two faint field galaxies.
+Staying in Pegasus, <x-dso>NGC 7769</x-dso> and <x-dso>NGC 7771</x-dso> form a nice trio with <x-dso>NGC 7770</x-dso>. All three were fairly bright, with NGc 7771 showing some interesting structure -- it's western extension seemed to curve northward or was in general misaligned with the rest of the body of the galaxy.  I also picked up <x-dso>PGC 72612</x-dso> nearby, which was bright enough to be continuously visible with direct vision. I did not bother with the other two faint field galaxies.
 
 ## More Hickson groups
 
