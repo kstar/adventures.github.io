@@ -26,6 +26,9 @@ I started on <x-dso>NGC 6962</x-dso>, the anchor of a galaxy grouping in Aquariu
 
 <x-dso>II Zw 96</x-dso> came to be on my list from Steve Gottlieb's article on objects in Delphinus, published in the September 2025 issue of Sky & Telescope magazine. I thought it was a pretty neat merger, and gave it a look at 583x. It appeared to have a V-shape with a knot hanging off one of the arms of the V.
 
+![James Webb Space Telescope image of II Zw 96](assets/IIZw96.jpg)
+Above is a James Webb Space Telescope image of II Zw 96, [click here for more](https://esawebb.org/images/potm2211a/)
+
 ## Lacerta
 
 Tired of chasing galaxies and not knowing what to observe for a bit, I actually hit some open clusters in Lacerta. <x-dso>IC 1434</x-dso>, <x-dso>NGC 7245</x-dso> and <x-dso>IC 1442</x-dso>, the three I observed, weren't particularly exciting.
