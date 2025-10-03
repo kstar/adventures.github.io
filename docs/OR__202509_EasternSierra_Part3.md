@@ -97,3 +97,4 @@ The faint chain of three galaxies southeast of Arp 19 were dimly seen with great
 By this time, it was 2AM, and I had to work the next day. So I wrapped up looking at the double cluster and <x-dso>NGC 891</x-dso> for "dessert" before going to bed. NGC 891 was definitely a beautiful sight! I put the covers on the telescope and locked it in altitude as usual, so that it won't point to the zenith where the wind could knock the mirror box out of place, as has happened to many other telescopes. I was very satisfied with the views of <x-dso>Arp 19</x-dso>, <x-dso>Arp 256</x-dso> and the <x-dso>NGC 7242</x-dso> group and felt fortunate that the clouds left me alone to be able to enjoy these views, something that was not clear would happen earlier in the night.
 
 
+Click [here for Part 4](/OR__202509_EasternSierra_Part4.html)

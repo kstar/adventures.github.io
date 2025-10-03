@@ -80,3 +80,4 @@ Two globulars in NGC 147, <x-dso simbad="FJJ NGC 147 I">Hodge I</x-dso> and <x-d
 
 At this point, it was 4:30 AM, I was tired. I shut down for the night.
 
+Click [here for Part 3](/OR__202509_EasternSierra_Part3.html)

@@ -4,7 +4,7 @@ title: "September 2025 Observing in the Eastern Sierra: Part 4"
 author: Akarsh Simha
 ---
 
-This is a continuation from [part 1](/OR_202509_EasternSierra_Part1.html),  [part 2](/OR_202509_EasternSierra_Part2.html) and [part 3](/OR_202509_EasternSierra_Part3.html).
+This is a continuation from [part 1](/OR__202509_EasternSierra_Part1.html),  [part 2](/OR__202509_EasternSierra_Part2.html) and [part 3](/OR__202509_EasternSierra_Part3.html).
 
 It was rather warm, and I had to tuck myself under a summer sleeping bag. I had aluminet draped over my truck for shade. I woke up earlier than I had wanted to, at perhaps 9:30 AM rather than 10:30AM which is when I'd set my alarm for. There was a decent amount of traffic on the road, perhaps 10 vehicles drove up during the morning hours and perhaps 4 or 5 drove down in the evening. Some of them looked like contractor trucks working for the ghost town's tourism industry. Some of them looked like off-roaders, perhaps interested in getting to surprise valley. Nobody disturbed me, or even drove by to explore the beautiful vista point "attached" to my campsite.
 
@@ -59,4 +59,6 @@ They say grief is a form of love, and I concur. To connect back to my good memor
 
 I contrast the connection I have with the Perseus Cluster to Albert Highe's, which was a much happier one. He wrote in [his deep dive on the Perseus Cluster](https://web.archive.org/web/20110926205645/http://pw2.netcom.com/~ahighe/a426.html), that the Perseus Cluster had special meaning to him after he "discovered" it on his birthday. It is interesting that we observers have so many memories and emotions of our lives associated with deep-sky objects.
 
-I consoled myself and went to bed at about 1:30AM, knowing that I had to work the next day.
+I consoled myself and started packing up my telescope at about 1:30AM, knowing that I had to work the next day.
+
+Click [here for Part 5](/OR__202509_EasternSierra_Part5.html)

@@ -4,8 +4,8 @@ title: "September 2025 Observing in the Eastern Sierra: Part 5"
 author: Akarsh Simha
 ---
 
-This is a continuation from [part 1](/OR_202509_EasternSierra_Part1.html),
-[part 2](/OR_202509_EasternSierra_Part2.html), [part 3](/OR_202509_EasternSierra_Part3.html), [part 4](/OR_202509_EasternSierra_Part4.html).
+This is a continuation from [part 1](/OR__202509_EasternSierra_Part1.html),
+[part 2](/OR__202509_EasternSierra_Part2.html), [part 3](/OR__202509_EasternSierra_Part3.html), [part 4](/OR__202509_EasternSierra_Part4.html).
 
 I woke up at my beautiful observing site to a nice vista and lesser traffic.
 I had already mostly packed up the telescope the previous night, leaving a few bits outside; especially the secondary cage, because that impedes my ability to recline and sleep in the cabin of my truck.

@@ -83,3 +83,4 @@ On that happy note, I covered the mirrors, put the caps on the eyepieces, locked
 
 It looks like the sky was overall dark, but transparency wasn't exceptional. At about 4AM, I could see a sizable elongated Gegenschein and a Zodiacal Band segment making a nice V-shape with the milky way. Yet, after the Cartwheel observation or so, the sky background in the eyepiece appeared bright and galaxies weren't very contrasty. It dewed all through the night, and my Telrad was fogged up by the morning, but the mirrors remained untouched.
 
+Click [here for Part 2](/OR__202509_EasternSierra_Part2.html)
