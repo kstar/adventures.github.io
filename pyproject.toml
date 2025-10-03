@@ -1,0 +1,14 @@
+[project]
+name = "adventures-github-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "fastmcp>=2.3.5",
+    "markdownify>=1.2.0",
+    "mcp>=1.9.0",
+    "requests>=2.32.3",
+    "sqlalchemy>=2.0.41",
+]

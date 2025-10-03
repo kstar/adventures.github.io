@@ -20,8 +20,8 @@ import json
 from markdownify import MarkdownConverter
 
 class CustomMarkdownConverter(MarkdownConverter):
-    def convert_div(self, el, text, convert_as_inline):
-        return super().convert_p(el, text, convert_as_inline)
+    def convert_div(self, el, text, parent_tags=set()):
+        return super().convert_p(el, text, parent_tags=parent_tags)
 
 def markdownify(html: str, **options) -> str:
     return CustomMarkdownConverter(**options).convert(html)
