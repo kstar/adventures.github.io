@@ -1,6 +1,6 @@
 ---
 layout: or
-title: "[ADS] OR: A Peaceful Weekend in the Ozark Mountains"
+title: "OR: A Peaceful Weekend in the Ozark Mountains"
 author: Scott Harrington
 date: "Thu, 2 Oct 2025 22:16:38 -0500"
 ---
