@@ -32,8 +32,7 @@
 	--equation-color: #ebc3e4;
 }
 body {
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0;
     color: var(--font-color);
     background-color: var(--bg-color);
     font-size: 18px;
@@ -206,7 +205,6 @@ div.headbar {
     padding: 0px;
     margin: 0;
     background-color: var(--navbar-color);
-    border-radius: 5px;
     display: block;
     width: 100%;
     min-height: 25px;
@@ -218,8 +216,9 @@ div.headbar {
 }
 div.headbar ul
 {
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    white-space: nowrap;
     height: auto;
     flex-direction: row;
     align-items: center;
@@ -231,11 +230,13 @@ div.headbar ul
     /*height: 30px;*/
 }
 div.headbar li {
-    display: block;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     height: 100%;
-    max-height: 60px; !important
+    max-height: 60px;
+    text-align: center;
     /*height: 20px;*/
 }
 div.headbar li.headbar-spacer {
@@ -245,14 +246,13 @@ div.headbar li.headbar-spacer {
     height: auto;
 }
 div.headbar li.headbar-button {
-    padding: 0px 0px 0px 0px;
-    margin: 0;
     border-radius: 5px;
     cursor: pointer;
     color: var(--head-color);
     font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     display: inline-flex;
+    text-align: center;
     flex-direction: row;
     align-items: center;
     justify-content: left;
@@ -263,6 +263,17 @@ div.headbar li.headbar-button:hover {
 }
 div.headbar li.headbar-shiny {
     background-color: var(--navbar-shiny);
+}
+.headbar-overflow {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid;
+    background-color: var(--bg-color);
+}
+div.headbar-overflow.show {
+    display: block;
 }
 
 li.headbar-button img {

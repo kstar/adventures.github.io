@@ -1,19 +1,24 @@
 <!-- This is the inner HTML of a div -->
-<ul>
-
+<ul class="headbar-contents">
   <li class="headbar-button home-button">
       <a href="/index.html" title="Homepage">
 	<img src="assets/favicon.ico" alt="Home"> Adventures in Deep Space
       </a>
   </li>
   <li class="headbar-sep"><span></span></li>
-  <li class="headbar-button headbar-shiny"><a href="/dso_index_constellation.html">DSO Index</a></li>
-  <li class="headbar-button"><a href="/webpages.html" title="Index of articles">Articles</a></li>
-  <li class="headbar-button"><a href="/observing.reports.htm" title="Index of observing reports">Observing Reports</a></li>
-  <li class="headbar-button"><a href="/catalogs.htm">Catalogs, Lists & Links</a></li>
-  <li class="headbar-button"><a href="/steve.ngc.htm">Steve Gottlieb's NGC/IC Notes</a></li>
-  <li class="headbar-button"><a href="/favorites.htm" title="A collection of cool objects for all telescopes">Seasonal Favorites</a></li>
-  <li class="headbar-button"><a href="/dsf_ootw_constellation.html" title="DeepSkyForum Object of the Week">DSF OOTW</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/webpages.html" title="Index of articles">Articles</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/observing.reports.htm" title="Index of observing reports">Observing Reports</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/catalogs.htm">Catalogs, Lists & Links</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/steve.ngc.htm">Steve Gottlieb's NGC/IC Notes</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/favorites.htm" title="A collection of cool objects for all telescopes">Seasonal Favorites</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/dsf_ootw_constellation.html" title="Index of DeepSkyForum Object of the Week">DSF OOTW</a></li>
+  <li class="headbar-button headbar-foldable"><a href="/dso_index_constellation.html" title="Overall index of deep-sky objects featured in Adventures in Deep Space">DSO Index</a></li>
+  <li><ul>
+  <div class="headbar-overflow" id="headbar-overflow">
+      <!-- Overflow goes here -->
+  </div>
+  </ul></li>
+  <li class="headbar-button headbar-kebab-btn" id="headbar-kebab-btn" title="Show remaining navigation links">⋮</li>
   <li class="headbar-spacer" id="headbar-spacer"></li>
   <li class="headbar-button darkmode-button" title="Toggle light/dark color theme"><a style="width: 20px; text-align: center;" onclick="toggleDarkMode();"><i class="fa fa-lightbulb-o"></i></a></li>
   <li class="headbar-button">&nbsp;</li>

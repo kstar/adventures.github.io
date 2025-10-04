@@ -98,16 +98,82 @@ customElements.define("x-dso-link", XDsoLinkElement);
     headbar.id = 'headbar';
     headbar.setAttribute('class', 'headbar');
 
-    fetch('headbar.html').then(res => res.text()).then(
+    // Overflow detection for navigation and header bar (ChatGPT)
+    function updateNavbarOverflow() {
+	console.log("in updateNavbarOverflow()");
+	const itemsContainer = headbar.querySelector('.headbar-contents');
+	const overflowContainer = document.getElementById('headbar-overflow');
+	const kebab = headbar.querySelector('.headbar-kebab-btn');
+	const darkModeButton = headbar.querySelector('.darkmode-button')
+
+	// Reset dropdown
+	overflowContainer.innerHTML = '';
+	kebab.style.display = 'none';
+
+	const gap = 8;
+	const navWidth = itemsContainer.offsetWidth;
+
+	const items = Array.from(itemsContainer.children);
+
+	let nonFoldableWidth = gap;
+	items.forEach(item => {
+	    item.style.display = 'inline-flex';
+	    if (!item.classList.contains('headbar-foldable'))
+		nonFoldableWidth += item.offsetWidth + gap;
+	});
+	let totalWidth = nonFoldableWidth;
+
+	let overflowCount = 0;
+	items.forEach(item => {
+	    if (!item.classList.contains('headbar-foldable'))
+		return;
+	    totalWidth += item.offsetWidth + gap; // include gap
+	    if (item.classList.contains('headbar-overflow'))
+		return;
+	    if (totalWidth > headbar.offsetWidth) {
+		// Move overflow items into dropdown
+		overflow_item = item.cloneNode(true);
+		overflow_item.style.display = 'block';
+		overflowContainer.appendChild(overflow_item);
+		++overflowCount;
+		item.style.display = 'none';
+	    }
+	});
+	if (overflowCount > 0) {
+	    kebab.style.display = 'inline-flex';
+	} else {
+	    kebab.style.display = 'none';
+	}
+    }
+
+    let promise = fetch('headbar.html').then(res => res.text()).then(
 	text => {
 	    headbar.innerHTML = text;
 	});
-    window.onload = () => {
+	    
+    window.addEventListener('load', () => {
 	var body = document.body;
 	body.insertBefore(headbar, body.firstChild);
-    }
-}
 
+	function _update_navbar() {
+	    let overflow = document.getElementById('headbar-overflow');
+	    let kebab = document.getElementById('headbar-kebab-btn');
+	    if (kebab && overflow) {
+		kebab.addEventListener('click', () => {
+		    overflow.classList.toggle('show');
+		});
+		updateNavbarOverflow();
+	    } else {
+		setTimeout(_update_navbar, 100);
+	    }
+	}
+	_update_navbar();
+    });
+    
+    window.addEventListener('resize', updateNavbarOverflow);
+
+}
+    
 // Following is based on https://stackoverflow.com/questions/56300132/how-to-override-css-prefers-color-scheme-setting
 // Determine if the user has a set theme
 function detectColorScheme(){
