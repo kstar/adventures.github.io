@@ -299,6 +299,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-09-07|[Merrilly setting the record straight](https://www.deepskyforum.com/showthread.php?1869-Object-of-the-Week-September-7-2025-Merrilly-setting-the-record-straight){:target="_blank"}|Victor van Wulfen|Merrill 1-1, Merrill 1-2, Merrill 2-2|
 |2024-08-11|[NGC6814 - A beautiful spiral in Aquila](https://www.deepskyforum.com/showthread.php?1793-NGC6814-A-beautiful-spiral-in-Aquila){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 6814</x-dso-link>|
 |2024-06-16|[Barnard’s E](https://www.deepskyforum.com/showthread.php?1780-Object-of-the-Week-June-16-2024-Barnard%25E2%2580%2599s-E){:target="_blank"}|Howard Banich|Barnard’s E (B 142 + <x-dso-link simbad="Barnard 143">B 143</x-dso-link>)|
 |2023-09-17|[Palomar 11](https://www.deepskyforum.com/showthread.php?1717-Object-of-the-Week-September-17th-2023-Palomar-11){:target="_blank"}|Owen Brazell|<x-dso-link>Palomar 11</x-dso-link>|
@@ -454,6 +455,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-09-21|[Reflection Nebula vdB 1 & Cometary Nebula PP 2](https://www.deepskyforum.com/showthread.php?1871-Object-of-the-Week-September-21-2025-Reflection-Nebula-vdB-1-amp-Cometary-Nebula-PP-2){:target="_blank"}|Steve Gottlieb|<x-dso-link>vdB 1</x-dso-link> (LBN 578, GN 00.08.0), P 2 (Parsamian-Petrosyan 2, GN 00.08.8, V633 Cas Nebula)|
 |2025-02-16|[NGC 609](https://www.deepskyforum.com/showthread.php?1835-Object-of-the-Week-for-February-16-2025-%25E2%2580%2593-NGC-609){:target="_blank"}|Howard Banich|<x-dso-link>NGC 609</x-dso-link>|
 |2024-12-01|[Four Open Clusters: NGC 133, NGC 146, King14 and Pot 7](https://www.deepskyforum.com/showthread.php?1823-Object-of-the-Week-December-3-2024-%25E2%2580%2593-Four-Open-Clusters-NGC-133-NGC-146-King14-and-Pot-7){:target="_blank"}|Howard Banich|<x-dso-link>NGC 133</x-dso-link>, <x-dso-link>NGC 146</x-dso-link>, King14, Pot 7|
 |2024-11-17|[Abell PN 6 and HFG1](https://www.deepskyforum.com/showthread.php?1818-Object-of-the-Week-November-17-2024-Abell-PN-6-and-HFG1){:target="_blank"}|Mark Friedman|Abell PN 6 (A 6, <x-dso-link>PK 136+04.1</x-dso-link>, PN G136.1+04.9, A55 5, ARO 207), HFG1 (Heckathorn-Fesen-Gull 1, PN G136.3+05.5, <x-dso-link>PK 136+05.1</x-dso-link>)|
@@ -530,6 +532,8 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-08-17|[Abell 46, Lyra](https://www.deepskyforum.com/showthread.php?1865-Object-of-the-week-August-17-2025-Abell-46-Lyra){:target="_blank"}|Paul Alsing|<x-dso-link simbad="PN A66 46">Abell 46</x-dso-link> (PK 55+15.1, <x-dso-link>PNG 66.4+16.0</x-dso-link>)|
+|2025-07-27|[IC 30 \(Catch some distant Light\)](https://www.deepskyforum.com/showthread.php?1862-Object-of-The-Week-July-27th-2025-IC-30-%28Catch-some-distant-Light%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>IC 30</x-dso-link>, <x-dso-link>IC 29</x-dso-link>, <x-dso-link>IC 32</x-dso-link>, <x-dso-link>IC 33</x-dso-link>|
 |2023-11-19|[Two dwarfs with barely any dark matter ](https://www.deepskyforum.com/showthread.php?1728-Object-Of-The-Week-November-19-2023-Two-dwarfs-with-barely-any-dark-matter%26p%3D9714%23post9714){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC1052</x-dso-link>-DF2 (LEDA 3097693), NGC1052-DF4|
 |2023-10-01|[IC 1756 and IC 1757 A chance alignment](https://www.deepskyforum.com/showthread.php?1719-Object-of-the-week-October-1-2023%25E2%2580%2593IC-1756-and-IC-1757-A-chance-alignment){:target="_blank"}|Jimi Lowrey|IC 1756, IC 1757|
 |2023-09-03|[NGC 128 Group](https://www.deepskyforum.com/showthread.php?1715-Object-of-the-Week-September-3-2023-NGC-128-Group){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 128</x-dso-link> Group (NGC 125 & <x-dso-link>NGC 126</x-dso-link> & <x-dso-link>NGC 127</x-dso-link> & NGC 128 & <x-dso-link>NGC 130</x-dso-link>), LGG 6 (NGC 128 Group & <x-dso-link>UGC 275</x-dso-link> & <x-dso-link>UGC 277</x-dso-link> & <x-dso-link>UGC 281</x-dso-link> & <x-dso-link>UGC 282</x-dso-link> & <x-dso-link>UGC 283</x-dso-link> & <x-dso-link>IC 17</x-dso-link>)|
@@ -742,6 +746,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-08-10|[SNR G065.3+5.7](https://www.deepskyforum.com/showthread.php?1864-Object-of-the-Week-August-10th-2025-%25E2%2580%2593-SNR-G065-3-5-7){:target="_blank"}|Scott Harrington|SNR G065.3+5.7 (Sh2-91, <x-dso-link>Sh2-94</x-dso-link>, <x-dso-link>vdB 7</x-dso-link>-1, LBN 147)|
 |2024-09-15|[Bernes 29 around V1331 Cyg](https://www.deepskyforum.com/showthread.php?1805-Object-of-the-Week-September-15th-2024-%25E2%2580%2593-Bernes-29-around-V1331-Cyg){:target="_blank"}|Scott Harrington|Bernes 29 (Parsamian-Petrosyan 99, Blitz-Fich-Stark 4), V1331 Cyg (LkHa 120, HBC 302)|
 |2024-07-21|[Knot Cataloged](https://www.deepskyforum.com/showthread.php?1788-Object-of-the-Week-July-21-2024-Knot-Cataloged){:target="_blank"}|Victor van Wulfen|GAL 084.0+00.8 (GN 20.43.9)|
 |2023-09-10|[NGC 7048](https://www.deepskyforum.com/showthread.php?1716-Object-of-the-Week-September-10th-2023-NGC-7048){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 7048</x-dso-link>|
@@ -808,6 +813,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-08-31|[Draco Dwarf \(UGC 10822, DDO 208\)](https://www.deepskyforum.com/showthread.php?1868-Object-of-the-Week-August-31-2025-Draco-Dwarf-%28UGC-10822-DDO-208%29){:target="_blank"}|Uwe Glahn|Draco Dwarf (Draco Dwarf Spheroidal, <x-dso-link>UGC 10822</x-dso-link>, DDO 208)|
 |2024-09-01|[NGC 4125 & NGC 4121](https://www.deepskyforum.com/showthread.php?1800-Object-of-the-Week-September-1-2024-%25E2%2580%2593-NGC-4125-amp-NGC-4121){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4125</x-dso-link> (UGC 7118, <x-dso-link>PGC 38524</x-dso-link>, <x-dso-link simbad="Z 315-019">CGCG 315-019</x-dso-link>, <x-dso-link simbad="Z 1205.6+6527">CGCG 1205.6+6527</x-dso-link>, <x-dso-link>MCG +11-15-027</x-dso-link>), <x-dso-link>NGC 4121</x-dso-link> (PGC 38508, <x-dso-link simbad="Z 315-018">CGCG 315-018</x-dso-link>, <x-dso-link simbad="Z 1205.5+6523">CGCG 1205.5+6523</x-dso-link>, <x-dso-link>MCG +11-15-026</x-dso-link>)|
 |2022-07-10|[KUV 18217+6419 + K 1-16, a remarkable duo](https://www.deepskyforum.com/showthread.php?1608-Object-of-the-Week-July-10-2022-%E2%80%93-KUV-18217-6419-K-1-16-a-remarkable-duo){:target="_blank"}|Steve Gottlieb|KUV 18217+6419 ([HB89] 1821+643), <x-dso-link simbad="PN K 1-16">K 1-16</x-dso-link> (PK 94+27.1, PN G094.0+27.4)|
 |2022-06-19|[NGC 6670 "The Poster Girl"](https://www.deepskyforum.com/showthread.php?1598-Object-of-the-Week-June-19-2022-NGC-6670-quot-The-Poster-Girl-quot){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 6670A</x-dso-link>, <x-dso-link>NGC 6670B</x-dso-link>|
@@ -965,6 +971,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-09-14|[USGC U811](http://www.deepskyforum.com/showthread.php?1870-Object-of-the-Week-September-14-2025-USGC-U811){:target="_blank"}|Wouter van Reeven|USGC U811 (MCG +6-49-1, <x-dso-link>IC 5193</x-dso-link>, <x-dso-link>NGC 7240</x-dso-link>, <x-dso-link>IC 1441</x-dso-link>, <x-dso-link>MCG +6-48-20</x-dso-link>, <x-dso-link>IC 1591</x-dso-link>, 2MASX J22162234+3710417, <x-dso-link>NGC 7242</x-dso-link>, 2MASX J22120645+3720024, 2MASX J22140847+3651161, 2MASX J22151846+3700364, 2MASX J22153478+3711073, <x-dso-link>LEDA 3088465</x-dso-link>, 2MASX J22132719+3711021, <x-dso-link>LEDA 5061051</x-dso-link>)|
 |2017-09-03|[IC 5217](https://www.deepskyforum.com/showthread.php?1059-Object-of-the-Week-September-3-2017-%E2%80%93-IC-5217){:target="_blank"}|Mark Friedman|<x-dso-link>IC 5217</x-dso-link>|
 |2013-09-29|[NGC 7250](https://www.deepskyforum.com/showthread.php?450-Object-of-the-Week-September-29-2013-%E2%80%93-NGC-7250){:target="_blank"}|Rolandos Constantinides|<x-dso-link>NGC 7250</x-dso-link>, <x-dso-link>LEDA 214816</x-dso-link>|
 
@@ -1090,6 +1097,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-07-20|[M 56](http://www.deepskyforum.com/showthread.php?1861-Object-of-the-Week-20th-July-2025-M56){:target="_blank"}|Owen Brazell|<x-dso-link>M 56</x-dso-link>|
 |2024-08-18|[NGC 6765](https://www.deepskyforum.com/showthread.php?1795-Object-of-the-Week-August-18th-2024-NGC-6765){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 6765</x-dso-link>|
 |2023-07-30|[PN K 3-27 - LYRA](https://www.deepskyforum.com/showthread.php?1707-Object-of-the-Week-July-30th-2023-%25E2%2580%2593-PN-K-3-27-LYRA){:target="_blank"}|Paul Alsing|<x-dso-link simbad="PN K 3-27">K 3-27</x-dso-link> (PK 061+08 1, PN G061.0+08.0)|
 |2022-02-13|[NGC 6791 Platais’ Oddball](https://www.deepskyforum.com/showthread.php?1564-Object-of-the-Week-February-13-2022-NGC-6791-Platais%E2%80%99-Oddball){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 6791</x-dso-link>|
@@ -1129,6 +1137,8 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-07-13|[The Dark Horse Nebula](https://www.deepskyforum.com/showthread.php?1859-Object-of-the-Week-July-6th-2025-NGC-6356-%25E2%2580%2593-The-Forgotten-Jewel-of-Ophiuchus){:target="_blank"}|Timo Karhula|<x-dso-link>B64</x-dso-link>, <x-dso-link>B259</x-dso-link>, <x-dso-link>B268</x-dso-link>,  <x-dso-link>B270</x-dso-link>, <x-dso-link>B62</x-dso-link>, <x-dso-link>B63</x-dso-link>, B67a, <x-dso-link>B75</x-dso-link>, <x-dso-link>B44</x-dso-link>, <x-dso-link>B45</x-dso-link>, <x-dso-link>B46</x-dso-link>, <x-dso-link>B47</x-dso-link>, <x-dso-link>B51</x-dso-link>, <x-dso-link>B57</x-dso-link>, <x-dso-link>B60</x-dso-link>, <x-dso-link>B238</x-dso-link>, <x-dso-link>B246</x-dso-link>, <x-dso-link>B253</x-dso-link>, <x-dso-link>B261</x-dso-link>, <x-dso-link>B262</x-dso-link>, <x-dso-link>B266</x-dso-link>, <x-dso-link>B269</x-dso-link>, <x-dso-link>B72</x-dso-link>, <x-dso-link>B68</x-dso-link>, <x-dso-link>B69</x-dso-link>, <x-dso-link>B70</x-dso-link>, <x-dso-link>B71</x-dso-link>, <x-dso-link>B73</x-dso-link>, <x-dso-link>B74</x-dso-link>, <x-dso-link>B76</x-dso-link>, B77, <x-dso-link>B255</x-dso-link>, <x-dso-link>B260</x-dso-link>, <x-dso-link>B264</x-dso-link>, <x-dso-link>B265</x-dso-link>, <x-dso-link>B267</x-dso-link>, <x-dso-link>B78</x-dso-link>, <x-dso-link>B59</x-dso-link>, <x-dso-link>B65</x-dso-link>, <x-dso-link>B66</x-dso-link>, <x-dso-link>B67</x-dso-link>, <x-dso-link>B81</x-dso-link>, <x-dso-link>B82</x-dso-link>, <x-dso-link>B83</x-dso-link>, <x-dso-link>B272</x-dso-link>, <x-dso-link>B274</x-dso-link>, <x-dso-link>B277</x-dso-link>, <x-dso-link>B279</x-dso-link>, <x-dso-link>B281</x-dso-link>, <x-dso-link>B282</x-dso-link>, <x-dso-link>B79</x-dso-link>, <x-dso-link>B80</x-dso-link>, B83a, <x-dso-link>B84</x-dso-link>, <x-dso-link>B276</x-dso-link>, <x-dso-link>B280</x-dso-link>|
+|2025-07-06|[NGC 6356 – The Forgotten Jewel of Ophiuchus](https://www.deepskyforum.com/showthread.php?1859-Object-of-the-Week-July-6th-2025-NGC-6356-%25E2%2580%2593-The-Forgotten-Jewel-of-Ophiuchus){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 6356</x-dso-link>|
 |2024-07-28|[Rho Ophiuchi Cloud](https://www.deepskyforum.com/showthread.php?1789-Object-Of-The-Week-July-28-Rho-Ophiuchi-Cloud){:target="_blank"}|Wouter van Reeven|Rho Ophiuchi Cloud (IC 4603, <x-dso-link>IC 4604</x-dso-link>, <x-dso-link>IC 4605</x-dso-link>, <x-dso-link>IC 4606</x-dso-link>, <x-dso-link simbad="Barnard 42">B 42</x-dso-link>, <x-dso-link simbad="Barnard 44">B 44</x-dso-link>, <x-dso-link simbad="Barnard 45">B 45</x-dso-link>)|
 |2024-06-02|[CN 3-1 & CN 2-1 A \(Partial\) Tale of the Cannon Catalog](https://www.deepskyforum.com/showthread.php?1777-Object-of-the-Week-June-2-2024-%25E2%2580%2593-CN-3-1-amp-CN-2-1-A-%28Partial%29-Tale-of-the-Cannon-Catalog){:target="_blank"}|Mark Friedman|Cannon (Cn) 3-1 (PK 038+12.1, PN G038.2+12.0, <x-dso-link>VV 171</x-dso-link>), Cannon (Cn) 2-1 (PK 356-04.1, PN G356.2-04.4, <x-dso-link>VV 126</x-dso-link>)|
 |2023-07-23|[Sh2-27](https://www.deepskyforum.com/showthread.php?1706-Object-of-the-Week-July-23rd-2023-%25E2%2580%2593-Sharpless-2-27-in-Ophiuchus){:target="_blank"}|Scott Harrington|<x-dso-link>Sh2-27</x-dso-link> (Sharpless-Osterbrock 15, Stromlo (Gum) 73)|
@@ -1292,6 +1302,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-08-03|[NGC 311, NGC 315 and NGC 318](https://www.deepskyforum.com/showthread.php?1863-Object-of-the-Week-August-3-2025-NGC-311-NGC-315-and-NGC-318){:target="_blank"}|Howard Banich|<x-dso-link>NGC 311</x-dso-link>, <x-dso-link>NGC 315</x-dso-link>, <x-dso-link>NGC 318</x-dso-link>|
 |2024-11-10|[NGC 507](https://www.deepskyforum.com/showthread.php?1816-Object-of-the-Week-Nov-10th-2024-NGC-507){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 507</x-dso-link> (Arp 229), NGC 507 group|
 |2022-11-13|[Hickson 98 \(NGC 7783 & friends\)](https://www.deepskyforum.com/showthread.php?1638-Object-of-the-Week-November-13-2022-Hickson-98-%28NGC-7783-amp-friends%29){:target="_blank"}|Paul Alsing|<x-dso-link>HCG 98</x-dso-link> (NGC 7783 & MGC 0-60-59 & <x-dso-link>LEDA 72810</x-dso-link> & <x-dso-link>MCG 0-60-60</x-dso-link>), MAC 2354+0021 (LEDA 4259935)|
 |2022-10-16|[NGC 7679 - Arp 216](https://www.deepskyforum.com/showthread.php?1632-Object-of-the-week-16th-October-2022-NGC-7679-Arp-216){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 7679</x-dso-link> (Arp 216)|
@@ -1435,6 +1446,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2025-08-24|[Merrill's Star Nebula](https://www.deepskyforum.com/showthread.php?1866-Object-of-the-Week-August-24th-2025-Merrill-s-Star-Nebula){:target="_blank"}|Akarsh Simha|<x-dso-link>Sh2-80</x-dso-link> (Hen 2-427, <x-dso-link simbad="PN M 1-67">Minkowski 1-67</x-dso-link>, Merrill's Star Nebula)|
 |2018-08-19|[Sh2-84](https://www.deepskyforum.com/showthread.php?1191-Object-Of-The-Week-August-19-2018-Sh2-84){:target="_blank"}|Wouter van Reeven|<x-dso-link>Sh 2-84</x-dso-link>|
 |2017-08-06|[HM Sagittae](https://www.deepskyforum.com/showthread.php?1041-Object-Of-The-Week-August-06-2017-HM-Sagittae){:target="_blank"}|Wouter van Reeven|HM Sagittae (Nova Sge 1975, <x-dso-link>PK 053-03</x-dso-link> 2)|
 |2015-07-26|[Henize 1-5 and the variable CS Fg Sge](https://www.deepskyforum.com/showthread.php?752-Object-of-the-Week-Junly-26th-2015-%E2%80%93-Henize-1-5-and-the-variable-CS-Fg-Sge){:target="_blank"}|Uwe Glahn|Hen 1-5 (PN G60.3-7.3), Fg Sge|
@@ -1651,7 +1663,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2025-07-05T23:26:26Z
+Last updated: 2025-10-04T08:31:21Z
 </div>
 {% endraw %}
 
