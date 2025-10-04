@@ -137,6 +137,8 @@ Discovered by a volunteer named Bruno on the [Galaxy Zoo](https://zoo4.galaxyzoo
 
 ![Hubble Space Telescope image of the Violin Clef](assets/ViolinClef.jpg)
 
+_HST image of the Violin Clef, courtesy of Prof. William Keel_
+
 Jimi Lowrey and I looked at it with his 48-inch at 610x power in 2016. This object is so dim, that it was very hard to see anything in the field. Occasionally, there were cores popping into view. There were moments when the three brighter cores were glimpsed simultaneously for short durations, but those moments were rare. There was no sign of the tidal tail, even in the mighty 48-inch.
 
 <!--
@@ -228,7 +230,9 @@ The idea is that generally minor mergers produce a single tail (I don't know why
 
 The famous Guitar Galaxy in the cluster <x-dso noindex>Abell 1185</x-dso> is one of the most fascinating interactions in the night sky. It is also known as VV 237 and NGC 3561. There is a lot going on here, so perhaps an annotated picture is in order:
 
-![The Guitar Galaxy](assets/Guitar_Galaxy.jpg)
+![The Guitar Galaxy, annotated Legacy Survey image](assets/Guitar_Galaxy.jpg)
+
+_Image from the Legacy Survey_
 
 The interacting system sports a long tidal tail (the guitar's fretboard) to the north from NGC 3561B, and this tail bears a tidal dwarf galaxy at its end (the guitar's body). [Here](https://www.cambridge.org/core/journals/highlights-of-astronomy/article/tidal-dwarf-galaxies/9A1A3745078A8E5D1B606CD1D15FCCAC) is a paper discussing this tidal dwarf, which is listed as <x-dso>VV 237f</x-dso> in SIMBAD. This interaction is a challenging visual target, even for Jimi's 48-inch.
 
@@ -294,13 +298,50 @@ I wrote more about my observations of the Mice through my 18-inch in the Sky & T
 
 ### Keenan's System
 
+In 1935, Philip Keenan [reported on an "Unusual Pair of Nebulae"](https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1935ApJ....81..355K&defaultprint=YES&filetype=.pdf) -- NGC 5216 and NGC 5218. He observed that the two apparently well-separated galaxies were connected by a faint but definite band of nebulosity. The interacting galaxies, also known as Arp 104, now bears his name. The Toomre brothers mentioned Keenan's System in [their Scentific American article](https://www.jstor.org/stable/24923264) (paywalled), and state "as for Keenan's system, no one as yet seems to have any inkling of whether its origin was mundane or exotic." I'm not sure when it became clear that this is a tidal bridge.
+
+However, in that same article, the Toomres propose a process for the formation of bridges: "Bridges result if the passing galaxy is of fairly small mass, whereas tails require that the two galaxies be nearly equal." I am not aware if there is any new insight on this, my cursory search didn't turn up any material.
+
+Certainly, Keenan's System is one of the most iconic examples of a tidal bridge. This exceedingly faint bridge is challenging to observe, even for Jimi's 48-inch. However, equipped with an incredible eyepiece (a 25mm Zeiss Abbe ortho providing 195x), this marvelous instrument did not disappoint! The bridge could be detected as a weak brightening of the sky background when scanning perpendicular to the separation between the galaxies. For some reason, the visual sensation of the bridge makes it appear thicker than it actually is.
+
 ### NGC 5215
+
+This interaction in Centaurus, also designated VV 693, comprises of NGC 5215A and NGC 5215B. The galaxies are bright and are connected by a bridge as well as sport (presumably) two tidal tails. [This paper](https://adsabs.harvard.edu/pdf/1991MNRAS.252P..27K) has studied the system, and indicates that <x-dso noindex>NGC 5220</x-dso> nearby is physically related.
+
+My 28-inch at rendered a very good view of the pair at 488x. The light bridge between the galaxies was continuously visible to near-averted vision, and I considered it fairly easy. The tail of NGC 5215B (=ESO 383-29) could be held in averted vision for long stretches, albeit still intermittent. The tail of NGC 5215A (=ESO 383-28) was faint, offering frequent flashes to averted vision.
 
 ### Arp 240
 
+Steve Gottlieb wrote about this galaxy in his excellent article on stages of mergers in the June 2022 issue of [Sky & Telescope](https://skyandtelescope.org/), where he describes it as an early-stage merger. He notes that the two galaxies, NGC 5257 and NGC 5258, have become LIRGs (Luminous Infrared Galaxies), and their closest approach occurred about 250 million years ago according to simulations. I recommend this article, as it also features an excellent sketch of this pair made by [Howard Banich](https://sites.google.com/site/howardbanichhomepage/) through Jimi Lowrey's 48-inch.
+
+![Hubble Space Telescope image of Arp 240](https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hubble_Interacting_Galaxy_NGC_5257_%282008-04-24%29.jpg/2560px-Hubble_Interacting_Galaxy_NGC_5257_%282008-04-24%29.jpg){:.medium}
+
+Howard's sketch is etched in my mind, because it captures so well the photographic view that this pair must have rendered. In that sketch, NGC 5257 has a structure very reminiscent of IC 2163 -- is it an ocular galaxy as well? I couldn't find any literature calling it an ocular galaxy.
+
+My notes through Jimi Lowrey's 48-inch at 697x state "the bridge is obvious when moving the scope" -- I'm referring to NGC 5257's tidally distorted arm. NGC 5258 showed mottling, and hints of a dust lane. NGC 5257 also showed mottling. I've never looked at the pair through any of my telescopes.
+
+
 ### Mrk 273
 
+Ever since I read about Mrk 273 in Steve Gottlieb's excellent article on stages of mergers in the June 2022 issue of [Sky & Telescope](https://skyandtelescope.org/), I really wanted to see it. Gottlieb describes it as a late-stage merger, with a single nucleus and some remaining tidal features. This galaxy, he writes, is an example of a ULIRG -- ultraluminous infrared galaxy, with a quasar-like core that shines with over a trillion solar luminosities.
+
+![Hubble Space Telescope image of Mrk 273](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hubble_Interacting_Galaxy_Mrk_273_%282008-04-24%29.jpg/2560px-Hubble_Interacting_Galaxy_Mrk_273_%282008-04-24%29.jpg){:.medium}
+
+What struck me the most is its very straight and thin tidal tail. Accompanying the Hubble image on that article, is Howard Banich's sketch through the 82-inch Struve telescope at the McDonald Observatory at 617x which shows the tail clearly. Steve also writes, that the "real thrill was its prominent tail, which looked like a jet contrail streaming away from Mrk 273!"
+
+With that kind of description, I had to hit it with my 28-inch. I had pretty poor sky conditions on the one night I tried this object, but I was still able to clearly glimpse the tail with averted vision. It was not too difficult, offering many intermittent flashes. The tail is at one end of the galaxy's body. I had the best view at 291x.
+
 ### Dentist's Chair
+
+Yes, this is the official nickname of <x-dso noindex>AM 1353-272</x-dso>, perhaps first introduced [in this paper](https://iopscience.iop.org/article/10.1086/345318/meta)?
+
+The main dentist chair galaxy and its companion <x-dso noindex>PGC 752558</x-dso> have similar redshifts, see [this paper](https://arxiv.org/pdf/astro-ph/0004405). The image in the paper also shows a striking string of knots seemingly linked with the main galaxy. [Later studies](https://arxiv.org/pdf/astro-ph/0601250) identified seven of the knots as tidal dwarf galaxy candidates!
+
+![Image of the Dentist's Chair from the 2000 paper](assets/DentistsChair.jpg)
+
+_Image of Dentist's Chair from [Weilbacher et. al. (2000)](https://arxiv.org/pdf/astro-ph/0004405)_
+
+As for visual observations, I heard of this object from Jimi Lowrey, and I believe he has observed it, perhaps along with two others. I only learned from him that it was a tough object for the 48-inch! I long to attempt it some day.
 
 ### Arp 84
 
@@ -326,7 +367,7 @@ I wrote more about my observations of the Mice through my 18-inch in the Sky & T
 
 ### NGC 7135
 
-### NGC 7252
+### Atoms for Peace Galaxy
 
 ### The Kite
 

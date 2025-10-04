@@ -6,7 +6,7 @@ Arp 256,,00:18:50 -10:22:36,4.712075,-10.37680278,0.027243,Cet,,,,
 IC 18,,00:28:34 -11:35:12,7.14562917,-11.58675,,Cet,,Tail,Very dim tail,ic-18
 NGC 474,,01:20:06 +03:24:55,20.02786272,3.41551721,,Psc,,Shells,<a href='https://apod.nasa.gov/apod/ap241107.html'>Shells resulting from accretion of a small galaxy</a>,ngc-474
 NGC 520,,01:24:34 +03:47:29,21.1454,3.7915,,Psc,,Tails,Excellent tail: attempt in 16-inch; Feat. in Toomre Sequence,ngc-520
-Arp 273,Rose Galaxies,02:21:28 +39:22:32,35.36960978,39.37558927,,And,,,arp-273
+Arp 273,Rose Galaxies,02:21:28 +39:22:32,35.36960978,39.37558927,,And,,,,arp-273
 NGC 922,,02:25:04 -24:47:17,36.26833333,-24.78818333,0.01027,For,,,<a href='https://noirlab.edu/public/images/iotw2439a/'>Galaxy distorted by interaction possessing an extremely dim tidal tail</a>,
 NGC 1097,,02:46:19 -30:16:29,41.5794125,-30.27491111,,For,,,<a href='/aintno.htm'>AINTNO #67</a>: this galaxy has an <a href='https://arxiv.org/abs/1504.03697'>extremely dim dog-leg stream</a>,ngc-1097
 NGC 1614,,04:34:00 -08:34:44,68.5001125,-8.57904722,0.015835,Eri,,,,
@@ -41,15 +41,15 @@ Arp 238,,13:15:32 +62:07:36,198.8854167,62.12694444,,UMa,,,
 IC 883,,13:20:35 +34:08:22,200.1473,34.1395,0.023412,CVn,,Tails,Two difficult tails
 M 51,Whirlpool,13:29:52 +47:11:42,202.469575,47.19525833,,CVn,,Streams,S&T Feb 2025,m-51
 Arp 104,Keenan's System,13:32:13 +62:43:36,203.0550123,62.72688947,,UMa,,Bridge,Bridge that is tough in a 48-inch!,keenans-system
-NGC 5215,,13:35:08 -33:29:06,203.7833333,-33.485,,Cen,,Tidal Tails,ngc-5215
-Arp 240,,13:39:52 +00:50:24,204.9705325,0.84002508,0.02267,Vir,,,arp-240
+NGC 5215,,13:35:08 -33:29:06,203.7833333,-33.485,,Cen,,Tidal Tails,,ngc-5215
+Arp 240,,13:39:52 +00:50:24,204.9705325,0.84002508,0.02267,Vir,,,,arp-240
 NGC 5279,,13:41:43 +55:40:25,205.4323652,55.67375816,,UMa,,,
 Mrk 273,,13:44:42 +55:53:12,206.1757421,55.88689417,0.037816,UMa,,Tail,Excellent tidal tail; needs aperture,mrk-273
 AM 1353-272,"Dentist's Chair",13:56:15 -27:35:55,209.0625,-27.59861111,,Hya,,Tail,Extremely difficult tail,dentists-chair
 Arp 84,"""Heron""",13:58:34 +37:27:10,209.6429167,37.45302778,,CVn,,Check,,arp-84
 NGC 5514,,14:13:38 +07:39:37,213.4112083,7.660375,,Boo,,,
 NGC 5614,,14:24:07 +34:51:31,216.0316137,34.85883713,,Boo,,,
-UGC 9425,Segner's Wheel,14:37:51 +30:28:47,219.4632417,30.47978333,,Boo,,,segners-wheel
+UGC 9425,Segner's Wheel,14:37:51 +30:28:47,219.4632417,30.47978333,,Boo,,,,segners-wheel
 VV 109,,14:46:01 +08:29:46,221.5083333,8.496111111,0.03546,Boo,,Tail,Excellent tidal tail but bright star detracts,vv-109
 Arp 173,,14:51:30 +09:20:02,222.8754167,9.33388889,,Boo,,,
 VV 59,"""Spade""",15:08:05 +34:23:23,227.0236875,34.38980556,0.045088,Boo,,????,Is this a tidal tail?,vv-59
@@ -61,13 +61,14 @@ Arp 72,,15:46:56 +17:52:41,236.73375,17.87833333,,Ser,,,<a href='https://science
 HCG 79b,Seyfert's Sextet,15:59:12 +20:45:48,239.802257,20.763354,0.01466,Ser,,Tail,S&T Feb 2025,seyferts-sextet
 IC 1182,,16:05:36 +17:48:07,241.4033182,17.80206169,,Her,,Tail,"Hercules Cluster galaxy with a strange jet-like feature; <a href='https://www.aanda.org/articles/aa/pdf/2004/17/aa0295.pdf'>this paper</a> argues that it is a tidal tail",ic-1182
 UGC 10214,Tadpole,16:06:03 +55:25:31,241.5162843,55.42544114,0.031222,Dra,,"Tail, SFRs","S&T Feb 2025; A really iconic galaxy!",tadpole-galaxy
+NGC 6240,,16:52:59 +02:24:02,253.245833,2.400555,,Oph,,"Tails",,,
 UGC 10610,,16:54:58 +43:03:38,253.7445417,43.06063889,,Her,,,
 IC 4630,,16:55:09 +26:39:46,253.7899163,26.66292831,0.0347,Her,,,
 VV 805,,17:03:15 +31:27:28,255.8154835,31.45793199,,Her,,,
 Arp 102,,17:19:14 +48:58:49,259.8103858,48.98039533,0.02486481,Her,,Tail,
 Arp 81,Edward's Galaxy,18:12:57 +68:21:32,273.24,68.35888889,,Dra,,"Tail, SFRs","S&T Feb 2025. TT is tough but tractable under good-sky. SFRs seen in 48-inch",arp-81
 NGC 7135,"""Stingray Galaxy""",21:49:46 -34:52:34,327.4416723,-34.8762711,,PsA,,Tails,Fascinating <a href='https://arxiv.org/pdf/2101.07072'>merger</a> with shells and tidal tails,ngc-7135
-NGC 7252,Atoms for Peace,22:20:44 -24:40:41,335.1865618,-24.6783082,0.0158,Aqr,,,,ngc-7252
+NGC 7252,Atoms for Peace,22:20:44 -24:40:41,335.1865618,-24.6783082,0.0158,Aqr,,,,atoms-for-peace-galaxy
 NGC 7463,,23:01:51 +15:58:54,345.4665582,15.98181438,,Peg,,,
 PGC 1000273,Kite Galaxy,23:04:44 -08:42:12,346.1833333,-8.703333333,,Aqr,,,"One of the <a href='https://arxiv.org/pdf/2305.01335'>longest tidal tails</a> known, promptly reserved for AINTO 2nd edition",the-kite
 NGC 7592,,23:18:22 -04:24:56,349.5916667,-4.41583333,0.024721,Aqr,,,
