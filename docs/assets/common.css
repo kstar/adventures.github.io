@@ -46,12 +46,14 @@ h1, h2, h3, h4 {
 }
 a:link {
     color: var(--link-color);
+    text-decoration: none;
     text-underline-offset: 2px;
 }
 a:visited {
     color: var(--link-visited-color);
 }
 a:hover {
+    cursor: pointer;
     color: var(--link-hover-color);
 }
 a h1,
