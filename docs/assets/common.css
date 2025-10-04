@@ -33,6 +33,7 @@
 }
 body {
     margin-top: 0;
+    margin-left: 0;
     color: var(--font-color);
     background-color: var(--bg-color);
     font-size: 18px;
