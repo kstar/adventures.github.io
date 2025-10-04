@@ -102,6 +102,7 @@ window.onload = function() {
     const icon = document.createElement('img');
     icon.src = 'assets/download_csv.png';
     icon.width = 32;
+    icon.style.margin = "0.1em";
     icon.alt = 'Download CSV table';
     button.appendChild(icon);
     button.className = 'floating';

@@ -97,7 +97,13 @@ button.floating {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    opacity: 0.5;
 }
+
+button.floating:hover {
+    opacity: 1.0;
+}
+
 
 /* For observing reports as well as the home page, even the old
    styling of ADS uses dark colors, so we have to tweak the theme. The
@@ -161,6 +167,16 @@ body.or a:hover {
 table {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+body.or table {
+    max-width: 70em;
+}
+
+div.main_content {
+    max-width: 70em;
+    margin: auto;
+    padding: 1em;
 }
 
 div.main_content table,
