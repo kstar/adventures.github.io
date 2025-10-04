@@ -171,6 +171,7 @@ table {
 
 body.or table {
     max-width: 70em;
+    padding: 1em;
 }
 
 div.main_content {
