@@ -28,7 +28,75 @@
     table.quick_links td {
 	padding: 0.5em 0.25em 0.5em 0.25em;
     }
+    .gallery {
+	position: relative;
+	width: 640px;
+	height: 480px;
+	overflow: hidden;
+	border-radius: 12px;
+	border: 1px solid;
+	margin: 0;
+	padding: 0;
+    }
+    .gallery img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	transition: opacity 1.2s ease-in-out;
+    }
+    .gallery img.active {
+	opacity: 1;
+    }
+    
+    .gallery-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	opacity: 1;
+	transition: opacity 1.2s ease-in-out;
+	background: rgba(0, 0, 0, 0.3);
+    }
+    
   </style>
+  <script type="text/javascript">
+    window.addEventListener('load', () => {
+	const images = document.querySelectorAll('.gallery img');
+	const caption = document.querySelector('.gallery-caption');
+	let current = 0;
+	caption.innerHTML = images[current].dataset.caption;
+	caption.style.opacity = 1;
+
+	function showNextImage() {
+	    // Fade out current image
+	    images[current].classList.remove('active');
+
+	    // Fade out caption
+	    caption.style.opacity = 0;
+
+	    // Move to next
+	    current = (current + 1) % images.length;
+
+	    // After fade-out, update text + show image + fade-in
+	    setTimeout(() => {
+		images[current].classList.add('active');
+		caption.innerHTML = images[current].dataset.caption;
+		caption.style.opacity = 1;
+	    }, 500); // matches caption fade-out duration
+	}
+
+	setInterval(showNextImage, 6000);
+    });
+  </script>
 </head>
 <body class="homepage">
     <!--
@@ -59,14 +127,21 @@
 	      <a href="whyads.html" target="_top">Why?</a> |
                     <a href="webpages.html" target="_top">What's Here</a> |
                     <a href="favorites.htm" target="_top">Try These</a> |
+                    <a href="dsf_ootw_constellation.html" target="_top">Want More?</a> |
 		    <a href="https://groups.google.com/g/adventuresindeepspace" target="_blank">Mailing List</a>
 		    <br />
 	    </div>
 	    Contact us: <a href=
             "mailto:ads-admin@googlegroups.com">ADS-Admin@googlegroups.com</a>.<br>
           </div>
-    <p><img src="assets/Sierra.Buttes.jpg" width="551" height="375" border="1" align="top"><br>
-      <i>Ray Cash, Mark Wagner, Mimi Wagner, Jim Shields and Steve Gottlieb <small>- Photo by Marsha Robinson</small></i></p>
+	  <div class="gallery">
+	    <img src="assets/Sierra.Buttes.jpg" class="active" data-caption="<b>Founders and Original Contributors:</b> Ray Cash, Mark Wagner, Mimi Wagner, Jim Shields and Steve Gottlieb - Photo by Marsha Robinson">
+	    <img src="assets/f29d45a0a6759c913bee40fdf6e0b58fa506652a_crop.jpeg" data-caption="Jimi Lowrey, Akarsh Simha, Steve Gottlieb and Scott Harrington - Photo by Sanath Kumar Sastry">
+	    <img src="assets/GSSP2009.jpg" data-caption="Mark Wagner, Alvin Huey, Steve Gottlieb, Debbie Searle-Alsing, Paul Alsing, Jimi Lowrey - Photo by John Pierce">
+	    <img src="assets/GSSP2023.jpg" data-caption="Akarsh Simha, Steve Gottlieb, Jimi Lowrey and Howard Banich at GSSP 2023">
+	    <div class="gallery-caption"></div>
+	  </div>
+      <i></i></p>
     <hr />
   </center>
     <div class="container" width="100%">
