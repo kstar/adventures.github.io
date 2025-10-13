@@ -232,10 +232,16 @@ Cave Nebula (<x-dso>Sh2-155</x-dso>): "Photography icon, it's pretty underwhelmi
 visually with faint and uneven bands of nebulosity across a rich field.
 Hard to detect without a hard edge, best at low power."
 
-<x-dso>NGC 55</x-dso>: "Spectacular edge on, very bright and irregular, with tons of
+<p><x-dso>NGC 55</x-dso>: "Spectacular edge on, very bright and irregular, with tons of
 mottling. I identified the following HII regions: DV 1, DV 2/3, DV 6.
 Great object to spend an hour on, the 36-degree latitude makes a huge
-difference!"
+difference!"</p>      
+
+<p style="text-align: center;">
+<img src="assets/NGC55_Finder_SNH.png" />
+*Finder chart for objects in NGC 55 by Scott Harrington. Original photo by Mark Hanson.*
+</p>
+
 
 <p><x-dso>NGC 134</x-dso>: "Near stellar core paired with a nearby field star. The galaxy
 has hints of mottling to the northeast and southwest, great to study."</p>
