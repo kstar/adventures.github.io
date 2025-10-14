@@ -105,7 +105,7 @@ when the seeing is better."</p>
 
 <p><x-dso>NGC 6729</x-dso> & <x-dso>NGC 6726</x-dso>: "Beautiful, rich star field shows two long and
 obvious circular halos of reflection nebulosity. I can also track a
-faint and uneven section extending towards HD 7170 with averted vision;
+faint and uneven section extending towards <x-dso omit>HR 7170</x-dso> with averted vision;
 the field is best at low power. Nearby globular cluster <x-dso>NGC 6723</x-dso> shows
 some stars resolved across its face; This tight cluster takes power
 well."</p>
