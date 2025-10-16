@@ -134,6 +134,7 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
 
     count = 0
     constellation.write('## Index\n\n')
+    constellation.write("This navigation menu shows the 88 constellations roughly as they are laid out in the sky, north to south and east to west. Seasons are for the northern hemisphere. Click on the link to see objects in that constellation.")
 
     for con in rows_by_constellation.keys():
         try:
