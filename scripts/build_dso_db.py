@@ -380,6 +380,15 @@ def main():
     logger.info(f'Processing reachability')
     process_reachability()
 
+    cursor.execute(
+        "CREATE VIEW IF NOT EXISTS mentioned_objects AS"
+        " SELECT mentions.filename, objects.main_id, objects.type, mentions.simbad_id, objects.constellation, objects.aliases, COALESCE(display_id, mentions.simbad_id) as display_id from mentions"
+        " inner join queries on  queries.simbad_id = mentions.simbad_id"
+        " inner join objects on queries.main_id = objects.main_id"
+        " inner join reachability on reachability.filename = mentions.filename"
+        " where reachability.reachable = 1 and mentions.simbad_id not like 'HD %' and mentions.simbad_id not like 'SAO %'"
+    )
+
     logger.info(f'Done')
 
 if __name__ == "__main__":
