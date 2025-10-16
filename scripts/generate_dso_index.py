@@ -17,6 +17,7 @@ logger.setLevel(logging.INFO)
 SCRIPT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 DOC_DIRECTORY = SCRIPT_DIR / ".." / "docs"
 DATABASE = SCRIPT_DIR / 'adventures.db'
+ARTICLES_COLLAPSE_LIMIT = 3
 
 conn = sqlite3.connect(DATABASE.as_posix())
 cursor = conn.cursor()
@@ -146,6 +147,8 @@ If you'd like to help improve this feature, please submit an MR on the <a href='
 
     output.write('\n\n---\n\n')
 
+    make_article_entry = lambda filename: f'<li class="index_article"><a href="/' + filename.replace('.md', '.html') + f'" class="index_article">{article_titles[filename]}</a></li>'
+
 
     for constellation in sorted(data):
         objects = data[constellation]
@@ -164,10 +167,15 @@ If you'd like to help improve this feature, please submit an MR on the <a href='
             valid_ids = ', '.join(sorted(valid_ids))
             type_ = main_id_dict['type']
             type_ = SIMBAD_OTYPE.get(type_, type_)
-            articles = '<ul>' + ' '.join([
-                f'<li class="index_article"><a href="/' + filename.replace('.md', '.html') + f'" class="index_article">{article_titles[filename]}</a></li>'
-                for filename in main_id_dict['filenames']
-            ]) + '</ul>'
+            articles = ['<ul>']
+            article_files = main_id_dict['filenames']
+            articles += [make_article_entry(article_file) for article_file in article_files[:ARTICLES_COLLAPSE_LIMIT]]
+            if len(article_files) == ARTICLES_COLLAPSE_LIMIT + 1:
+                articles += [make_article_entry(article_files[-1]),]
+            elif len(article_files) > ARTICLES_COLLAPSE_LIMIT:
+                articles += ['<details>', f'<summary>{len(article_files) - ARTICLES_COLLAPSE_LIMIT} more...</summary>'] + [make_article_entry(article_file) for article_file in article_files[ARTICLES_COLLAPSE_LIMIT:]] + ['</details>']
+            articles += ['</ul>']
+            articles = ' '.join(articles)
             output.write(f'<tr><td><x-dso-link simbad="{simbad_id}">{display_id}</x-dso-link></td><td>{valid_ids}</td><td>{type_}</td><td>{articles}</td></tr>' + '\n')
         output.write('\n</tbody>\n</table>')
         output.write('\n\n[▲ Index](#index){:.top}\n\n---\n\n')
