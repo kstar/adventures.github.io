@@ -27,7 +27,7 @@ article_titles = dict(cursor.execute("SELECT filename, title FROM articles").fet
 exclude = ["dsf_ootw.md", "dsf_ootw_constellation.md"]
 
 query = """
-SELECT mentions.filename, objects.main_id, objects.type, mentions.simbad_id, objects.constellation, objects.aliases, COALESCE(display_id, mentions.simbad_id) as display_id from mentions
+SELECT mentions.filename, objects.main_id, objects.ra, objects.dec, objects.type, mentions.simbad_id, objects.constellation, objects.aliases, COALESCE(display_id, mentions.simbad_id) as display_id from mentions
 inner join queries on  queries.simbad_id = mentions.simbad_id
 inner join objects on queries.main_id = objects.main_id
 inner join reachability on reachability.filename = mentions.filename
@@ -39,13 +39,15 @@ if len(exclude) > 0:
 
 query += "order by constellation, objects.main_id, mentions.display_id"
 
-data = {}
-for filename, main_id, type_, simbad_id, constellation, aliases, display_id in cursor.execute(query):
+data = {} # {constellation: {main_id: {simbad_ids: {...}, display_ids: [...], aliases: [...], type: ..., ra: ..., dec: ...}}}
+for filename, main_id, ra, dec, type_, simbad_id, constellation, aliases, display_id in cursor.execute(query):
     main_id_dict = data.setdefault(constellation, {}).setdefault(main_id, {})
     main_id_dict.setdefault('simbad_ids', set()).add(simbad_id)
     main_id_dict.setdefault('display_ids', {}).setdefault(display_id, []).append(filename)
     main_id_dict.setdefault('aliases', []).extend(json.loads(aliases) if aliases else [])
     main_id_dict['type'] = type_
+    main_id_dict['ra'] = ra
+    main_id_dict['dec'] = dec
 
 for objects in data.values():
     for main_id_dict in objects.values():
@@ -147,7 +149,18 @@ If you'd like to help improve this feature, please submit an MR on the <a href='
 
     output.write('\n\n---\n\n')
 
-    make_article_entry = lambda filename: f'<li class="index_article"><a href="/' + filename.replace('.md', '.html') + f'" class="index_article">{article_titles[filename]}</a></li>'
+    def remove_ads_prefix(article_title: str) -> str:
+        if article_title.lower().startswith("adventures in deep space: "):
+            return article_title[26:]
+        return article_title
+
+    def truncate_article_title(article_title: str) -> str:
+        TRUNCATE_LIMIT = 40
+        if len(article_title) > TRUNCATE_LIMIT:
+            return article_title[:(TRUNCATE_LIMIT - 2)] + '…'
+        return article_title
+
+    make_article_entry = lambda filename: f'<li class="index_article"><a href="/' + filename.replace('.md', '.html') + f'" class="index_article">{truncate_article_title(remove_ads_prefix(article_titles[filename]))}</a></li>'
 
 
     for constellation in sorted(data):
@@ -176,7 +189,7 @@ If you'd like to help improve this feature, please submit an MR on the <a href='
                 articles += ['<details>', f'<summary>{len(article_files) - ARTICLES_COLLAPSE_LIMIT} more...</summary>'] + [make_article_entry(article_file) for article_file in article_files[ARTICLES_COLLAPSE_LIMIT:]] + ['</details>']
             articles += ['</ul>']
             articles = ' '.join(articles)
-            output.write(f'<tr><td><x-dso-link simbad="{simbad_id}">{display_id}</x-dso-link></td><td>{valid_ids}</td><td>{type_}</td><td>{articles}</td></tr>' + '\n')
+            output.write(f'<tr><td><x-dso-link simbad="{simbad_id}" data-ra="{ra}" data-dec="{dec}">{display_id}</x-dso-link></td><td>{valid_ids}</td><td>{type_}</td><td style="min-width: 35%">{articles}</td></tr>' + '\n')
         output.write('\n</tbody>\n</table>')
         output.write('\n\n[▲ Index](#index){:.top}\n\n---\n\n')
 

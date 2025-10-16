@@ -324,6 +324,9 @@ table.favorites {
     /* FIXME: Generalize this so that all in-page anchors allow for the head bar */
     scroll-margin-top: 40px;
 }
+table.constellation_index ul {
+    margin: 0.05em;
+}
 /* Temporary: Until we remove the OR theme */
 /*
 body.or li.darkmode-button {
