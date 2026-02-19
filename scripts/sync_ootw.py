@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from io import StringIO
 from urllib.parse import quote_plus as urlencode
 from collections import namedtuple
-from common import OBJECT_REGEX, CONSTELLATIONS, make_constellation_map
+from common import OBJECT_REGEX, CONSTELLATIONS, make_constellation_map, make_constellation_alphabetical_index
 
 ESCAPE_REGEX = re.compile(r'[_{\*`\(\)}]|---+')
 
@@ -143,6 +143,11 @@ To see the objects organized by chronology, click [here](dsf_ootw.html). To see 
             raise RuntimeError(f'Invalid constellation `{con}` has entries {" ".join([rows[ind] for ind in rows_by_constellation[con]])}!')
 
     constellation.write(make_constellation_map(rows_by_constellation.keys()))
+
+    constellation.write("\n\nAlternatively, the below menu shows the 88 constellations in alphabetical order. Click on the link to see objects in that constellation.\n\n")
+
+    constellation.write(make_constellation_alphabetical_index(rows_by_constellation.keys()))
+            
 
     constellation.write('\n\n---\n\n')
 

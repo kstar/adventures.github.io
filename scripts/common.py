@@ -296,6 +296,20 @@ def make_constellation_map(enable: set):
 
     return constellation_map
 
+def make_constellation_alphabetical_index(enable: set):
+    count = 0
+    result = ["|"]
+    for abbrev, full in CONSTELLATIONS.items():
+        if abbrev in enable:
+            result.append(f' <span class="constellation-anchor"><a href="#{full.lower().replace(" ", "-")}" title="{full}">{CONSTELLATIONS_CAMELCASE[abbrev]}</a></span> |')
+        else:
+            result.append(f' <span class="constellation-anchor">{CONSTELLATIONS_CAMELCASE[abbrev]}</span> |')
+        count += 1
+        if count % 11 == 0 and count != 88:
+            result.append("\n|")
+    return "".join(result)
+
+
 simbadification = OrderedDict([
     ('Collinder ', 'Cl Collinder '),
     ('simeis', 'Sim'),
