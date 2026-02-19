@@ -6,6 +6,11 @@ open_new_page: false
 no_bullets: true
 ---
 
+## Observing Reports
+<center><a href="observing.reports.htm">Click here to go to the Observing Report index</a></center>
+
+----
+
 ## Adventures
 * [Observing Down Under](soglob.htm) - Steve Gottlieb
 * [Seasonal Favorites](favorites.htm) - Jim Shields
