@@ -1,60 +1,13 @@
 <html><head>
 
+<title>Steve Gottlieb's NGC/IC/UGC Notes</title>
 
-
-<title>Steve Gottlieb's NGC Notes</title>
-
-
-
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/common.css?version=8" />
 <script type="text/javascript" src="assets/common.js?version=4"></script>
 <script type="text/javascript">document.disableCSVMaker = true; document.disableDSO = true;</script>
-<script>
-  // ChatGPT-4o and Akarsh Simha
-  function searchGo() {
-      const catalog = document.getElementById('catalog').value;
-      const object = document.getElementById('object').value;
-      const regex = /^(\d+)$/;
-      const ICmax = 5386;
-      const NGCmax = 7840;
-
-      const match = object.match(regex);
-      if (match) {
-	  const catalogNumber = parseInt(match[1]);
-	  let catMax = 0;
-	  if (catalog == "NGC") {
-	      catMax = NGCmax;
-	  } else if (catalog == "IC") {
-	      catMax = ICmax;
-	  } else {
-	      console.log("Programming error!");
-	  }
-	  if (catalogNumber <= 0 || catalogNumber > catMax) {
-	      alert(`Invalid catalog number ${catalogNumber} for the ${catalog} catalog`);
-	      return;
-	  }
-	  const pageStart = Math.floor((catalogNumber - 1)/1000)*1000 + 1;
-	  const pageEnd = (pageStart + 999 > catMax) ? catMax : (pageStart + 999);
-          let url = `/${catalog}%20${pageStart.toString()}-${pageEnd}.html#${catalog}%20${catalogNumber}`;
-	  if (catalog == "NGC") {
-	      ;
-	  }
-	  else if (catalog == "IC") {
-	      url = `/${catalog}%20${pageStart.toString()}%20thru%20${catalog}%20${pageEnd}.html#${catalog}%20${catalogNumber}`;
-	  } else {
-	      console.log("Programming error!");
-	  }
-          window.location.href = url;
-      } else {
-          alert('Please enter a valid catalog number. Do not include the catalog name prefix like NGC / IC. Also do not include suffixes like A, B, C; Convert Messier names to NGC or IC as appropriate. Valid examples are:\n\n891\n0891\n34');
-      }
-
-  }
-  window.setTimeout(() => {
-      document.getElementById('object').addEventListener("keyup", (event) => { console.log(`Encountered ${event}`); if (event && event.keyCode == 13) { event.preventDefault(); searchGo(); } });
-  });
-</script>
+<script type="text/javascript" src="assets/steve_search.js?version=0"></script>
 <style>
   div.search-box {
       text-align: right;
@@ -73,254 +26,207 @@
   a.gottlieb:hover {
       border: 1px blue solid;
   }
+  div.page-content {
+      max-width: 70em;
+      margin: auto;
+      padding: 1em;
+  }
 </style>
 </head>
 
-
-
 <body class="or">
 
-
-
-
-
-
-
-
 <center>
-  <h1>Steve Gottlieb's NGC Notes</h1>
+  <h1>Steve Gottlieb's NGC/IC/UGC Notes</h1>
 </center>
 
+<div class="page-content">
 
-<P>&nbsp;</p>
+<p>&nbsp;</p>
   <div class="search-box flex-box">
       <a href="mailto:astrogottlieb@gmail.com" class="gottlieb" title="Click to e-mail Steve Gottlieb"><image src="assets/AskSteve.png" style="margin-right: 0px; width: 150px; display: inline;"/></a>
     <label for="catalog">Jump to:&nbsp;</label>
     <select id="catalog" name="catalog" title="Pick which catalog you want">
       <option value="NGC">NGC</option>
       <option value="IC">IC</option>
+      <option value="UGC">UGC</option>
     </select>
 
-    <input type="text" id="object" name="object" pattern="\d+" required title="Please enter a valid catalog number within the NGC/IC catalog (e.g. 891 or 6027) without A-B-C suffixes." placeholder="e.g. 2903" autofocus style="width: 100px;"/>
+    <input type="text" id="object" name="object" pattern="\d+" required title="Please enter a valid catalog number (e.g. 891 or 6027) without A-B-C suffixes." placeholder="e.g. 2903" autofocus style="width: 100px;"/>
 
-    <button type="button" onclick="searchGo()">Go</button>
+    <button type="button" onclick="steveSearchGo('catalog', 'object')">Go</button>
   </div>
+  <script>
+    document.getElementById('object').addEventListener('keyup', function(e) {
+        if (e.keyCode === 13) { e.preventDefault(); steveSearchGo('catalog', 'object'); }
+    });
+  </script>
   <hr>
-<table width=640 border=0 align="center" cellpadding="8">
-  <tr> 
-    <td align="left" valign="top" height="1035"> 
-      <div align="left"> 
-        <p class=MsoNormal>&nbsp; 
-        <p> Here are my observing notes for every non-stellar object 
-          in the entire NGC, which was compiled by John Louis Dreyer in 1888. 
-          This famous catalogue includes 7840 entries discovered visually up to 
-          that date, the majority from William Herschel and his son John. As far 
-          as I know, these notes are the only visual journal of the entire NGC 
-          by a single observer, covering the entire sky from north to south celestial 
-          pole. In addition, I've included visual notes on 2362 objects from the 
-          IC (Index Catalogues of 1894 and 1907) for a total of 10,202 NGC/IC 
+
+        <p> Here are my observing notes for every non-stellar object
+          in the entire NGC, which was compiled by John Louis Dreyer in 1888.
+          This famous catalogue includes 7840 entries discovered visually up to
+          that date, the majority from William Herschel and his son John. As far
+          as I know, these notes are the only visual journal of the entire NGC
+          by a single observer, covering the entire sky from north to south celestial
+          pole. In addition, I've included visual notes on 2362 objects from the
+          IC (Index Catalogues of 1894 and 1907) for a total of 10,202 NGC/IC
           designations. </p>
-        <p> In 2014, I completed a 35-year project of observing 
-          every NGC object north of -41 degrees declination. These were all the 
-          NGCs accessible from my home in northern California. At that time I 
-          had also covered most of the far southern sky from several previous 
-          trips to Australia, with 300 NGCs remaining that were not visible from 
-          the United States. After a few additional observing trips to the southern 
-          hemisphere, I completed the last remaining 34 NGCs during the November 
-          2017 <a href="https://ozsky.org">OzSky Star Safari</a>, which took place 
-          on the Markdale Homestead, a large working sheep ranch and country estate 
+        <p> In 2014, I completed a 35-year project of observing
+          every NGC object north of -41 degrees declination. These were all the
+          NGCs accessible from my home in northern California. At that time I
+          had also covered most of the far southern sky from several previous
+          trips to Australia, with 300 NGCs remaining that were not visible from
+          the United States. After a few additional observing trips to the southern
+          hemisphere, I completed the last remaining 34 NGCs during the November
+          2017 <a href="https://ozsky.org">OzSky Star Safari</a>, which took place
+          on the Markdale Homestead, a large working sheep ranch and country estate
           3 &frac12; hour drive west of Sydney. </p>
-        <p> Since that date I've been trying to complete the 1529 
-          entries in the first Index Catalogue (IC I).<span style="mso-spacerun: yes">&nbsp; 
-          </span>The vast majority of these are faint galaxies, with over half 
-          the total from Stephane Javelle, who observed with a 30-inch f/23 refractor 
-          at the Nice observatory in France. <span style="mso-spacerun: yes">&nbsp;</span>I 
-          now have just 119 of these galaxies remaining to observe. </p>
-        <p> All my observations and notes were made at fairly dark 
-          observing sites used by clubs and individuals in the San Francisco bay 
-          area as well as various northern California star parties at Lassen National 
-          Park and northeastern California. In addition, a large number of summer 
-          observations were made at high elevation sites in the Sierras or the 
-          White Mountains east of Bishop. Generally, these observations were made 
-          with SQM readings from 21.3-21.9. Deep southern objects were observed 
-          on 8 weeklong observing trips to Australia using 14&quot; to 30&quot; 
-          scopes that were provided by Zane Hammond at his &quot;Magellan Observatory&quot; 
-          and at several OzSky Star Safaris. Some southern observations were also 
-          made using Ray Cash's 13&quot; travel scope that I brought to Costa 
+        <p> Since that date I've been trying to complete the 1529
+          entries in the first Index Catalogue (IC I).
+          The vast majority of these are faint galaxies, with over half
+          the total from Stephane Javelle, who observed with a 30-inch f/23 refractor
+          at the Nice observatory in France.
+          I now have just 119 of these galaxies remaining to observe. </p>
+        <p> All my observations and notes were made at fairly dark
+          observing sites used by clubs and individuals in the San Francisco bay
+          area as well as various northern California star parties at Lassen National
+          Park and northeastern California. In addition, a large number of summer
+          observations were made at high elevation sites in the Sierras or the
+          White Mountains east of Bishop. Generally, these observations were made
+          with SQM readings from 21.3-21.9. Deep southern objects were observed
+          on 8 weeklong observing trips to Australia using 14&quot; to 30&quot;
+          scopes that were provided by Zane Hammond at his &quot;Magellan Observatory&quot;
+          and at several OzSky Star Safaris. Some southern observations were also
+          made using Ray Cash's 13&quot; travel scope that I brought to Costa
           Rica and with C-8 from the southern end of Baja. </p>
-        <p> I began taking notes on the Messier objects using a 
-          6&quot; f/5 reflector in 1978. Three years later I started exploring 
-          fainter NGCs with a 13.1&quot; Odyssey I. The vast majority of my notes, 
-          though, were made with a 17.5&quot; f/4.5 homemade dob (1987-2002) and 
-          an 18&quot; f/4.3 Starmaster (2003-2011). Since 2012 I've used a 24&quot; 
-          f/3.7 Starstructure. I've also taken detailed notes on over 500 NGC 
-          and IC objects using Jimi Lowrey's 48&quot; gigantic dobsonian from 
-          west Texas. In general, you'll find multiple observations of many NGCs, 
-          so their visual appearances can be compared through a variety of apertures. 
+        <p> I began taking notes on the Messier objects using a
+          6&quot; f/5 reflector in 1978. Three years later I started exploring
+          fainter NGCs with a 13.1&quot; Odyssey I. The vast majority of my notes,
+          though, were made with a 17.5&quot; f/4.5 homemade dob (1987-2002) and
+          an 18&quot; f/4.3 Starmaster (2003-2011). Since 2012 I've used a 24&quot;
+          f/3.7 Starstructure. I've also taken detailed notes on over 500 NGC
+          and IC objects using Jimi Lowrey's 48&quot; gigantic dobsonian from
+          west Texas. In general, you'll find multiple observations of many NGCs,
+          so their visual appearances can be compared through a variety of apertures.
           </p>
-        <p> All of the NGC/IC identifications have been checked 
-          for historical accuracy as part of <a href="http://ngcicproject.observers.org">NGC/IC 
-          Project</a> (database no longer available but see <a href="http://ngcicproject.observers.org/NGC/">here</a>). 
-          At the end of my visual observations of each NGC, I've included historical 
-          discovery information such as the observer's name, date, telescope, 
-          and the original discovery descriptions. Modern catalogues discrepancies 
+        <p> All of the NGC/IC identifications have been checked
+          for historical accuracy as part of <a href="http://ngcicproject.observers.org">NGC/IC
+          Project</a> (database no longer available but see <a href="http://ngcicproject.observers.org/NGC/">here</a>).
+          At the end of my visual observations of each NGC, I've included historical
+          discovery information such as the observer's name, date, telescope,
+          and the original discovery descriptions. Modern catalogues discrepancies
           and errors are also discussed. </p>
-        <p> In addition to the NGC and IC, the final link includes 
-          observations of nearly 1200 galaxies in the Uppsala General Catalogue 
-          (UGC), which are not in the NGC or IC. These are generally fainter galaxies 
-          that are at least 10' diameter on the first National Geographic-Palomar 
+        <p> In addition to the NGC and IC, the final link includes
+          observations of nearly 1200 galaxies in the Uppsala General Catalogue
+          (UGC), which are not in the NGC or IC. These are generally fainter galaxies
+          that are at least 10' diameter on the first National Geographic-Palomar
           Observatory Sky Survey (POSS). </p>
-        <p> I want to acknowledge the investigative work of Dr. 
-          Harold Corwin and Dr. Wolfgang Steinicke, who I've communicated with 
-          for many years on a number of identification problems. Harold Corwin 
-          provides precise positions and extensive historical notes on thousands 
+        <p> I want to acknowledge the investigative work of Dr.
+          Harold Corwin and Dr. Wolfgang Steinicke, who I've communicated with
+          for many years on a number of identification problems. Harold Corwin
+          provides precise positions and extensive historical notes on thousands
           of NGC and IC objects at <a
-href="http://haroldcorwin.net/ngcic/">http://haroldcorwin.net/ngcic/</a>. Wolfgang 
-          Steinicke provides biographical information on 172 NGC/IC astronomers, 
-          as well as a number of historically accurate catalogues in .xls format 
-          on his web site at <a href="http://www.klima-luft.de/steinicke/index_e.htm">http://www.klima-luft.de/steinicke/index_e.htm</a>. 
-          For those interesting in learning more on the history of the NGC, I 
-          highly recommend Wolfgang's book &quot;Observing and Cataloguing Nebulae 
+href="http://haroldcorwin.net/ngcic/">http://haroldcorwin.net/ngcic/</a>. Wolfgang
+          Steinicke provides biographical information on 172 NGC/IC astronomers,
+          as well as a number of historically accurate catalogues in .xls format
+          on his web site at <a href="http://www.klima-luft.de/steinicke/index_e.htm">http://www.klima-luft.de/steinicke/index_e.htm</a>.
+          For those interesting in learning more on the history of the NGC, I
+          highly recommend Wolfgang's book &quot;Observing and Cataloguing Nebulae
           and Star Clusters&quot;. </p>
-        <p> 
         <p align=right>Steve Gottlieb<br>
-          5/3/23 <span style='font-size:
-13.5pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
-        </div>
-    </td>
-  </tr>
-</table>
+          5/3/23</p>
+
+</div>
+
 <p><br>
 <p>
 <center>
-  <table width=640 border=3>
-    <tr> 
-      <th bgcolor="#FFFFFF" style="color: black;"><b>Note: All positions 
+  <a name="catalog-table"></a>
+  <table width=640 border=3 style="font-size: 1.2em;">
+    <tr>
+      <th bgcolor="#FFFFFF" style="color: black;">Note: All positions
         are in Equinox J2000.0<br>
-        In the Observation Files, 13: = 13-inch Telescope, 17.5: = 17.5-inch Telescope, 
-        etc.</b></th>
+        In the Observation Files, 13: = 13-inch Telescope, 17.5: = 17.5-inch Telescope,
+        etc.</th>
     </tr>
-    <tr> 
-      <td> 
-        <div align="center"><a href="NGC%20complete.html"><b>NGC 
-          1-7840 complete</b></a></div>
-      </td>
+    <tr>
+      <th>NGC &mdash; New General Catalogue
+        <br><small><a href="assets/ngc_notes.txt">Download complete text</a></small></th>
     </tr>
-    <tr> 
-      <td height="22"><a href="NGC%201-1000.html"><b>NGC 
-        1 thru <x-dso>NGC 1000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC0.html"><b>NGC 1 thru <x-dso>NGC 1000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%201001-2000.html"><b>NGC 
-        1001 thru <x-dso>NGC 2000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC1.html"><b>NGC 1001 thru <x-dso>NGC 2000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%202001-3000.html"><b>NGC 
-        2001 thru <x-dso>NGC 3000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC2.html"><b>NGC 2001 thru <x-dso>NGC 3000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%203001-4000.html"><b>NGC 
-        3001 thru <x-dso>NGC 4000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC3.html"><b>NGC 3001 thru <x-dso>NGC 4000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%204001-5000.html"><b>NGC 
-        4001 thru <x-dso>NGC 5000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC4.html"><b>NGC 4001 thru <x-dso>NGC 5000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%205001-6000.html"><b>NGC 
-        5001 thru <x-dso>NGC 6000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC5.html"><b>NGC 5001 thru <x-dso>NGC 6000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%206001-7000.html"><b>NGC 
-        6001 thru <x-dso>NGC 7000</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC6.html"><b>NGC 6001 thru <x-dso>NGC 7000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><a href="NGC%207001-7840.html"><b>NGC 
-        7001 thru <x-dso>NGC 7840</x-dso></b></a></td>
+    <tr>
+      <td><a href="NGC7.html"><b>NGC 7001 thru <x-dso>NGC 7840</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td> 
-        <div align="center"><b><a href="IC%201-5386%20complete.html">IC 
-          1-5386 complete</a></b></div>
-      </td>
+    <tr>
+      <th>IC &mdash; Index Catalogue
+        <br><small><a href="assets/ic_notes.txt">Download complete text</a></small></th>
     </tr>
-    <tr> 
-      <td height="22"> 
-        <div align="left"><b><a href="IC%201%20thru%20IC%201000.html">IC 
-          1 thru <x-dso>IC 1000</x-dso></a></b></div>
-      </td>
+    <tr>
+      <td><a href="IC0.html"><b>IC 1 thru <x-dso>IC 1000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><b><a href="IC%201001%20thru%20IC%202000.html">IC 
-        1001 thru <x-dso>IC 2000</x-dso></a></b></td>
+    <tr>
+      <td><a href="IC1.html"><b>IC 1001 thru <x-dso>IC 2000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><b><a href="IC%202001%20thru%20IC%203000.html">IC 
-        2001 thru <x-dso>IC 3000</x-dso></a></b></td>
+    <tr>
+      <td><a href="IC2.html"><b>IC 2001 thru <x-dso>IC 3000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><b><a href="IC%203001%20thru%20IC%204000.html">IC 
-        3001 thru <x-dso>IC 4000</x-dso></a></b></td>
+    <tr>
+      <td><a href="IC3.html"><b>IC 3001 thru <x-dso>IC 4000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td height="20"><b><a href="IC%204001%20thru%20IC%205000.html">IC 
-        4001 thru <x-dso>IC 5000</x-dso></a></b></td>
+    <tr>
+      <td><a href="IC4.html"><b>IC 4001 thru <x-dso>IC 5000</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td><b><a href="IC%205001%20thru%20IC%205386.html">IC 
-        5001 thru <x-dso>IC 5386</x-dso></a></b></td>
+    <tr>
+      <td><a href="IC5.html"><b>IC 5001 thru <x-dso>IC 5386</x-dso></b></a></td>
     </tr>
-    <tr> 
-      <td> 
-        <div align="center"><a href="UGC%20(4-4-20).htm"><b>UGC 
-          1-12195 Complete</b></a></div>
-      </td>
+    <tr>
+      <th>UGC &mdash; Uppsala General Catalogue
+        <br><small><a href="assets/ugc_notes.txt">Download complete text</a></small></th>
+    </tr>
+    <tr>
+      <td><a href="UGC.html"><b>UGC 1&ndash;12915 (all)</b></a></td>
     </tr>
   </table>
   <p>
   <p>
-  <p> 
   <p>
-
-
-
-
-
-
+  <p>
 
 <A HREF="index.html"><IMG SRC="assets/Home.jpg" width="57" height="49"></A></center>
 <P>
   <!-- Start of StatCounter Code -->
   <script type="text/javascript">
-var sc_project=3998290; 
-var sc_invisible=1; 
-var sc_partition=48; 
-var sc_click_stat=1; 
-var sc_security="d12111e7"; 
+var sc_project=3998290;
+var sc_invisible=1;
+var sc_partition=48;
+var sc_click_stat=1;
+var sc_security="d12111e7";
 </script>
 
 <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/3998290/0/d12111e7/1/" alt="free hit counter" ></a></div></noscript>
 <!-- End of StatCounter Code -->
 
-
-
 </body>
 
-
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
