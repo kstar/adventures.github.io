@@ -154,6 +154,7 @@ def process_catalog(catalog: str) -> None:
     # For single-page catalogs, everything goes into page 0
     pages: dict[int, list[str]] = {}
     current_page: int | None = None
+    expect_header = True  # True at start of file and after a separator
 
     for raw_line in lines:
         line = raw_line.rstrip("\r\n")
@@ -164,15 +165,17 @@ def process_catalog(catalog: str) -> None:
                 pages.setdefault(current_page, []).append(
                     '<hr class="dso-separator"/>\n'
                 )
+            expect_header = True
             continue
 
         # Blank line — skip (paragraph spacing from <p> margins)
         if len(line.strip()) == 0:
             continue
 
-        # Check for new object header (only match the catalog being processed)
+        # Check for new object header: must follow a separator (or start of
+        # file) AND match the catalog being processed
         obj_match = OBJ_REGEX.match(line)
-        if obj_match and obj_match.group(1) == catalog.upper():
+        if expect_header and obj_match and obj_match.group(1) == catalog.upper():
             cat_name = obj_match.group(1)
             number = int(obj_match.group(2))
             current_page = get_page_index(number) if split else 0
@@ -185,8 +188,10 @@ def process_catalog(catalog: str) -> None:
                 f"{escaped_rest}"
             )
             pages.setdefault(current_page, []).append(f"<p>{markup}</p>\n")
+            expect_header = False
             logger.info(f"Object: {obj_id}")
         else:
+            expect_header = False
             if current_page is not None:
                 pages.setdefault(current_page, []).append(
                     f"<p>{html.escape(line)}</p>\n"
