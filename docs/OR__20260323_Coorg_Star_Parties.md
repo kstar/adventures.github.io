@@ -10,7 +10,7 @@ In the past years, I did not have a telescope to call my own in India. Since las
 
 ![Portability is key: Akarsh carrying all of his stuff for the star party at once](assets/Akarsh_carrying_12inch.jpg)
 
-*Carrying all my goods for the star party at once: The 12-inch telescope, my sky atlas and a few odds and ends lie within the carrying case except for the secondary mirror; that along with the eyepieces are in my backpack, along with my laptop, logbook and red filter. Hanging on my shoulders are my clothes and a roll-up camping table*
+<center><i>Carrying all my goods for the star party at once: The 12-inch telescope, my sky atlas and a few odds and ends lie within the carrying case except for the secondary mirror; that along with the eyepieces are in my backpack, along with my laptop, logbook and red filter. Hanging on my shoulders are my clothes and a roll-up camping table</i></center>
 
 My trip to India started with a terrifying situation where the checked baggage that had the telescope did not make my flight connection! The airline delivered it home a couple days later and I was relieved to luckily find everything intact inside. I was more concerned about airline security officials messing up the telescope because of its curious appearance than the rough handling that the baggage goes through, since the construction of the telescope has proven to be very good at resisting shock in our experiments.
 
@@ -18,11 +18,11 @@ The [Bangalore Astronomical Society](https://bas.org.in) organizes star parties 
 
 ![A view of paddy fields near Palahalli](assets/Palahalli.jpg)
 
-*A scene along the road to the star party, when we stopped for fresh coconut water, showing a rice paddy field*
+<center><i>A scene along the road to the star party, when we stopped for fresh coconut water, showing a rice paddy field</i></center>
 
 ![A view of a coffee and spice plantation](assets/kodagu_coffee_spices.jpg)
 
-*The windy roads in the hills are dotted with large plantations growing coffee and spices*
+<center><i>The windy roads in the hills are dotted with large plantations growing coffee and spices</i></center>
 
 Due to proliferation of light pollution, the site generally presents Bortle 3 conditions at best -- I remember the times 15 years ago when it used to be Bortle 1. The other problem the region presents is moisture and extinction. The region is extremely wet and the mountains make their own clouds. It's unusual to have a night without dew or poor transparency. Despite these challenges, it seems to be one of the best sites in south India.
 
@@ -34,7 +34,7 @@ At the February star party, I was joined at the parking lot by visual observer R
 
 ![Group photo from the February 2026 Star Party](assets/CoorgFeb2026.jpg)
 
-*Group photograph from the February 2026 Star Party. Ranjit and my mother are seated in the front row, while I stand with new alumni of my alma mater.*
+<center><i>Group photograph from the February 2026 Star Party. Ranjit and my mother are seated in the front row, while I stand with new alumni of my alma mater.</i></center>
 
 The skies were not very transparent and punctuated by intermittent periods of clouds. I spent a total of two nights at the parking lot and two nights at the lodge. One of the nights was of better transparency during the early evening, and unfortunately I had decided to stick to the lodge that night. On that night at about 3 AM, a group of us decided to drive up to the parking lot to appreciate the southern skies. I rapidly dismantled my telescope to a transportable state and reassembled it at the parking lot to continue observing. At this time the southern skies were not particularly clear. The second full night at the parking lot was markedly better. An initial crowd of about 20 people made it to the lot and the skies were unfortunately poor. Unimpressed, most of the crowd decided to retreat to the lodge and its creature comforts, except for Ranjit and I. My mother later returned from the lodge to the parking lot, bringing us the catered meals from down there. It was a nice experience to eat under the stars. My mom remained with us through the night although she slept in the car early. I did bring her out to check out eta Carina nebula, but otherwise left her undisturbed. The sky improved later that night, and Ranjit and I continued observing into the wee hours. Here are my observing highlights from February, although I have introduced some follow-up observations from March herein as well.
 
@@ -101,6 +101,11 @@ At 60x with an NPB filter, a crescent-shaped filament of nebulosity that appeare
 ### <x-dso>NGC 3372</x-dso>, the Eta Carina Nebula
 
 I observed the nebula at 60× with a DGM NPB filter. The nebula filled and exceed the 1° FOV of the eyepiece. It appeared beautiful and showed numerous dark rifts. All my attempts at seeing the Homunculus Nebula were met with failure, I imagine it needs to be higher in the sky and a precisely collimated scope.
+
+![The Carina/Crux portion of the Milky Way](assets/EtaCarina.jpg)
+
+<center><i>Carina and Crux as my iPhone saw it from the parking lot. At the center of the image is the eta Carina nebula and the Wishing Well Cluster NGC 3532. To the left of center lies the southern cross (Crux). You can also appreciate the thick extinction below the bottom star of the cross (Acrux).</i></center>
+
 
 ### <x-dso>NGC 3918</x-dso>, the Blue Planetary
 
@@ -169,7 +174,7 @@ I spent only two nights at the March star party. Turns out in both Feb and March
 
 ![Public night at the March 2026 Star Party](assets/CoorgStarParty.jpg)
 
-*Public night at the March 2026 star party. People are viewing the crescent moon.*
+<center><i>Public night at the March 2026 star party. People are viewing the crescent moon.</i></center>
 
 When we arrived at the parking lot, there were people still enjoying the evening vista. We delayed our setting up until they left in a short ten minutes or so. The conditions started out being so-so, the southern beehive being barely visible to averted vision.
 
@@ -177,7 +182,7 @@ I warmed up on tau Canis Majoris cluster and the Southern Beehive cluster before
 
 ![A view of the Milky Way further south of the stinger of Scorpius, the part that is invisible from California](assets/NormaMilkyWay.jpg)
 
-*I took a moment out of my observing to set up for this photo-op at the parking lot with my 12-inch telescope. The resolved star cloud just above the center of the frame is the False Comet. In the center of the frame is the Norma Star Cloud. The Milky Way stretched all the way to alpha and beta Centauri*.
+<center><i>I took a moment out of my observing to set up for this photo-op at the parking lot with my 12-inch telescope. The resolved star cloud just above the center of the frame is the False Comet. In the center of the frame is the Norma Star Cloud. The Milky Way stretched all the way to alpha and beta Centauri</i></center>
 
 
 ### <x-dso>IC 2501</x-dso>
@@ -251,6 +256,4 @@ At 87×, this globular cluster in Ara was fully resolved and appeared "teardrop"
 NGC 6397 is one of the two closest globular clusters to the earth, along with M 4.
 
 ![Photo of Akarsh with his 12-inch travel dob at the lodge during the March 2026 star party](assets/Akarsh_12inch.jpg)
-*Here is me with my 12-inch at the lodge on the Saturday night of the March 2026 BAS star party.*
-
-
+<center><i>Here is me with my 12-inch at the lodge on the Saturday night of the March 2026 BAS star party.</i></center>
