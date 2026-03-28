@@ -10,6 +10,10 @@ This year was my 17th Golden State Star Party (that’s all of them since the 20
 
 Since I got asked "How far can you see with your telescope?", I thought I’d answer this question with a few examples of the dozens of objects I viewed in my 24-inch f/3.8 Starstructure over 5 nights.
 
+Astronomers typically estimate the distance to remote galaxies using Hubble's law. According to Hubble's law, distant galaxies are receding from us (and one another) with a speed which is proportional to their distance. The recession is due to the expansion of the universe (an expanding balloon is often given as an analogy), which causes radiation from distant source to be shifted to longer wavelengths or "redshifted". From a measurement of a galaxy's redshift and the expansion constant, called the Hubble constant (H₀), you can determine the distance to the galaxy.
+
+A central problem in modern cosmology, though, is that the two main methods which determine the Hubble constant yield different results, which are not quite compatible. Many measurements using a series of "standard candles" from Cepheid variables to distant type Ia supernovae give a value of about 73 km/sec/Mpc (million parsecs), while measurements using the cosmic microwave background (CMB) yield a value of 67 or 68 km/sec/Mpc. The distances I've mentioned below use a “compromise" Hubble constant of H₀ = 70 km/sec/Mpc.
+
 **<x-dso>UGCA 402</x-dso> at 115 million light years**  
 15 13 30.9 -20 40 30  
 V = 12.7;  Size 3.5'x0.7';  PA = 62°  
