@@ -873,6 +873,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-01-25|[NGC 1222](https://www.deepskyforum.com/showthread.php?1894-Object-of-the-Week-January-25th-2026-NGC-1222){:target="_blank"}|Scott Harrington|<x-dso-link>NGC 1222</x-dso-link> (Mrk 603)|
 |2025-12-21|[NGC1232](https://www.deepskyforum.com/showthread.php?1889-Object-of-the-Week-December-21st-2025-NGC1232){:target="_blank"}|Dragan Nikin|NGC 1232 (Arp 41, <x-dso-link>UGC 2596</x-dso-link>, <x-dso-link>PGC 11834</x-dso-link>)|
 |2022-12-11|[A nebula that will make you jump](https://www.deepskyforum.com/showthread.php?1644-Object-of-the-Week-December-11-2022-A-nebula-that-will-make-you-jump){:target="_blank"}|Victor van Wulfen|Criss-Cross Nebula|
 |2022-11-20|[Hickson 28 in Eridanus](https://www.deepskyforum.com/showthread.php?1639-Object-of-the-Week-November-20-2022-Hickson-28-in-Eridanus){:target="_blank"}|Alvin Huey|<x-dso-link>HCG 28</x-dso-link> (LEDA 15136 & <x-dso-link>LEDA 15141</x-dso-link> & <x-dso-link>LEDA 15135</x-dso-link> & <x-dso-link>LEDA 15139</x-dso-link>)|
@@ -1101,6 +1102,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-02-15|[NGC 2337 - A lopsided Lynx ](https://www.deepskyforum.com/showthread.php?1899-Object-of-the-Week-February-15-2026-NGC2337-A-lopsided-Lynx-NGC-2337-A-lopsided-Lynx){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 2337</x-dso-link> (MCG+07-15-010, <x-dso-link>UGC 3711</x-dso-link>, <x-dso-link>LEDA 20298</x-dso-link>)|
 |2025-11-02|[NGC 2500](https://www.deepskyforum.com/showthread.php?1881-Object-of-the-Week-November-1st-2025-NGC-2500){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 2500</x-dso-link> (UGC 4165)|
 |2025-01-26|[APM 08279+5255](https://www.deepskyforum.com/showthread.php?1832-Object-of-the-Week-January-26-2025-APM-08279-5255){:target="_blank"}|Timo Karhula|APM 08279+5255 (IRAS F08279+5255, QSO <x-dso-link>B0827</x-dso-link>+5255, KODIAQ J083141+524517, LQAC 127+052 013, PS-ELQS J083141.69+524517.5)|
 |2023-01-15|[NGC 2683 UFO Galaxy](https://www.deepskyforum.com/showthread.php?1654-Object-of-the-Week-January-15-2023-NGC-2683-UFO-Galaxy){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 2683</x-dso-link>|
@@ -1189,6 +1191,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-02-22|[Will the real nebula please stand up?](https://www.deepskyforum.com/showthread.php?1902-Object-of-the-Week-22-February-2026-Will-the-real-nebula-please-stand-up){:target="_blank"}|Victor van Wulfen|<x-dso-link>NGC 1990</x-dso-link>, Courtès 123|
 |2025-11-23|[Cederblad 51 around HK Ori](https://www.deepskyforum.com/showthread.php?1885-Object-of-the-Week-November-23th-2025-Cederblad-51-around-HK-Ori){:target="_blank"}|Uwe Glahn|Cederblad 51 ([RK68] 25, Bernes 89, GN 05.28.8, Magakian 104), HK Ori|
 |2025-02-02|[Haro 3-75](https://www.deepskyforum.com/showthread.php?1833-Object-of-the-Week-February-2nd-2025-Haro-3-75){:target="_blank"}|Owen Brazell|Haro 3-75 (PN G193.6-09.5)|
 |2025-01-19|[Cederblad 51, an E.E. Barnard discovery](https://www.deepskyforum.com/showthread.php?1831-Object-of-the-Week-January-19-2025-Cederblad-51-an-E-E-Barnard-discovery){:target="_blank"}|Steve Gottlieb|<x-dso-link simbad="Ced 51">Cederblad 51</x-dso-link> (Simeis 3-52, Bernes 89, Parsamian-Petrosyan 29)|
@@ -1565,6 +1568,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-02-01|["UMa compact" + bonus object](https://www.deepskyforum.com/showthread.php?1895-Object-of-the-Week-SBS-0849-496-quot-UMa-compact-quot-bonus-object){:target="_blank"}|Paul Alsing|SBSG 0849+496 (IRAS F08494+4938, <x-dso-link>LEDA 139147</x-dso-link>), <x-dso-link>IRAS 08339+6517</x-dso-link> (LEDA 24283)|
 |2024-04-28|[Core business](https://www.deepskyforum.com/showthread.php?1768-Object-of-the-Week-April-28-2024-Core-business){:target="_blank"}|Victor van Wulfen|<x-dso-link>MCG +08-20-033</x-dso-link> (UGC 5953, <x-dso-link>PGC 32536</x-dso-link>)|
 |2024-04-14|[NGC 3445 = Arp 24 in Ursa Major](https://www.deepskyforum.com/showthread.php?1762-Object-of-the-Week-April-14-2024-NGC-3445-Arp-24-in-Ursa-Major){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 3445</x-dso-link> (Arp 24, <x-dso-link>UGC 6021</x-dso-link>, <x-dso-link>PGC 32772</x-dso-link>), <x-dso-link>MCG 10-16-24</x-dso-link>, <x-dso-link>LEDA 2554198</x-dso-link>, <x-dso-link>NGC 3440</x-dso-link>, <x-dso-link>NGC 3458</x-dso-link>|
 |2024-03-31|[VV 124 \(UGC 4879\)](https://www.deepskyforum.com/showthread.php?1759-Object-of-the-Week-March-31st-2024-%25E2%2580%2593-VV-124-%28UGC-4879%29){:target="_blank"}|Scott Harrington|<x-dso-link>VV 124</x-dso-link> (MCG +09-15-113, <x-dso-link simbad="Z 264-088">CGCG 264-088</x-dso-link>, <x-dso-link>UGC 487</x-dso-link>)|
@@ -1623,6 +1627,8 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-03-01|[NGC 3201](https://www.deepskyforum.com/showthread.php?1903-OOTW-March-01-2026-%25E2%2580%2593-NGC-3201){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC 3201</x-dso-link>|
+|2026-02-08|[Henize 2-7](https://www.deepskyforum.com/showthread.php?1898-Object-of-the-Week-February-8th-2026-Henize-2-7){:target="_blank"}|Akarsh Simha|Henize 2-7 (Wray 16-16, PN G 264.1-08.1, <x-dso-link>PK 264-08+1</x-dso-link>)|
 |2025-04-06|[NGC 3256, the nearest LIRG](https://www.deepskyforum.com/showthread.php?1843-Object-of-the-Week-April-6th-2025-NGC-3256-the-nearest-LIRG){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 3256</x-dso-link> (VV 65, <x-dso-link>MCG -07-22-010</x-dso-link>, <x-dso-link>ESO 263-038</x-dso-link>, AM 1025-433, <x-dso-link>PGC 30785</x-dso-link>)|
 |2022-03-06|[NGC 2736 = Pencil Nebula = Herschel's Ray = ESO 260-N14 = RCW 37](https://www.deepskyforum.com/showthread.php?1568-Object-of-the-Week-March-6-2022-%E2%80%93-NGC-2736-Pencil-Nebula-Herschel-s-Ray-ESO-260-N14-RCW-37){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 2736</x-dso-link> (Pencil Nebula, Herschel's Ray, <x-dso-link>ESO 260-N14</x-dso-link>, RCW 37)|
 |2014-03-16|[Eight Burst Nebula](https://www.deepskyforum.com/showthread.php?534-Object-of-the-Week-March-16-2014-Eight-Burst-Nebula){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 3132</x-dso-link>|
@@ -1691,7 +1697,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2026-02-19T22:50:35Z
+Last updated: 2026-03-28T20:25:21Z
 </div>
 {% endraw %}
 

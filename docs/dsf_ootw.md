@@ -12,6 +12,12 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 
 |Date|Title|Author|Object(s)|Constellation|
 |----|----|----|----|----|----|
+|2026-03-01|[NGC 3201](https://www.deepskyforum.com/showthread.php?1903-OOTW-March-01-2026-%25E2%2580%2593-NGC-3201){:target="_blank"}|Wouter van Reeven|<x-dso-link>NGC 3201</x-dso-link>|VEL|
+|2026-02-22|[Will the real nebula please stand up?](https://www.deepskyforum.com/showthread.php?1902-Object-of-the-Week-22-February-2026-Will-the-real-nebula-please-stand-up){:target="_blank"}|Victor van Wulfen|<x-dso-link>NGC 1990</x-dso-link>, Courtès 123|ORI|
+|2026-02-15|[NGC 2337 - A lopsided Lynx ](https://www.deepskyforum.com/showthread.php?1899-Object-of-the-Week-February-15-2026-NGC2337-A-lopsided-Lynx-NGC-2337-A-lopsided-Lynx){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 2337</x-dso-link> (MCG+07-15-010, <x-dso-link>UGC 3711</x-dso-link>, <x-dso-link>LEDA 20298</x-dso-link>)|LYN|
+|2026-02-08|[Henize 2-7](https://www.deepskyforum.com/showthread.php?1898-Object-of-the-Week-February-8th-2026-Henize-2-7){:target="_blank"}|Akarsh Simha|Henize 2-7 (Wray 16-16, PN G 264.1-08.1, <x-dso-link>PK 264-08+1</x-dso-link>)|VEL|
+|2026-02-01|["UMa compact" + bonus object](https://www.deepskyforum.com/showthread.php?1895-Object-of-the-Week-SBS-0849-496-quot-UMa-compact-quot-bonus-object){:target="_blank"}|Paul Alsing|SBSG 0849+496 (IRAS F08494+4938, <x-dso-link>LEDA 139147</x-dso-link>), <x-dso-link>IRAS 08339+6517</x-dso-link> (LEDA 24283)|UMA|
+|2026-01-25|[NGC 1222](https://www.deepskyforum.com/showthread.php?1894-Object-of-the-Week-January-25th-2026-NGC-1222){:target="_blank"}|Scott Harrington|<x-dso-link>NGC 1222</x-dso-link> (Mrk 603)|ERI|
 |2026-01-18|[NGC 935 and IC 1801 = Arp 276](https://www.deepskyforum.com/showthread.php?1893-Object-of-the-Week-January-18-2026-%25E2%2580%2593-NGC-935-and-IC-1801-Arp-276){:target="_blank"}|Howard Banich|<x-dso-link>Arp 276</x-dso-link> (NGC 935, <x-dso-link>IC 1801</x-dso-link>)|ARI|
 |2026-01-11|[NGC 2859 \(Let’s Ring In The New Year\)](https://www.deepskyforum.com/showthread.php?1892-Objects-of-The-Week-January-11-2026-NGC-2859-%28Let%25E2%2580%2599s-Ring-In-The-New-Year%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 2859</x-dso-link>|LMI|
 |2026-01-04|[NGC 1016](https://www.deepskyforum.com/showthread.php?1891-Object-of-the-Week-January-4-2026-NGC-1016){:target="_blank"}|Owen Brazell|<x-dso-link>NGC 1016</x-dso-link>|CET|
@@ -743,7 +749,7 @@ To see the objects organized by constellation, click [here](dsf_ootw_constellati
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2026-02-19T22:50:35Z
+Last updated: 2026-03-28T20:25:21Z
 </div>
 {% endraw %}
 
