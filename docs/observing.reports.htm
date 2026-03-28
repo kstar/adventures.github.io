@@ -7,2262 +7,2351 @@
     <link rel="stylesheet" href="assets/common.css?version=8">
     <script type="text/javascript" src="assets/common.js?version=4"></script>
     <script type="text/javascript">document.disableCSVMaker = true; document.disableDSO = true;</script>
-</head>
+    
+<style>table.reports td { padding: 10px; overflow: hidden; text-overflow: ellipsis; }</style></head>
 <body class="or">
   <center>
     <h1>Observing Reports<br></h1>
-    <table class="reports" border align="center" width="700">
+    <div id="filter-controls" style="margin: 20px auto; width: 750px; text-align: left; padding: 15px; border: 1px solid #444; background: black; color: rgba(255, 255, 255, 0.8); border-radius: 4px;">
+      <div style="margin-bottom: 10px;">
+        <strong>Filter by Aperture (inches):</strong>
+        Min: <input type="number" id="min-ap" step="0.1" style="width: 50px; background: #222; color: white; border: 1px solid #555;">
+        Max: <input type="number" id="max-ap" step="0.1" style="width: 50px; background: #222; color: white; border: 1px solid #555;">
+        <button onclick="filterReports()" style="background: #444; color: white; border: 1px solid #666; cursor: pointer; padding: 2px 10px;">Filter</button>
+        <button onclick="resetFilter()" style="background: #444; color: white; border: 1px solid #666; cursor: pointer; padding: 2px 10px;">Reset</button>
+      </div>
+      <div id="report-count" style="font-style: italic; font-size: 0.9em; color: rgba(255, 255, 255, 0.6);"></div>
+    </div>
+    <script>
+      function filterReports() {
+        const minInput = document.getElementById('min-ap').value;
+        const maxInput = document.getElementById('max-ap').value;
+        const min = minInput === "" ? 0 : parseFloat(minInput);
+        const max = maxInput === "" ? 1000 : parseFloat(maxInput);
+        
+        const table = document.querySelector('table.reports');
+        if (!table) return;
+        const rows = Array.from(table.rows);
+        let visibleCount = 0;
+        let totalCount = 0;
+        
+        for (let i = 1; i < rows.length; i++) {
+          const row = rows[i];
+          const cells = row.cells;
+          
+          if (cells.length === 4 && cells[3].tagName === 'TD') {
+            totalCount++;
+            const apText = cells[3].textContent.trim();
+            
+            // Logic: Always show if unknown (apText is empty)
+            if (!apText) {
+                row.style.display = '';
+                visibleCount++;
+                continue;
+            }
+            
+            const apValues = apText.split('/').map(v => parseFloat(v.trim()));
+            const isVisible = apValues.some(v => !isNaN(v) && v >= min && v <= max);
+            row.style.display = isVisible ? '' : 'none';
+            if (isVisible) visibleCount++;
+          }
+        }
+        
+        // Month headers logic
+        let lastHeader = null;
+        let hasVisibleInMonth = false;
+        for (let i = 0; i < rows.length; i++) {
+            const row = rows[i];
+            if (row.cells.length === 1 && row.cells[0].tagName === 'TH' && row.cells[0].hasAttribute('colspan')) {
+                if (lastHeader && !hasVisibleInMonth) {
+                    lastHeader.style.display = 'none';
+                }
+                lastHeader = row;
+                lastHeader.style.display = '';
+                hasVisibleInMonth = false;
+            } else if (row.style.display !== 'none' && row.cells.length === 4) {
+                hasVisibleInMonth = true;
+            }
+        }
+        if (lastHeader && !hasVisibleInMonth) lastHeader.style.display = 'none';
+        
+        const countSpan = document.getElementById('report-count');
+        if (countSpan) countSpan.textContent = `Showing ${visibleCount} of ${totalCount} reports`;
+      }
+      
+      function resetFilter() {
+        document.getElementById('min-ap').value = '';
+        document.getElementById('max-ap').value = '';
+        filterReports();
+      }
+      
+      window.addEventListener('load', filterReports);
+    </script>
+<p style="font-style: italic; color: #888; margin-bottom: 20px;">Note: The "Aperture" values are determined using AI and may not always be correct.</p>
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    <table class="reports" border align="center" width="750" style="table-layout: fixed; border-collapse: collapse;">
       <tr>
-        <th width="45" height="31">Date</th>
-        <th width="387" height="31">Title</th>
-        <th width="112" height="31">Author(s)</th>
+        <th width="60" height="31">Date</th>
+        <th width="410" height="31">Title</th>
+        <th width="180" height="31">Author(s)</th>
+        <th width="100" height="31">Aperture (in)</th>
       </tr>
       <tr>
-        <th colspan="3">March 2026</th>
+        <th colspan="4">March 2026</th>
       </tr>
       <tr>
-        <th>27</th>
-        <td>
+        <th width="60">27</th>
+        <td width="410">
           <div align="left">
 	    July 2, 2025: "How far can you see with your telescope?" (Golden State Star Party)
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR_20250702_GSSP_How_Far_Can_You_See.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th>27</th>
-        <td>
+        <th width="60">27</th>
+        <td width="410">
           <div align="left">
 	    Lake Sonoma Feb. 25, 2025 - Winter's largest objects
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR_20250225_Lake_Sonoma_Winters_Largest_Objects.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th>27</th>
-        <td>
+        <th width="60">27</th>
+        <td width="410">
           <div align="left">
 	    Lake Sonoma on Dec. 30, 2024
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR_20241230_Lake_Sonoma.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>14.5</center></td></tr>
       <tr>
-        <th>27</th>
-        <td>
+        <th width="60">27</th>
+        <td width="410">
           <div align="left">
 	    Three nights in Glenn County
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR_20251016_Three_Nights_Glenn_County.html">Muriel Dulieu-Holzer</a>
         </td>
-      </tr>
+      <td width="100"><center>10/14.5/24</center></td></tr>
       <tr>
-        <th>23</th>
-        <td>
+        <th width="60">23</th>
+        <td width="410">
           <div align="left">
 	    Two new moons in South India
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__20260323_Coorg_Star_Parties.html">Akarsh Simha</a>
-        </td>
+	  </td>
+	  <td width="100"><center>12</center></td></tr>      <tr>
+        <th colspan="4">February 2026</th>
       </tr>
       <tr>
-        <th colspan="3">February 2026</th>
-      </tr>
-      <tr>
-        <th>12</th>
-        <td>
+        <th width="60">12</th>
+        <td width="410">
           <div align="left">
 	    The Artistic Angle : First milestone with Pencil and Photons
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__20260225_The_Artistic_Angle_First_milestone_with_Pencil_and_Photons.html">Snehith</a>
         </td>
-      </tr>
+      <td width="100"><center>8</center></td></tr>
       <tr>
-        <th>12</th>
-        <td>
+        <th width="60">12</th>
+        <td width="410">
           <div align="left">
 	    Under Winter's Last Breath
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__20260211_LirSchobert.html">Lir Schobert</a>
-        </td>
+	  </td>
+	  <td width="100"><center>10</center></td></tr>      <tr>
+        <th colspan="4">October 2025</th>
       </tr>
       <tr>
-        <th colspan="3">October 2025</th>
-      </tr>
-      <tr>
-        <th>12</th>
-        <td>
+        <th width="60">12</th>
+        <td width="410">
           <div align="left">
 	    Okie-Tex And the West: An Astronomy Adventure
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__Okie-Tex_and_the_West_202509_Alex_Swartzinski.html">Alex Swartzinski</a>
         </td>
-      </tr>
+      <td width="100"><center>15</center></td></tr>
       <tr>
-        <th>12</th>
-        <td>
+        <th width="60">12</th>
+        <td width="410">
           <div align="left">
 	    A not-so-dark observing trip
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__not_so_dark_observing_trip.html">Mark McCarthy</a>
         </td>
-      </tr>
+      <td width="100"><center>10</center></td></tr>
       <tr>
-        <th>4</th>
-        <td>
+        <th width="60">4</th>
+        <td width="410">
           <div align="left">
 	    A Peaceful Weekend in the Ozark Mountains
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__A_Peaceful_Weekend_in_the_Ozark_Mountains.html">Scott Harrington</a>
-        </td>
+	  </td>
+	  <td width="100"><center>6</center></td></tr>      <tr>
+        <th colspan="4">September 2025</th>
       </tr>
       <tr>
-        <th colspan="3">September 2025</th>
-      </tr>
-      <tr>
-        <th>19</th>
-        <td>
+        <th width="60">19</th>
+        <td width="410">
           <div align="left">
 	    September 2025 Observing in the Eastern Sierra: Part 1
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__202509_EasternSierra_Part1.html">Akarsh Simha</a>
         </td>
-      </tr>
+      <td width="100"><center>28</center></td></tr>
       <tr>
-        <th>20</th>
-        <td>
+        <th width="60">20</th>
+        <td width="410">
           <div align="left">
 	    September 2025 Observing in the Eastern Sierra: Part 2
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__202509_EasternSierra_Part2.html">Akarsh Simha</a>
         </td>
-      </tr>
+      <td width="100"><center>28</center></td></tr>
       <tr>
-        <th>21</th>
-        <td>
+        <th width="60">21</th>
+        <td width="410">
           <div align="left">
 	    September 2025 Observing in the Eastern Sierra: Part 3
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__202509_EasternSierra_Part3.html">Akarsh Simha</a>
         </td>
-      </tr>
+      <td width="100"><center>28</center></td></tr>
       <tr>
-        <th>22</th>
-        <td>
+        <th width="60">22</th>
+        <td width="410">
           <div align="left">
 	    September 2025 Observing in the Eastern Sierra: Part 4
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__202509_EasternSierra_Part4.html">Akarsh Simha</a>
         </td>
-      </tr>
+      <td width="100"><center>28</center></td></tr>
       <tr>
-        <th>23</th>
-        <td>
+        <th width="60">23</th>
+        <td width="410">
           <div align="left">
 	    September 2025 Observing in the Eastern Sierra: Part 5
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__202509_EasternSierra_Part5.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>3.9</center></td></tr>
+      <tr>
+        <th colspan="4">April 2025</th>
       </tr>
       <tr>
-        <th colspan="3">April 2025</th>
-      </tr>
-      <tr>
-        <th>30</th>
-        <td>
+        <th width="60">30</th>
+        <td width="410">
           <div align="left">
 	    Seven Nights in West Texas
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR__Seven_nights_in_west_Texas.html">Akarsh Simha</a>
         </td>
-      </tr>
+      <td width="100"><center>28/48</center></td></tr>
       <tr>
-        <th>26</th>
-        <td>
+        <th width="60">26</th>
+        <td width="410">
           <div align="left">
 	    Deep Sky Observing Report: April 26, 2025
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="/OR_Swartzinski_20250426.html">Alex Swartzinski</a>
         </td>
+      <td width="100"><center>15</center></td></tr>
+      <tr>
+        <th colspan="4">December 2024</th>
       </tr>
       <tr>
-        <th colspan="3">December 2024</th>
-      </tr>
-      <tr>
-        <th>6</th>
-        <td>
+        <th width="60">6</th>
+        <td width="410">
           <div align="left">
 	    Two long winter nights in the Eastern Sierra
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="OR_Simha_202412_InyoCounty.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">November 2024</th>
       </tr>
       <tr>
-        <th colspan="3">November 2024</th>
-      </tr>
-      <tr>
-        <th>5</th>
-        <td>
+        <th width="60">5</th>
+        <td width="410">
           <div align="left">
 	    Two Scintillating Nights of Tranquility
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="OR__Two_scintillating_nights_of_tranquility.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">August 2024</th>
       </tr>
       <tr>
-        <th colspan="3">August 2024</th>
-      </tr>
-      <tr>
-        <th>4</th>
-        <td>
+        <th width="60">4</th>
+        <td width="410">
           <div align="left">
 	    A Great Night that could've Started Better
           </div>
         </td>
-        <td>
-	  <a href="OR__A_great_night_that_could_ve_started_better.html">Akarsh Simha</a>
-        </td>
+        <td width="180">
+	  <a href="/OR__A_great_night_that_could_ve_started_better.html">Akarsh Simha</a>
+	  </td>
+	  <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">May 2024</th>
       </tr>
       <tr>
-        <th colspan="3">May 2024</th>
-      </tr>
-      <tr>
-        <th>2</th>
-        <td>
+        <th width="60">2</th>
+        <td width="410">
           <div align="left">
 	    Lake Sonoma on May 1st 2024
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="OR__Lake_Sonoma_last_night.html">Akarsh Simha</a>
         </td>
-      </tr>
+      <td width="100"><center>18</center></td></tr>
       <tr>
-        <th>4</th>
-        <td>
+        <th width="60">4</th>
+        <td width="410">
           <div align="left">
 	    May 3rd 2024 at GalStar
           </div>
         </td>
-        <td>
+        <td width="180">
 	  <a href="OR__A_single_night_at_GalStar.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">November 2023</th>
       </tr>
       <tr>
-        <th colspan="3">November 2023</th>
-      </tr>
-      <tr>
-        <th>11</th>
-        <td>
+        <th width="60">11</th>
+        <td width="410">
           <div align="left">
 	    A chunk of observing at Death Valley and Owens Valley
           </div>
         </td>
-        <td>
+        <td width="180">
           <a href="OR__A_chunk_of_observing_at_Death_Valley_and_Owens_Valley.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">August 2023</th>
       </tr>
       <tr>
-        <th colspan="3">August 2023</th>
-      </tr>
-      <tr>
-        <th>18</th>
-        <td>
+        <th width="60">18</th>
+        <td width="410">
           <div align="left">
             Aug 10/11/12 at McArthur
           </div>
         </td>
-        <td>
+        <td width="180">
           <a href="2023.McArthur.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">July 2023</th>
       </tr>
       <tr>
-        <th colspan="3">July 2023</th>
-      </tr>
-      <tr>
-        <th>17</th>
-        <td>OR (7/17/23): Pickering's Pint-sized Planetaries</td>
-        <td>
+        <th width="60">17</th>
+        <td width="410">OR (7/17/23): Pickering's Pint-sized Planetaries</td>
+        <td width="180">
           <a href="Pickering.Planetaries.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>15</center></td></tr>
+      <tr>
+        <th colspan="4">April 2023</th>
       </tr>
       <tr>
-        <th colspan="3">April 2023</th>
-      </tr>
-      <tr>
-        <th>16</th>
-        <td>Double Dipping in Guacamole</td>
-        <td>
+        <th width="60">16</th>
+        <td width="410">Double Dipping in Guacamole</td>
+        <td width="180">
           <a href="/OR_Double_dipping_in_Guacamole.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">August 2022</th>
       </tr>
       <tr>
-        <th colspan="3">August 2022</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">27</th>
-        <td height="15" width="387">First Light At "Traniquility Base"</td>
-        <td height="15" width="112">
+        <th width="60">27</th>
+        <td width="410">First Light At "Traniquility Base"</td>
+        <td width="180">
           <a href="First%20Light%20At%20Tranquility%20Base.htm">Mark Wagner</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">April 2021</th>
       </tr>
       <tr>
-        <th colspan="3">April 2021</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">14</th>
-        <td height="15" width="387">A Super-Night On 4/15/21</td>
-        <td height="15" width="112">
+        <th width="60">14</th>
+        <td width="410">A Super-Night On 4/15/21</td>
+        <td width="180">
           <a href="A%20super-night%20on%204.15.21.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>14.5</center></td></tr>
+      <tr>
+        <th colspan="4">June 2020</th>
       </tr>
       <tr>
-        <th colspan="3">June 2020</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">12-16</th>
-        <td height="15" width="387">A couple of nights with Fritz Zwicky</td>
-        <td height="15" width="112">
+        <th width="60">12-16</th>
+        <td width="410">A couple of nights with Fritz Zwicky</td>
+        <td width="180">
           <a href="A%20couple%20of%20nights%20with%20Fritz%20Zwicky.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">May 2020</th>
       </tr>
       <tr>
-        <th colspan="3">May 2020</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">20</th>
-        <td height="15" width="387">Spirals Of Spring</td>
-        <td height="15" width="112">
+        <th width="60">20</th>
+        <td width="410">Spirals Of Spring</td>
+        <td width="180">
           <a href="Spirals%20Of%20Spring.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">January 2020</th>
       </tr>
       <tr>
-        <th colspan="3">January 2020</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">24</th>
-        <td height="15" width="387">Go Bears! The Berkeley Open Clusters</td>
-        <td height="15" width="112">
+        <th width="60">24</th>
+        <td width="410">Go Bears! The Berkeley Open Clusters</td>
+        <td width="180">
           <a href="Go Bears!%20 The Berkeley Open Clusters.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">December 2019</th>
       </tr>
       <tr>
-        <th colspan="3">December 2019</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">10</th>
-        <td height="15" width="387">Late Fall Observing Report</td>
-        <td height="15" width="112">
+        <th width="60">10</th>
+        <td width="410">Late Fall Observing Report</td>
+        <td width="180">
           <a href="Late%20Fall%20Observing%20Report.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">October 2019</th>
       </tr>
       <tr>
-        <th colspan="3">October 2019</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">29</th>
-        <td height="15" width="387">Lowrey 48 inch in October Part III</td>
-        <td height="15" width="112">
+        <th width="60">29</th>
+        <td width="410">Lowrey 48 inch in October Part III</td>
+        <td width="180">
           <a href="Lowrey%2048%20inch%20in%20October%20Part%20III.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <th height="15" width="45">26</th>
-        <td height="15" width="387">Lowrey 48 inch in October Part II</td>
-        <td height="15" width="112">
+        <th width="60">26</th>
+        <td width="410">Lowrey 48 inch in October Part II</td>
+        <td width="180">
           <a href="Lowrey%2048%20inch%20in%20October%20Part%20II.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <th height="15" width="45">25</th>
-        <td height="15" width="387">Lowrey 48 inch in October Part I</td>
-        <td height="15" width="112">
+        <th width="60">25</th>
+        <td width="410">Lowrey 48 inch in October Part I</td>
+        <td width="180">
           <a href="Lowrey%2048%20inch%20in%20October%20Part%20I.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>48</center></td></tr>
+      <tr>
+        <th colspan="4">September 2019</th>
       </tr>
       <tr>
-        <th colspan="3">September 2019</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">25</th>
-        <td height="15" width="387">September 2019 Observing Report from CalStar</td>
-        <td height="15" width="112">
+        <th width="60">25</th>
+        <td width="410">September 2019 Observing Report from CalStar</td>
+        <td width="180">
           <a href="September%202019%20Observing%20Report%20from%20CalStar.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">July 2019</th>
       </tr>
       <tr>
-        <th colspan="3">July 2019</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">4</th>
-        <td height="15" width="387">My first two nights in the Warner Mountains</td>
-        <td height="15" width="112">
+        <th width="60">4</th>
+        <td width="410">My first two nights in the Warner Mountains</td>
+        <td width="180">
           <a href="/OR_WarnersFirstTime.html">Akarsh Simha</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4">January 2019</th>
       </tr>
       <tr>
-        <th colspan="3">January 2019</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">1</th>
-        <td height="15" width="387">Starting Off The New Year Right!</td>
-        <td height="15" width="112">
+        <th width="60">1</th>
+        <td width="410">Starting Off The New Year Right!</td>
+        <td width="180">
           <a href="Starting%20off%20the%20New%20Year%20right.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">July 2018</th>
       </tr>
       <tr>
-        <th colspan="3">July 2018</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">11-15</th>
-        <td height="15" width="387">Golden State Star Party 2019</td>
-        <td height="15" width="112">
+        <th width="60">11-15</th>
+        <td width="410">Golden State Star Party 2019</td>
+        <td width="180">
           <a href="1807.gssp.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">February 2018</th>
       </tr>
       <tr>
-        <th colspan="3">February 2018</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">18</th>
-        <td height="15" width="387">The Eridanus Loop and more</td>
-        <td height="15" width="112">
+        <th width="60">18</th>
+        <td width="410">The Eridanus Loop and more</td>
+        <td width="180">
           <a href="The%20Eridanus%20Loop%20and%20more.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th height="15" width="45">13/15</th>
-        <td height="15" width="387">Lake Sonoma on 2/13 and 2/15</td>
-        <td height="15" width="112">
+        <th width="60">13/15</th>
+        <td width="410">Lake Sonoma on 2/13 and 2/15</td>
+        <td width="180">
           <a href="Lake%20Sonoma%20on%202.13%20and%202.15.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">December 2017</th>
       </tr>
       <tr>
-        <th colspan="3">December 2017</th>
-      </tr>
-      <tr>
-        <th height="15" width="45">20</th>
-        <td height="15" width="387">Winter Observing At Lake Sonoma</td>
-        <td height="15" width="112">
+        <th width="60">20</th>
+        <td width="410">Winter Observing At Lake Sonoma</td>
+        <td width="180">
           <a href="Winter%20Observing%20at%20Lake%20Sonoma.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">October 2017</th>
       </tr>
       <tr>
-        <th colspan="3">October 2017</th>
-      </tr>
-      <tr>
-        <th height="33" rowspan="2" width="45">15</th>
-        <td height="15" width="387">Observing Adventure in Australia (Part II)</td>
-        <td height="15" width="112">
+        <th width="60">15</th>
+        <td width="410">Observing Adventure in Australia (Part II)</td>
+        <td width="180">
           <a href="Observing%20Adventure%20in%20Australia%20(Part%20II).htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <td height="16" width="387">Observing Adventure in Australia (Part I)</td>
-        <td height="16" width="112">
+        <th width="60">15</th><td width="410">Observing Adventure in Australia (Part I)</td>
+        <td width="180">
           <a href="Observing%20Adventure%20in%20Australia%20(Part%20I).htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">March 2017</th>
       </tr>
       <tr>
-        <th colspan="3">March 2017</th>
-      </tr>
-      <tr>
-        <th height="33" width="45">28</th>
-        <td height="33" width="387">Spring Galaxies including the Hydra I Cluster</td>
-        <td height="33" width="112">
+        <th width="60">28</th>
+        <td width="410">Spring Galaxies including the Hydra I Cluster</td>
+        <td width="180">
           <a href="Spring%20Galaxies%20including%20the%20Hydra%20I%20Cluster.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">December 2016</th>
       </tr>
       <tr>
-        <th colspan="3">December 2016</th>
-      </tr>
-      <tr>
-        <th height="33" width="45">21/28</th>
-        <td height="33" width="387">Blazers, Seyferts, Double Rings and more.</td>
-        <td height="33" width="112">
+        <th width="60">21/28</th>
+        <td width="410">Blazers, Seyferts, Double Rings and more.</td>
+        <td width="180">
           <a href="Blazers,%20Seyferts,%20Double%20Rings%20and%20more.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th height="33" width="45"><b>1</b></th>
-        <td height="33" width="387">Galaxies both near and far</td>
-        <td height="33" width="112">
+        <th width="60"><b>1</b></th>
+        <td width="410">Galaxies both near and far</td>
+        <td width="180">
           <a href="Galaxies%20both%20near%20and%20far.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4">November 2016</th>
       </tr>
       <tr>
-        <th colspan="3">November 2016</th>
-      </tr>
-      <tr>
-        <th height="33" width="45"><b>23</b></th>
-        <td height="33" width="387">Fall Galaxies through a 48-inch!</td>
-        <td height="33" width="112">
+        <th width="60"><b>23</b></th>
+        <td width="410">Fall Galaxies through a 48-inch!</td>
+        <td width="180">
           <a href="Fall%20Galaxies%20through%20a%2048-inch.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>48</center></td></tr>
+      <tr>
+        <th colspan="4"><b>September 2016</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>September 2016</b></th>
-      </tr>
-      <tr>
-        <th height="33" width="45">29</th>
-        <td height="33" width="387">Three fine nights at the Calstar Star Party</td>
-        <td height="33" width="112">
+        <th width="60">29</th>
+        <td width="410">Three fine nights at the Calstar Star Party</td>
+        <td width="180">
           <a href="Three%20fine%20nights%20at%20the%20Calstar%20Star%20Party.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>August 2016</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>August 2016</b></th>
-      </tr>
-      <tr>
-        <th height="33" width="45">30</th>
-        <td height="33" width="387">Adventures In The White Mountains (Part Two)</td>
-        <td height="33" width="112">
+        <th width="60">30</th>
+        <td width="410">Adventures In The White Mountains (Part Two)</td>
+        <td width="180">
           <a href="Adventures%20in%20the%20White%20Mountains%20(Part%20II).html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th height="33" width="45">30</th>
-        <td height="33" width="387">Adventures In The White Mountains (Part One)</td>
-        <td height="33" width="112">
+        <th width="60">30</th>
+        <td width="410">Adventures In The White Mountains (Part One)</td>
+        <td width="180">
           <a href="Adventures%20in%20the%20White%20Mountains%20(Part%20I).html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>June 2016</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>June 2016</b></th>
-      </tr>
-      <tr>
-        <th height="33" width="45">6</th>
-        <td height="33" width="387">In Search of Interacting Galaxies</td>
-        <td height="33" width="112">
+        <th width="60">6</th>
+        <td width="410">In Search of Interacting Galaxies</td>
+        <td width="180">
           <a href="In%20Search%20of%20Interacting%20Galaxies%20--%206%20June%202016.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th height="33" width="45">4</th>
-        <td height="33" width="387">A Three Mark Night at Willow Springs</td>
-        <td height="33" width="112">
+        <th width="60">4</th>
+        <td width="410">A Three Mark Night at Willow Springs</td>
+        <td width="180">
           <a href="160604.OR%20A%20Three%20Mark%20Night%20at%20Willow%20Springs%20160604.html">Mark Wagner</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4"><b>May 2016</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>May 2016</b></th>
-      </tr>
-      <tr>
-        <th height="30" width="45">31</th>
-        <td height="30" width="387">Saying farewell to spring galaxies.</td>
-        <td height="30" width="112">
+        <th width="60">31</th>
+        <td width="410">Saying farewell to spring galaxies.</td>
+        <td width="180">
           <a href="160531.OR%20Saying%20farewell%20to%20spring%20galaxies.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>January 2016</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>January 2016</b></th>
-      </tr>
-      <tr>
-        <th height="30" width="45">1</th>
-        <td height="30" width="387">Ringing in the New Year with some deep sky observing!</td>
-        <td height="30" width="112">
+        <th width="60">1</th>
+        <td width="410">Ringing in the New Year with some deep sky observing!</td>
+        <td width="180">
           <a href="160101.OR%20Ringing%20in%20the%20New%20Year%20with%20some%20deep%20sky%20observing.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>June 2015</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>June 2015</b></th>
-      </tr>
-      <tr>
-        <th width="45">17</th>
-        <td height="28" width="387">Observing in June on the Modoc Plateau (Part III)</td>
-        <td height="28" width="112">
+        <th width="60">17</th>
+        <td width="410">Observing in June on the Modoc Plateau (Part III)</td>
+        <td width="180">
           <a href="150616.OR%20Observing%20in%20June%20on%20the%20Modoc%20Plateau%20Part%20III.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td height="28" width="387">Observing in June on the Modoc Plateau (Part II)</td>
-        <td height="28" width="112">
+        <th width="60">16</th>
+        <td width="410">Observing in June on the Modoc Plateau (Part II)</td>
+        <td width="180">
           <a href="150616.OR%20Observing%20in%20June%20on%20the%20Modoc%20Plateau%20Part%20II.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">15</th>
-        <td height="28" width="387">Observing in June on the Modoc Plateau (Part I)</td>
-        <td height="28" width="112">
+        <th width="60">15</th>
+        <td width="410">Observing in June on the Modoc Plateau (Part I)</td>
+        <td width="180">
           <a href="150615.OR%20Observing%20in%20June%20on%20the%20Modoc%20Plateau%20Part%20I.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td height="5" width="387">June at Deep Sky Ranch II.</td>
-        <td height="5" width="112">
+        <th width="60">16</th>
+        <td width="410">June at Deep Sky Ranch II.</td>
+        <td width="180">
           <a href="150613%20OR%20June%20at%20Deep%20Sky%20Ranch%20II.htm">Mark Wagner</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th colspan="4"><b>April 2015</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>April 2015</b></th>
-      </tr>
-      <tr>
-        <th width="45">16</th>
-        <td height="5" width="387">OR 48 inch Texas part three</td>
-        <td height="5" width="112">
+        <th width="60">16</th>
+        <td width="410">OR 48 inch Texas part three</td>
+        <td width="180">
           <a href="150416.OR%2048%20inch%20Texas%20part%20three.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <th height="22" width="45">16</th>
-        <td height="22" width="387">OR 48 inch Texas part two</td>
-        <td height="22" width="112">
+        <th width="60">16</th>
+        <td width="410">OR 48 inch Texas part two</td>
+        <td width="180">
           <a href="150416.OR%2048%20inch%20Texas%20part%20two.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td height="5" width="387">OR 48 inch Texas part one</td>
-        <td height="5" width="112">
+        <th width="60">16</th>
+        <td width="410">OR 48 inch Texas part one</td>
+        <td width="180">
           <a href="150416.OR%2048%20inch%20Texas%20part%20one.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>48</center></td></tr>
+      <tr>
+        <th colspan="4"><b>Novembert 2014</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>Novembert 2014</b></th>
-      </tr>
-      <tr>
-        <th width="45">24</th>
-        <td height="5" width="387">OR Lake Sonoma</td>
-        <td height="5" width="112">
+        <th width="60">24</th>
+        <td width="410">OR Lake Sonoma</td>
+        <td width="180">
           <a href="141124.lake.sonoma.steve.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>August 2014</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>August 2014</b></th>
-      </tr>
-      <tr>
-        <th width="45">27</th>
-        <td height="5" width="387">OR Lake Sonoma</td>
-        <td height="5" width="112">
+        <th width="60">27</th>
+        <td width="410">OR Lake Sonoma</td>
+        <td width="180">
           <a href="140827.lake.sonoma.steve.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">23</th>
-        <td height="5" width="387">OR Willow Springs</td>
-        <td height="5" width="112">
+        <th width="60">23</th>
+        <td width="410">OR Willow Springs</td>
+        <td width="180">
           <a href="140823.willow.springs.steve.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>July 2014</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>July 2014</b></th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="5" width="387">Lassen Volcanic National Park</td>
-        <td height="5" width="112">
+        <th width="60">25</th>
+        <td width="410">Lassen Volcanic National Park</td>
+        <td width="180">
           <a href="Lassen%20Volcanic%20National%20Park.4.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">24</th>
-        <td height="5" width="387">Lassen Volcanic National Park</td>
-        <td height="5" width="112">
+        <th width="60">24</th>
+        <td width="410">Lassen Volcanic National Park</td>
+        <td width="180">
           <a href="Lassen%20Volcanic%20National%20Park.3.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">23</th>
-        <td height="5" width="387">Lassen Volcanic National Park</td>
-        <td height="5" width="112">
+        <th width="60">23</th>
+        <td width="410">Lassen Volcanic National Park</td>
+        <td width="180">
           <a href="Lassen%20Volcanic%20National%20Park.2.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">22</th>
-        <td height="5" width="387">Lassen Volcanic National Park</td>
-        <td height="5" width="112">
+        <th width="60">22</th>
+        <td width="410">Lassen Volcanic National Park</td>
+        <td width="180">
           <a href="Lassen%20Volcanic%20National%20Park.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th colspan="4"><b>June 2014</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>June 2014</b></th>
-      </tr>
-      <tr>
-        <th width="45">27/28</th>
-        <td height="5" width="387">OR from GSSP</td>
-        <td height="5" width="112">
+        <th width="60">27/28</th>
+        <td width="410">OR from GSSP</td>
+        <td width="180">
           <a href="https://www.facebook.com/media/set/?set=a.690485647683908.1073741839.186343804764764&amp;type=1">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th colspan="4"><b>May 2014</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>May 2014</b></th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="5" width="387">The parade of Spring Trios continues</td>
-        <td height="5" width="112">
+        <th width="60">25</th>
+        <td width="410">The parade of Spring Trios continues</td>
+        <td width="180">
           <a href="https://www.facebook.com/media/set/?set=a.676734405725699.1073741838.186343804764764&amp;type=1">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th colspan="4"><b>April 2014</b></th>
       </tr>
       <tr>
-        <th colspan="3"><b>April 2014</b></th>
-      </tr>
-      <tr>
-        <th width="45">22</th>
-        <td height="5" width="387">Swimming in a sea of Virgo galaxies</td>
-        <td height="5" width="112">
+        <th width="60">22</th>
+        <td width="410">Swimming in a sea of Virgo galaxies</td>
+        <td width="180">
           <a href="https://www.facebook.com/media/set/?set=a.672950199437453.1073741837.186343804764764&amp;type=1">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">20</th>
-        <td height="5" width="387">Triple the fun from Lake Sonoma</td>
-        <td height="5" width="112">
+        <th width="60">20</th>
+        <td width="410">Triple the fun from Lake Sonoma</td>
+        <td width="180">
           <a href="https://www.facebook.com/media/set/?set=a.660744540658019.1073741835.186343804764764&amp;type=1">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th colspan="4">March 2014</th>
       </tr>
       <tr>
-        <th colspan="3">March 2014</th>
-      </tr>
-      <tr>
-        <th width="45">22</th>
-        <td height="5" width="387"><x-dso>VV 171</x-dso> and neighbors from Lake Sonoma</td>
-        <td height="5" width="112">
+        <th width="60">22</th>
+        <td width="410"><x-dso>VV 171</x-dso> and neighbors from Lake Sonoma</td>
+        <td width="180">
           <a href="https://www.facebook.com/media/set/?set=a.643231675742639.1073741832.186343804764764&amp;type=1">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th colspan="4">February 2014</th>
       </tr>
       <tr>
-        <th colspan="3">February 2014</th>
-      </tr>
-      <tr>
-        <th width="45">22</th>
-        <td height="5" width="387">A parade of galaxies last Saturday night</td>
-        <td height="5" width="112">
+        <th width="60">22</th>
+        <td width="410">A parade of galaxies last Saturday night</td>
+        <td width="180">
           <a href="https://www.facebook.com/media/set/?set=a.630253757040431.1073741830.186343804764764&amp;type=1">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <!-- <tr> -->
-      <!--   <td height="5" width="387">Willow Springs, February 22, 2014</td> -->
-      <!--   <td height="5" width="112"> -->
+      <!--   <td width="410">Willow Springs, February 22, 2014</td> -->
+      <!--   <td width="180"> -->
       <!--     <a href="set=a.628586077207199.1073741826.186343804764764&amp;type=1&amp;l=3bea226747">Mark Wagner</a> -->
       <!--   </td> -->
-      <!-- </tr> -->
+      <!-- <td width="100"></td></tr> -->
       <tr>
-        <th colspan="3">January 2014</th>
+        <th colspan="4">January 2014</th>
       </tr>
       <tr>
-        <th width="45">31</th>
-        <td height="5" width="387">Three supernovae on one night!</td>
-        <td height="5" width="112">
+        <th width="60">31</th>
+        <td width="410">Three supernovae on one night!</td>
+        <td width="180">
           <a href="Three%20supernovae%20on%20one%20night.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">25</th>
-        <td height="5" width="387">"Winter" observing in California</td>
-        <td height="5" width="112">
+        <th width="60">25</th>
+        <td width="410">"Winter" observing in California</td>
+        <td width="180">
           <a href="Winter%20observing%20in%20California.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>48</center></td></tr>
+      <tr>
+        <th colspan="4">December 2013</th>
       </tr>
       <tr>
-        <th colspan="3">December 2013</th>
-      </tr>
-      <tr>
-        <th width="45">28</th>
-        <td height="5" width="387">Resolving the Brightest Star in <x-dso>M33</x-dso></td>
-        <td height="5" width="112">
+        <th width="60">28</th>
+        <td width="410">Resolving the Brightest Star in <x-dso>M33</x-dso></td>
+        <td width="180">
           <a href="Resolving%20the%20Brightest%20Star%20in%20M33.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">1</th>
-        <td height="5" width="387">Interacting Galaxies, Trios and Groups from Lake Sonoma</td>
-        <td height="5" width="112">
+        <th width="60">1</th>
+        <td width="410">Interacting Galaxies, Trios and Groups from Lake Sonoma</td>
+        <td width="180">
           <a href="Interacting%20Galaxies,%20Trios%20and%20Groups%20from%20Lake%20Sonoma.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">October 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">October 2013</th>
-      </tr>
-      <tr>
-        <th width="45">30</th>
-        <td height="12" width="387">Fall observing with the 48-inch</td>
-        <td height="12" width="112">
+        <th width="60">30</th>
+        <td width="410">Fall observing with the 48-inch</td>
+        <td width="180">
           <a href="Fall%20observing%20with%20the%2048-inch.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <th width="45">9</th>
-        <td height="12" width="387">CalStar 2013 (Part 2)</td>
-        <td height="12" width="112">
+        <th width="60">9</th>
+        <td width="410">CalStar 2013 (Part 2)</td>
+        <td width="180">
           <a href="CalStar.2013.2.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">9</th>
-        <td height="12" width="387">CalStar 2013 (Part 1)</td>
-        <td height="12" width="112">
+        <th width="60">9</th>
+        <td width="410">CalStar 2013 (Part 1)</td>
+        <td width="180">
           <a href="CalStar.2013.1.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">September 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">September 2013</th>
-      </tr>
-      <tr>
-        <th width="45">13</th>
-        <td height="12" width="387">Beautiful Night for Abell Planetary and Palomar Globular hunting</td>
-        <td height="12" width="112">
+        <th width="60">13</th>
+        <td width="410">Beautiful Night for Abell Planetary and Palomar Globular hunting</td>
+        <td width="180">
           <a href="Beautiful%20Night%20for%20Abell%20Planetary%20and%20Palomar%20Globular%20hunting.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">August 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">August 2013</th>
-      </tr>
-      <tr>
-        <th width="45">12</th>
-        <td height="12" width="387">Observing on the Modoc Plateau, 8/5 to 8/7/13</td>
-        <td height="12" width="112">
+        <th width="60">12</th>
+        <td width="410">Observing on the Modoc Plateau, 8/5 to 8/7/13</td>
+        <td width="180">
           <a href="Observing%20on%20the%20Modoc%20Plateau,%208.5%20to%208.7.13.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <th width="45">3</th>
-        <td height="14" width="387">Bright Night Targets at Houge Park</td>
-        <td height="14" width="112">
+        <th width="60">3</th>
+        <td width="410">Bright Night Targets at Houge Park</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2013/08/bright-night-targets-at-houge-park.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">July 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">July 2013</th>
-      </tr>
-      <tr>
-        <th rowspan="2" width="45">22</th>
-        <td height="13" width="387">Draco Dwarf don't despair</td>
-        <td width="112" height="13">
+        <th width="60">22</th>
+        <td width="410">Draco Dwarf don't despair</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2013-07/10047.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">VV interacting galaxies and Zwicky compacts eruptive galaxies</td>
-        <td width="112" height="13">
+        <th width="60">22</th><td width="410">VV interacting galaxies and Zwicky compacts eruptive galaxies</td>
+        <td width="180">
           <a href="VV%20interacting%20galaxies%20and%20Zwicky%20compacts%20eruptive%20galaxies.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">June 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">June 2013</th>
-      </tr>
-      <tr>
-        <th width="45">9</th>
-        <td height="13" width="387">They're All Planetaries!</td>
-        <td width="112" height="13">
+        <th width="60">9</th>
+        <td width="410">They're All Planetaries!</td>
+        <td width="180">
           <a href="http://observers.org/tac-or.archive/0030.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">May 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">May 2013</th>
-      </tr>
-      <tr>
-        <th rowspan="2" width="45">11</th>
-        <td height="13" width="387">Triple the fun! - Willow Springs on May 11, 2013</td>
-        <td width="112" height="13">
+        <th width="60">11</th>
+        <td width="410">Triple the fun! - Willow Springs on May 11, 2013</td>
+        <td width="180">
           <a href="/OR__Triple_the_fun_20130511.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>24</center></td></tr>
       <tr>
-        <td height="13" width="387">Willow Springs - May 11th</td>
-        <td width="112" height="13">
+        <th width="60">11</th><td width="410">Willow Springs - May 11th</td>
+        <td width="180">
           <a href="http://observers.org/tac-or.archive/0021.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">April 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">April 2013</th>
-      </tr>
-      <tr>
-        <th rowspan="3" width="45">4</th>
-        <td height="1" width="387">In Heaven with a 48-inch part 3</td>
-        <td width="112" height="1">
+        <th width="60">4</th>
+        <td width="410">In Heaven with a 48-inch part 3</td>
+        <td width="180">
           <a href="In%20Heaven%20with%20a%2048-inch%20part%203.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <td height="2" width="387">In Heaven with a 48-inch part 2</td>
-        <td width="112" height="2">
+        <th width="60">4</th><td width="410">In Heaven with a 48-inch part 2</td>
+        <td width="180">
           <a href="In%20Heaven%20with%20a%2048-inch%20part%202.htm">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>48</center></td></tr>
       <tr>
-        <td height="6" width="387">In Heaven with a 48-inch part 1</td>
-        <td width="112" height="6">
+        <th width="60">4</th><td width="410">In Heaven with a 48-inch part 1</td>
+        <td width="180">
           <a href="In%20Heaven%20with%20a%2048-inch%20part%201.htm">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>48</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">March 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">March 2013</th>
-      </tr>
-      <tr>
-        <th width="45">9</th>
-        <td height="13" width="387">Observing Triplets from Willow Springs on 3/9/13</td>
-        <td width="112" height="13">
+        <th width="60">9</th>
+        <td width="410">Observing Triplets from Willow Springs on 3/9/13</td>
+        <td width="180">
           <a href="/OR__Observing_Triplets_from_Willow_Springs_on_3_9_13.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>18</center></td></tr>
       <tr>
-        <th width="45">10</th>
-        <td height="13" width="387">A Brief Attempt At Comet PanSTARRS</td>
-        <td width="112" height="13">
+        <th width="60">10</th>
+        <td width="410">A Brief Attempt At Comet PanSTARRS</td>
+        <td width="180">
           <a href="http://observers.org/tac-or.archive/0015.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">February 2013</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">February 2013</th>
-      </tr>
-      <tr>
-        <th width="45">5</th>
-        <td height="13" width="387">Observing last night at Lake Sonoma</td>
-        <td width="112" height="13">
+        <th width="60">5</th>
+        <td width="410">Observing last night at Lake Sonoma</td>
+        <td width="180">
           <a href="/OR__Observing_last_night_at_Lake_Sonoma__Tues_2_5_13_.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>24</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">December 2012</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">December 2012</th>
-      </tr>
-      <tr>
-        <th width="45">3</th>
-        <td height="13" width="387">Drama along the Queensland coast</td>
-        <td width="112" height="13">
+        <th width="60">3</th>
+        <td width="410">Drama along the Queensland coast</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2012-12/7097.html">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">September 2012</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">September 2012</th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="13" width="387">OR Fall CalStar</td>
-        <td width="112" height="13">
+        <th width="60">25</th>
+        <td width="410">OR Fall CalStar</td>
+        <td width="180">
           <a href="/OR-%20Fall%20CalStar%202012.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">August 2011</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">August 2011</th>
-      </tr>
-      <tr>
-        <th width="45">28</th>
-        <td height="13" width="387">Pole Dancers</td>
-        <td width="112" height="13">
+        <th width="60">28</th>
+        <td width="410">Pole Dancers</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2011/08/pole-dancers_1261.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="3" width="45">20</th>
-        <td height="13" width="387">A Tale Of Two Sites - Part 1</td>
-        <td width="112" height="13">
+        <th width="60">20</th>
+        <td width="410">A Tale Of Two Sites - Part 1</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2011/08/tale-of-two-sites-part-1.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">A Tale Of Two Sites - Part 2</td>
-        <td width="112" height="13">
+        <th width="60">20</th><td width="410">A Tale Of Two Sites - Part 2</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2011/08/tale-of-two-sites-part-2.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">A Tale Of Two Sites - Part 3</td>
-        <td width="112" height="13">
+        <th width="60">20</th><td width="410">A Tale Of Two Sites - Part 3</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2011/08/tale-of-two-sites-part-3.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">July 2011</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">July 2011</th>
-      </tr>
-      <tr>
-        <th width="45">16</th>
-        <td height="13" width="387">The 1 billion light-year club</td>
-        <td width="112" height="13">
+        <th width="60">16</th>
+        <td width="410">The 1 billion light-year club</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2011-07/5481.html">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">May 2011</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">May 2011</th>
-      </tr>
-      <tr>
-        <th rowspan="2" width="45">3</th>
-        <td height="13" width="387">Lake Sonoma Tuesday night</td>
-        <td width="112" height="13">
+        <th width="60">3</th>
+        <td width="410">Lake Sonoma Tuesday night</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2011-05/6045.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Heaven and Earth</td>
-        <td width="112" height="13">
+        <th width="60">3</th><td width="410">Heaven and Earth</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">2</th>
-        <td height="13" width="387">Viewing with a 48-inch</td>
-        <td width="112" height="13">
+        <th width="60">2</th>
+        <td width="410">Viewing with a 48-inch</td>
+        <td width="180">
           <a href="http://old.observers.org/tac.mailing.list/2011/May/0004.html">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">January 2011</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">January 2011</th>
-      </tr>
-      <tr>
-        <th width="45">26</th>
-        <td height="13" width="387">Praying to the weather gods worked! (Lake Sonoma on 1/26/11)</td>
-        <td width="112" height="13">
+        <th width="60">26</th>
+        <td width="410">Praying to the weather gods worked! (Lake Sonoma on 1/26/11)</td>
+        <td width="180">
           <a href="/OR__Praying_to_the_weather_gods_worked__Lake_Sonoma_on_1_26_11_.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">November 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">November 2010</th>
-      </tr>
-      <tr>
-        <th rowspan="3" width="45">20</th>
-        <td height="1" width="387">Observing in Australia Nov 3-9 (part 3)</td>
-        <td width="112" height="1">
+        <th width="60">20</th>
+        <td width="410">Observing in Australia Nov 3-9 (part 3)</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2010-11/3491.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="2" width="387">Observing in Australia Nov 3-9 (part 2)</td>
-        <td width="112" height="2">
+        <th width="60">20</th><td width="410">Observing in Australia Nov 3-9 (part 2)</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2010-11/3488.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="6" width="387">Observing in Australia Nov 3-9 (part 1)</td>
-        <td width="112" height="6">
+        <th width="60">20</th><td width="410">Observing in Australia Nov 3-9 (part 1)</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2010-11/3484.html">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">October 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">October 2010</th>
-      </tr>
-      <tr>
-        <th width="45">10</th>
-        <td height="13" width="387">10 10 10! A fine night at Willow Springs</td>
-        <td width="112" height="13">
+        <th width="60">10</th>
+        <td width="410">10 10 10! A fine night at Willow Springs</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2010/10/10-10-10-fine-night-at-willow-springs.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">September 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">September 2010</th>
-      </tr>
-      <tr>
-        <th width="45">6</th>
-        <td height="5" width="387">One of the most curious objects in the sky and much more!</td>
-        <td width="112" height="5">
+        <th width="60">6</th>
+        <td width="410">One of the most curious objects in the sky and much more!</td>
+        <td width="180">
           <a href="/OR___One_of_the_most_curious_objects_in_the_sky__and_much_more.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>18</center></td></tr>
       <tr>
-        <th width="45">11</th>
-        <td height="6" width="387">A night with some UC Berkeley luminaries</td>
-        <td width="112" height="6">
+        <th width="60">11</th>
+        <td width="410">A night with some UC Berkeley luminaries</td>
+        <td width="180">
           <a href="/OR__A_night_with_some_UC_Berkeley_luminaries_9_11_10.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">August 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">August 2010</th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="1" width="387">The (second) youngest known galactic supernova remnant</td>
-        <td width="112" height="1">
+        <th width="60">25</th>
+        <td width="410">The (second) youngest known galactic supernova remnant</td>
+        <td width="180">
           <a href="OR_20100825.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>18</center></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td height="1" width="387">Observing Barnard's Galaxy from Lassen</td>
-        <td width="112" height="1">
+        <th width="60">16</th>
+        <td width="410">Observing Barnard's Galaxy from Lassen</td>
+        <td width="180">
           <a href="/OR-%20Observing%20Barnard's%20Galaxy%20from%20Lassen%208_12_10.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>18</center></td></tr>
       <tr>
-        <th width="45">14</th>
-        <td height="2" width="387">Friendly Skies</td>
-        <td width="112" height="2">
+        <th width="60">14</th>
+        <td width="410">Friendly Skies</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2010_08_01_archive.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">8</th>
-        <td height="6" width="387">Bonny Doon</td>
-        <td width="112" height="6">
+        <th width="60">8</th>
+        <td width="410">Bonny Doon</td>
+        <td width="180">
           <a href="http://old.observers.org/tac.mailing.list/2010/Aug/0080.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">July2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">July2010</th>
-      </tr>
-      <tr>
-        <th width="45">18</th>
-        <td height="13" width="387"><x-dso>NGC 6962</x-dso> group</td>
-        <td width="112" height="13">
+        <th width="60">18</th>
+        <td width="410"><x-dso>NGC 6962</x-dso> group</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2010-07/2080.html">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">June2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">June2010</th>
-      </tr>
-      <tr>
-        <th width="45">19</th>
-        <td height="13" width="387">UFO sighting from Houge Park</td>
-        <td width="112" height="13">
+        <th width="60">19</th>
+        <td width="410">UFO sighting from Houge Park</td>
+        <td width="180">
           <a href="http://old.observers.org/tac.mailing.list/2010/Jun/0272.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" height="11" width="45">12</th>
-        <td class="month" height="11" width="387">
+        <th width="60">12</th>
+        <td width="410">
           <div align="left">
 	    Willow Springs on June 12, 2010
           </div>
         </td>
-        <td class="month" height="13" width="112">
+        <td width="180">
           <a href="OR__20100612.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>18</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">May 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">May 2010</th>
-      </tr>
-      <tr>
-        <th width="45">12</th>
-        <td height="13" width="387">The view through 48-inches</td>
-        <td width="112" height="13">
+        <th width="60">12</th>
+        <td width="410">The view through 48-inches</td>
+        <td width="180">
           <a href="/My_first_observing_report_through_the_48_.html">Steve Gottlieb</a>
         </td>
+      <td width="100"><center>48</center></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">March 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">March 2010</th>
-      </tr>
-      <tr>
-        <th width="45">15</th>
-        <td height="13" width="387">Short night at Lake Sonoma</td>
-        <td width="112" height="13">
+        <th width="60">15</th>
+        <td width="410">Short night at Lake Sonoma</td>
+        <td width="180">
           <a href="http://observers.org/tac.archive/2010-03/2775.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">14</th>
-        <td height="13" width="387">The Big Freeze; A Cold Night In UMa</td>
-        <td width="112" height="13">
+        <th width="60">14</th>
+        <td width="410">The Big Freeze; A Cold Night In UMa</td>
+        <td width="180">
           <a href="http://www.deepskyobserving.blogspot.com/2010/03/big-freeze-cold-night-in-uma.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">February 2010</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">February 2010</th>
-      </tr>
-      <tr>
-        <th width="45">17</th>
-        <td height="13" width="387">A Good Night For Winter</td>
-        <td width="112" height="13">
+        <th width="60">17</th>
+        <td width="410">A Good Night For Winter</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2010/02/good-night-for-winter.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="2" width="45">14</th>
-        <td height="19" width="387">Touring the Celestial Zoo</td>
-        <td width="112" height="19">
+        <th width="60">14</th>
+        <td width="410">Touring the Celestial Zoo</td>
+        <td width="180">
           <a href="https://old.observers.org/reports/2010/2010.02.17.4.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Starlights Return</td>
-        <td width="112" height="13">
+        <th width="60">14</th><td width="410">Starlights Return</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2010/02/starlights-return.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">November 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">November 2009</th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="13" width="387">Wet Behind The Ears - Dewy Night at Willow Springs</td>
-        <td width="112" height="13">
+        <th width="60">25</th>
+        <td width="410">Wet Behind The Ears - Dewy Night at Willow Springs</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/11/wet-behind-ears-dewy-night-at-willow.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">15</th>
-        <td height="13" width="387">Winter's Return to Willow Springs</td>
-        <td width="112" height="13">
+        <th width="60">15</th>
+        <td width="410">Winter's Return to Willow Springs</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/11/winters-return-to-willow-springs.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">October 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">October 2009</th>
-      </tr>
-      <tr>
-        <th width="45">17</th>
-        <td height="13" width="387">Late Season Highlights from Willow Springs</td>
-        <td width="112" height="13">
+        <th width="60">17</th>
+        <td width="410">Late Season Highlights from Willow Springs</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/10/late-season-highlights-from-willow.html">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">September 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">September 2009</th>
-      </tr>
-      <tr>
-        <th rowspan="2" width="45">24</th>
-        <td height="13" width="387">Himalia and more from Lake Sonoma</td>
-        <td width="112" height="13">
+        <th width="60">24</th>
+        <td width="410">Himalia and more from Lake Sonoma</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.09.16.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Spoiling An "A" Student</td>
-        <td width="112" height="13">
+        <th width="60">24</th><td width="410">Spoiling An "A" Student</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/09/spoiling-a-student.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">02</th>
-        <td height="13" width="387">Double shadow transit on Jupiter and more</td>
-        <td width="112" height="13">
+        <th width="60">02</th>
+        <td width="410">Double shadow transit on Jupiter and more</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.09.02.1.shtml">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">August 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">August 2009</th>
-      </tr>
-      <tr>
-        <th width="45">20</th>
-        <td height="13" width="387">No Need For Speed</td>
-        <td width="112" height="13">
+        <th width="60">20</th>
+        <td width="410">No Need For Speed</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/08/no-need-for-speed.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td height="13" width="387">Observing Distant Fires (Holy Smokes!)</td>
-        <td width="112" height="13">
+        <th width="60">16</th>
+        <td width="410">Observing Distant Fires (Holy Smokes!)</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/08/observing-distant-fires-holy-smokes.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">12</th>
-        <td height="13" width="387">Two object OR from Lake Sonoma on 7/25/09</td>
-        <td width="112" height="13">
+        <th width="60">12</th>
+        <td width="410">Two object OR from Lake Sonoma on 7/25/09</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.08.10.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">01</th>
-        <td height="13" width="387">Short But Good Night at Houge Park</td>
-        <td width="112" height="13">
+        <th width="60">01</th>
+        <td width="410">Short But Good Night at Houge Park</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.07.22.1.shtml">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">July 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">July 2009</th>
-      </tr>
-      <tr>
-        <th width="45">22</th>
-        <td height="13" width="387">July 21/22, 2009: Two Nights With New Sights</td>
-        <td width="112" height="13">
+        <th width="60">22</th>
+        <td width="410">July 21/22, 2009: Two Nights With New Sights</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.07.22.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">21</th>
-        <td height="13" width="387">Longest Solar Eclipse of the 21st Century a success!</td>
-        <td width="112" height="13">
+        <th width="60">21</th>
+        <td width="410">Longest Solar Eclipse of the 21st Century a success!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.07.21.3.shtml">Steve Gottlieb</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">May 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">May 2009</th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="13" width="387">A Memorable Weekend</td>
-        <td width="112" height="13">
+        <th width="60">25</th>
+        <td width="410">A Memorable Weekend</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/05/sunday-night-on-new-moon-long-weekend.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">23</th>
-        <td height="13" width="387">Rare Sighting at IHOP</td>
-        <td width="112" height="13">
+        <th width="60">23</th>
+        <td width="410">Rare Sighting at IHOP</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/05/rare-sighting-at-ihop.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">22</th>
-        <td height="13" width="387">Return to Blue Canyon</td>
-        <td width="112" height="13">
+        <th width="60">22</th>
+        <td width="410">Return to Blue Canyon</td>
+        <td width="180">
           <a href="http://deepskyobserving.blogspot.com/2009/05/return-to-blue-canyon.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td height="13" width="387">Sons of Dobzilla</td>
-        <td width="112" height="13">
+        <th width="60">16</th>
+        <td width="410">Sons of Dobzilla</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.05.16.8.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">15</th>
-        <td height="13" width="387">Big Turnout at Houge Park</td>
-        <td width="112" height="13">
+        <th width="60">15</th>
+        <td width="410">Big Turnout at Houge Park</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.05.15.1.shtml">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">Apr 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">Apr 2009</th>
-      </tr>
-      <tr>
-        <th width="45">25</th>
-        <td height="13" width="387">Event Horizon at Deepsky Ranch</td>
-        <td width="112" height="13">
+        <th width="60">25</th>
+        <td width="410">Event Horizon at Deepsky Ranch</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.04.25.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">22</th>
-        <td height="13" width="387">Venus Occultation</td>
-        <td width="112" height="13">
+        <th width="60">22</th>
+        <td width="410">Venus Occultation</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.04.22.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">20</th>
-        <td height="13" width="387">Outstanding Night at Dinosaur Point</td>
-        <td width="112" height="13">
+        <th width="60">20</th>
+        <td width="410">Outstanding Night at Dinosaur Point</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.04.19.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">04</th>
-        <td height="13" width="387">A Surprising Night at Houge Park</td>
-        <td width="112" height="13">
+        <th width="60">04</th>
+        <td width="410">A Surprising Night at Houge Park</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.04.04.1.shtml">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">Mar 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">Mar 2009</th>
-      </tr>
-      <tr>
-        <th width="45">30</th>
-        <td height="13" width="387">Patience Pays...</td>
-        <td width="112" height="13">
+        <th width="60">30</th>
+        <td width="410">Patience Pays...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.03.29.5.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">25</th>
-        <td height="13" width="387">Digging Celestial Bones at Dinosaur Point</td>
-        <td width="112" height="13">
+        <th width="60">25</th>
+        <td width="410">Digging Celestial Bones at Dinosaur Point</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.03.25.1.shtml">Mark Wagner</a>
         </td>
+      <td width="100"></td></tr>
+      <tr>
+        <th class="month" colspan="4" height="11">Feb 2009</th>
       </tr>
       <tr>
-        <th class="month" colspan="3" height="11">Feb 2009</th>
-      </tr>
-      <tr>
-        <th width="45">20</th>
-        <td height="13" width="387">Frosty Hickson</td>
-        <td width="112" height="13">
+        <th width="60">20</th>
+        <td width="410">Frosty Hickson</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.02.20.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">02</th>
-        <td height="13" width="387">Houge Park - Try It, You'll Like It!</td>
-        <td width="112" height="13">
+        <th width="60">02</th>
+        <td width="410">Houge Park - Try It, You'll Like It!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.02.02.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="11">
+        <th class="month" colspan="4" height="11">
           <a name="Nov" id="Nov"></a>Jan 2009
         </th>
       </tr>
       <tr>
-        <th rowspan="3" width="45">21</th>
-        <td height="13" width="387">Monday night at Lake Sonoma 1/26/09</td>
-        <td width="112" height="13">
+        <th width="60">21</th>
+        <td width="410">Monday night at Lake Sonoma 1/26/09</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.01.28.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Willows Springs 12/30/08</td>
-        <td width="112" height="13">
+        <th width="60">21</th><td width="410">Willows Springs 12/30/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.01.21.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Lake Sonoma 1/17/09</td>
-        <td width="112" height="13">
+        <th width="60">21</th><td width="410">Lake Sonoma 1/17/09</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.01.19.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">02</th>
-        <td height="13" width="387">Ice-nine night at Willow Springs</td>
-        <td width="112" height="13">
+        <th width="60">02</th>
+        <td width="410">Ice-nine night at Willow Springs</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2009/2009.01.02.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="Nov" id="Nov"></a>Dec 2008
         </th>
       </tr>
       <tr>
-        <th width="45">15</th>
-        <td height="13" width="387">Remember when it was clear 3 weeks ago...</td>
-        <td width="112" height="13">
+        <th width="60">15</th>
+        <td width="410">Remember when it was clear 3 weeks ago...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.12.15.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="2" width="45">01</th>
-        <td height="13" width="387">Chasing tiny celestial butterflies 11/17/08</td>
-        <td width="112" height="13">
+        <th width="60">01</th>
+        <td width="410">Chasing tiny celestial butterflies 11/17/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.12.01.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Munching Cosmic Brownies at Coe</td>
-        <td width="112" height="13">
+        <th width="60">01</th><td width="410">Munching Cosmic Brownies at Coe</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.11.30.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="Nov" id="Nov"></a>Nov 2008
         </th>
       </tr>
       <tr>
-        <th width="45">24</th>
-        <td height="13" width="387">Observing-LITE</td>
-        <td width="112" height="13">
+        <th width="60">24</th>
+        <td width="410">Observing-LITE</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.11.24.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">08</th>
-        <td height="13" width="387">Wide Gaps</td>
-        <td width="112" height="13">
+        <th width="60">08</th>
+        <td width="410">Wide Gaps</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.11.08.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="Sep" id="Sep"></a>Oct 2008
         </th>
       </tr>
       <tr>
-        <th width="45">27</th>
-        <td height="13" width="387">Deep Sky Ranch 10/25/08</td>
-        <td width="112" height="13">
+        <th width="60">27</th>
+        <td width="410">Deep Sky Ranch 10/25/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.10.26.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">26</th>
-        <td height="13" width="387">Location, location, location...</td>
-        <td width="112" height="13">
+        <th width="60">26</th>
+        <td width="410">Location, location, location...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.10.26.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="Sep" id="Sep"></a>Sep 2008
         </th>
       </tr>
       <tr>
-        <th width="45">29</th>
-        <td height="13" width="387">CalStar 2008 - It doesn't get much better</td>
-        <td width="112" height="13">
+        <th width="60">29</th>
+        <td width="410">CalStar 2008 - It doesn't get much better</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.09.28.4.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="2" width="45">01</th>
-        <td height="13" width="387">"Mariposa" - from the Cocoon</td>
-        <td width="112" height="13">
+        <th width="60">01</th>
+        <td width="410">"Mariposa" - from the Cocoon</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.09.01.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="13" width="387">Lake Sonoma 8/30/08</td>
-        <td width="112" height="13">
+        <th width="60">01</th><td width="410">Lake Sonoma 8/30/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.09.01.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="Aug" id="Aug"></a>Aug 2008
         </th>
       </tr>
       <tr>
-        <th width="45">05</th>
-        <td height="13" width="387">Seeing stars in two very different clusters....</td>
-        <td width="112" height="13">
+        <th width="60">05</th>
+        <td width="410">Seeing stars in two very different clusters....</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.08.05.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">03</th>
-        <td height="13" width="387">Mt. Lassen - Going Dark at 7.5</td>
-        <td width="112" height="13">
+        <th width="60">03</th>
+        <td width="410">Mt. Lassen - Going Dark at 7.5</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.08.03.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th colspan="3">
+        <th colspan="4">
           <a name="Jul" id="Jul"></a>Jul 2008
         </th>
       </tr>
       <tr>
-        <th width="45">22</th>
-        <td height="13" width="387">GSSP</td>
-        <td width="112" height="13">
+        <th width="60">22</th>
+        <td width="410">GSSP</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.07.22.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">07</th>
-        <td height="13" width="387">ER: GSSP 2008</td>
-        <td width="112" height="13">
+        <th width="60">07</th>
+        <td width="410">ER: GSSP 2008</td>
+        <td width="180">
           <p><a href="http://old.observers.org/reports/2008/2008.07.07.2.shtml">Mark Wagner</a></p>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="Jun" id="Jun"></a>June 2008
         </th>
       </tr>
       <tr>
-        <th width="45">11</th>
-        <td height="13" width="387">Willow Springs 6/7/08</td>
-        <td width="112" height="13">
+        <th width="60">11</th>
+        <td width="410">Willow Springs 6/7/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.06.11.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="4" width="45">08</th>
-        <td height="4" width="387">Willow Springs - Who Needs Sleep? (Bring on Adin)...</td>
-        <td height="4" width="112">
+        <th width="60">08</th>
+        <td width="410">Willow Springs - Who Needs Sleep? (Bring on Adin)...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.06.08.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="May" id="May"></a>May 2008
         </th>
       </tr>
       <tr>
-        <th width="45">14</th>
-        <td height="-4" width="387">OR 3: LMC Sampler from Australia</td>
-        <td width="112" height="13">
+        <th width="60">14</th>
+        <td width="410">OR 3: LMC Sampler from Australia</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.05.14.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="2" width="45">&nbsp;</th>
-        <td height="2" width="387">Losing Ten Inches Ain't Fun!</td>
-        <td height="2" width="112">
+        <th width="60">&nbsp;</th>
+        <td width="410">Losing Ten Inches Ain't Fun!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.05.05.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="22" width="45">04</th>
-        <td height="22" width="387">A night of interacting pairings ...</td>
-        <td height="22" width="112">
+        <th width="60">04</th>
+        <td width="410">A night of interacting pairings ...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.05.04.6.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="April" id="April"></a>April 2008
         </th>
       </tr>
       <tr>
-        <th width="45">30</th>
-        <td height="13" width="387">Planetaries: Magellan Observatory, NSW 4/4/08-4/12/08</td>
-        <td width="112" height="13">
+        <th width="60">30</th>
+        <td width="410">Planetaries: Magellan Observatory, NSW 4/4/08-4/12/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.04.30.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="2" width="45">27</th>
-        <td height="21" width="387">Magellan Observatory, New South Wales 4/4/08-4/12/08</td>
-        <td width="112" height="21">
+        <th width="60">27</th>
+        <td width="410">Magellan Observatory, New South Wales 4/4/08-4/12/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.04.27.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="5" width="387">Sleepy Time Report from Willow Springs.</td>
-        <td height="5" width="112">
+        <th width="60">27</th><td width="410">Sleepy Time Report from Willow Springs.</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.04.27.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="24">
+        <th class="month" colspan="4" height="24">
           <a name="March" id="March"></a>March 2008
         </th>
       </tr>
       <tr>
-        <th height="10" width="45">10</th>
-        <td height="10" width="387">Tour of Puppis Clusters (3/2/08)</td>
-        <td height="10" width="112">
+        <th width="60">10</th>
+        <td width="410">Tour of Puppis Clusters (3/2/08)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.03.10.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="13" width="45">09</th>
-        <td height="13" width="387">Galaxy Fields Forever</td>
-        <td height="13" width="112">
+        <th width="60">09</th>
+        <td width="410">Galaxy Fields Forever</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.03.09.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="February" id="February"></a>February 2008
         </th>
       </tr>
       <tr>
-        <th rowspan="2" width="45">21</th>
-        <td width="387">Lunar Eclipse from Lafayette</td>
-        <td width="112">
+        <th width="60">21</th>
+        <td width="410">Lunar Eclipse from Lafayette</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.02.21.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">Eclipse - Three Views?</td>
-        <td width="112">
+        <th width="60">21</th><td width="410">Eclipse - Three Views?</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.02.21.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">10</th>
-        <td width="387">Willow Springs 2/10/08</td>
-        <td width="112">
+        <th width="60">10</th>
+        <td width="410">Willow Springs 2/10/08</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.02.10.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">06</th>
-        <td width="387">2/4/08 from Lake Sonoma</td>
-        <td width="112">
+        <th width="60">06</th>
+        <td width="410">2/4/08 from Lake Sonoma</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.02.06.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="January" id="January"></a>January 2008
         </th>
       </tr>
       <tr>
-        <th width="45">02</th>
-        <td width="387">First OR of the new year: 1/1/08 at Fremont Peak</td>
-        <td width="112">
+        <th width="60">02</th>
+        <td width="410">First OR of the new year: 1/1/08 at Fremont Peak</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2008/2008.01.02.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="December" id="December"></a>December 2007
         </th>
       </tr>
       <tr>
-        <th width="45">24</th>
-        <td width="387">Team Dioscuri and Celestial Sports....</td>
-        <td width="112">
+        <th width="60">24</th>
+        <td width="410">Team Dioscuri and Celestial Sports....</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.12.24.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">13</th>
-        <td width="387">A Winter's Day...</td>
-        <td width="112">
+        <th width="60">13</th>
+        <td width="410">A Winter's Day...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.12.13.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">09</th>
-        <td width="387">Lake Sonoma Saturday 12/8/07</td>
-        <td width="112">
+        <th width="60">09</th>
+        <td width="410">Lake Sonoma Saturday 12/8/07</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.12.09.5.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="November" id="November"></a>November 2007
         </th>
       </tr>
       <tr>
-        <th width="45">04</th>
-        <td width="387">"Dino-Nite!"</td>
-        <td width="112">
+        <th width="60">04</th>
+        <td width="410">"Dino-Nite!"</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.11.04.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">03</th>
-        <td width="387">Comet night at Houge Park</td>
-        <td width="112">
+        <th width="60">03</th>
+        <td width="410">Comet night at Houge Park</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.11.03.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="October" id="October"></a>October 2007
         </th>
       </tr>
       <tr>
-        <th rowspan="2" width="45">25</th>
-        <td width="387">Holmes</td>
-        <td width="112">
+        <th width="60">25</th>
+        <td width="410">Holmes</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.10.25.15.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">More Comet Holmes 17/P</td>
-        <td width="112">
+        <th width="60">25</th><td width="410">More Comet Holmes 17/P</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.10.25.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">14</th>
-        <td width="387">Fremont Peak 10/13/07</td>
-        <td width="112">
+        <th width="60">14</th>
+        <td width="410">Fremont Peak 10/13/07</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.10.14.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">07</th>
-        <td width="387">A Social Night At Coe</td>
-        <td width="112">
+        <th width="60">07</th>
+        <td width="410">A Social Night At Coe</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.10.07.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="September" id="September"></a>September 2007
         </th>
       </tr>
       <tr>
-        <th width="45">20</th>
-        <td width="387">Willow Springs in the shadow of a 33" (9/15/07)</td>
-        <td width="112">
+        <th width="60">20</th>
+        <td width="410">Willow Springs in the shadow of a 33" (9/15/07)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.09.20.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">18</th>
-        <td width="387">Willow Springs Sept 15 2007</td>
-        <td width="112">
+        <th width="60">18</th>
+        <td width="410">Willow Springs Sept 15 2007</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.09.18.4.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">11</th>
-        <td width="387">Lake Sonoma 9/10/07 (Monday night)</td>
-        <td width="112">
+        <th width="60">11</th>
+        <td width="410">Lake Sonoma 9/10/07 (Monday night)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.9.11.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">9</th>
-        <td width="387">Observing at Plettstone Sept 9 2007</td>
-        <td width="112">
+        <th width="60">9</th>
+        <td width="410">Observing at Plettstone Sept 9 2007</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.9.9.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="August" id="August07"></a>August 2007
         </th>
       </tr>
       <tr>
-        <th width="45">15</th>
-        <td width="387">A Surprise in the Small Sagittarius Star Cloud</td>
-        <td width="112">
+        <th width="60">15</th>
+        <td width="410">A Surprise in the Small Sagittarius Star Cloud</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.8.15.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="2" width="45">13</th>
-        <td width="387">The DARC Observatory 8/11/07</td>
-        <td width="112">
+        <th width="60">13</th>
+        <td width="410">The DARC Observatory 8/11/07</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.8.13.7.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">My "Joe Friday" Observing Report</td>
-        <td width="112">
+        <th width="60">13</th><td width="410">My "Joe Friday" Observing Report</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.8.13.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">4</th>
-        <td width="387">How To Feel Letdown on a Good Night</td>
-        <td width="112">
+        <th width="60">4</th>
+        <td width="410">How To Feel Letdown on a Good Night</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.8.4.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="July" id="July"></a>July 2007
         </th>
       </tr>
       <tr>
-        <th width="45">25</th>
-        <td width="387">OR 3: GSSP and Sierra Buttes (Globs)</td>
-        <td width="112">
+        <th width="60">25</th>
+        <td width="410">OR 3: GSSP and Sierra Buttes (Globs)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.7.25.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="4" width="45">24</th>
-        <td width="387" height="4">Sierra Buttes (Two southern HII complexes)</td>
-        <td width="112" height="4">
+        <th width="60">24</th>
+        <td width="410">Sierra Buttes (Two southern HII complexes)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.7.24.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">22</th>
-        <td width="387">Steady seeing conditions at Bumpass!</td>
-        <td width="112">
+        <th width="60">22</th>
+        <td width="410">Steady seeing conditions at Bumpass!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.7.22.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">21</th>
-        <td width="387">OR 1: GSSP and Sierra Buttes, July 21 2007 (Planetaries)</td>
-        <td width="112">
+        <th width="60">21</th>
+        <td width="410">OR 1: GSSP and Sierra Buttes, July 21 2007 (Planetaries)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.7.21.5.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">18</th>
-        <td width="387">GSSP July 18 2007 - Where The Myth Began</td>
-        <td width="112">
+        <th width="60">18</th>
+        <td width="410">GSSP July 18 2007 - Where The Myth Began</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.7.18.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">16</th>
-        <td width="387">Comet VZ13</td>
-        <td width="112">
+        <th width="60">16</th>
+        <td width="410">Comet VZ13</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.7.16.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="Jun" id="Jun"></a>June 2007
         </th>
       </tr>
       <tr>
-        <th width="45">22</th>
-        <td width="387">Houge Park</td>
-        <td width="112">
+        <th width="60">22</th>
+        <td width="410">Houge Park</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.6.22.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">14</th>
-        <td width="387">Making Lemonade at Michelle's...</td>
-        <td width="112">
+        <th width="60">14</th>
+        <td width="410">Making Lemonade at Michelle's...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.6.14.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="May" id="May"></a>May 2007
         </th>
       </tr>
       <tr>
-        <th height="-1" width="45">12</th>
-        <td height="18" width="387">Short IHOP on 5/12/07 and Lake Sonoma on 5/14/07</td>
-        <td height="18" width="112">
+        <th width="60">12</th>
+        <td width="410">Short IHOP on 5/12/07 and Lake Sonoma on 5/14/07</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.5.12.5.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="0" width="45">12</th>
-        <td height="18" width="387">Short OR from 5/12/07: Ice House Observation Plateau (IHOP4)</td>
-        <td height="18" width="112">
+        <th width="60">12</th>
+        <td width="410">Short OR from 5/12/07: Ice House Observation Plateau (IHOP4)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.5.12.4.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="10" width="45">12</th>
-        <td width="387">Coe was a winner!</td>
-        <td width="112">
+        <th width="60">12</th>
+        <td width="410">Coe was a winner!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2007/2007.5.12.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="April" id="April"></a>April 2007
         </th>
       </tr>
       <tr>
-        <td height="21" width="45">
+        <td width="410">
           <div align="center">
             14
           </div>
         </td>
-        <td width="387" height="21">Star Hill Inn 4/14/07</td>
+        <td width="180">Star Hill Inn 4/14/07</td>
         <td width="112" height="21">
           <a href="http://old.observers.org/reports/2007/2007.4.14.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="March" id="March"></a>March 2007
         </th>
       </tr>
       <tr>
-        <td width="45">
+        <td width="410">
           <div align="center">
             17
           </div>
         </td>
-        <td width="387">Return to Fremont Peak (I musta been drunk)...</td>
+        <td width="180">Return to Fremont Peak (I musta been drunk)...</td>
         <td width="112">
           <a href="http://old.observers.org/reports/2007/2007.3.17.7.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="45">
+        <td width="410">
           <div align="center">
             11
           </div>
         </td>
-        <td width="387">Lake Sonoma Sunday night 3/11/07</td>
+        <td width="180">Lake Sonoma Sunday night 3/11/07</td>
         <td width="112">
           <a href="http://old.observers.org/reports/2007/2007.3.11.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="45">
+        <td width="410">
           <div align="center">
             10
           </div>
         </td>
-        <td width="387">Bon Appetit!</td>
+        <td width="180">Bon Appetit!</td>
         <td width="112">
           <a href="http://old.observers.org/reports/2007/2007.3.10.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="February" id="February"></a>February 2007
         </th>
       </tr>
       <tr>
-        <td width="45">
+        <td width="410">
           <div align="center">
             16
           </div>
         </td>
-        <td width="387">Lake Sonoma 2/16/07</td>
+        <td width="180">Lake Sonoma 2/16/07</td>
         <td width="112">
           <a href="http://old.observers.org/reports/2007/2007.2.16.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="January" id="January">January 2007</a>
         </th>
       </tr>
       <tr>
-        <td width="45">
+        <td width="410">
           <div align="center">
             13
           </div>
         </td>
-        <td width="387">OR: Lake Sonoma on Saturday 1/13/07</td>
+        <td width="180">OR: Lake Sonoma on Saturday 1/13/07</td>
         <td width="112">
           <a href="http://old.observers.org/reports/2007/2007.1.13.5.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="45">
+        <td width="410">
           <div align="center">
             12
           </div>
         </td>
-        <td width="387">Daytime Mc-Not Easy In Binos</td>
+        <td width="180">Daytime Mc-Not Easy In Binos</td>
         <td width="112">
           <a href="http://old.observers.org/reports/2007/2007.1.12.4.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="December" id="December">December 2006</a>
         </th>
       </tr>
       <tr>
-        <th width="45">18</th>
-        <td width="387">Last night at Lake Sonoma</td>
-        <td width="112">
+        <th width="60">18</th>
+        <td width="410">Last night at Lake Sonoma</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.12.18.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="November" id="November">November 2006</a>
         </th>
       </tr>
       <tr>
-        <th rowspan="2" width="45">
+        <th width="60">
           <div align="center">
             18
           </div>
         </th>
-        <td width="387">Willow Springs - Out In The Wilds</td>
-        <td width="112">
+        <td width="410">Willow Springs - Out In The Wilds</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.11.18.5.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">Willow Springs</td>
-        <td width="112">
+        <th width="60"><div align="center">
+            18
+          </div></th><td width="410">Willow Springs</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.11.18.8.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="October" id="October">October 2006</a>
         </th>
       </tr>
       <tr>
-        <th height="-4" width="45">29</th>
-        <td height="-2" width="387">Willow Springs Ayers site 10/21/06</td>
-        <td height="29" width="112">
+        <th width="60">29</th>
+        <td width="410">Willow Springs Ayers site 10/21/06</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.10.29.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">20</th>
-        <td width="387">Excellent conditions at Lake Sonoma last night!</td>
-        <td width="112">
+        <th width="60">20</th>
+        <td width="410">Excellent conditions at Lake Sonoma last night!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.10.20.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">15</th>
-        <td width="387">Coe last night....</td>
-        <td width="112">
+        <th width="60">15</th>
+        <td width="410">Coe last night....</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.10.15.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3">
+        <th class="month" colspan="4">
           <a name="September" id="September">September 2006</a>
         </th>
       </tr>
       <tr>
-        <th width="45">28</th>
-        <td width="387">Lake Sonoma - 9/25/06</td>
-        <td width="112">
+        <th width="60">28</th>
+        <td width="410">Lake Sonoma - 9/25/06</td>
+        <td width="180">
           <a href="OR_Lake_Sonoma_20060924.html">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"><center>18</center></td></tr>
       <tr>
-        <th width="45">27</th>
-        <td width="387">Calstar Aways Wins...</td>
-        <td width="112">
+        <th width="60">27</th>
+        <td width="410">Calstar Aways Wins...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.09.27.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">19</th>
-        <td width="387">Solar Pillar</td>
-        <td width="112">
+        <th width="60">19</th>
+        <td width="410">Solar Pillar</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.09.19.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">17</th>
-        <td width="387">Coe last night... brief report...</td>
-        <td width="112">
+        <th width="60">17</th>
+        <td width="410">Coe last night... brief report...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.09.17.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">02</th>
-        <td width="387">Houge Park 9/1</td>
-        <td width="112">
+        <th width="60">02</th>
+        <td width="410">Houge Park 9/1</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.09.02.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="31">
+        <th class="month" colspan="4" height="31">
           <a name="August" id="August06"></a>August 2006
         </th>
       </tr>
       <tr>
-        <th width="45">29</th>
-        <td width="387">Guide Dogs Rock!</td>
-        <td width="112">
+        <th width="60">29</th>
+        <td width="410">Guide Dogs Rock!</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.29.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="2" width="45">28</th>
-        <td width="387">Willow Springs, 26-27 Aug 2006</td>
-        <td width="112">
+        <th width="60">28</th>
+        <td width="410">Willow Springs, 26-27 Aug 2006</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.28.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">Comet 177P/Bradford</td>
-        <td width="112">
+        <th width="60">28</th><td width="410">Comet 177P/Bradford</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.28.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">24</th>
-        <td width="387">Uranus' moons</td>
-        <td width="112">
+        <th width="60">24</th>
+        <td width="410">Uranus' moons</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.24.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">22</th>
-        <td width="387">Where Stars Go To Die (8/19)</td>
-        <td width="112">
+        <th width="60">22</th>
+        <td width="410">Where Stars Go To Die (8/19)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.22.3.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">14</th>
-        <td width="387">Naked Eye Sunspot</td>
-        <td width="112">
+        <th width="60">14</th>
+        <td width="410">Naked Eye Sunspot</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.14.2.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th rowspan="3" width="45">12</th>
-        <td width="387">Sierra Buttes and Lassen 7/20 to 7/27 (Globulars)</td>
-        <td width="112">
+        <th width="60">12</th>
+        <td width="410">Sierra Buttes and Lassen 7/20 to 7/27 (Globulars)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.12.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">Sierra Buttes and Lassen 7/20 to 7/27 (Planetaries)</td>
-        <td width="112">
+        <th width="60">12</th><td width="410">Sierra Buttes and Lassen 7/20 to 7/27 (Planetaries)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.12.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td width="387">Sierra Buttes and Lassen 7/20 to 7/27 (Part 1)</td>
-        <td width="112">
+        <th width="60">12</th><td width="410">Sierra Buttes and Lassen 7/20 to 7/27 (Part 1)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.12.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th width="45">05</th>
-        <td width="387">Licked</td>
-        <td width="112">
+        <th width="60">05</th>
+        <td width="410">Licked</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.08.05.1.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="July" id="July">July 2006</a>
         </th>
       </tr>
       <tr>
-        <th height="-2" width="45">29</th>
-        <td height="-4" width="387">Reflections from Coe: Looking In The Mirror Again...</td>
-        <td height="22" width="112">
+        <th width="60">29</th>
+        <td width="410">Reflections from Coe: Looking In The Mirror Again...</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.7.29.5.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="-2" width="45">26</th>
-        <td height="-2" width="387">Nelms Star Party July 26 2006</td>
-        <td height="22" width="112">
+        <th width="60">26</th>
+        <td width="410">Nelms Star Party July 26 2006</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.7.26.5.shtml">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th height="-8" rowspan="3" width="45">20</th>
-        <td height="31" width="387">Sierra Buttes and Lassen 7/20 to 7/27 (Globulars)</td>
-        <td height="31" width="112">
+        <th width="60">20</th>
+        <td width="410">Sierra Buttes and Lassen 7/20 to 7/27 (Globulars)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.7.20.3.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="-2" width="387">Sierra Buttes and Lassen 7/20 to 7/27 (Planetaries)</td>
-        <td height="-2" width="112">
+        <th width="60">20</th><td width="410">Sierra Buttes and Lassen 7/20 to 7/27 (Planetaries)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.7.20.2.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <td height="-2" width="387">Sierra Buttes and Lassen 7/20 to 7/27 (Part I)</td>
-        <td height="-2" width="112">
+        <th width="60">20</th><td width="410">Sierra Buttes and Lassen 7/20 to 7/27 (Part I)</td>
+        <td width="180">
           <a href="http://old.observers.org/reports/2006/2006.7.20.1.shtml">Steve Gottlieb</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="October" id="October">October 1998</a>
         </th>
       </tr>
       <tr>
-        <th height="-2" width="45">17</th>
-        <td height="-2" width="387">Spotted Beast of the North</td>
-        <td height="-2" width="112">
+        <th width="60">17</th>
+        <td width="410">Spotted Beast of the North</td>
+        <td width="180">
           <a href="https://deepskyobserving.blogspot.com/1998/10/spotted-beast-of-north.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
       <tr>
-        <th class="month" colspan="3" height="14">
+        <th class="month" colspan="4" height="14">
           <a name="August" id="August">August 1998</a>
         </th>
       </tr>
       <tr>
-        <th height="-2" width="45">21</th>
-        <td height="-2" width="387">Terror at 7200 ft</td>
-        <td height="-2" width="112">
+        <th width="60">21</th>
+        <td width="410">Terror at 7200 ft</td>
+        <td width="180">
           <a href="https://deepskyobserving.blogspot.com/1998/08/terror-at-7200-ft.html">Mark Wagner</a>
         </td>
-      </tr>
+      <td width="100"></td></tr>
     </table>
     For more observing reports, look <a href="https://old.observers.org/reports/" target="_blank">here</a>, <a href="https://deepskyobserving.blogspot.com/" target="_blank">here</a> and <a href="http://arnett.us.com/psc/or.html">here</a>.<br />
   </center>
