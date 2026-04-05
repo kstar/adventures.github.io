@@ -1,7 +1,7 @@
 ---
 layout: or
 title: Three nights in Glenn County
-author: Muriel Dulieu-Holzer
+author: Muriel Dulieu Holzer
 ---
 
 # First night – 10/16/2025
