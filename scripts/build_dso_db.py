@@ -7,6 +7,7 @@ import sqlite3
 import pykstars
 from astroquery.simbad import Simbad
 from astroquery.ipac.ned import Ned
+Ned.TIMEOUT = 3
 from astropy.coordinates import ICRS, get_constellation
 import astropy.units as u
 import re

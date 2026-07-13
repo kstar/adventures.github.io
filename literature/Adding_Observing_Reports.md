@@ -70,6 +70,13 @@ uv run scripts/apply_dso.py --file docs/OR_your_slug.md
 ```
 *Note: Only run this on the newly added files to maintain a clean git diff.*
 
+> [!IMPORTANT]
+> **HTML Tag at Beginning of Line/Paragraph Issue:**
+> If an `<x-dso>` tag is placed at the very beginning of a line or paragraph in a Markdown file, Jekyll's Markdown parser (Kramdown) may interpret it as a block-level HTML element, breaking the paragraph and rendering a newline. 
+> To fix this:
+> - Wrap the entire paragraph in `<p>...</p>` tags.
+> - Replace any markdown within that paragraph (like `*italic*` or `**bold**`) with HTML tags (`<em>...</em>` or `<strong>...</strong>`), as markdown is not parsed inside block-level HTML.
+
 ---
 
 ## Step 6: Final Review & Staging

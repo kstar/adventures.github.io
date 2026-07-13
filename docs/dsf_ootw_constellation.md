@@ -218,7 +218,7 @@ table{ writing-mode:horizontal-tb; direction:ltr; } */
 </td><td class="cell-ce8">
 <span class="constellation-anchor">Tel</span>
 </td><td class="cell-ce11">
-<span class="constellation-anchor">Nor</span>
+<span class="constellation-anchor"><a href="#norma" title="Norma">Nor</a></span>
 </td><td class="cell-ce5"> </td><td class="cell-ce8">
 <span class="constellation-anchor"><a href="#centaurus" title="Centaurus">Cen</a></span>
 </td><td class="cell-ce11"> </td></tr><tr class="row-ro1"><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td><td colspan="3" class="cell-ce2"> </td></tr><tr class="row-ro1"><td class="cell-ce3"> </td><td class="cell-ce7">
@@ -264,7 +264,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 | <span class="constellation-anchor"><a href="#columba" title="Columba">Col</a></span> | <span class="constellation-anchor"><a href="#coma-berenices" title="Coma Berenices">Com</a></span> | <span class="constellation-anchor">CrA</span> | <span class="constellation-anchor"><a href="#corona-borealis" title="Corona Borealis">CrB</a></span> | <span class="constellation-anchor"><a href="#crater" title="Crater">Crt</a></span> | <span class="constellation-anchor"><a href="#crux" title="Crux">Cru</a></span> | <span class="constellation-anchor"><a href="#corvus" title="Corvus">Crv</a></span> | <span class="constellation-anchor"><a href="#canes-venatici" title="Canes Venatici">CVn</a></span> | <span class="constellation-anchor"><a href="#cygnus" title="Cygnus">Cyg</a></span> | <span class="constellation-anchor"><a href="#delphinus" title="Delphinus">Del</a></span> | <span class="constellation-anchor"><a href="#dorado" title="Dorado">Dor</a></span> |
 | <span class="constellation-anchor"><a href="#draco" title="Draco">Dra</a></span> | <span class="constellation-anchor"><a href="#equuleus" title="Equuleus">Equ</a></span> | <span class="constellation-anchor"><a href="#eridanus" title="Eridanus">Eri</a></span> | <span class="constellation-anchor"><a href="#fornax" title="Fornax">For</a></span> | <span class="constellation-anchor"><a href="#gemini" title="Gemini">Gem</a></span> | <span class="constellation-anchor"><a href="#grus" title="Grus">Gru</a></span> | <span class="constellation-anchor"><a href="#hercules" title="Hercules">Her</a></span> | <span class="constellation-anchor">Hor</span> | <span class="constellation-anchor"><a href="#hydra" title="Hydra">Hya</a></span> | <span class="constellation-anchor">Hyi</span> | <span class="constellation-anchor">Ind</span> |
 | <span class="constellation-anchor"><a href="#lacerta" title="Lacerta">Lac</a></span> | <span class="constellation-anchor"><a href="#leo" title="Leo">Leo</a></span> | <span class="constellation-anchor"><a href="#lepus" title="Lepus">Lep</a></span> | <span class="constellation-anchor"><a href="#libra" title="Libra">Lib</a></span> | <span class="constellation-anchor"><a href="#leo-minor" title="Leo Minor">LMi</a></span> | <span class="constellation-anchor"><a href="#lupus" title="Lupus">Lup</a></span> | <span class="constellation-anchor"><a href="#lynx" title="Lynx">Lyn</a></span> | <span class="constellation-anchor"><a href="#lyra" title="Lyra">Lyr</a></span> | <span class="constellation-anchor">Men</span> | <span class="constellation-anchor">Mic</span> | <span class="constellation-anchor"><a href="#monoceros" title="Monoceros">Mon</a></span> |
-| <span class="constellation-anchor">Mus</span> | <span class="constellation-anchor">Nor</span> | <span class="constellation-anchor">Oct</span> | <span class="constellation-anchor"><a href="#ophiuchus" title="Ophiuchus">Oph</a></span> | <span class="constellation-anchor"><a href="#orion" title="Orion">Ori</a></span> | <span class="constellation-anchor"><a href="#pavo" title="Pavo">Pav</a></span> | <span class="constellation-anchor"><a href="#pegasus" title="Pegasus">Peg</a></span> | <span class="constellation-anchor"><a href="#perseus" title="Perseus">Per</a></span> | <span class="constellation-anchor"><a href="#phoenix" title="Phoenix">Phe</a></span> | <span class="constellation-anchor">Pic</span> | <span class="constellation-anchor"><a href="#piscis-austrinus" title="Piscis Austrinus">PsA</a></span> |
+| <span class="constellation-anchor">Mus</span> | <span class="constellation-anchor"><a href="#norma" title="Norma">Nor</a></span> | <span class="constellation-anchor">Oct</span> | <span class="constellation-anchor"><a href="#ophiuchus" title="Ophiuchus">Oph</a></span> | <span class="constellation-anchor"><a href="#orion" title="Orion">Ori</a></span> | <span class="constellation-anchor"><a href="#pavo" title="Pavo">Pav</a></span> | <span class="constellation-anchor"><a href="#pegasus" title="Pegasus">Peg</a></span> | <span class="constellation-anchor"><a href="#perseus" title="Perseus">Per</a></span> | <span class="constellation-anchor"><a href="#phoenix" title="Phoenix">Phe</a></span> | <span class="constellation-anchor">Pic</span> | <span class="constellation-anchor"><a href="#piscis-austrinus" title="Piscis Austrinus">PsA</a></span> |
 | <span class="constellation-anchor"><a href="#pisces" title="Pisces">Psc</a></span> | <span class="constellation-anchor"><a href="#puppis" title="Puppis">Pup</a></span> | <span class="constellation-anchor"><a href="#pyxis" title="Pyxis">Pyx</a></span> | <span class="constellation-anchor">Ret</span> | <span class="constellation-anchor"><a href="#sculptor" title="Sculptor">Scl</a></span> | <span class="constellation-anchor"><a href="#scorpius" title="Scorpius">Sco</a></span> | <span class="constellation-anchor"><a href="#scutum" title="Scutum">Sct</a></span> | <span class="constellation-anchor"><a href="#serpens" title="Serpens">Ser</a></span> | <span class="constellation-anchor"><a href="#sextans" title="Sextans">Sex</a></span> | <span class="constellation-anchor"><a href="#sagitta" title="Sagitta">Sge</a></span> | <span class="constellation-anchor"><a href="#sagittarius" title="Sagittarius">Sgr</a></span> |
 | <span class="constellation-anchor"><a href="#taurus" title="Taurus">Tau</a></span> | <span class="constellation-anchor">Tel</span> | <span class="constellation-anchor">TrA</span> | <span class="constellation-anchor"><a href="#triangulum" title="Triangulum">Tri</a></span> | <span class="constellation-anchor"><a href="#tucana" title="Tucana">Tuc</a></span> | <span class="constellation-anchor"><a href="#ursa-major" title="Ursa Major">UMa</a></span> | <span class="constellation-anchor"><a href="#ursa-minor" title="Ursa Minor">UMi</a></span> | <span class="constellation-anchor"><a href="#vela" title="Vela">Vel</a></span> | <span class="constellation-anchor"><a href="#virgo" title="Virgo">Vir</a></span> | <span class="constellation-anchor">Vol</span> | <span class="constellation-anchor"><a href="#vulpecula" title="Vulpecula">Vul</a></span> |
 
@@ -659,6 +659,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-04-05|[Arp 305: NGC 4016 and NGC 4017, Interacting Galaxies](https://www.deepskyforum.com/showthread.php?1911-Object-of-the-Week-April-5-2026-%25E2%2580%2593-Arp-305-NGC-4016-and-NGC-4017-Interacting-Galaxies){:target="_blank"}|Howard Banich|<x-dso-link>Arp 305</x-dso-link> (NGC 4016 and <x-dso-link>NGC 4017</x-dso-link>)|
 |2025-05-18|[Malin 1](https://www.deepskyforum.com/showthread.php?1851-Object-of-the-Week-May-18th-2025-%25E2%2580%2593-Malin-1){:target="_blank"}|Scott Harrington|Malin 1 (VPC 1091, <x-dso-link>LEDA 42102</x-dso-link>)|
 |2025-03-23|[the Haro Berenice](https://www.deepskyforum.com/showthread.php?1841-Object-of-the-Week-March-23-2025-the-Haro-Berenice){:target="_blank"}|Victor van Wulfen|H4-1 (PK 049+88 1, PN G049.3+88.1)|
 |2024-03-10|[Tiny and Super-Thin in Coma Berenices](https://www.deepskyforum.com/showthread.php?1754-Object-of-the-Week-March-10-2024-%25E2%2580%2593-Tiny-and-Super-Thin-in-Coma-Berenices){:target="_blank"}|Mark Friedman|<x-dso-link>NGC 4147</x-dso-link>, <x-dso-link>UGC 7170</x-dso-link>|
@@ -736,6 +737,8 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-05-03|[NGC 4369 and its peculiar bar](https://www.deepskyforum.com/showthread.php?1915-Object-of-the-Week-May-3-2026-NGC-4369-and-its-peculiar-bar){:target="_blank"}|Uwe Glahn|<x-dso-link>NGC 4369</x-dso-link> (Mrk 439, <x-dso-link>UGC 7489</x-dso-link>, <x-dso-link>MCG +07-26-004</x-dso-link>)|
+|2026-03-15|[M63 The Sunflower Galaxy](https://www.deepskyforum.com/showthread.php?1905-Object-of-the-Week-March-15-2026-M63-The-Sunflower-Galaxy){:target="_blank"}|Dragan Nikin|<x-dso-link>M 63</x-dso-link> (NGC 5055, <x-dso-link>UGC 8334</x-dso-link>)|
 |2023-07-09|[NGC 5297 “The Hook Galaxy” ](https://www.deepskyforum.com/showthread.php?1703-Object-to-the-Week-July-9-2023-NGC-5297-%25E2%2580%259CThe-Hook-Galaxy%25E2%2580%259D){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 5297</x-dso-link>, <x-dso-link>NGC 5296</x-dso-link>|
 |2023-04-09|[Messier 3](https://www.deepskyforum.com/showthread.php?1674-Object-of-the-Week-April-9-2023-%E2%80%93-Messier-3){:target="_blank"}|Mark Friedman|<x-dso-link>M 3</x-dso-link>|
 |2021-05-16|[NGC 5421 = Arp 111](https://www.deepskyforum.com/showthread.php?1494-Object-Of-The-Week-May-16-2021-%E2%80%93-NGC-5421-Arp-111){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 5421</x-dso-link> (Arp 111, <x-dso-link>VV 120</x-dso-link>, <x-dso-link>I Zw 78</x-dso-link>)|
@@ -1009,6 +1012,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-04-19|[NGC 4005 and Friends, including Arp 138](https://www.deepskyforum.com/showthread.php?1913-Object-of-the-Week-April-19th-2026-%25E2%2580%2593-NGC-4005-and-Friends-including-Arp-138){:target="_blank"}|Paul Alsing|WBL 368 (NGC 3978, <x-dso-link>NGC 3989</x-dso-link>, <x-dso-link>NGC 3987</x-dso-link>, NGC 3989, <x-dso-link>NGC 4005</x-dso-link>, <x-dso-link>NGC 4011</x-dso-link>, <x-dso-link>NGC 4015</x-dso-link> (Arp 318), <x-dso-link>MCG +4-28-110</x-dso-link>)|
 |2025-05-11|[NGC 3338](https://www.deepskyforum.com/showthread.php?1850-Object-of-the-Week-May-11-2025-%25E2%2580%2593-NGC-3338){:target="_blank"}|Howard Banich|<x-dso-link>NGC 3338</x-dso-link>|
 |2023-03-26|[NGC3507 & NGC 3501](https://www.deepskyforum.com/showthread.php?1672-Object-of-the-Week-March-26th-2023-NGC3507-amp-NGC-3501){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 3507</x-dso-link>, <x-dso-link>NGC 3501</x-dso-link>|
 |2022-03-20|[NGC 3646, a Ring Galaxy in Leo](https://www.deepskyforum.com/showthread.php?1571-Object-of-the-Week-March-20-2022-NGC-3646-a-Ring-Galaxy-in-Leo){:target="_blank"}|Akarsh Simha|<x-dso-link>NGC 3646</x-dso-link>|
@@ -1155,6 +1159,17 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 |2015-01-25|[NGC 2264, the Cone Nebula](https://www.deepskyforum.com/showthread.php?678-Object-of-t-he-Week-January-25-2015-NGC-2264-the-Cone-Nebula){:target="_blank"}|Howard Banich|<x-dso-link>NGC 2264</x-dso-link>|
 |2014-01-05|[NGC2261 Hubbles Variable Nebula](https://www.deepskyforum.com/showthread.php?499-Object-of-the-Week-January-5-2014-%E2%80%93-NGC2261-Hubbles-Variable-Nebula){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 2261</x-dso-link>|
 |2012-02-19|[Thommes' Nebula revealed](https://www.deepskyforum.com/showthread.php?65-Object-of-the-Week-Feb-19-2012-Thommes-Nebula-revealed){:target="_blank"}|Steve Gottlieb|Thommes' Nebula|
+
+
+[▲ Index](#index){:.top}
+
+---
+
+## Norma
+
+|Date|Title|Author|Object(s)|
+|----|----|----|----|----|
+|2026-04-26|[the Dragon's Egg Nebula \(NGC 6164/5\)](https://www.deepskyforum.com/showthread.php?1914-Object-of-the-Week-April-26th-2026-the-Dragon-s-Egg-Nebula-%28NGC-6164-5%29){:target="_blank"}|Akarsh Simha|Hen 2-168 (NGC 6164, <x-dso-link>NGC 6165</x-dso-link>)|
 
 
 [▲ Index](#index){:.top}
@@ -1568,6 +1583,9 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-04-12|[NGC 3310](https://www.deepskyforum.com/showthread.php?1912-Object-of-the-Week-April-12th-2026-%25E2%2580%2593-NGC-3310){:target="_blank"}|Scott Harrington|NGC 3310 (MCG +09-18-008, <x-dso-link>Arp 217</x-dso-link>, <x-dso-link simbad="Z 267-004">CGCG 267-004</x-dso-link>, <x-dso-link>VV 365</x-dso-link>, 406, <x-dso-link>UGC 5786</x-dso-link>)|
+|2026-03-22|[M81 and the Dwarf Galaxy Holmberg IX](https://www.deepskyforum.com/showthread.php?1909-Object-of-the-Week-March-22-2026-%25E2%2580%2593-M81-and-the-Dwarf-Galaxy-Holmberg-IX){:target="_blank"}|Timo Karhula|<x-dso-link>M 81</x-dso-link> (NGC 3031, <x-dso-link>UGC 5318</x-dso-link>, <x-dso-link simbad="Z 333-7">CGCG 333-7</x-dso-link>, <x-dso-link>MCG +12-10-10</x-dso-link>, <x-dso-link>IRAS 9514+6918</x-dso-link>, <x-dso-link>PGC 28630</x-dso-link>, Bode's Galaxy), Holmberg IX (UGC 5336, <x-dso-link>MCG +12-10-12</x-dso-link>, DDO 66, Anon 0953+69, <x-dso-link>PGC 28757</x-dso-link>)|
+|2026-03-08|[NGC 2684 photobombs a background cluster](https://www.deepskyforum.com/showthread.php?1904-Object-of-the-Week-March-8-2026-%25E2%2580%2593-NGC-2684-photobombs-a-background-cluster){:target="_blank"}|Steve Gottlieb|<x-dso-link>NGC 2684</x-dso-link> (UGC 4662, <x-dso-link>MCG +08-16-035</x-dso-link>, <x-dso-link simbad="Z 237-024">CGCG 237-024</x-dso-link>, <x-dso-link>PGC 25024</x-dso-link>), <x-dso-link>VV 765</x-dso-link> (NGC 2686A, <x-dso-link>NGC 2686B</x-dso-link>, <x-dso-link>NGC 2687A</x-dso-link>, <x-dso-link>NGC 2687B</x-dso-link>, <x-dso-link>NGC 2688</x-dso-link>, <x-dso-link>NGC 2689</x-dso-link>, <x-dso-link>PGC 25042</x-dso-link>, <x-dso-link>LEDA 2335698</x-dso-link>)|
 |2026-02-01|["UMa compact" + bonus object](https://www.deepskyforum.com/showthread.php?1895-Object-of-the-Week-SBS-0849-496-quot-UMa-compact-quot-bonus-object){:target="_blank"}|Paul Alsing|SBSG 0849+496 (IRAS F08494+4938, <x-dso-link>LEDA 139147</x-dso-link>), <x-dso-link>IRAS 08339+6517</x-dso-link> (LEDA 24283)|
 |2024-04-28|[Core business](https://www.deepskyforum.com/showthread.php?1768-Object-of-the-Week-April-28-2024-Core-business){:target="_blank"}|Victor van Wulfen|<x-dso-link>MCG +08-20-033</x-dso-link> (UGC 5953, <x-dso-link>PGC 32536</x-dso-link>)|
 |2024-04-14|[NGC 3445 = Arp 24 in Ursa Major](https://www.deepskyforum.com/showthread.php?1762-Object-of-the-Week-April-14-2024-NGC-3445-Arp-24-in-Ursa-Major){:target="_blank"}|Paul Alsing|<x-dso-link>NGC 3445</x-dso-link> (Arp 24, <x-dso-link>UGC 6021</x-dso-link>, <x-dso-link>PGC 32772</x-dso-link>), <x-dso-link>MCG 10-16-24</x-dso-link>, <x-dso-link>LEDA 2554198</x-dso-link>, <x-dso-link>NGC 3440</x-dso-link>, <x-dso-link>NGC 3458</x-dso-link>|
@@ -1642,6 +1660,8 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 
 |Date|Title|Author|Object(s)|
 |----|----|----|----|----|
+|2026-05-17|[The most distant Messier object](https://www.deepskyforum.com/showthread.php?1917-OOTW-May-17-2026-%25E2%2580%2593-The-most-distant-Messier-object){:target="_blank"}|Wouter van Reeven|<x-dso-link>M 58</x-dso-link> (NGC 4579, <x-dso-link>MCG+02-32-160</x-dso-link>, <x-dso-link>UGC 7796</x-dso-link>, <x-dso-link>LEDA 42168</x-dso-link>)|
+|2026-05-10|[A ramcharger in Coma](https://www.deepskyforum.com/showthread.php?1916-Object-of-the-Week-May-10-2026-A-ramcharger-in-Coma){:target="_blank"}|Victor van Wulfen|<x-dso-link>IC 3467</x-dso-link> (MCG+02-32-125, <x-dso-link>UGC 7695</x-dso-link>, <x-dso-link>LEDA 41608</x-dso-link>, <x-dso-link>VV 563</x-dso-link>)|
 |2025-06-01|[IC 1101 and Abell 2029](https://www.deepskyforum.com/showthread.php?1853-Object-of-the-Week-June-1st-2025-IC-1101-and-Abell-2029){:target="_blank"}|Akarsh Simha|<x-dso-link>IC 1101</x-dso-link>, <x-dso-link>Abell 2029</x-dso-link>, <x-dso-link>PGC 54178</x-dso-link> (LEDA 54178), <x-dso-link>LEDA 5057632</x-dso-link>|
 |2025-04-13|[NGC 4536 & NGC 4527](https://www.deepskyforum.com/showthread.php?1845-Object-of-the-Week-April-13th-2025-%25E2%2580%2593-NGC-4536-amp-NGC-4527){:target="_blank"}|Dragan Nikin|<x-dso-link>NGC 4536</x-dso-link>, <x-dso-link>NGC 4527</x-dso-link>, <x-dso-link>NGC 4533</x-dso-link>|
 |2024-06-09|[NGC 5331 \(Fox Eyes\)](https://www.deepskyforum.com/showthread.php?1779-Object-of-The-Week-June-9-2024%25E2%2580%2594NGC-5331-%28Fox-Eyes%29){:target="_blank"}|Jimi Lowrey|<x-dso-link>NGC 5331</x-dso-link> (VV 253)|
@@ -1697,7 +1717,7 @@ Alternatively, the below menu shows the 88 constellations in alphabetical order.
 {% raw %}
 <br />
 <div style="text-align: right; margin-right: 10px;">
-Last updated: 2026-03-28T20:25:21Z
+Last updated: 2026-07-13T03:46:58Z
 </div>
 {% endraw %}
 
