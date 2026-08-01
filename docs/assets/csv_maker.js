@@ -108,9 +108,10 @@ window.onload = function() {
     button.className = 'floating';
     button.title = `Download table containing SIMBAD data on the ${N} underlined objects on this page`;
 
-    // Style the button
     // Add an event listener to the button (optional)
     button.addEventListener('click', async () => {
+        // Dispatch custom event for tracking
+        document.dispatchEvent(new CustomEvent('ads_csv_export', { detail: { path: window.location.pathname } }));
         const prev_src = icon.src;
         icon.src = 'assets/loading.gif';
         await generateCSV();
