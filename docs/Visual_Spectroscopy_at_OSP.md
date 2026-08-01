@@ -102,6 +102,14 @@ That's when we noticed that we couldn't tell which absorption line was $$\text{[
 
 Here is a video showing our experiments with filters with the solar spectroscope:
 
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/qhyQ1c-haH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border: none; border-radius: 8px; max-width: 100%;"></iframe>
+</center>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=qhyQ1c-haH4" target="_blank">Watch the video on YouTube</a>
+</p>
+
 
 All this was quite fun with the lively company. Then it dawned on me that the presence of iron in the Solar spectrum was yet more evidence that the Sun and the Solar System formed from a nebula that was seeded with materials from previous stars that died in supernova explosions. Well, of course. Here we were covered in the reddish dust of the central Oregon High desert—almost the spitting image of the surface of Mars but for the *"dammit bushes"* (attend OSP and you'll know!)—its color coming from iron oxide. The gold in my wedding ring gave me a little nudge too, reminding me that all of the naturally occurring elements on the periodic table are here because of those ancient supernovae.
 
