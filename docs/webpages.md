@@ -17,6 +17,7 @@ no_bullets: true
 * [Off The Beaten Path](offpath.htm) - Steve Gottlieb
 * [John Dobson: Astronomy for Children under 80](dobson.htm) - Jim Shields
 * [Spectra of Hot and Cool Stars](spectra.htm) - Jim Shields
+* [Visual Spectroscopy at OSP](Visual_Spectroscopy_at_OSP.html) - Rob Brown
 * [Thoughts on a Great Comet](comet.htm) - Jay Reynolds Freeman
 * [Quantum Wierdness: The Garden of Forking Paths](paths.htm) - Jim Shields
 * [Herschel II in Rome: Another Way](rome.htm) - Bill Meyers
