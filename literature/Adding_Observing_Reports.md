@@ -115,3 +115,14 @@ Once the author has verified that the reports display correctly on the website, 
     - `date`: YYYY-MM-DD
     - `page`: The `.html` filename (optional if included in description link).
     - `description`: A short description, often including a link and the author's name.
+
+---
+
+## General Formatting & Style Reference
+
+For a comprehensive guide and live template for writing and formatting pages in this repository, refer to the [example.md](../docs/example.md) file. It provides references and guidelines on:
+- Jekyll front-matter properties (e.g., setting layout, title, and author).
+- Text formatting (headings, bold, italics, quotes).
+- HTML and Markdown link styling.
+- Image alignment and sizing conventions.
+- Mathematical equations: Mathematical typesetting is handled by MathJax. Always wrap equations in double dollar signs (`$$`) for both inline and standalone block equations.
