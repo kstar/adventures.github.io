@@ -74,22 +74,21 @@ Akarsh wanted to know the source of these lines. We were pretty sure that we wer
 
 At first, this was a bit confusing because some of us did not realize the wavelength shift that results if the filter is tilted, and they were not careful to place the filter over the eyepiece without tilt. So some of us saw all the lines disappear—I won't say who. But once that got sorted out, we started to get sensible results. The $$\text{[O III]}$$ filter decisively eliminated the shorter-wavelength dim line that was hydrogen beta, while the hydrogen beta filter dimmed or blocked one of the two brighter lines—the longer-wavelength one—while leaving the dimmer hydrogen beta line unaffected.
 
+By the way, the notation $$\text{[O III]}$$ is not the same as $$\text{O}_3$$ (Ozone), but instead refers to the $$\text{O}^{2+}$$ ion. This is a system called [spectroscopic notation](https://en.wikipedia.org/wiki/Spectroscopic_notation#Ionization_states) that can be somewhat confusing. In this system $$\text{O I}$$ refers to the neutral oxygen atom, $$\text{O II}$$ to oxygen with one electron removed (singly ionized) and $$\text{O III}$$ to oxygen with two electrons removed (doubly ionized). The brackets indicate a forbidden line. Similarly, the emission nebulae that glow pink in the sky are called $$\text{H II}$$ regions because they are dominated by (singly) ionized hydrogen, whereas the 21cm radio emission from neutral hydrogen is associated with $$\text{H I}$$ clouds.
+
 ---
 
-### Forbidden Lines and the Physics of Low Density
+### Forbidden Lines and the Physics of Low Density Gas
 
 (This section too is a contribution of Google's Gemini AI. Proofread and edited by Akarsh)
 
-Why do we see emission from doubly ionized oxygen ($$\text{[O III]}$$) in a planetary nebula, but we don't see any corresponding absorption lines in the Solar spectrum?
+Why do we see emission from doubly-ionized oxygen $$\text{[O III]}$$ in a planetary nebula, but we don't see any corresponding absorption lines in the solar spectrum?
 
-A transition is called **"forbidden"** in quantum mechanics when it has a very low probability of occurring spontaneously. The excited state of the atom is *metastable*, meaning the electron remains in that state for a relatively long time—ranging from milliseconds to hours—before decaying and emitting a photon (compared to nanoseconds for permitted transitions).
+An atomic transition is called **"forbidden"** in quantum mechanics when it has a very low probability of occurring spontaneously. The excited state of the atom is *metastable*, meaning the electron can remain in that state for a relatively long time—ranging from milliseconds to hours—before decaying and emitting a photon (compared to nanoseconds for non-forbidden transitions).
 
-*   **In dense environments** (like the Solar atmosphere, or laboratories on Earth), the gas density is high. An oxygen atom excited to a metastable state will almost certainly collide with another particle (like a free electron) and lose its excitation energy collisionaly (collisional de-excitation) long before it has a chance to spontaneously emit a photon. Therefore, no forbidden lines are produced.
-*   **In low-density environments** (like planetary nebulae, where densities are typically only $$10^2$$ to $$10^4\text{ particles/cm}^3$$), the time between collisions for any given atom is hours. Under these near-vacuum conditions, the metastable oxygen ion is left undisturbed, giving it plenty of time to decay radiatively and emit the characteristic green $$\text{[O III]}$$ photons.
+In dense environments, like the solar atmosphere, or laboratories on Earth, the gas density is high. An oxygen atom excited to a metastable state will almost certainly collide with another particle (like a free electron) and lose its excitation energy collisionaly (collisional de-excitation) long before it has a chance to spontaneously emit a photon. Therefore, no forbidden lines are produced. On the other hand in low-density environments like planetary nebulae, where densities are typically only 100 to 10000 particles in a cubic centimeter, the time between collisions for any given atom is hours. Under these conditions, the metastable oxygen ion is left undisturbed, giving it plenty of time to decay radiatively and emit the characteristic green $$\text{[O III]}$$ photons.
 
 In fact, for a long time, the $$\text{[O III]}$$ lines were attributed to a hypothetical new element called *nebulium* before it was understood that they were in fact due to a forbidden transition in doubly-ionized oxygen.
-
-By the way, the notation $$\text{[O III]}$$ is not the same as $$\text{O}_3$$ (Ozone), but instead refers to the $$\text{O}^{2+}$$ ion. This is a system called [spectroscopic notation](https://en.wikipedia.org/wiki/Spectroscopic_notation#Ionization_states) that can be somewhat confusing. In this system $$\text{O I}$$ refers to the neutral oxygen atom, $$\text{O II}$$ to oxygen with one electron removed (singly ionized) and $$\text{O III}$$ to oxygen with two electrons removed (doubly ionized). The brackets indicate a forbidden line. Similarly, the emission nebulae that glow pink in the sky are called $$\text{H II}$$ regions because they are dominated by (singly) ionized hydrogen, whereas the 21cm radio emission from neutral hydrogen is associated with $$\text{H I}$$ clouds.
 
 ---
 
