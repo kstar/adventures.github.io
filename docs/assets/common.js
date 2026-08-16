@@ -76,6 +76,8 @@ customElements.define("x-dso-link", XDsoLinkElement);
     script.src = 'assets/csv_maker.js';
     document.head.appendChild(script);
 }
+// To enable analytics tracking once your AWS backend is deployed, uncomment the line below:
+// import('./analytics.js').catch(err => console.warn('Analytics failed to load:', err));
 // Font Awesome v4.7.0
 {
     let link = document.createElement('link');
